@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><title>Cores proibidas</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+body{margin:0;padding:20px;background:#F0EDE6;}
+.row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.sw{position:relative;border-radius:2px;border:1px solid rgba(28,53,32,.12);padding:12px;height:98px;display:flex;flex-direction:column;justify-content:space-between;background:#F0EDE6;}
+.chip{position:relative;width:100%;height:44px;border-radius:2px;overflow:hidden;}
+.chip::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 48%,#B95839 48%,#B95839 52%,transparent 52%);}
+.name{font-family:'Poppins',sans-serif;font-weight:500;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#1C3520;}
+.hex{font-family:'Poppins',sans-serif;font-weight:300;font-size:11px;color:#5C5852;}
+.header{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:16px;color:#1C3520;margin-bottom:10px;}
+</style></head><body>
+<div class="header">Proibidas — sem exceção</div>
+<div class="row">
+  <div class="sw"><div class="chip" style="background:#2E7035"></div><div><div class="name">Verde médio</div><div class="hex">#2E7035</div></div></div>
+  <div class="sw"><div class="chip" style="background:#DBE2D9"></div><div><div class="name">Sage</div><div class="hex">#DBE2D9</div></div></div>
+  <div class="sw"><div class="chip" style="background:#EED6C7"></div><div><div class="name">Creme</div><div class="hex">#EED6C7</div></div></div>
+  <div class="sw"><div class="chip" style="background:linear-gradient(90deg,#ff6bff,#6b8cff)"></div><div><div class="name">Qualquer gradiente</div><div class="hex">glow, azul, lilás</div></div></div>
+</div>
+</body></html>

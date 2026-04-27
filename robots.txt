@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /preview.html
+Disallow: /SKILL.md
+Disallow: /README.md
+Disallow: /README-formularios.md
+
+Sitemap: https://anapaulateixeira.med.br/sitemap.xml

@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SEO -->
+<title>Na Mídia · Clientes e imprensa · Dra. Ana Paula Teixeira</title>
+<meta name="description" content="Empresas atendidas e presença editorial em veículos de gestão, saúde corporativa e ESG sobre medicina do trabalho e Lesão Moral Ocupacional.">
+<meta name="author" content="Dra. Ana Paula Teixeira">
+<link rel="canonical" href="https://anapaulateixeira.med.br/na-midia.html">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Dra. Ana Paula Teixeira">
+<meta property="og:url" content="https://anapaulateixeira.med.br/na-midia.html">
+<meta property="og:title" content="Na Mídia · Clientes e cobertura editorial">
+<meta property="og:description" content="Empresas atendidas e presença editorial em veículos de gestão, saúde corporativa e ESG sobre medicina do trabalho e Lesão Moral Ocupacional.">
+<meta property="og:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Na Mídia · Clientes e cobertura editorial">
+<meta name="twitter:description" content="Empresas atendidas e presença editorial em veículos de gestão, saúde corporativa e ESG sobre medicina do trabalho e Lesão Moral Ocupacional.">
+<meta name="twitter:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<meta name="theme-color" content="#1C3520">
+<link rel="stylesheet" href="design-system.css">
+<style>
+  .hero-mid { padding-block: clamp(80px, 9vw, 128px); background: var(--bege-areia); }
+  .hero-mid h1 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.125rem, 1.6rem + 2.4vw, 3.25rem);
+    line-height: 1.12;
+    color: var(--verde-noturno);
+    letter-spacing: -0.01em;
+    margin: 24px 0 24px 0;
+    max-width: 20ch;
+    text-wrap: balance;
+  }
+  .hero-mid p.sub {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    max-width: 62ch;
+    margin: 0;
+  }
+
+  .block { padding-block: clamp(96px, 10vw, 128px); }
+  .block h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.5rem);
+    color: var(--verde-noturno);
+    margin: 16px 0 56px 0;
+    letter-spacing: -0.01em;
+  }
+
+  .press-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+  @media (min-width: 800px) { .press-grid { grid-template-columns: repeat(2, 1fr); } }
+  .press-card {
+    background: var(--off-white);
+    padding: 40px 32px;
+    display: flex; flex-direction: column; gap: 16px;
+    min-height: 280px;
+  }
+  .press-cat {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--terracota);
+  }
+  .press-date {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.8125rem;
+    color: var(--cinza-quente);
+  }
+  .press-title {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.375rem;
+    color: var(--verde-noturno);
+    line-height: 1.25;
+    margin: 0;
+    letter-spacing: -0.005em;
+    text-wrap: balance;
+  }
+  .press-exc {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: var(--preto-editorial);
+    flex: 1;
+  }
+  .press-cta {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    text-decoration: none;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+
+  /* Vídeos */
+  .videos { background: var(--bege-areia); }
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  @media (min-width: 700px) { .video-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1100px) { .video-grid { grid-template-columns: repeat(3, 1fr); } }
+  .vcard {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    display: flex; flex-direction: column;
+    overflow: hidden;
+    transition: transform .25s, box-shadow .25s;
+    text-decoration: none;
+    color: inherit;
+  }
+  .vcard:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(28,53,32,.08); }
+  .vthumb {
+    aspect-ratio: 16/9;
+    background: var(--verde-noturno);
+    position: relative;
+    overflow: hidden;
+  }
+  .vthumb iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%; height: 100%;
+    border: 0;
+  }
+  .vbody { padding: 24px 24px 28px; display: flex; flex-direction: column; gap: 10px; }
+  .vveic {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--terracota);
+  }
+  .vtitle {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.125rem;
+    color: var(--verde-noturno);
+    line-height: 1.3;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .vcta {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    margin-top: 8px;
+  }
+
+  /* Imprensa contato */
+  .press-contact {
+    background: var(--off-white);
+    padding-block: clamp(80px, 8vw, 112px);
+    border-top: 1px solid var(--border);
+  }
+  .press-contact .inner { max-width: 680px; }
+  .press-contact h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.75rem, 1.3rem + 1.4vw, 2.25rem);
+    color: var(--verde-noturno);
+    margin: 16px 0 24px 0;
+  }
+  .press-contact p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: var(--preto-editorial);
+    margin: 0 0 32px 0;
+  }
+  .pc-list {
+    display: flex; flex-direction: column; gap: 12px;
+    margin-bottom: 24px;
+  }
+  .pc-list > div {
+    display: flex; gap: 16px; align-items: center;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--preto-editorial);
+  }
+  .pc-list b {
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+    min-width: 96px;
+  }
+  .pc-list a { color: var(--verde-noturno); text-decoration: none; border-bottom: 1px solid var(--border); }
+  .pc-list a:hover { color: var(--terracota); border-color: var(--terracota); }
+  .kit-note {
+    padding: 20px 24px;
+    background: var(--bege-areia);
+    border-left: 3px solid var(--terracota);
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: var(--weight-semibold);
+    font-size: 1.125rem;
+    color: var(--verde-noturno);
+  }
+
+  /* CTA */
+  .cta-mid {
+    background: var(--verde-noturno);
+    color: var(--off-white);
+    padding-block: clamp(96px, 10vw, 128px);
+    text-align: center;
+  }
+  .cta-mid h2 {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: var(--weight-semibold);
+    font-size: clamp(2rem, 1.4rem + 2.2vw, 2.75rem);
+    color: var(--off-white);
+    margin: 0 0 20px 0;
+    max-width: 22ch;
+    margin-inline: auto;
+    line-height: 1.2;
+    text-wrap: balance;
+  }
+  .cta-mid p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: rgba(240,237,230,.82);
+    max-width: 52ch;
+    margin: 0 auto 36px;
+  }
+  .btn-outline-light {
+    display: inline-block;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    border: 1px solid var(--off-white);
+    color: var(--off-white);
+    text-decoration: none;
+    transition: all .2s;
+  }
+  .btn-outline-light:hover { background: var(--off-white); color: var(--verde-noturno); }
+
+  /* Clientes — logo strip */
+  .clients { background: var(--off-white); }
+  .clients .intro {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    max-width: 62ch;
+    margin: 0;
+  }
+  .clients .logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-top: 56px;
+  }
+  @media (min-width: 600px) { .clients .logos { grid-template-columns: repeat(5, 1fr); } }
+  .clients .logo-slot {
+    background: var(--off-white);
+    aspect-ratio: 3/2;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+    padding: 20px;
+    text-align: center;
+    line-height: 1.4;
+  }
+  .clients .logo-slot img {
+    max-width: 80%;
+    max-height: 60%;
+    object-fit: contain;
+    opacity: 0.92;
+    transition: opacity .2s, transform .2s var(--ease-out);
+  }
+  .clients .logo-slot:hover img { opacity: 1; transform: scale(1.04); }
+
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Início</a></li>
+      <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+      <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+      <li><a href="livro.html" class="nav-link">Livro</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="na-midia.html" class="nav-link" aria-current="page">Na Mídia</a></li>
+      <li><a href="contato.html" class="nav-link">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#1C3520" stroke-width="1.5"><line x1="3" y1="7" x2="19" y2="7"/><line x1="3" y1="15" x2="19" y2="15"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="hero-mid">
+  <div class="container">
+    <span class="eyebrow-editorial">Referências · clientes · imprensa</span>
+    <h1>Quem conversou com ela. E onde essa conversa aparece.</h1>
+    <p class="sub">Empresas que convidaram palestras, rodas e o Círculo Técnico NR-1 para dentro — e a cobertura editorial em veículos especializados em gestão, saúde corporativa e ESG.</p>
+  </div>
+</header>
+
+<!-- CLIENTES / EMPRESAS ATENDIDAS -->
+<section class="block clients reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Clientes · empresas atendidas</span>
+    <h2>Empresas que convidaram a conversa para dentro.</h2>
+    <p class="intro">Organizações de médio e grande porte que contrataram palestras, rodas de conversa ou o Círculo Técnico NR-1. Setores: indústria, alimentos, saúde, hospitalidade, educação, serviços estruturados.</p>
+    <div class="logos reveal-stagger">
+      <div class="logo-slot"><img src="assets/logos/forvia.jpeg" alt="Forvia"></div>
+      <div class="logo-slot"><img src="assets/logos/jmacedo.jpeg" alt="J.Macêdo"></div>
+      <div class="logo-slot"><img src="assets/logos/costa-do-sauipe.jpeg" alt="Costa do Sauípe"></div>
+      <div class="logo-slot"><img src="assets/logos/priner.jpeg" alt="Priner Serviços Industriais"></div>
+      <div class="logo-slot"><img src="assets/logos/perkons.jpeg" alt="Perkons"></div>
+      <div class="logo-slot"><img src="assets/logos/etica-pesquisa-clinica.jpeg" alt="Ética Pesquisa Clínica"></div>
+      <div class="logo-slot"><img src="assets/logos/cisviver.jpeg" alt="Cisviver"></div>
+      <div class="logo-slot"><img src="assets/logos/aspil.jpeg" alt="ASPIL Aspiração e Serviços Industriais"></div>
+      <div class="logo-slot"><img src="assets/logos/gelo-alagoinhas.jpeg" alt="Gelo Alagoinhas"></div>
+      <div class="logo-slot"><img src="assets/logos/imh.jpeg" alt="Instituto Monsenhor Hipólito"></div>
+    </div>
+  </div>
+</section>
+
+<section class="block container reveal">
+  <span class="eyebrow-editorial">Imprensa · Matérias editoriais</span>
+  <h2>Imprensa editorial</h2>
+
+  <article class="press-card press-feature reveal">
+    <span class="press-cat">Pauta em destaque · Março 2026</span>
+    <h3 class="press-title">Mulheres ganham 21% menos e representam 60% dos casos de burnout no país.</h3>
+    <p class="press-exc">A Dra. Ana Paula é entrevistada sobre o recorte de gênero na saúde mental ocupacional — a desigualdade salarial, a carga de cuidado não remunerado e a predominância feminina nos casos de burnout. Cobertura simultânea em quatro veículos editoriais.</p>
+    <ul class="press-coverage" style="list-style:none;padding:0;margin:24px 0 0 0;display:grid;grid-template-columns:1fr;gap:1px;background:var(--border);border:1px solid var(--border)">
+      <li style="background:var(--off-white);padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+        <span style="font-family:var(--font-sans);font-weight:500;font-size:.8125rem;letter-spacing:.04em;color:var(--verde-noturno)">CartaCapital · <em style="color:var(--cinza-quente);font-style:normal;font-weight:300">Do Micro ao Macro</em></span>
+        <a href="https://www.cartacapital.com.br/do-micro-ao-macro/mulheres-ganham-21-menos-burnout-desigualdade/" target="_blank" rel="noopener" class="press-cta">Ler matéria →</a>
+      </li>
+      <li style="background:var(--off-white);padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+        <span style="font-family:var(--font-sans);font-weight:500;font-size:.8125rem;letter-spacing:.04em;color:var(--verde-noturno)">Robb Report Brasil · <em style="color:var(--cinza-quente);font-style:normal;font-weight:300">Lide</em></span>
+        <a href="https://www.robbreportbrasil.com.br/noticias-lide/sociedade-tendencias/mulheres-ganham-21-menos-e-representam-60-dos-casos-de-burnout-no-pais" target="_blank" rel="noopener" class="press-cta">Ler matéria →</a>
+      </li>
+      <li style="background:var(--off-white);padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+        <span style="font-family:var(--font-sans);font-weight:500;font-size:.8125rem;letter-spacing:.04em;color:var(--verde-noturno)">RH Notícias <em style="color:var(--cinza-quente);font-style:normal;font-weight:300">— recorte para RH e gestão</em></span>
+        <a href="https://www.rhnoticias.com.br/desigualdade-eleva-burnout-e-afasta-mulheres-no-trabalho" target="_blank" rel="noopener" class="press-cta">Ler matéria →</a>
+      </li>
+      <li style="background:var(--off-white);padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+        <span style="font-family:var(--font-sans);font-weight:500;font-size:.8125rem;letter-spacing:.04em;color:var(--verde-noturno)">Bahia Notícias · <em style="color:var(--cinza-quente);font-style:normal;font-weight:300">recorte regional Bahia</em></span>
+        <a href="https://www.bahianoticias.com.br/saude/artigo/1064-mulheres-ganham-21-menos-e-representam-60-dos-casos-de-burnout-no-pais" target="_blank" rel="noopener" class="press-cta">Ler matéria →</a>
+      </li>
+    </ul>
+  </article>
+</section>
+
+<section class="block videos reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Vídeo · TV · Rádio</span>
+    <h2>Entrevistas em vídeo e rádio</h2>
+    <div class="video-grid reveal-stagger">
+
+      <article class="vcard">
+        <div class="vthumb">
+          <iframe src="https://www.youtube.com/embed/f4KWwgZnyvI"
+                  title="Rádio CBN Bahia — Redução de Acidentes de Trabalho"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="vbody">
+          <span class="vveic">Rádio CBN Bahia</span>
+          <h3 class="vtitle">Redução de Acidentes de Trabalho.</h3>
+        </div>
+      </article>
+
+      <article class="vcard">
+        <div class="vthumb">
+          <iframe src="https://www.youtube.com/embed/eNpFczxoUf8"
+                  title="CBN Salvador · Conexão Sociedade — Saúde Mental no Trabalho"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="vbody">
+          <span class="vveic">CBN Salvador · Conexão Sociedade</span>
+          <h3 class="vtitle">Saúde Mental no Trabalho.</h3>
+        </div>
+      </article>
+
+      <article class="vcard">
+        <div class="vthumb">
+          <iframe src="https://www.youtube.com/embed/ZAZ-KYTJnmU"
+                  title="Board Talks — Sustentabilidade e governança humana"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="vbody">
+          <span class="vveic">Board Talks</span>
+          <h3 class="vtitle">Sustentabilidade e governança humana.</h3>
+        </div>
+      </article>
+
+      <article class="vcard">
+        <div class="vthumb">
+          <iframe src="https://www.youtube.com/embed/8-2xZy5eITY"
+                  title="TV Aratu / TVE Bahia — Síndrome do Impostor"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="vbody">
+          <span class="vveic">TV Aratu / TVE Bahia</span>
+          <h3 class="vtitle">Síndrome do Impostor.</h3>
+        </div>
+      </article>
+
+      <a class="vcard" href="https://www.youtube.com/watch?v=2WgClkHtW4c" target="_blank" rel="noopener">
+        <div class="vthumb t5"><div class="play"><span></span></div></div>
+        <div class="vbody">
+          <span class="vveic">F5 Podcast</span>
+          <h3 class="vtitle">Trajetória: da mineradora ao conceito de Lesão Moral Ocupacional.</h3>
+          <span class="vcta">Assistir →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="press-contact reveal">
+  <div class="container inner">
+    <span class="eyebrow-editorial">Para imprensa</span>
+    <h2>Falar com a assessoria.</h2>
+    <p>Para solicitações de entrevista, pauta, matéria ou participação em eventos de imprensa, escreva diretamente para o canal oficial.</p>
+    <div class="pc-list">
+      <div><b>Email</b><a href="mailto:contato@anapaulateixeira.med.br">contato@anapaulateixeira.med.br</a></div>
+      <div><b>WhatsApp</b><a href="https://wa.me/5575983186200">(75) 98318-6200</a></div>
+    </div>
+    <div class="kit-note">Bio e press kit disponíveis sob solicitação.</div>
+  </div>
+</section>
+
+<section class="cta-mid modo-profundidade reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Levar a conversa</span>
+    <h2 style="margin-top:24px">Quer levar essa conversa para sua empresa?</h2>
+    <p>A mesma voz que aparece na imprensa conduz palestras, rodas de conversa e formações dentro da sua organização.</p>
+    <a href="servicos.html" class="btn-outline-light">Ver serviços →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
+        <p class="footer-anchor">Porque empresas íntegras cuidam, com seriedade, do que impacta pessoas, cultura e trabalho.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegar</div>
+        <div class="stack-3">
+          <div><a href="sobre.html">Sobre</a></div>
+          <div><a href="servicos.html">Serviços</a></div>
+          <div><a href="livro.html">Livro</a></div>
+          <div><a href="blog.html">Blog</a></div>
+          <div><a href="na-midia.html">Na Mídia</a></div>
+          <div><a href="governanca.html">Governança</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contato</div>
+        <div class="stack-3">
+          <div><a href="mailto:contato@anapaulateixeira.med.br">contato@anapaulateixeira.med.br</a></div>
+          <div><a href="https://wa.me/5575983186200">WhatsApp (75) 98318-6200</a></div>
+          <div><a href="contato.html">Formulário</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>CRM-BA 12797 · RQE 7237 · Board Member ICOH</span>
+      <span>© 2026 Dra. Ana Paula Teixeira · anapaulateixeira.med.br · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidade</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="design-system.js"></script>
+<script>
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+</body>
+</html>

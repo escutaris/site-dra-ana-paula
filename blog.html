@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SEO -->
+<title>Artigos · Blog · Dra. Ana Paula Teixeira</title>
+<meta name="description" content="Artigos editoriais sobre medicina do trabalho, NR-1, Lesão Moral Ocupacional e cultura corporativa. Textos longos, técnicos e escritos para a alta liderança.">
+<meta name="author" content="Dra. Ana Paula Teixeira">
+<link rel="canonical" href="https://anapaulateixeira.med.br/blog.html">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Dra. Ana Paula Teixeira">
+<meta property="og:url" content="https://anapaulateixeira.med.br/blog.html">
+<meta property="og:title" content="Blog · Artigos editoriais sobre saúde mental no trabalho">
+<meta property="og:description" content="Artigos editoriais sobre medicina do trabalho, NR-1, Lesão Moral Ocupacional e cultura corporativa. Textos longos, técnicos e escritos para a alta liderança.">
+<meta property="og:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog · Artigos editoriais sobre saúde mental no trabalho">
+<meta name="twitter:description" content="Artigos editoriais sobre medicina do trabalho, NR-1, Lesão Moral Ocupacional e cultura corporativa. Textos longos, técnicos e escritos para a alta liderança.">
+<meta name="twitter:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<meta name="theme-color" content="#1C3520">
+<link rel="stylesheet" href="design-system.css">
+<link rel="stylesheet" href="form-handlers.css">
+<style>
+  section[id] { scroll-margin-top: 80px; }
+
+  /* Hero */
+  .hero-blog { padding-block: clamp(80px, 9vw, 128px); background: var(--bege-areia); }
+  .hero-blog h1 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.125rem, 1.6rem + 2.4vw, 3.25rem);
+    line-height: 1.12;
+    color: var(--verde-noturno);
+    letter-spacing: -0.01em;
+    margin: 24px 0 24px 0;
+    max-width: 24ch;
+    text-wrap: balance;
+  }
+  .hero-blog p.sub {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    max-width: 62ch;
+    margin: 0;
+  }
+
+  /* Filtros */
+  .filters {
+    padding-block: 32px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--off-white);
+    position: sticky; top: 64px; z-index: 10;
+  }
+  .filters .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .filters-label {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+    margin-right: 16px;
+  }
+  .tag {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+    background: transparent;
+    padding: 8px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all .2s;
+  }
+  .tag:hover { color: var(--terracota); border-color: var(--terracota); }
+  .tag.active { background: var(--terracota); color: var(--off-white); border-color: var(--terracota); }
+
+  /* Featured */
+  .featured {
+    background: var(--verde-noturno);
+    color: var(--off-white);
+  }
+  .featured .inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 520px;
+  }
+  @media (min-width: 900px) { .featured .inner { grid-template-columns: 1fr 1fr; } }
+  .featured .img {
+    background-image: url('assets/photos/context-coffee-journal.png');
+    background-size: cover; background-position: center;
+    min-height: 320px;
+  }
+  .featured .text {
+    padding: clamp(48px, 6vw, 96px);
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .featured .eyebrow-editorial { color: var(--off-white); }
+  .featured .eyebrow-editorial::before { background: var(--terracota); }
+  .featured .meta {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.8125rem;
+    color: rgba(240,237,230,.7);
+    margin: 20px 0;
+    letter-spacing: 0.04em;
+  }
+  .featured h2 {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: var(--weight-semibold);
+    font-size: clamp(1.75rem, 1.3rem + 1.4vw, 2.5rem);
+    color: var(--off-white);
+    line-height: 1.2;
+    margin: 0 0 24px 0;
+    max-width: 22ch;
+    letter-spacing: -0.005em;
+    text-wrap: balance;
+  }
+  .featured p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: rgba(240,237,230,.82);
+    max-width: 46ch;
+    margin: 0 0 32px 0;
+  }
+  .btn-outline-light {
+    display: inline-block;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    border: 1px solid var(--off-white);
+    color: var(--off-white);
+    text-decoration: none;
+    transition: all .2s;
+    align-self: flex-start;
+  }
+  .btn-outline-light:hover { background: var(--off-white); color: var(--verde-noturno); }
+
+  /* Grid */
+  .all-articles { padding-block: clamp(96px, 10vw, 128px); }
+  .all-articles h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.5rem);
+    color: var(--verde-noturno);
+    margin: 16px 0 56px 0;
+    letter-spacing: -0.01em;
+  }
+  .grid-articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 56px 32px;
+  }
+  @media (min-width: 700px) { .grid-articles { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1000px) { .grid-articles { grid-template-columns: repeat(3, 1fr); } }
+
+  .art-card {
+    display: flex; flex-direction: column; gap: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform .25s;
+  }
+  .art-card:hover { transform: translateY(-3px); }
+  .art-card:hover .art-title { color: var(--terracota); }
+  .art-img {
+    aspect-ratio: 4/3;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+    filter: saturate(0.85);
+  }
+  .art-cat {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    margin-top: 4px;
+  }
+  .art-date {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.8125rem;
+    color: var(--cinza-quente);
+  }
+  .art-title {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.375rem;
+    color: var(--verde-noturno);
+    line-height: 1.25;
+    margin: 4px 0;
+    letter-spacing: -0.005em;
+    text-wrap: balance;
+    transition: color .2s;
+  }
+  .art-exc {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .art-meta-row {
+    display: flex; gap: 12px; align-items: center; justify-content: space-between;
+    margin-top: 4px;
+  }
+  .art-read {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.75rem;
+    color: var(--verde-noturno);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .art-time {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.75rem;
+    color: var(--cinza-quente);
+  }
+
+  /* Newsletter */
+  .newsletter {
+    background: var(--bege-areia);
+    padding-block: clamp(80px, 9vw, 112px);
+  }
+  .newsletter .inner {
+    max-width: 640px; margin: 0 auto; text-align: center;
+  }
+  .newsletter h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.75rem, 1.3rem + 1.6vw, 2.375rem);
+    color: var(--verde-noturno);
+    margin: 20px 0 20px 0;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  .newsletter p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    color: var(--preto-editorial);
+    line-height: 1.6;
+    margin-bottom: 32px;
+  }
+  .nl-form {
+    display: flex; gap: 12px; max-width: 480px; margin: 0 auto; flex-wrap: wrap;
+  }
+  .nl-form input {
+    flex: 1; min-width: 220px;
+    padding: 14px 18px;
+    border: 1px solid var(--border);
+    background: var(--off-white);
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    color: var(--preto-editorial);
+    border-radius: 2px;
+  }
+  .nl-form input:focus {
+    outline: none; border-color: var(--terracota);
+  }
+  .nl-form button {
+    padding: 14px 24px;
+    background: var(--terracota);
+    color: var(--off-white);
+    border: 0;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.875rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background .2s;
+  }
+  .nl-form button:hover { background: #b05a3f; }
+
+  /* CTA pesquisa */
+  .cta-pesq {
+    background: var(--verde-noturno);
+    color: var(--off-white);
+    padding-block: clamp(96px, 10vw, 128px);
+    text-align: center;
+  }
+  .cta-pesq h2 {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: var(--weight-semibold);
+    font-size: clamp(2rem, 1.4rem + 2.2vw, 2.75rem);
+    color: var(--off-white);
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+    max-width: 22ch;
+    margin-inline: auto;
+    text-wrap: balance;
+  }
+  .cta-pesq p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: rgba(240,237,230,.82);
+    max-width: 52ch;
+    margin: 0 auto 36px;
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Início</a></li>
+      <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+      <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+      <li><a href="livro.html" class="nav-link">Livro</a></li>
+      <li><a href="blog.html" class="nav-link" aria-current="page">Blog</a></li>
+      <li><a href="na-midia.html" class="nav-link">Na Mídia</a></li>
+      <li><a href="contato.html" class="nav-link">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#1C3520" stroke-width="1.5"><line x1="3" y1="7" x2="19" y2="7"/><line x1="3" y1="15" x2="19" y2="15"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="hero-blog">
+  <div class="container">
+    <span class="eyebrow-editorial">Blog · Artigos · Reflexões técnicas</span>
+    <h1>Reflexões técnicas sobre o trabalho que adoece — e sobre o que cura.</h1>
+    <p class="sub">Artigos autorais sobre saúde mental ocupacional, Lesão Moral Ocupacional, NR-1, liderança ética e integridade organizacional. Escritos por uma médica do trabalho, não por um gerador de conteúdo.</p>
+  </div>
+</header>
+
+<section class="filters reveal">
+  <div class="container">
+    <div class="row">
+      <span class="filters-label">Filtrar por eixo</span>
+      <button class="tag active">Todos</button>
+      <button class="tag">Risco e Conformidade</button>
+      <button class="tag">Lesão Moral Ocupacional</button>
+      <button class="tag">Liderança e Nomeação</button>
+      <button class="tag">Casos Reais</button>
+    </div>
+  </div>
+</section>
+
+<section class="featured modo-profundidade reveal">
+  <div class="inner">
+    <div class="img" aria-hidden="true"></div>
+    <div class="text">
+      <span class="eyebrow-editorial">Artigo em destaque · Lesão Moral Ocupacional</span>
+      <div class="meta">15 de abril de 2026 · 8 min de leitura</div>
+      <h2>O diagnóstico que falta: quando burnout é uma palavra rasa para o que adoeceu.</h2>
+      <p>A literatura internacional sobre Lesão Moral Ocupacional revela um mecanismo de adoecimento que o diagnóstico de burnout não explica: a violação sistemática dos valores do trabalhador pela própria empresa. Um mapa técnico para distinguir os dois.</p>
+      <a href="#" class="btn-outline-light">Ler artigo completo →</a>
+    </div>
+  </div>
+</section>
+
+<section class="all-articles container reveal">
+  <span class="eyebrow-editorial">Todos os artigos</span>
+  <h2>Artigos recentes</h2>
+  <div class="grid-articles reveal-stagger">
+
+    <!-- 1. Risco e Conformidade -->
+    <a href="#" class="art-card">
+      <div class="art-img" style="background-image:url('assets/photos/context-pen-documents.png')"></div>
+      <span class="art-cat">Risco e Conformidade</span>
+      <span class="art-date">12 de abril de 2026</span>
+      <h3 class="art-title">NR-1 e o Inventário de Riscos Psicossociais: o que mudou na fiscalização.</h3>
+      <p class="art-exc">A nova redação exige que o PGR contemple fatores psicossociais com o mesmo rigor aplicado a risco químico ou ergonômico. O que isso significa na prática.</p>
+      <div class="art-meta-row"><span class="art-read">Ler →</span><span class="art-time">6 min</span></div>
+    </a>
+
+    <!-- 2. Lesão Moral Ocupacional -->
+    <a href="#" class="art-card">
+      <div class="art-img" style="background-image:url('assets/photos/context-notebook-glasses.png')"></div>
+      <span class="art-cat">Lesão Moral Ocupacional</span>
+      <span class="art-date">8 de abril de 2026</span>
+      <h3 class="art-title">Quando a meta trai a missão: a raiz organizacional da Lesão Moral.</h3>
+      <p class="art-exc">Brett Litz definiu Lesão Moral Ocupacional como o dano de agir contra os próprios valores. No trabalho, isso costuma vir escrito dentro das metas trimestrais.</p>
+      <div class="art-meta-row"><span class="art-read">Ler →</span><span class="art-time">9 min</span></div>
+    </a>
+
+    <!-- 3. Liderança -->
+    <a href="#" class="art-card">
+      <div class="art-img" style="background-image:url('assets/photos/context-hands-writing.png')"></div>
+      <span class="art-cat">Liderança e Nomeação</span>
+      <span class="art-date">3 de abril de 2026</span>
+      <h3 class="art-title">Nomear o problema: a primeira obrigação técnica da liderança responsável.</h3>
+      <p class="art-exc">Nomear o que adoece não é drama — é o primeiro ato de governança. O que a medicina do trabalho ensina sobre linguagem corporativa.</p>
+      <div class="art-meta-row"><span class="art-read">Ler →</span><span class="art-time">5 min</span></div>
+    </a>
+
+    <!-- 4. Risco e Conformidade -->
+    <a href="#" class="art-card">
+      <div class="art-img" style="background-image:url('assets/photos/context-pen-glasses.png')"></div>
+      <span class="art-cat">Risco e Conformidade</span>
+      <span class="art-date">29 de março de 2026</span>
+      <h3 class="art-title">PL 1305/25: o que muda na responsabilidade empresarial por sofrimento mental.</h3>
+      <p class="art-exc">O projeto amplia a cadeia de responsabilização em adoecimento psicológico no trabalho. Um guia para quem precisa começar a se preparar.</p>
+      <div class="art-meta-row"><span class="art-read">Ler →</span><span class="art-time">7 min</span></div>
+    </a>
+
+    <!-- 5. Lesão Moral Ocupacional -->
+    <a href="#" class="art-card">
+      <div class="art-img" style="background-image:url('assets/photos/context-handmade-paper.png')"></div>
+      <span class="art-cat">Lesão Moral Ocupacional</span>
+      <span class="art-date">24 de março de 2026</span>
+      <h3 class="art-title">Do Vietnã ao escritório: a genealogia de um conceito que o Brasil ainda não reconhece.</h3>
+      <p class="art-exc">Shay cunhou Lesão Moral Ocupacional estudando veteranos. Farnsworth levou o conceito para profissões civis. Falta o Brasil fazer a travessia.</p>
+      <div class="art-meta-row"><span class="art-read">Ler →</span><span class="art-time">10 min</span></div>
+    </a>
+
+    <!-- 6. Casos Reais -->
+    <a href="#" class="art-card">
+      <div class="art-img" style="background-image:url('assets/photos/context-leather-chair.png')"></div>
+      <span class="art-cat">Casos Reais</span>
+      <span class="art-date">18 de março de 2026</span>
+      <h3 class="art-title">O gerente que pediu afastamento depois da reunião de corte.</h3>
+      <p class="art-exc">Um caso anonimizado que ilustra como a liderança intermediária adoece primeiro — e por que a empresa costuma tratar o sintoma, não a causa.</p>
+      <div class="art-meta-row"><span class="art-read">Ler →</span><span class="art-time">8 min</span></div>
+    </a>
+
+    <!-- 7. Risco e Conformidade -->
+    <a href="#" class="art-card">
+      <div class="art-img" style="background-image:url('assets/photos/context-pen-documents.png')"></div>
+      <span class="art-cat">Risco e Conformidade</span>
+      <span class="art-date">12 de março de 2026</span>
+      <h3 class="art-title">Resolução CFM 2.323/2022: o que o parecer técnico precisa contemplar.</h3>
+      <p class="art-exc">A resolução reorganizou critérios de avaliação de capacidade laborativa. Um roteiro técnico para médicos do trabalho e peritos.</p>
+      <div class="art-meta-row"><span class="art-read">Ler →</span><span class="art-time">6 min</span></div>
+    </a>
+
+    <!-- 8. Lesão Moral Ocupacional -->
+    <a href="#" class="art-card">
+      <div class="art-img" style="background-image:url('assets/photos/context-coffee-journal.png')"></div>
+      <span class="art-cat">Lesão Moral Ocupacional</span>
+      <span class="art-date">5 de março de 2026</span>
+      <h3 class="art-title">Três sinais de Lesão Moral que RH confunde com baixa performance.</h3>
+      <p class="art-exc">Desengajamento, perda de voz e cinismo progressivo não são problemas de produtividade. São sintomas clínicos de um ambiente que violou algo importante.</p>
+      <div class="art-meta-row"><span class="art-read">Ler →</span><span class="art-time">7 min</span></div>
+    </a>
+
+    <!-- 9. Liderança -->
+    <a href="#" class="art-card">
+      <div class="art-img" style="background-image:url('assets/photos/context-hands-writing.png')"></div>
+      <span class="art-cat">Liderança e Nomeação</span>
+      <span class="art-date">26 de fevereiro de 2026</span>
+      <h3 class="art-title">Integridade organizacional não é comunicação: é coerência cotidiana.</h3>
+      <p class="art-exc">Empresas íntegras não são as que publicam o código de conduta mais bonito. São as que não criam distância entre o que dizem e o que pedem na segunda-feira.</p>
+      <div class="art-meta-row"><span class="art-read">Ler →</span><span class="art-time">5 min</span></div>
+    </a>
+
+    <!-- 10. Lesão Moral Ocupacional -->
+    <a href="#" class="art-card">
+      <div class="art-img" style="background-image:url('assets/photos/context-notebook-glasses.png')"></div>
+      <span class="art-cat">Lesão Moral Ocupacional</span>
+      <span class="art-date">19 de fevereiro de 2026</span>
+      <h3 class="art-title">Por que Lesão Moral Ocupacional importa para a medicina do trabalho brasileira agora.</h3>
+      <p class="art-exc">A NR-1 abriu espaço técnico para reconhecer mecanismos de adoecimento que o CID ainda não nomeia com clareza. Lesão Moral Ocupacional é um deles.</p>
+      <div class="art-meta-row"><span class="art-read">Ler →</span><span class="art-time">8 min</span></div>
+    </a>
+
+    <!-- 11. Casos Reais -->
+    <a href="#" class="art-card">
+      <div class="art-img" style="background-image:url('assets/photos/context-leather-chair.png')"></div>
+      <span class="art-cat">Casos Reais</span>
+      <span class="art-date">10 de fevereiro de 2026</span>
+      <h3 class="art-title">A médica que não queria mais assinar atestado: anatomia de um afastamento clínico.</h3>
+      <p class="art-exc">Quando o próprio profissional de saúde adoece, o mecanismo fica evidente — e o sistema precisa de uma escuta que não exista apenas no final do processo.</p>
+      <div class="art-meta-row"><span class="art-read">Ler →</span><span class="art-time">9 min</span></div>
+    </a>
+
+    <!-- 12. Risco e Conformidade -->
+    <a href="#" class="art-card">
+      <div class="art-img" style="background-image:url('assets/photos/context-pen-glasses.png')"></div>
+      <span class="art-cat">Risco e Conformidade</span>
+      <span class="art-date">2 de fevereiro de 2026</span>
+      <h3 class="art-title">Auditoria psicossocial: os cinco erros que RHs cometem em ano de fiscalização.</h3>
+      <p class="art-exc">Formulário genérico, pergunta mal calibrada, ausência de plano de ação. Um guia para evitar os tropeços mais comuns na primeira rodada da NR-1.</p>
+      <div class="art-meta-row"><span class="art-read">Ler →</span><span class="art-time">6 min</span></div>
+    </a>
+
+  </div>
+</section>
+
+<section class="newsletter reveal">
+  <div class="container">
+    <div class="inner">
+      <span class="eyebrow-editorial">Acompanhe de perto</span>
+      <h2>Os próximos artigos chegam por email antes de chegar aqui.</h2>
+      <p>Quinzenalmente, reflexões técnicas que ainda não foram publicadas. Apenas conteúdo autoral, zero spam.</p>
+      <form class="nl-form" action="https://docs.google.com/forms/d/e/__FORM_ID_NEWSLETTER__/formResponse" method="POST" target="_blank">
+        <input type="email" name="entry.EMAIL" required placeholder="seu@email.com" aria-label="Seu email">
+        <button type="submit">Quero receber →</button>
+      </form>
+      <p style="margin-top:32px;font-family:var(--font-sans);font-size:0.9375rem;color:var(--cinza-quente);line-height:1.6">Este blog é a face pública da pesquisa. Para a síntese técnica sobre Lesão Moral Ocupacional e o diálogo com os autores fundadores do campo — <a href="sobre.html#s05" style="color:var(--verde-noturno);border-bottom:1px solid var(--terracota);text-decoration:none">veja a seção de pesquisa em Sobre →</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
+        <p class="footer-anchor">Porque empresas íntegras cuidam, com seriedade, do que impacta pessoas, cultura e trabalho.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegar</div>
+        <div class="stack-3">
+          <div><a href="sobre.html">Sobre</a></div>
+          <div><a href="servicos.html">Serviços</a></div>
+          <div><a href="livro.html">Livro</a></div>
+          <div><a href="na-midia.html">Na Mídia</a></div>
+          <div><a href="blog.html">Blog</a></div>
+          <div><a href="governanca.html">Governança</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contato</div>
+        <div class="stack-3">
+          <div><a href="mailto:contato@anapaulateixeira.med.br">contato@anapaulateixeira.med.br</a></div>
+          <div><a href="https://wa.me/5575983186200">WhatsApp (75) 98318-6200</a></div>
+          <div><a href="na-midia.html">Na Mídia</a></div>
+          <div><a href="contato.html">Formulário</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>CRM-BA 12797 · RQE 7237 · Board Member ICOH</span>
+      <span>© 2026 Dra. Ana Paula Teixeira · anapaulateixeira.med.br · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidade</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="design-system.js"></script>
+<script src="form-handlers.js"></script>
+<script>
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // tag filter — funcional: filtra artigos por categoria
+  document.querySelectorAll('.filters .tag').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cat = btn.textContent.trim();
+      document.querySelectorAll('.filters .tag').forEach(x => x.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.art-card').forEach(card => {
+        const cardCat = (card.querySelector('.art-cat')?.textContent || '').trim();
+        card.style.display = (cat === 'Todos' || cardCat === cat) ? '' : 'none';
+      });
+    });
+  });
+</script>
+</body>
+</html>

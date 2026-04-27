@@ -1,0 +1,173 @@
+/* =========================================================
+   form-handlers.css
+   — Estilos para fluxo paralelo WhatsApp + estado de sucesso
+   — Compartilhado entre servicos.html, contato.html, blog.html
+   ========================================================= */
+
+/* ---------- Linha de submissão: botão principal + "ou" + WhatsApp ---------- */
+.form-submit-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.form-or {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-light);
+  font-size: 0.875rem;
+  color: var(--cinza-quente);
+  font-style: italic;
+}
+
+/* Botão WhatsApp secundário (contexto servicos.html) */
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 2px;
+  background: #25D366;
+  color: white !important;
+  border: none;
+  font-family: var(--font-sans);
+  font-weight: var(--weight-medium);
+  font-size: 0.9375rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .2s, transform .15s;
+}
+.btn-wa:hover {
+  background: #1EBE5D;
+  transform: translateY(-1px);
+}
+
+/* Versão inline (contexto contato.html) — combina com .form-submit */
+.btn-wa-inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  border-radius: 2px;
+  background: #25D366;
+  color: white;
+  border: none;
+  font-family: var(--font-sans);
+  font-weight: var(--weight-medium);
+  font-size: 0.9375rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background .2s, transform .15s;
+}
+.btn-wa-inline:hover {
+  background: #1EBE5D;
+  transform: translateY(-1px);
+}
+
+/* ---------- Estado de sucesso pós-envio ---------- */
+.form-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 32px;
+  background: var(--bege-claro, #F5EFE5);
+  border-left: 3px solid var(--verde-noturno, #1C3520);
+  border-radius: 2px;
+  animation: formSuccessIn .45s cubic-bezier(.25, .75, .3, 1) both;
+}
+
+@keyframes formSuccessIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.form-success-inner {
+  max-width: 520px;
+  text-align: center;
+}
+
+.form-success-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--verde-noturno, #1C3520);
+  color: white;
+  font-size: 1.75rem;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+.form-success-inner h3 {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-bold);
+  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  color: var(--verde-noturno, #1C3520);
+  margin: 0 0 16px 0;
+  letter-spacing: -0.01em;
+}
+
+.form-success-inner p {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-light);
+  font-size: 1rem;
+  color: var(--preto-suave, #1A1A1A);
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+}
+
+.form-success-inner p strong {
+  font-weight: var(--weight-medium);
+  color: var(--verde-noturno, #1C3520);
+}
+
+.form-success-note {
+  margin-top: 20px !important;
+  padding-top: 20px;
+  border-top: 1px solid rgba(28, 53, 32, 0.15);
+  font-size: 0.875rem !important;
+  color: var(--cinza-quente, #6B6761) !important;
+  font-style: italic;
+}
+
+.form-success-wa {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  margin-top: 8px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 2px;
+  font-family: var(--font-sans);
+  font-weight: var(--weight-medium);
+  font-size: 0.9375rem;
+  letter-spacing: 0.02em;
+  transition: background .2s, transform .15s;
+}
+.form-success-wa:hover {
+  background: #1EBE5D;
+  transform: translateY(-1px);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .form-submit-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .form-or {
+    text-align: center;
+  }
+  .btn-wa, .btn-wa-inline {
+    width: 100%;
+  }
+  .form-success {
+    padding: 40px 24px;
+  }
+}

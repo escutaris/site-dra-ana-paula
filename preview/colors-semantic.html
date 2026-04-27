@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><title>Semânticos</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+body{margin:0;padding:20px;background:#F0EDE6;font-family:'Poppins',sans-serif;}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.mode{padding:18px;border-radius:2px;}
+.mode.clareza{background:#F0EDE6;border:1px solid rgba(28,53,32,.14);}
+.mode.profundidade{background:#1C3520;}
+.tag{font-weight:500;font-size:10px;letter-spacing:.25em;text-transform:uppercase;}
+.clareza .tag{color:#1C3520;}
+.profundidade .tag{color:#F0EDE6;opacity:.8;}
+.h{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:24px;margin:8px 0 4px;line-height:1.1;}
+.profundidade .h{color:#F0EDE6;font-style:italic;font-weight:600;}
+.clareza .h{color:#1C3520;}
+.p{font-size:12px;font-weight:300;line-height:1.55;margin:0;}
+.clareza .p{color:#1A1A1A;}
+.profundidade .p{color:rgba(240,237,230,.8);}
+.acc{display:inline-block;margin-top:8px;font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;padding:8px 14px;border-radius:2px;background:#B95839;color:#F0EDE6;}
+</style></head><body>
+<div class="grid">
+  <div class="mode clareza">
+    <div class="tag">Modo Clareza</div>
+    <h3 class="h">Conformidade NR-1</h3>
+    <p class="p">Fundo off-white, títulos retos, corpo em preto editorial. Acento terracota em CTA.</p>
+    <span class="acc">Marcar consultoria</span>
+  </div>
+  <div class="mode profundidade">
+    <div class="tag">Modo Profundidade</div>
+    <h3 class="h">Lesão moral ocupacional</h3>
+    <p class="p">Fundo verde-noturno, títulos em itálico, corpo em off-white semitransparente.</p>
+    <span class="acc">Ler ensaio</span>
+  </div>
+</div>
+</body></html>

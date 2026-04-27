@@ -1,0 +1,169 @@
+/* ============================================================
+   Dra. Ana Paula Teixeira — Design System JS
+   Vanilla — reveal, counter, nav mobile, smooth scroll.
+   Respeita prefers-reduced-motion.
+   ============================================================ */
+
+(function () {
+  'use strict';
+
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ----- Reveal on scroll -----
+     Trigger quando elemento entra a marca de 80% do viewport (vindo de baixo).
+     Implementação: rootMargin -20% no bottom recorta a janela observada,
+     fazendo o trigger ocorrer quando o elemento atinge 80% da altura. */
+  function initReveal() {
+    const els = document.querySelectorAll('.reveal, .reveal-stagger');
+    if (!els.length) return;
+    if (prefersReduced || !('IntersectionObserver' in window)) {
+      els.forEach(el => el.classList.add('is-visible'));
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -20% 0px' });
+    els.forEach(el => io.observe(el));
+  }
+
+  /* ----- Stagger: aplica transition-delay incremental nos filhos diretos
+     de qualquer container .reveal-stagger. 80ms entre cada filho.
+     Cap: a partir do 5º item, todos sem delay (evita ondas longas em listas grandes). */
+  function initStagger() {
+    const containers = document.querySelectorAll('.reveal-stagger');
+    if (!containers.length) return;
+    const isMobile = window.matchMedia('(max-width: 700px)').matches;
+    const step = isMobile ? 50 : 80;
+    const cap = 5;
+    containers.forEach(container => {
+      Array.from(container.children).forEach((child, i) => {
+        const idx = Math.min(i, cap - 1);
+        child.style.transitionDelay = (idx * step) + 'ms';
+      });
+    });
+  }
+
+  /* ----- Counter up (cubic easing) ----- */
+  function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+
+  function animateCounter(el) {
+    const target = parseFloat(el.dataset.target);
+    const duration = parseInt(el.dataset.duration || '1600', 10);
+    const decimals = parseInt(el.dataset.decimals || '0', 10);
+    if (isNaN(target)) return;
+    if (prefersReduced) {
+      el.textContent = target.toLocaleString('pt-BR', {
+        minimumFractionDigits: decimals, maximumFractionDigits: decimals
+      });
+      return;
+    }
+    const start = performance.now();
+    function tick(now) {
+      const elapsed = now - start;
+      const t = Math.min(1, elapsed / duration);
+      const val = target * easeOutCubic(t);
+      el.textContent = val.toLocaleString('pt-BR', {
+        minimumFractionDigits: decimals, maximumFractionDigits: decimals
+      });
+      if (t < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  function initCounters() {
+    const els = document.querySelectorAll('[data-counter]');
+    if (!els.length) return;
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(animateCounter);
+      return;
+    }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    els.forEach(el => io.observe(el));
+  }
+
+  /* ----- Nav: scroll state + mobile toggle ----- */
+  function initNav() {
+    const nav = document.querySelector('.nav');
+    if (!nav) return;
+
+    // scroll state
+    const onScroll = () => {
+      if (window.scrollY > 8) nav.classList.add('is-scrolled');
+      else nav.classList.remove('is-scrolled');
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // mobile toggle
+    const toggle = nav.querySelector('.nav-toggle');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        const open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+
+    // close on link click
+    nav.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('is-open');
+        if (toggle) toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  /* ----- Smooth scroll for in-page anchors ----- */
+  function initSmoothScroll() {
+    if (prefersReduced) return;
+    document.addEventListener('click', (e) => {
+      const a = e.target.closest('a[href^="#"]');
+      if (!a) return;
+      const id = a.getAttribute('href');
+      if (id.length < 2) return;
+      const target = document.querySelector(id);
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
+  /* ----- Marquee duplication for seamless loop ----- */
+  function initMarquee() {
+    document.querySelectorAll('.marquee-track').forEach(track => {
+      if (track.dataset.duplicated) return;
+      const clone = track.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      track.parentNode.appendChild(clone);
+      track.dataset.duplicated = '1';
+    });
+  }
+
+  /* ----- Init ----- */
+  function init() {
+    initStagger();   // antes do reveal — aplica delays nos filhos
+    initReveal();
+    initCounters();
+    initNav();
+    // intentionally NOT using scrollIntoView — causes layout issues in embedded views
+    // initSmoothScroll();
+    initMarquee();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();

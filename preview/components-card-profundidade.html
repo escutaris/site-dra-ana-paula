@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><title>Card Profundidade</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+body{margin:0;padding:22px;background:#F0EDE6;}
+.card{position:relative;max-width:620px;min-height:240px;border-radius:2px;overflow:hidden;background:#1C3520;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate;}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%, #2a4028 0%, #0e1c10 80%);z-index:-1;}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,53,32,.2) 0%,rgba(28,53,32,.88) 100%);z-index:-1;}
+.eb{display:inline-flex;align-items:center;gap:8px;font-family:'Poppins',sans-serif;font-weight:500;font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:#F0EDE6;margin-bottom:10px;}
+.eb::before{content:"";width:5px;height:5px;background:#B95839;border-radius:50%;}
+.t{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:26px;color:#F0EDE6;margin:0 0 8px;line-height:1.25;text-wrap:balance;}
+.b{font-family:'Poppins',sans-serif;font-weight:300;font-size:13px;line-height:1.7;color:rgba(240,237,230,.8);margin:0;}
+</style></head><body>
+<article class="card">
+  <span class="eb">Modo Profundidade</span>
+  <h3 class="t">Lesão moral ocupacional — o quebrado que pede nome</h3>
+  <p class="b">Foto contextual como textura, overlay verde-noturno, tipografia em itálico. Usado em livro, pesquisa, casos reais.</p>
+</article>
+</body></html>

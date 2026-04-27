@@ -1,0 +1,1087 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SEO -->
+<title>Serviços · Palestras, Rodas de Conversa e Consultoria · Dra. Ana Paula Teixeira</title>
+<meta name="description" content="Três formas de tratar saúde mental no trabalho: Palestra Corporativa, Roda de Conversa e Consultoria sob medida. Mentoria individual e Círculo Técnico NR-1 disponíveis sob demanda.">
+<meta name="author" content="Dra. Ana Paula Teixeira">
+<link rel="canonical" href="https://anapaulateixeira.med.br/servicos.html">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Dra. Ana Paula Teixeira">
+<meta property="og:url" content="https://anapaulateixeira.med.br/servicos.html">
+<meta property="og:title" content="Serviços · Três formatos. Uma autoridade técnica.">
+<meta property="og:description" content="Três formas de tratar saúde mental no trabalho: Palestra Corporativa, Roda de Conversa e Consultoria sob medida. Mentoria individual e Círculo Técnico NR-1 disponíveis sob demanda.">
+<meta property="og:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Serviços · Três formatos. Uma autoridade técnica.">
+<meta name="twitter:description" content="Três formas de tratar saúde mental no trabalho: Palestra Corporativa, Roda de Conversa e Consultoria sob medida. Mentoria individual e Círculo Técnico NR-1 disponíveis sob demanda.">
+<meta name="twitter:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<meta name="theme-color" content="#1C3520">
+<link rel="stylesheet" href="design-system.css">
+<link rel="stylesheet" href="form-handlers.css">
+<style>
+  /* ===== Serviços — overrides locais ===== */
+  .hero-srv { padding-block: clamp(88px, 10vw, 140px); }
+  .hero-srv .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  @media (min-width: 960px) {
+    .hero-srv .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 440px); gap: 72px; }
+  }
+  .hero-srv h1 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.125rem, 1.5rem + 2.4vw, 3.25rem);
+    line-height: 1.15;
+    color: var(--verde-noturno);
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    max-width: 22ch;
+    margin: 24px 0 28px 0;
+  }
+  .hero-srv p.lead-s {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    color: var(--preto-editorial);
+    max-width: 58ch;
+    line-height: 1.6;
+    margin: 0 0 32px 0;
+  }
+  .hero-srv .cta-row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .hero-srv .micro { margin-top: 12px; font-size: var(--type-small); color: var(--cinza-quente); }
+  .hero-srv .hero-visual {
+    aspect-ratio: 4/5;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 2px;
+    background: var(--bege-areia);
+  }
+  .hero-srv .hero-visual img {
+    width: 100%; height: 100%; object-fit: cover;
+    filter: saturate(0.92);
+  }
+
+  /* Blocos genéricos */
+  .s-block { padding-block: clamp(96px, 10vw, 128px); }
+  .s-block .eyebrow-editorial { margin-bottom: 20px; }
+  .s-title {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
+    color: var(--verde-noturno);
+    margin: 0 0 24px 0;
+    max-width: 28ch;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+  .s-sub {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    color: var(--preto-editorial);
+    max-width: 56ch;
+    margin: 0 0 48px 0;
+  }
+  .s-sub-italic {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: var(--weight-semibold);
+    font-size: clamp(1.375rem, 1.2rem + 0.9vw, 1.875rem);
+    color: var(--terracota);
+    max-width: 36ch;
+    line-height: 1.3;
+    margin: 0 0 24px 0;
+    text-wrap: balance;
+  }
+
+  /* Dois eixos */
+  .axis-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  @media (min-width: 800px) { .axis-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
+  .axis-card {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 48px 40px;
+    display: flex; flex-direction: column; gap: 20px;
+    border-top: 4px solid var(--verde-noturno);
+  }
+  .axis-card.reflex { border-top-color: var(--terracota); }
+  .axis-card h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.5rem;
+    color: var(--verde-noturno);
+    margin: 0;
+  }
+  .axis-card .axis-for {
+    font-size: var(--type-small);
+    color: var(--cinza-quente);
+    margin: 0;
+  }
+  .axis-card p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--preto-editorial);
+  }
+  .axis-card ul { list-style: none; margin: 0; padding: 0; }
+  .axis-card li {
+    padding: 14px 0;
+    border-top: 1px solid var(--border);
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    color: var(--preto-editorial);
+    display: flex; justify-content: space-between; gap: 16px;
+  }
+  .axis-card li:last-child { border-bottom: 1px solid var(--border); }
+  .axis-card li .price {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: var(--cinza-quente);
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+
+  /* Produto destacado */
+  .product {
+    padding-block: clamp(96px, 10vw, 128px);
+    border-top: 1px solid var(--border);
+  }
+  .product.alt { background: var(--bege-areia); }
+  .badge-new {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--terracota);
+    color: var(--off-white);
+    padding: 8px 14px;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin-bottom: 24px;
+  }
+  .product h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
+    color: var(--verde-noturno);
+    margin: 12px 0 20px 0;
+    max-width: 24ch;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+  .product .product-italic {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: var(--weight-semibold);
+    font-size: clamp(1.25rem, 1.1rem + 0.7vw, 1.5rem);
+    color: var(--verde-noturno);
+    max-width: 44ch;
+    line-height: 1.35;
+    margin: 0 0 28px 0;
+  }
+  .product .prod-prose {
+    max-width: 640px;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--preto-editorial);
+  }
+  .product .prod-prose p + p { margin-top: 16px; }
+  .product h3.mini {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--verde-noturno);
+    margin: 0 0 20px 0;
+  }
+
+  .step-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  @media (min-width: 700px) { .step-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1000px) { .step-grid.four { grid-template-columns: repeat(4, 1fr); } }
+  .step {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    padding: 28px 24px;
+    border-radius: 2px;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .product.alt .step { background: #F5F0E8; }
+  .step-num {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.75rem;
+    color: var(--terracota);
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .step-title {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-semibold);
+    font-size: 1.125rem;
+    color: var(--verde-noturno);
+    margin: 0;
+  }
+  .step-desc {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--cinza-quente);
+  }
+
+  .plain-list { list-style: none; padding: 0; margin: 0; max-width: 640px; }
+  .plain-list li {
+    padding: 14px 0;
+    border-top: 1px solid var(--border);
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    color: var(--preto-editorial);
+  }
+  .plain-list li:last-child { border-bottom: 1px solid var(--border); }
+
+  .tier-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  @media (min-width: 700px) { .tier-grid { grid-template-columns: repeat(3, 1fr); } }
+  .tier {
+    border: 1px solid var(--border);
+    background: var(--off-white);
+    padding: 28px 24px;
+    border-radius: 2px;
+  }
+  .product.alt .tier { background: #F5F0E8; }
+  .tier .tier-label {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+    margin: 0 0 8px 0;
+  }
+  .tier .tier-price {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.5rem;
+    color: var(--verde-noturno);
+  }
+
+  /* Palestras */
+  .pal-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 24px;
+  }
+  @media (min-width: 800px) { .pal-grid { grid-template-columns: 1fr 1fr; } }
+  .pal-card {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    padding: 32px 28px;
+    border-radius: 2px;
+    display: flex; flex-direction: column; gap: 14px;
+    border-left: 4px solid var(--verde-noturno);
+  }
+  .pal-card.feat { border-left-color: var(--terracota); }
+  .pal-card .pal-label {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+  }
+  .pal-card h4 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.25rem;
+    color: var(--verde-noturno);
+    margin: 0;
+    text-wrap: balance;
+  }
+  .pal-card .pal-desc {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: var(--preto-editorial);
+  }
+  .pal-card .pal-for {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+  .pal-list {
+    list-style: none; padding: 0; margin: 28px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    border-top: 1px solid var(--border);
+  }
+  @media (min-width: 800px) { .pal-list { grid-template-columns: 1fr 1fr; gap: 0 32px; } }
+  .pal-list li {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    color: var(--preto-editorial);
+    display: flex; gap: 12px;
+  }
+  .pal-list li::before {
+    content: ''; width: 24px; height: 1px; background: var(--terracota);
+    flex-shrink: 0; margin-top: 0.7em;
+  }
+
+  /* Preço tabela */
+  .price-table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+  }
+  .price-table th, .price-table td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    color: var(--preto-editorial);
+  }
+  .price-table th {
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--verde-noturno);
+    border-bottom-color: var(--verde-noturno-24);
+  }
+  .price-table tr:last-child td { border-bottom: 0; }
+
+  /* Under-proposal block — produtos sob briefing */
+  .under-proposal {
+    border-left: 3px solid var(--terracota);
+    padding: 24px 0 24px 28px;
+    max-width: 640px;
+    margin-top: 16px;
+  }
+  .under-proposal .up-line {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: var(--weight-semibold);
+    font-size: 1.375rem;
+    line-height: 1.35;
+    color: var(--verde-noturno);
+    margin: 0 0 10px 0;
+    text-wrap: balance;
+  }
+  .under-proposal .up-micro {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--cinza-quente);
+    margin: 0;
+    max-width: 52ch;
+  }
+
+  /* Formulário */
+  .form-wrap {
+    background: var(--bege-areia);
+    padding-block: clamp(96px, 10vw, 128px);
+  }
+  .form-wrap h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.5rem + 2vw, 2.75rem);
+    color: var(--verde-noturno);
+    margin: 24px 0 36px 0;
+    max-width: 24ch;
+  }
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px 32px;
+    max-width: 720px;
+  }
+  @media (min-width: 700px) { .form-grid { grid-template-columns: 1fr 1fr; } }
+  .form-grid .full { grid-column: 1 / -1; }
+  .form-wrap .field-input, .form-wrap .field-textarea, .form-wrap select {
+    background: transparent;
+    border-bottom: 1px solid var(--verde-noturno-24);
+    color: var(--preto-editorial);
+  }
+  .form-wrap select {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    border: 0;
+    border-bottom: 1px solid var(--verde-noturno-24);
+    padding: 8px 0;
+    width: 100%;
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, var(--verde-noturno) 50%), linear-gradient(135deg, var(--verde-noturno) 50%, transparent 50%);
+    background-position: calc(100% - 15px) 50%, calc(100% - 10px) 50%;
+    background-size: 5px 5px;
+    background-repeat: no-repeat;
+  }
+  .form-wrap .form-note {
+    font-size: var(--type-small); color: var(--cinza-quente); margin-top: 14px;
+  }
+
+  /* Contatos grid */
+  .contacts {
+    padding-block: clamp(80px, 8vw, 112px);
+    border-top: 1px solid var(--border);
+  }
+  .contacts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  @media (min-width: 700px) { .contacts-grid { grid-template-columns: repeat(4, 1fr); } }
+  .contact-item .label {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+    display: block;
+    margin-bottom: 8px;
+  }
+  .contact-item a, .contact-item span.v {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-semibold);
+    font-size: 1.125rem;
+    color: var(--verde-noturno);
+    text-decoration: none;
+  }
+  .contact-item a:hover { color: var(--terracota); }
+
+  /* Section anchors spacing */
+  section[id] { scroll-margin-top: 80px; }
+
+  /* ===== Overview três formatos ===== */
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-top: 16px;
+  }
+  @media (min-width: 820px) { .overview-grid { grid-template-columns: repeat(3, 1fr); } }
+  .overview-card {
+    background: var(--off-white);
+    padding: 40px 32px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-height: 260px;
+    transition: background .25s ease;
+  }
+  .overview-card:hover { background: #FCFAF5; }
+  .overview-card:hover .ov-arrow { transform: translateX(4px); color: var(--terracota); }
+  .ov-num {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+  }
+  .overview-card h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.5rem, 1.2rem + 0.8vw, 1.875rem);
+    line-height: 1.2;
+    color: var(--verde-noturno);
+    margin: 0;
+    text-wrap: balance;
+  }
+  .overview-card p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: var(--preto-editorial);
+    margin: 0;
+    flex-grow: 1;
+  }
+  .ov-arrow {
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--verde-noturno);
+    margin-top: 8px;
+    transition: transform .25s ease, color .25s ease;
+    display: inline-block;
+  }
+  .overview-more {
+    margin-top: 32px;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--cinza-quente);
+    max-width: 62ch;
+  }
+
+  /* ===== Livro callout ===== */
+  .book-callout-srv {
+    padding-block: clamp(96px, 11vw, 140px);
+    background: var(--off-white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .book-callout-srv .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 56px;
+    align-items: center;
+  }
+  @media (min-width: 900px) {
+    .book-callout-srv .grid { grid-template-columns: minmax(0, 380px) minmax(0, 1fr); gap: 80px; }
+  }
+  .book-callout-srv .cover {
+    aspect-ratio: 2/3;
+    width: 100%;
+    max-width: 380px;
+    justify-self: center;
+    background: var(--bege-areia);
+    box-shadow: 0 32px 60px -30px rgba(28,53,32,.25), 0 16px 32px -20px rgba(28,53,32,.15);
+    overflow: hidden;
+  }
+  .book-callout-srv .cover img { width: 100%; height: 100%; object-fit: cover; }
+  .book-callout-srv h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.4rem + 2vw, 2.75rem);
+    line-height: 1.12;
+    color: var(--verde-noturno);
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 20px 0 16px 0;
+    max-width: 20ch;
+  }
+  .book-callout-srv .book-sub {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: var(--weight-semibold);
+    font-size: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
+    color: var(--terracota);
+    line-height: 1.3;
+    margin: 0 0 24px 0;
+    max-width: 32ch;
+  }
+  .book-callout-srv p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--preto-editorial);
+    max-width: 52ch;
+    margin: 0 0 16px 0;
+  }
+  .book-callout-srv .cta-row { margin-top: 32px; display: flex; gap: 16px; flex-wrap: wrap; }
+
+  /* ===== Outros formatos (cards compactos) ===== */
+  .others {
+    padding-block: clamp(80px, 9vw, 112px);
+  }
+  .others-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 40px;
+  }
+  @media (min-width: 760px) { .others-grid { grid-template-columns: repeat(2, 1fr); } }
+  .other-card {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .other-card h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.375rem;
+    line-height: 1.25;
+    color: var(--verde-noturno);
+    margin: 4px 0 0 0;
+  }
+  .other-card p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    margin: 0;
+  }
+  .other-card .o-meta {
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    letter-spacing: 0.04em;
+    color: var(--cinza-quente);
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+  .other-card .o-meta b { font-weight: var(--weight-medium); color: var(--verde-noturno); }
+
+  /* ===== Ebook isca ===== */
+  .ebook-lead {
+    background: var(--bege-areia);
+    padding-block: clamp(80px, 9vw, 120px);
+  }
+  .ebook-lead .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  @media (min-width: 860px) {
+    .ebook-lead .grid { grid-template-columns: 1.1fr 1fr; gap: 64px; }
+  }
+  .ebook-lead h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.75rem, 1.3rem + 1.8vw, 2.5rem);
+    line-height: 1.15;
+    color: var(--verde-noturno);
+    text-wrap: balance;
+    margin: 16px 0 16px 0;
+    max-width: 22ch;
+  }
+  .ebook-lead p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--preto-editorial);
+    max-width: 52ch;
+    margin: 0 0 24px 0;
+  }
+  .ebook-lead .eb-form {
+    background: var(--off-white);
+    padding: 32px 28px;
+    border: 1px solid var(--border);
+  }
+  .ebook-lead .eb-form label {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+    display: block;
+    margin-bottom: 8px;
+  }
+  .ebook-lead .eb-form input {
+    width: 100%;
+    padding: 12px 14px;
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    border: 1px solid var(--border);
+    background: var(--off-white);
+    margin-bottom: 16px;
+  }
+  .ebook-lead .eb-form input:focus { outline: 1px solid var(--verde-noturno); }
+  .ebook-lead .eb-micro {
+    font-size: 0.75rem;
+    color: var(--cinza-quente);
+    margin-top: 12px;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Início</a></li>
+      <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+      <li><a href="servicos.html" class="nav-link" aria-current="page">Serviços</a></li>
+      <li><a href="livro.html" class="nav-link">Livro</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="na-midia.html" class="nav-link">Na Mídia</a></li>
+      <li><a href="contato.html" class="nav-link">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#1C3520" stroke-width="1.5"><line x1="3" y1="7" x2="19" y2="7"/><line x1="3" y1="15" x2="19" y2="15"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero-srv container">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow-editorial">Serviços · Palestra · Roda de Conversa · Consultoria</span>
+      <h1>Conversa técnica sobre saúde mental no trabalho — para qualquer público.</h1>
+      <p class="lead-s">De conselhos executivos a auditórios corporativos, associações, Sebrae, formação pública ou chão de fábrica — a mesma voz técnica e humana que aparece na imprensa conduz palestras, rodas de conversa e consultoria dentro da sua organização.</p>
+      <div class="cta-row">
+        <a href="#contato" class="btn btn-primary">Solicitar proposta →</a>
+      </div>
+      <p class="micro">Proposta personalizada em até 24h.</p>
+    </div>
+    <div class="hero-visual">
+      <img src="assets/photos/stage-palestra.png" alt="Dra. Ana Paula em palestra corporativa">
+    </div>
+  </div>
+</header>
+
+<!-- OVERVIEW TRÊS FORMATOS -->
+<section class="s-block container reveal">
+  <span class="eyebrow-editorial">Como trabalhar com a Dra. Ana Paula</span>
+  <h2 class="s-title">Três formas de tratar saúde mental no trabalho.</h2>
+  <p class="s-sub">Da palestra aberta ao apoio consultivo personalizado — calibrados pelo contexto, público e porte de cada organização.</p>
+  <div class="overview-grid">
+    <a href="#palestra" class="overview-card">
+      <span class="ov-num">01 · Palestra</span>
+      <h3>Palestra Corporativa</h3>
+      <p>Intervenção editorial em formato de palestra. Para conselhos, auditórios corporativos, associações, SIPATs, convenções, Sebrae e programas públicos.</p>
+      <span class="ov-arrow">Ver temas →</span>
+    </a>
+    <a href="#roda" class="overview-card">
+      <span class="ov-num">02 · Roda</span>
+      <h3>Roda de Conversa</h3>
+      <p>Formato interativo, com escuta, dúvidas e reflexão — calibrado pelo público e pelo tema. De conselhos executivos a equipes técnicas e chão de fábrica.</p>
+      <span class="ov-arrow">Saber mais →</span>
+    </a>
+    <a href="#contato" class="overview-card">
+      <span class="ov-num">03 · Consultoria</span>
+      <h3>Consultoria sob medida</h3>
+      <p>Apoio personalizado para empresas que querem tratar saúde mental com rigor técnico. Escopo definido em conversa — do diagnóstico organizacional ao PGR psicossocial.</p>
+      <span class="ov-arrow">Entrar em contato →</span>
+    </a>
+  </div>
+  <p class="overview-more">Mentoria individual e Círculo Técnico NR-1 também disponíveis sob demanda — detalhados mais adiante nesta página.</p>
+</section>
+
+<!-- PALESTRA CORPORATIVA -->
+<section id="palestra" class="product alt reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Eixo Reflexivo · Sensibilização</span>
+    <h2>Palestra Corporativa</h2>
+    <div class="prod-prose">
+      <p>Conduzida pela Dra. Ana Paula como médica do trabalho, autora e pesquisadora de Lesão Moral Ocupacional. A palestra não é evento motivacional — é intervenção editorial na forma como o trabalho é compreendido e nomeado.</p>
+      <p>Linguagem técnica de risco e cultura, com registros clínicos reais e referências acadêmicas, mas sempre adaptada ao público — seja conselho executivo, auditório corporativo, SIPAT, convenção, associação, Sebrae, formação pública ou equipe de chão de fábrica.</p>
+    </div>
+
+    <h3 class="mini" style="margin-top:56px">Quatro temas em destaque</h3>
+    <div class="pal-grid">
+      <article class="pal-card feat">
+        <span class="pal-label">01</span>
+        <h4>Quando o Trabalho Dói: o custo invisível do adoecimento</h4>
+        <p class="pal-desc">O ensaio editorial que virou livro. Panorama do sofrimento no trabalho brasileiro — e da conta que chega antes e depois do afastamento.</p>
+        <span class="pal-for">Para qualquer público — de conselhos a auditórios abertos</span>
+      </article>
+      <article class="pal-card feat">
+        <span class="pal-label">02</span>
+        <h4>Lesão Moral Ocupacional nas organizações: o conceito que o burnout não explica</h4>
+        <p class="pal-desc">Pesquisa aplicada ao Brasil corporativo. O que é, como se manifesta, por que importa para reputação, jurídico e gestão.</p>
+        <span class="pal-for">Para lideranças, comitês executivos, jurídico, compliance e formação continuada</span>
+      </article>
+      <article class="pal-card feat">
+        <span class="pal-label">03</span>
+        <h4>NR-1 como ativo, não como passivo</h4>
+        <p class="pal-desc">A norma lida pelo avesso: o que cumprir com rigor técnico libera em reputação, retenção e governança.</p>
+        <span class="pal-for">Para empresas, SST, RH, consultores, gestores públicos e associações</span>
+      </article>
+      <article class="pal-card feat">
+        <span class="pal-label">04</span>
+        <h4>Liderança que cuida: coragem técnica no cotidiano</h4>
+        <p class="pal-desc">O que distingue o líder que protege cultura do líder que apenas entrega meta — com exemplos do consultório e da prática corporativa.</p>
+        <span class="pal-for">Para lideranças em todos os níveis, equipes e programas de desenvolvimento</span>
+      </article>
+    </div>
+
+    <p class="prod-prose" style="margin-top:40px;font-size:0.9375rem;color:var(--cinza-quente);max-width:62ch">Outros temas autorais estão disponíveis sob consulta — incluindo recortes específicos para lideranças femininas, comitês de ESG, saúde pública e formação técnica. O portfólio completo é enviado junto da proposta.</p>
+
+    <div class="palestra-details" style="margin-top:56px;display:grid;grid-template-columns:1fr;gap:48px">
+      <div>
+        <h3 class="mini">Formatos disponíveis</h3>
+        <div class="tier-grid">
+          <div class="tier"><p class="tier-label">Padrão</p><div class="tier-price">1h–1h30</div></div>
+          <div class="tier"><p class="tier-label">Expandido</p><div class="tier-price">2h–3h</div></div>
+          <div class="tier"><p class="tier-label">Online</p><div class="tier-price">Até 90 min</div></div>
+        </div>
+      </div>
+      <div>
+        <h3 class="mini">Em todas as palestras</h3>
+        <ul class="plain-list">
+          <li>Alinhamento prévio de 30 min para calibrar linguagem ao contexto.</li>
+          <li>Material editorial de suporte enviado à plateia.</li>
+          <li>Q&amp;A sem tabu — nomes reais, casos reais, respostas técnicas.</li>
+          <li>Gravação para uso interno (formato online).</li>
+          <li>Certificado técnico assinado por médica do trabalho.</li>
+        </ul>
+      </div>
+    </div>
+    <style>@media (min-width: 800px) { .palestra-details { grid-template-columns: 1fr 1fr !important; gap: 64px !important; } }</style>
+
+    <h3 class="mini" style="margin-top:56px">Investimento</h3>
+    <div class="under-proposal">
+      <p class="up-line">Investimento sob proposta personalizada.</p>
+      <p class="up-micro">Proposta em até 24h após alinhamento breve sobre porte, público e formato. O portfólio completo dos temas é enviado junto.</p>
+      <div style="margin-top:28px"><a href="#contato" class="btn btn-primary">Solicitar portfólio e proposta →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- RODA DE CONVERSA -->
+<section id="roda" class="product reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Eixo Reflexivo · Aprofundamento</span>
+    <h2>Roda de Conversa</h2>
+    <div class="prod-prose">
+      <p>Formato interativo em que a Dra. Ana Paula conduz o tema e abre espaço para dúvidas, reflexão e escuta. O conteúdo e a linguagem são calibrados pelo público — pode acontecer com conselhos executivos, equipes de liderança, grupos técnicos de SESMT e RH, e também com chão de fábrica, comunidades, associações ou formações públicas.</p>
+      <p>Não é só palestra, não é só workshop. É o momento em que a conversa que a empresa precisa ter acontece — com uma médica experiente mediando, nomeando e abrindo caminho.</p>
+    </div>
+
+    <div class="tier-grid" style="margin-top:40px">
+      <div class="tier"><p class="tier-label">Audiência</p><div class="tier-price">Calibrada pelo contexto</div></div>
+      <div class="tier"><p class="tier-label">Duração</p><div class="tier-price">1h30 – 3h</div></div>
+      <div class="tier"><p class="tier-label">Formato</p><div class="tier-price">Interativo</div></div>
+    </div>
+
+    <div class="under-proposal" style="margin-top:48px">
+      <p class="up-line">Investimento sob proposta personalizada.</p>
+      <p class="up-micro">Proposta em até 24h após alinhamento breve sobre público, tema e contexto.</p>
+      <div style="margin-top:28px"><a href="#contato" class="btn btn-primary">Solicitar Roda de Conversa →</a></div>
+    </div>
+
+    <blockquote style="margin-top:64px;border-left:3px solid var(--terracota);padding:20px 0 20px 28px;max-width:640px">
+      <p style="font-family:var(--font-serif);font-style:italic;font-weight:600;font-size:1.5rem;line-height:1.35;color:var(--verde-noturno);margin:0;text-wrap:balance">Não é uma palestra. É uma conversa com quem sabe o que está acontecendo — e não tem medo de nomear.</p>
+    </blockquote>
+  </div>
+</section>
+
+<!-- OUTROS FORMATOS -->
+<section class="others reveal bg-context bg-circle-chairs">
+  <div class="container">
+  <span class="eyebrow-editorial">Outros formatos</span>
+  <h2 class="s-title" style="max-width:32ch">Formatos sob demanda.</h2>
+  <p class="s-sub">Mentoria individual e Círculo Técnico NR-1 atendem demandas específicas, com agenda restrita.</p>
+  <div class="others-grid reveal-stagger">
+    <article class="other-card" id="mentoria">
+      <span class="eyebrow-editorial">Mentoria individual</span>
+      <h3>Acompanhamento estratégico</h3>
+      <p>Para C-level, fundadoras e lideranças que atravessam decisões sensíveis de cultura, saúde e reputação. Encontros quinzenais, sigilo integral.</p>
+      <span class="o-meta"><b>Formato</b> encontros quinzenais · <b>Agenda</b> sob consulta</span>
+    </article>
+    <article class="other-card" id="circulo">
+      <span class="eyebrow-editorial">Círculo Técnico NR-1</span>
+      <h3>Formação de quatro semanas</h3>
+      <p>Programa para SST, RH, medicina e jurídico que precisam dominar NR-1 com profundidade técnica real. Quatro encontros, leituras aplicadas, mentoria em grupo.</p>
+      <span class="o-meta"><b>Formato</b> turma · <b>Agenda e investimento</b> sob consulta</span>
+    </article>
+  </div>
+  <div style="margin-top:40px"><a href="#contato" class="btn-ghost">Consultar disponibilidade <span class="arrow">→</span></a></div>
+  </div>
+</section>
+
+<!-- GOVERNANÇA — bloco discreto -->
+<section class="container reveal" style="padding-block:clamp(56px,6vw,80px);border-top:1px solid var(--border)">
+  <span class="eyebrow-editorial">Antes de contratar · Métricas e governança</span>
+  <p style="font-family:var(--font-serif);font-weight:600;font-size:clamp(1.25rem,1.05rem + 0.7vw,1.625rem);color:var(--verde-noturno);line-height:1.3;letter-spacing:-0.005em;max-width:30ch;margin:16px 0 32px 0;text-wrap:balance">O custo de não fazer. O retorno de fazer bem.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px;margin-bottom:32px">
+    <div>
+      <span style="font-family:var(--font-serif);font-weight:700;font-size:1.875rem;color:var(--terracota);letter-spacing:-0.01em">US$ 1 tri</span>
+      <p style="font-family:var(--font-sans);font-weight:300;font-size:0.875rem;line-height:1.5;color:var(--preto-editorial);margin:6px 0 0 0">em produtividade perdida por ano no mundo.</p>
+    </div>
+    <div>
+      <span style="font-family:var(--font-serif);font-weight:700;font-size:1.875rem;color:var(--terracota);letter-spacing:-0.01em">370%</span>
+      <p style="font-family:var(--font-sans);font-weight:300;font-size:0.875rem;line-height:1.5;color:var(--preto-editorial);margin:6px 0 0 0">ROI médio em programas de saúde mental no trabalho.</p>
+    </div>
+    <div>
+      <span style="font-family:var(--font-serif);font-weight:700;font-size:1.875rem;color:var(--terracota);letter-spacing:-0.01em">0%</span>
+      <p style="font-family:var(--font-sans);font-weight:300;font-size:0.875rem;line-height:1.5;color:var(--preto-editorial);margin:6px 0 0 0">das maiores empresas auditam externamente o sistema.</p>
+    </div>
+  </div>
+  <a href="governanca.html" class="btn-ghost">Ver indicadores e Regras de Ouro <span class="arrow">→</span></a>
+</section>
+
+<!-- EBOOK ISCA — Do Relato à Tomada de Decisão -->
+<section class="ebook-lead reveal">
+  <div class="container grid">
+    <div>
+      <span class="eyebrow-editorial">Guia técnico gratuito · 27 páginas · edição 2026</span>
+      <h2>Comece pelo material editorial.</h2>
+      <p style="font-family:var(--font-serif);font-style:italic;font-weight:600;font-size:clamp(1.125rem,1rem + 0.5vw,1.375rem);color:var(--terracota);margin-bottom:16px">Do Relato à Tomada de Decisão — 12 passos para avaliar nexo causal entre transtornos mentais e contexto ocupacional.</p>
+      <p>Guia autoral da Dra. Ana Paula Teixeira para profissionais que precisam transformar relato em parecer técnico defensável. Alinhado a NR-1, NR-17, Portaria MTE 1.419/2024 e Resolução CFM 2.323/2022.</p>
+    </div>
+    <div class="eb-form">
+      <h3 style="font-family:var(--font-serif);font-weight:700;font-size:1.25rem;color:var(--verde-noturno);margin:0 0 16px 0">O que o guia entrega</h3>
+      <ul style="font-family:var(--font-sans);font-weight:300;font-size:0.9375rem;line-height:1.7;color:var(--preto-editorial);margin:0 0 24px 0;padding-left:20px">
+        <li>12 passos operacionais para avaliar nexo causal ocupacional.</li>
+        <li>Roteiro de entrevista clínico-ocupacional com critérios técnicos.</li>
+        <li>Distinção entre adoecimento ocupacional e transtorno comórbido.</li>
+        <li>Checklist de documentação para parecer técnico.</li>
+      </ul>
+      <a href="https://guia.anateixeiramed.com.br/" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;text-align:center;justify-content:center">Receber o guia gratuitamente →</a>
+      <p class="eb-micro">Entrega por email em até 2 minutos. Para médicos do trabalho, SESMT, RH, perícia, jurídico e compliance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULÁRIO -->
+<section id="contato" class="form-wrap">
+  <div class="container">
+    <span class="eyebrow-editorial">Solicitação de proposta</span>
+    <h2>Quer levar esse tema para sua empresa?</h2>
+    <form class="form-grid" action="https://docs.google.com/forms/d/e/__FORM_ID_SERVICOS__/formResponse" method="POST" target="_blank" data-wa-phone="5575983186200">
+      <div class="field"><label class="field-label">Nome completo *</label><input class="field-input" name="entry.NOME" required></div>
+      <div class="field"><label class="field-label">Empresa *</label><input class="field-input" name="entry.EMPRESA" required></div>
+      <div class="field"><label class="field-label">Cargo *</label><input class="field-input" name="entry.CARGO" required></div>
+      <div class="field"><label class="field-label">Email corporativo *</label><input class="field-input" name="entry.EMAIL" type="email" required></div>
+      <div class="field"><label class="field-label">Telefone *</label><input class="field-input" name="entry.TELEFONE" type="tel" required></div>
+      <div class="field">
+        <label class="field-label">Serviço de interesse</label>
+        <select name="entry.SERVICO">
+          <option>Palestra Corporativa</option>
+          <option>Roda de Conversa</option>
+          <option>Consultoria</option>
+          <option>Círculo Técnico NR-1</option>
+          <option>Mentoria Individual</option>
+          <option>Ainda estou avaliando</option>
+        </select>
+      </div>
+      <div class="field full"><label class="field-label">Mensagem (opcional)</label><textarea class="field-textarea" name="entry.MENSAGEM"></textarea></div>
+      <div class="full form-submit-row">
+        <button type="submit" class="btn btn-primary">Enviar solicitação →</button>
+        <span class="form-or">ou</span>
+        <button type="button" class="btn btn-secondary btn-wa" data-wa-prefill>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px;vertical-align:-3px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Enviar via WhatsApp
+        </button>
+      </div>
+      <p class="form-note full">Respondemos em até 48h úteis.</p>
+    </form>
+  </div>
+</section>
+
+<!-- CONTATO DIRETO -->
+<section class="contacts">
+  <div class="container">
+    <span class="eyebrow-editorial">Contato direto</span>
+    <div class="contacts-grid" style="margin-top:32px">
+      <div class="contact-item">
+        <span class="label">Email</span>
+        <a href="mailto:contato@anapaulateixeira.med.br">contato@<br>anapaulateixeira.med.br</a>
+      </div>
+      <div class="contact-item">
+        <span class="label">WhatsApp</span>
+        <a href="https://wa.me/5575983186200">(75) 98318-6200</a>
+      </div>
+      <div class="contact-item">
+        <span class="label">Instagram</span>
+        <a href="#">@draanapaulateixeira</a>
+      </div>
+      <div class="contact-item">
+        <span class="label">LinkedIn</span>
+        <a href="#">/in/draanapaulateixeira</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
+        <p class="footer-anchor">Porque empresas íntegras cuidam, com seriedade, do que impacta pessoas, cultura e trabalho.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegar</div>
+        <div class="stack-3">
+          <div><a href="sobre.html">Sobre</a></div>
+          <div><a href="servicos.html">Serviços</a></div>
+          <div><a href="livro.html">Livro</a></div>
+          <div><a href="blog.html">Blog</a></div>
+          <div><a href="na-midia.html">Na Mídia</a></div>
+          <div><a href="governanca.html">Governança</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contato</div>
+        <div class="stack-3">
+          <div><a href="mailto:contato@anapaulateixeira.med.br">contato@anapaulateixeira.med.br</a></div>
+          <div><a href="https://wa.me/5575983186200">WhatsApp (75) 98318-6200</a></div>
+          <div><a href="contato.html">Formulário</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>CRM-BA 12797 · RQE 7237 · Board Member ICOH</span>
+      <span>© 2026 Dra. Ana Paula Teixeira · anapaulateixeira.med.br · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidade</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="design-system.js"></script>
+<script src="form-handlers.js"></script>
+<script>
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+
+</body>
+</html>

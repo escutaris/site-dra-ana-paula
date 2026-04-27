@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><title>Form fields</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+body{margin:0;padding:26px;background:#F0EDE6;}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:620px;}
+.f{display:flex;flex-direction:column;gap:8px;}
+.l{font-family:'Poppins',sans-serif;font-weight:500;font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:#1C3520;}
+.i{font-family:'Poppins',sans-serif;font-weight:300;font-size:14px;color:#1A1A1A;background:transparent;border:0;border-bottom:1px solid rgba(28,53,32,.24);padding:8px 0;outline:none;}
+.i:focus{border-bottom-color:#B95839;}
+.cap{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:12px;color:#5C5852;}
+</style></head><body>
+<div class="grid">
+  <div class="f"><label class="l">Nome completo</label><input class="i" placeholder="Ana Paula Teixeira"></div>
+  <div class="f"><label class="l">E-mail corporativo</label><input class="i" placeholder="nome@empresa.com.br"></div>
+  <div class="f" style="grid-column:span 2"><label class="l">Mensagem</label><input class="i" placeholder="Como posso contribuir com sua organização"></div>
+</div>
+</body></html>

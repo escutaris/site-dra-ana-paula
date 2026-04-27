@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"><title>Nav</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+body{margin:0;background:#F0EDE6;}
+.nav{padding:18px 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(28,53,32,.12);}
+.logo{font-family:'Cormorant Garamond',serif;font-weight:700;letter-spacing:3px;font-size:14px;text-transform:uppercase;color:#1C3520;}
+.logo .dra{font-style:italic;font-weight:600;color:#B95839;text-transform:lowercase;margin-right:6px;letter-spacing:.5px;}
+.list{display:flex;gap:26px;list-style:none;margin:0;padding:0;}
+.list a{font-family:'Poppins',sans-serif;font-size:12px;color:#1C3520;text-decoration:none;position:relative;padding:6px 0;}
+.list a.active::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:1px;background:#B95839;}
+</style></head><body>
+<nav class="nav">
+  <span class="logo"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span>
+  <ul class="list">
+    <li><a href="#" class="active">Sobre</a></li>
+    <li><a href="#">Serviços</a></li>
+    <li><a href="#">Livro</a></li>
+    <li><a href="#">Pesquisa</a></li>
+    <li><a href="#">Contato</a></li>
+  </ul>
+</nav>
+</body></html>

@@ -1,0 +1,267 @@
+/* ============================================================
+   Dra. Ana Paula Teixeira — Colors & Type
+   Tokens base: paleta fixa + sistema tipográfico editorial
+   ============================================================ */
+
+/* ----- Local brand fonts (preferred over Google Fonts) ----- */
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 300; font-display: swap; src: url('fonts/CormorantGaramond-Light.ttf') format('truetype'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 300; font-display: swap; src: url('fonts/CormorantGaramond-LightItalic.ttf') format('truetype'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/CormorantGaramond-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 400; font-display: swap; src: url('fonts/CormorantGaramond-Italic.ttf') format('truetype'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 500; font-display: swap; src: url('fonts/CormorantGaramond-Medium.ttf') format('truetype'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 500; font-display: swap; src: url('fonts/CormorantGaramond-MediumItalic.ttf') format('truetype'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/CormorantGaramond-SemiBold.ttf') format('truetype'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 600; font-display: swap; src: url('fonts/CormorantGaramond-SemiBoldItalic.ttf') format('truetype'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/CormorantGaramond-Bold.ttf') format('truetype'); }
+@font-face { font-family: 'Cormorant Garamond'; font-style: italic; font-weight: 700; font-display: swap; src: url('fonts/CormorantGaramond-BoldItalic.ttf') format('truetype'); }
+
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 100; font-display: swap; src: url('fonts/Poppins-Thin.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: italic; font-weight: 100; font-display: swap; src: url('fonts/Poppins-ThinItalic.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 200; font-display: swap; src: url('fonts/Poppins-ExtraLight.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: italic; font-weight: 200; font-display: swap; src: url('fonts/Poppins-ExtraLightItalic.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 300; font-display: swap; src: url('fonts/Poppins-Light.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: italic; font-weight: 300; font-display: swap; src: url('fonts/Poppins-LightItalic.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/Poppins-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: italic; font-weight: 400; font-display: swap; src: url('fonts/Poppins-Italic.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 500; font-display: swap; src: url('fonts/Poppins-Medium.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: italic; font-weight: 500; font-display: swap; src: url('fonts/Poppins-MediumItalic.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/Poppins-SemiBold.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: italic; font-weight: 600; font-display: swap; src: url('fonts/Poppins-SemiBoldItalic.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/Poppins-Bold.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: italic; font-weight: 700; font-display: swap; src: url('fonts/Poppins-BoldItalic.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 800; font-display: swap; src: url('fonts/Poppins-ExtraBold.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: italic; font-weight: 800; font-display: swap; src: url('fonts/Poppins-ExtraBoldItalic.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: normal; font-weight: 900; font-display: swap; src: url('fonts/Poppins-Black.ttf') format('truetype'); }
+@font-face { font-family: 'Poppins'; font-style: italic; font-weight: 900; font-display: swap; src: url('fonts/Poppins-BlackItalic.ttf') format('truetype'); }
+
+:root {
+  /* ----- PALETA FIXA (sem exceção) ----- */
+  --off-white:         #F0EDE6;   /* fundo dominante, mín. 75% da área */
+  --bege-areia:        #E8DDD2;   /* cards, superfícies secundárias */
+  --verde-noturno:     #1C3520;   /* texto, elementos, fundo editorial pontual */
+  --terracota:         #B95839;   /* CTAs, destaques — máx. 1x por seção */
+  --preto-editorial:   #1A1A1A;   /* corpo de texto */
+  --cinza-quente:      #5C5852;   /* texto secundário */
+
+  /* Derivadas (ainda dentro da paleta) */
+  --verde-noturno-80:  rgba(28, 53, 32, 0.80);
+  --verde-noturno-24:  rgba(28, 53, 32, 0.24);
+  --verde-noturno-12:  rgba(28, 53, 32, 0.12);
+  --verde-noturno-06:  rgba(28, 53, 32, 0.06);
+  --terracota-hover:   #A44B30;   /* -8% luminância para hover */
+  --off-white-80:      rgba(240, 237, 230, 0.80);
+
+  /* ----- SEMÂNTICOS (Modo Clareza — padrão) ----- */
+  --bg:                var(--off-white);
+  --bg-surface:        var(--bege-areia);
+  --bg-inverse:        var(--verde-noturno);
+  --fg:                var(--preto-editorial);
+  --fg-muted:          var(--cinza-quente);
+  --fg-strong:         var(--verde-noturno);
+  --fg-inverse:        var(--off-white);
+  --accent:            var(--terracota);
+  --accent-hover:      var(--terracota-hover);
+  --border:            var(--verde-noturno-12);
+  --border-strong:     var(--verde-noturno-24);
+
+  /* ----- TIPOGRAFIA ----- */
+  --font-serif:        'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-sans:         'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Escala tipográfica (clamp mobile-first) */
+  --type-display:      clamp(2.75rem, 2rem + 3.75vw, 5.5rem);   /* 44 → 88 */
+  --type-h1:           clamp(2.25rem, 1.75rem + 2.5vw, 4rem);   /* 36 → 64 */
+  --type-h2:           clamp(1.75rem, 1.4rem + 1.75vw, 3rem);   /* 28 → 48 */
+  --type-h3:           clamp(1.375rem, 1.2rem + 0.875vw, 2rem); /* 22 → 32 */
+  --type-h4:           clamp(1.125rem, 1rem + 0.625vw, 1.5rem); /* 18 → 24 */
+  --type-lead:         clamp(1.125rem, 1rem + 0.5vw, 1.375rem); /* 18 → 22 */
+  --type-body:         1rem;         /* 16 */
+  --type-small:        0.875rem;     /* 14 */
+  --type-label:        0.75rem;      /* 12 uppercase */
+  --type-caption:      0.8125rem;    /* 13 */
+
+  /* Pesos */
+  --weight-light:      300;
+  --weight-regular:    400;
+  --weight-medium:     500;
+  --weight-semibold:   600;
+  --weight-bold:       700;
+
+  /* Line heights */
+  --lh-tight:          1.08;    /* display, h1 */
+  --lh-snug:           1.2;     /* h2, h3 */
+  --lh-normal:         1.5;     /* lead */
+  --lh-relaxed:        1.7;     /* body */
+  --lh-loose:          1.9;     /* long reading */
+
+  /* Letter spacing */
+  --ls-label:          0.25em;  /* eyebrow UPPERCASE */
+  --ls-logo:           0.18em;  /* 4px aprox em 22px */
+  --ls-tight:          -0.01em;
+  --ls-normal:         0;
+
+  /* ----- ESPAÇAMENTO (base 8) ----- */
+  --space-1:           4px;
+  --space-2:           8px;
+  --space-3:           16px;
+  --space-4:           24px;
+  --space-5:           32px;
+  --space-6:           48px;
+  --space-7:           64px;
+  --space-8:           96px;
+  --space-9:           128px;
+  --space-10:          192px;
+
+  /* ----- RAIOS (máx 4px) ----- */
+  --radius-none:       0;
+  --radius-sm:         2px;
+  --radius-md:         4px;
+
+  /* ----- BORDAS ----- */
+  --stroke-hair:       1px;
+  --stroke-thin:       1.5px;
+  --stroke-regular:    2px;
+  --stroke-bar:        4px;   /* barra lateral editorial */
+  --stroke-bar-lg:     8px;   /* barra lateral grande */
+
+  /* ----- LAYOUT ----- */
+  --container:         1280px;
+  --container-narrow:  880px;   /* leitura editorial */
+  --container-prose:   680px;   /* ensaio */
+  --gutter:            24px;
+
+  /* ----- MOTION ----- */
+  --ease-editorial:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-standard:     cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out:          cubic-bezier(0, 0, 0.2, 1);
+  --dur-fast:          150ms;
+  --dur-base:          200ms;
+  --dur-slow:          400ms;
+  --dur-reveal:        700ms;
+  --dur-portrait:      1200ms;
+  --dur-link:          250ms;
+  --stagger:           80ms;
+}
+
+/* ----- MODO PROFUNDIDADE: remapeia semânticos ----- */
+.modo-profundidade {
+  --bg:                var(--verde-noturno);
+  --bg-surface:        var(--verde-noturno);
+  --fg:                var(--off-white);
+  --fg-muted:          var(--off-white-80);
+  --fg-strong:         var(--off-white);
+  --border:            rgba(240, 237, 230, 0.18);
+  --border-strong:     rgba(240, 237, 230, 0.32);
+}
+
+/* ----- BASE ----- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-weight: var(--weight-light);
+  font-size: var(--type-body);
+  line-height: var(--lh-relaxed);
+  font-feature-settings: 'kern', 'liga', 'calt';
+}
+
+/* ----- TIPOGRAFIA SEMÂNTICA ----- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-bold);
+  color: var(--fg-strong);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-tight);
+  margin: 0;
+  text-wrap: balance;
+}
+
+h1 { font-size: var(--type-h1); line-height: var(--lh-tight); }
+h2 { font-size: var(--type-h2); }
+h3 { font-size: var(--type-h3); }
+h4 { font-size: var(--type-h4); }
+
+.display {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-bold);
+  font-size: var(--type-display);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+  color: var(--fg-strong);
+  text-wrap: balance;
+  margin: 0;
+}
+
+.modo-profundidade h1,
+.modo-profundidade h2,
+.modo-profundidade h3,
+.modo-profundidade h4,
+.modo-profundidade .display {
+  font-style: italic;
+  font-weight: var(--weight-semibold);
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+  color: var(--fg);
+}
+
+.lead {
+  font-size: var(--type-lead);
+  line-height: var(--lh-normal);
+  font-weight: var(--weight-light);
+  color: var(--fg);
+  text-wrap: pretty;
+}
+
+.modo-profundidade .lead,
+.modo-profundidade p {
+  color: var(--fg-muted);
+}
+
+.label,
+.eyebrow {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-medium);
+  font-size: var(--type-label);
+  text-transform: uppercase;
+  letter-spacing: var(--ls-label);
+  color: var(--fg-strong);
+  line-height: 1;
+}
+
+.small { font-size: var(--type-small); color: var(--fg-muted); }
+.caption { font-size: var(--type-caption); color: var(--fg-muted); }
+
+em, .italic-quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: var(--weight-semibold);
+}
+
+a {
+  color: var(--fg-strong);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: text-decoration-thickness var(--dur-base) var(--ease-standard);
+}
+a:hover { text-decoration-thickness: 2px; }
+
+strong, b { font-weight: var(--weight-medium); color: var(--fg-strong); }
+
+/* Seleção */
+::selection {
+  background: var(--terracota);
+  color: var(--off-white);
+}

@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SEO -->
+<title>Governança em Saúde Mental no Trabalho · Regras de Ouro · Dra. Ana Paula Teixeira</title>
+<meta name="description" content="Indicadores e perguntas estratégicas para a alta liderança qualificar a gestão de saúde mental no trabalho. Custo, retorno e lacuna entre intenção e governança.">
+<meta name="author" content="Dra. Ana Paula Teixeira">
+<link rel="canonical" href="https://anapaulateixeira.med.br/governanca.html">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Dra. Ana Paula Teixeira">
+<meta property="og:url" content="https://anapaulateixeira.med.br/governanca.html">
+<meta property="og:title" content="Governança em Saúde Mental no Trabalho · Regras de Ouro">
+<meta property="og:description" content="Indicadores e perguntas estratégicas para a alta liderança qualificar a gestão de saúde mental no trabalho.">
+<meta property="og:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Governança em Saúde Mental no Trabalho · Regras de Ouro">
+<meta name="twitter:description" content="Indicadores e perguntas estratégicas para a alta liderança qualificar a gestão de saúde mental no trabalho.">
+<meta name="twitter:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<meta name="theme-color" content="#1C3520">
+<link rel="stylesheet" href="design-system.css">
+<style>
+  .hero-mid { padding-block: clamp(80px, 9vw, 128px); background: var(--bege-areia); }
+  .hero-mid h1 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.125rem, 1.6rem + 2.4vw, 3.25rem);
+    line-height: 1.12;
+    color: var(--verde-noturno);
+    letter-spacing: -0.01em;
+    margin: 24px 0 24px 0;
+    max-width: 22ch;
+    text-wrap: balance;
+  }
+  .hero-mid p.sub {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    max-width: 62ch;
+    margin: 0;
+  }
+
+  .block { padding-block: clamp(96px, 10vw, 128px); }
+  .block h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.5rem);
+    color: var(--verde-noturno);
+    margin: 16px 0 40px 0;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  .block .intro {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    max-width: 62ch;
+    margin: 0 0 56px 0;
+  }
+
+  /* KPI band — custo / retorno / nexo */
+  .kpi-band { background: var(--off-white); }
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-top: 40px;
+  }
+  @media (min-width: 800px) { .kpi-grid { grid-template-columns: repeat(3, 1fr); } }
+  .kpi-cell {
+    background: var(--off-white);
+    padding: 48px 32px;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .kpi-tag {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--terracota);
+  }
+  .kpi-num {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.25rem, 1.6rem + 2.6vw, 3.5rem);
+    color: var(--verde-noturno);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .kpi-desc {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--preto-editorial);
+    margin: 0;
+  }
+
+  /* Gap — verde-noturno, dados da lacuna */
+  .gap-block { background: var(--verde-noturno); color: var(--off-white); }
+  .gap-block h2 { color: var(--off-white); }
+  .gap-block .eyebrow-editorial { color: var(--off-white); }
+  .gap-block .eyebrow-editorial::before { background: var(--terracota); }
+  .gap-block .intro { color: var(--off-white); opacity: 0.85; }
+  .gap-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 24px;
+  }
+  @media (min-width: 700px) { .gap-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; } }
+  @media (min-width: 1000px) { .gap-grid { grid-template-columns: repeat(3, 1fr); } }
+  .gap-cell {
+    border-top: 1px solid rgba(245,239,229,.25);
+    padding-top: 24px;
+  }
+  .gap-num {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.4rem + 2.2vw, 2.875rem);
+    color: var(--terracota);
+    line-height: 1;
+    letter-spacing: -0.01em;
+    display: block;
+  }
+  .gap-title {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.0625rem;
+    color: var(--off-white);
+    line-height: 1.3;
+    margin: 16px 0 12px 0;
+    letter-spacing: -0.005em;
+  }
+  .gap-desc {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: var(--off-white);
+    opacity: 0.78;
+    margin: 0;
+  }
+
+  /* FAQ — Regras de Ouro em accordion */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--border);
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+  }
+  .faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 28px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.125rem, 0.95rem + 0.6vw, 1.375rem);
+    color: var(--verde-noturno);
+    line-height: 1.3;
+    letter-spacing: -0.005em;
+    list-style-position: outside;
+    transition: color .2s;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary:hover { color: var(--terracota); }
+  .faq-num {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.8125rem;
+    letter-spacing: 0.2em;
+    color: var(--terracota);
+    flex-shrink: 0;
+    padding-top: 6px;
+    min-width: 36px;
+  }
+  .faq-q {
+    flex: 1;
+    text-wrap: balance;
+  }
+  .faq-toggle {
+    flex-shrink: 0;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1.5rem;
+    color: var(--cinza-quente);
+    line-height: 1;
+    margin-top: 4px;
+    transition: transform .25s;
+  }
+  .faq-item[open] .faq-toggle { transform: rotate(45deg); color: var(--terracota); }
+  .faq-body {
+    padding: 0 0 32px 60px;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--preto-editorial);
+    max-width: 70ch;
+  }
+  /* Mobile: layout vertical no summary — num+toggle no topo, pergunta abaixo */
+  @media (max-width: 600px) {
+    .faq-item summary {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: "num . toggle" "q q q";
+      gap: 12px 8px;
+      padding: 22px 0;
+      font-size: 1.0625rem;
+    }
+    .faq-num { grid-area: num; padding-top: 0; min-width: auto; font-size: 0.6875rem; }
+    .faq-q { grid-area: q; }
+    .faq-toggle { grid-area: toggle; margin-top: 0; }
+    .faq-body { padding: 0 0 28px 0; font-size: 0.9375rem; }
+  }
+
+  /* Manifesto fechamento */
+  .manifesto {
+    background: var(--bege-areia);
+    padding-block: clamp(80px, 8vw, 112px);
+  }
+  .manifesto .wrap { max-width: 38rem; }
+  .manifesto .quote {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-medium);
+    font-style: italic;
+    font-size: clamp(1.375rem, 1.05rem + 1.2vw, 1.875rem);
+    line-height: 1.4;
+    color: var(--verde-noturno);
+    letter-spacing: -0.005em;
+    text-wrap: balance;
+    margin: 32px 0 0 0;
+  }
+  .manifesto .quote em {
+    color: var(--terracota);
+    font-style: normal;
+    font-weight: var(--weight-bold);
+  }
+
+  /* CTA final */
+  .cta-block { background: var(--verde-noturno); color: var(--off-white); padding-block: clamp(80px, 8vw, 112px); }
+  .cta-block .eyebrow-editorial { color: var(--off-white); }
+  .cta-block .eyebrow-editorial::before { background: var(--terracota); }
+  .cta-block h2 {
+    color: var(--off-white);
+    margin: 24px 0 24px 0;
+    max-width: 22ch;
+  }
+  .cta-block p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--off-white);
+    opacity: 0.9;
+    max-width: 60ch;
+    margin: 0 0 40px 0;
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Início</a></li>
+      <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+      <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+      <li><a href="livro.html" class="nav-link">Livro</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="na-midia.html" class="nav-link">Na Mídia</a></li>
+      <li><a href="contato.html" class="nav-link">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#1C3520" stroke-width="1.5"><line x1="3" y1="7" x2="19" y2="7"/><line x1="3" y1="15" x2="19" y2="15"/></svg>
+    </button>
+  </div>
+</nav>
+
+<header class="hero-mid">
+  <div class="container">
+    <span class="eyebrow-editorial">Governança · Indicadores · Decisão</span>
+    <h1>Quando a empresa mede melhor, decide melhor.</h1>
+    <p class="sub">E quando decide melhor, transforma saúde mental em cultura, liderança e valor de longo prazo. Esta página reúne os indicadores e perguntas que qualificam a gestão.</p>
+  </div>
+</header>
+
+<!-- KPI BAND — custo, retorno, nexo -->
+<section class="block kpi-band reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">A conta que ninguém quer ver</span>
+    <h2>Custo, retorno e o que os dados clínicos revelam.</h2>
+    <p class="intro">Saúde mental no trabalho deixou de ser pauta de RH. É linha de balanço: produtividade perdida, retorno sobre treinamento de liderança e nexo causal direto com a operação.</p>
+    <div class="kpi-grid reveal-stagger">
+      <div class="kpi-cell">
+        <span class="kpi-tag">Custo global</span>
+        <span class="kpi-num">US$ 1 tri</span>
+        <p class="kpi-desc"><strong>Em perda de produtividade por ano.</strong> 12 bilhões de dias de trabalho perdidos no mundo, segundo estimativas de mercado.</p>
+      </div>
+      <div class="kpi-cell">
+        <span class="kpi-tag">Retorno</span>
+        <span class="kpi-num">370%</span>
+        <p class="kpi-desc"><strong>ROI médio</strong> em programas de saúde mental no trabalho. Pode chegar a <strong>1.000%</strong> quando aplicado em treinamento de lideranças.</p>
+      </div>
+      <div class="kpi-cell">
+        <span class="kpi-tag">Nexo causal</span>
+        <span class="kpi-num">15%</span>
+        <p class="kpi-desc"><strong>Dos casos acompanhados pela psicologia</strong> apresentam provável nexo causal direto com o trabalho — exigindo ação na fonte do estresse, não só na consequência individual.</p>
+      </div>
+    </div>
+    <!-- PENDÊNCIA: confirmar com cliente as fontes exatas (OMS / Deloitte / estudo brasileiro) para citação técnica abaixo da banda. -->
+  </div>
+</section>
+
+<!-- LACUNA — verde noturno -->
+<section class="block gap-block reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">A lacuna entre intenção e governança</span>
+    <h2>O mercado reconhece o problema. Poucas empresas o transformam em decisão.</h2>
+    <p class="intro">Embora 97% das grandes empresas reconheçam saúde mental como prioridade, esse reconhecimento raramente vira governança, transparência ou KPI auditável.</p>
+    <div class="gap-grid reveal-stagger">
+      <div class="gap-cell">
+        <span class="gap-num">13%</span>
+        <h3 class="gap-title">CEOs assumem compromissos públicos sobre o tema.</h3>
+        <p class="gap-desc">Poucas empresas traduzem o reconhecimento interno em posicionamento público da alta liderança.</p>
+      </div>
+      <div class="gap-cell">
+        <span class="gap-num">33%</span>
+        <h3 class="gap-title">Treinam gestores de linha.</h3>
+        <p class="gap-desc">A maior parte ainda não desenvolve lideranças para reconhecer sofrimento, sustentar conversas difíceis e agir com preparo.</p>
+      </div>
+      <div class="gap-cell">
+        <span class="gap-num">21%</span>
+        <h3 class="gap-title">Usam dados para moldar estratégia.</h3>
+        <p class="gap-desc">Muitas empresas medem engajamento, mas poucas transformam esse material em decisão consistente sobre saúde mental.</p>
+      </div>
+      <div class="gap-cell">
+        <span class="gap-num">10%</span>
+        <h3 class="gap-title">Divulgam KPIs de impacto.</h3>
+        <p class="gap-desc">A baixa transparência revela o quanto ainda se comunica intenção sem demonstrar resultado real.</p>
+      </div>
+      <div class="gap-cell">
+        <span class="gap-num">0%</span>
+        <h3 class="gap-title">Auditam o sistema externamente.</h3>
+        <p class="gap-desc">Entre as maiores empresas avaliadas, nenhuma possui sistema de gestão de saúde mental auditado por terceiros — campo ainda pouco amadurecido em governança.</p>
+      </div>
+      <div class="gap-cell" style="display:flex;flex-direction:column;justify-content:center;border-top-color:var(--terracota)">
+        <p style="font-family:var(--font-serif);font-style:italic;font-size:1.0625rem;line-height:1.5;color:var(--off-white);margin:0;text-wrap:balance">A saúde mental no trabalho não se fortalece apenas com intenção. Ela se fortalece quando a empresa aprende a medir o que revela confiança, estresse, apoio, equilíbrio e mudança real de cultura.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGRAS DE OURO — FAQ -->
+<section class="block container reveal">
+  <span class="eyebrow-editorial">Regras de Ouro · Perguntas e Respostas</span>
+  <h2>As perguntas que qualificam a gestão.</h2>
+  <p class="intro">Oito perguntas para a alta liderança avaliar maturidade real em saúde mental no trabalho — e os indicadores correspondentes que transformam intenção em decisão.</p>
+
+  <div class="faq-list">
+
+    <details class="faq-item">
+      <summary>
+        <span class="faq-num">01</span>
+        <span class="faq-q">Como saber se minha empresa está criando segurança para que as pessoas falem?</span>
+        <span class="faq-toggle">+</span>
+      </summary>
+      <div class="faq-body">
+        <p>Um dos sinais mais importantes é o percentual de colaboradores que se sentem seguros para conversar abertamente com sua liderança direta sobre saúde mental, dificuldades emocionais e sobrecarga. Quando esse dado é baixo, a empresa pode ter canais formais, mas ainda não ter confiança real.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <span class="faq-num">02</span>
+        <span class="faq-q">O que um bom indicador de bem-estar precisa captar?</span>
+        <span class="faq-toggle">+</span>
+      </summary>
+      <div class="faq-body">
+        <p>Não basta medir satisfação geral. Empresas mais maduras observam o sentimento das pessoas em relação ao equilíbrio entre vida pessoal e trabalho, o bem-estar percebido e as tendências ao longo do tempo. Esse tipo de leitura ajuda a adaptar práticas, rotinas e modelos de trabalho com mais inteligência.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <span class="faq-num">03</span>
+        <span class="faq-q">Como perceber se as pessoas sabem onde buscar ajuda?</span>
+        <span class="faq-toggle">+</span>
+      </summary>
+      <div class="faq-body">
+        <p>Um indicador essencial é o nível de conscientização interna: quantos colaboradores sabem onde encontrar apoio, que tipo de suporte existe e como acessá-lo. Uma empresa pode oferecer recursos valiosos e, ainda assim, ter baixa efetividade se a força de trabalho não souber que eles existem ou não confiar neles.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <span class="faq-num">04</span>
+        <span class="faq-q">Por que medir percepção de estresse ajuda a agir antes?</span>
+        <span class="faq-toggle">+</span>
+      </summary>
+      <div class="faq-body">
+        <p>Porque esse dado permite atuação preditiva. Quando a empresa acompanha o percentual de pessoas que se relacionam com altos níveis de estresse, consegue enxergar padrões antes que o impacto se traduza em afastamento, conflito, queda de desempenho ou adoecimento mais evidente.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <span class="faq-num">05</span>
+        <span class="faq-q">O que mostra se uma iniciativa está mudando comportamento, e não apenas discurso?</span>
+        <span class="faq-toggle">+</span>
+      </summary>
+      <div class="faq-body">
+        <p>Acompanhar atitudes, adesão e mudança de comportamento em relação a hábitos e estilos de vida mais saudáveis ajuda a entender se a cultura está realmente se movendo. Quando não há mudança concreta, a comunicação pode estar forte, mas a transformação ainda não chegou ao cotidiano.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <span class="faq-num">06</span>
+        <span class="faq-q">O que esses indicadores revelam para a alta liderança?</span>
+        <span class="faq-toggle">+</span>
+      </summary>
+      <div class="faq-body">
+        <p>Eles ajudam a responder uma pergunta estratégica: os recursos investidos em saúde mental estão melhorando apenas a imagem da empresa ou também a cultura, a confiança e a experiência real de trabalho? Quando bem acompanhados e divulgados, esses indicadores fortalecem transparência, coerência e capacidade de decisão.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <span class="faq-num">07</span>
+        <span class="faq-q">O que vale mais: medir muito ou medir melhor?</span>
+        <span class="faq-toggle">+</span>
+      </summary>
+      <div class="faq-body">
+        <p>Medir melhor. O valor está em escolher indicadores que façam sentido para a realidade da empresa e permitam acompanhar tendências, lacunas e efeitos concretos das ações. O objetivo não é inflar dashboards, mas sustentar decisões mais responsáveis e mais úteis para a operação.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <span class="faq-num">08</span>
+        <span class="faq-q">Qual é a pergunta que toda liderança deveria se fazer?</span>
+        <span class="faq-toggle">+</span>
+      </summary>
+      <div class="faq-body">
+        <p>As pessoas da minha empresa se sentem seguras, apoiadas e suficientemente informadas para pedir ajuda antes que o sofrimento se agrave?</p>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-block reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Próximo passo</span>
+    <h2>Levar essa governança para dentro da sua empresa.</h2>
+    <p>Palestras, rodas de conversa e o Círculo Técnico NR-1 traduzem esse repertório em decisão executiva — com critério clínico, base regulatória e linguagem de gestão.</p>
+    <div class="flex gap-3" style="flex-wrap:wrap">
+      <a href="servicos.html" class="btn btn-primary">Conhecer os formatos →</a>
+      <a href="contato.html" class="btn btn-secondary">Falar com a Dra. Ana Paula</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
+        <p class="footer-anchor">Porque empresas íntegras cuidam, com seriedade, do que impacta pessoas, cultura e trabalho.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegar</div>
+        <div class="stack-3">
+          <div><a href="sobre.html">Sobre</a></div>
+          <div><a href="servicos.html">Serviços</a></div>
+          <div><a href="livro.html">Livro</a></div>
+          <div><a href="blog.html">Blog</a></div>
+          <div><a href="na-midia.html">Na Mídia</a></div>
+          <div><a href="governanca.html">Governança</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contato</div>
+        <div class="stack-3">
+          <div><a href="mailto:contato@anapaulateixeira.med.br">contato@anapaulateixeira.med.br</a></div>
+          <div><a href="https://wa.me/5575983186200">WhatsApp (75) 98318-6200</a></div>
+          <div><a href="contato.html">Formulário</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>CRM-BA 12797 · RQE 7237 · Board Member ICOH</span>
+      <span>© 2026 Dra. Ana Paula Teixeira · anapaulateixeira.med.br · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidade</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="design-system.js"></script>
+<script>
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+</body>
+</html>
