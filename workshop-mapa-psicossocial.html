@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SEO -->
+<title>Workshop Mapa Psicossocial NR-1 · Online · 8h · Trio multidisciplinar · Dra. Ana Paula Teixeira</title>
+<meta name="description" content="Workshop online de 8 horas conduzido por médica do trabalho, psicóloga organizacional e ergonomista. Sua empresa sai com rascunho do inventário de riscos psicossociais para responder à NR-1 com método, não com checklist.">
+<meta name="author" content="Dra. Ana Paula Teixeira">
+<link rel="canonical" href="https://anapaulateixeira.med.br/workshop-mapa-psicossocial.html">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Dra. Ana Paula Teixeira">
+<meta property="og:url" content="https://anapaulateixeira.med.br/workshop-mapa-psicossocial.html">
+<meta property="og:title" content="Workshop Mapa Psicossocial NR-1 · Online · 8h · Trio multidisciplinar">
+<meta property="og:description" content="Sua empresa sai com rascunho do inventário de riscos psicossociais. Conduzido por médica do trabalho, psicóloga organizacional e ergonomista.">
+<meta property="og:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Workshop Mapa Psicossocial NR-1 · Online · 8h">
+<meta name="twitter:description" content="Sua empresa sai com rascunho do inventário de riscos psicossociais. Trio multidisciplinar liderado pela Dra. Ana Paula Teixeira.">
+<meta name="twitter:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<meta name="theme-color" content="#1C3520">
+<link rel="stylesheet" href="design-system.css">
+<link rel="stylesheet" href="form-handlers.css">
+<style>
+  /* ===== Workshop Mapa Psicossocial — overrides locais ===== */
+
+  /* HERO */
+  .hero-wmp { padding-block: clamp(96px, 10vw, 144px); }
+  .hero-wmp .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  @media (min-width: 960px) {
+    .hero-wmp .hero-grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 80px; }
+  }
+  .hero-wmp h1 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.125rem, 1.5rem + 2.6vw, 3.625rem);
+    line-height: 1.1;
+    color: var(--verde-noturno);
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+    max-width: 22ch;
+    margin: 24px 0 28px 0;
+  }
+  .hero-wmp h1 em {
+    font-style: italic;
+    font-weight: var(--weight-semibold);
+    color: var(--terracota);
+  }
+  .hero-wmp .lead {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    max-width: 56ch;
+    margin: 0 0 36px 0;
+  }
+  .hero-wmp .meta-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 32px;
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 32px;
+  }
+  @media (min-width: 600px) {
+    .hero-wmp .meta-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+  .hero-wmp .meta-cell .meta-k {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+    margin-bottom: 6px;
+  }
+  .hero-wmp .meta-cell .meta-v {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-semibold);
+    font-size: 1.125rem;
+    color: var(--verde-noturno);
+    line-height: 1.25;
+  }
+  .hero-wmp .cta-row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .hero-wmp .micro { margin-top: 16px; font-size: var(--type-small); color: var(--cinza-quente); max-width: 48ch; line-height: 1.5; }
+
+  .hero-wmp .urgency {
+    background: var(--bege-areia);
+    border-left: 3px solid var(--terracota);
+    padding: 24px 28px;
+    border-radius: 2px;
+  }
+  .hero-wmp .urgency .ur-label {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .hero-wmp .urgency h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-semibold);
+    font-style: italic;
+    font-size: clamp(1.25rem, 1.05rem + 0.7vw, 1.5rem);
+    color: var(--verde-noturno);
+    line-height: 1.3;
+    margin: 0 0 16px 0;
+    text-wrap: balance;
+  }
+  .hero-wmp .urgency p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    margin: 0;
+  }
+  .hero-wmp .urgency .figs {
+    display: flex;
+    gap: 24px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(28,53,32,.12);
+    flex-wrap: wrap;
+  }
+  .hero-wmp .urgency .fig-num {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--terracota);
+    letter-spacing: -0.01em;
+    display: block;
+    line-height: 1;
+  }
+  .hero-wmp .urgency .fig-desc {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    line-height: 1.45;
+    color: var(--preto-editorial);
+    margin-top: 6px;
+    max-width: 18ch;
+  }
+
+  /* Block patterns (reaproveita s-block, s-title, s-sub do design-system) */
+  .wmp-block { padding-block: clamp(80px, 8vw, 112px); }
+  .wmp-block .eyebrow-editorial { margin-bottom: 20px; }
+
+  /* Promessa em 3 colunas — alinha à tríade Pessoas · Reputação · Resultados */
+  .triad-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 32px;
+  }
+  @media (min-width: 720px) {
+    .triad-grid { grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  }
+  .triad-card {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    padding: 32px 28px;
+    border-radius: 2px;
+  }
+  .triad-card .t-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 12px;
+  }
+  .triad-card h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.5rem;
+    color: var(--verde-noturno);
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+  }
+  .triad-card p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    margin: 0;
+  }
+
+  /* Como funciona — passo-a-passo */
+  .steps-list {
+    margin-top: 32px;
+    display: grid;
+    gap: 20px;
+  }
+  .step {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 24px;
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+  }
+  .step:last-child { border-bottom: 1px solid var(--border); }
+  .step .step-n {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--terracota);
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .step .step-body h4 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.25rem;
+    color: var(--verde-noturno);
+    margin: 0 0 8px 0;
+    line-height: 1.25;
+  }
+  .step .step-body p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    margin: 0;
+  }
+
+  /* Time multidisciplinar */
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 32px;
+  }
+  @media (min-width: 720px) {
+    .team-grid { grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  }
+  .team-card {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    padding: 28px 24px;
+    border-radius: 2px;
+  }
+  .team-card .t-photo {
+    aspect-ratio: 1/1;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: var(--bege-areia);
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+  }
+  .team-card .t-photo img { width: 100%; height: 100%; object-fit: cover; }
+  .team-card .t-role {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .team-card h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.25rem;
+    color: var(--verde-noturno);
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+  }
+  .team-card .t-credit {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    color: var(--cinza-quente);
+    margin: 0 0 12px 0;
+    line-height: 1.5;
+  }
+  .team-card .t-bio {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: var(--preto-editorial);
+    margin: 0;
+  }
+
+  /* Entregáveis lista */
+  .deliverables {
+    background: var(--bege-areia);
+    padding: clamp(40px, 5vw, 64px);
+    border-radius: 2px;
+    margin-top: 32px;
+  }
+  .deliverables h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.5rem;
+    color: var(--verde-noturno);
+    margin: 0 0 24px 0;
+  }
+  .deliverables ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  @media (min-width: 720px) {
+    .deliverables ul { grid-template-columns: 1fr 1fr; gap: 20px 40px; }
+  }
+  .deliverables li {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: var(--preto-editorial);
+    padding-left: 24px;
+    position: relative;
+  }
+  .deliverables li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--terracota);
+    font-weight: 700;
+  }
+
+  /* Para quem */
+  .audience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  @media (min-width: 720px) {
+    .audience-grid { grid-template-columns: 1fr 1fr; gap: 16px 32px; }
+  }
+  .audience-item {
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+  }
+  .audience-item:last-child,
+  .audience-item:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid var(--border); }
+  .audience-item h4 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-semibold);
+    font-size: 1.0625rem;
+    color: var(--verde-noturno);
+    margin: 0 0 6px 0;
+  }
+  .audience-item p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: var(--cinza-quente);
+    margin: 0;
+  }
+
+  /* Investimento */
+  .invest-block {
+    background: var(--verde-noturno);
+    color: var(--off-white);
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 4vw, 56px);
+    border-radius: 2px;
+    margin-top: 32px;
+  }
+  .invest-block .eyebrow-editorial { color: var(--bege-areia); margin-bottom: 16px; }
+  .invest-block h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.5rem + 1.6vw, 2.75rem);
+    color: var(--off-white);
+    margin: 0 0 12px 0;
+    line-height: 1.1;
+  }
+  .invest-block .from-line {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: var(--weight-semibold);
+    font-size: 1.25rem;
+    color: var(--bege-areia);
+    margin: 0 0 24px 0;
+  }
+  .invest-block p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--off-white);
+    opacity: 0.92;
+    margin: 0 0 32px 0;
+    max-width: 56ch;
+  }
+  .invest-block .invest-cta-row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .invest-block .btn-primary { background: var(--terracota); border-color: var(--terracota); }
+  .invest-block .btn-secondary { color: var(--off-white); border-color: rgba(245,239,229,.4); }
+  .invest-block .btn-secondary:hover { background: rgba(245,239,229,.08); color: var(--off-white); }
+
+  /* FAQ */
+  .faq-list { margin-top: 32px; }
+  .faq-list details {
+    border-top: 1px solid var(--border);
+    padding: 20px 0;
+  }
+  .faq-list details:last-child { border-bottom: 1px solid var(--border); }
+  .faq-list summary {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-semibold);
+    font-size: 1.125rem;
+    color: var(--verde-noturno);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    line-height: 1.35;
+  }
+  .faq-list summary::-webkit-details-marker { display: none; }
+  .faq-list summary::after {
+    content: "+";
+    font-family: var(--font-sans);
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--terracota);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+  .faq-list details[open] summary::after { content: "−"; }
+  .faq-list details p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: var(--preto-editorial);
+    margin: 16px 0 0 0;
+    max-width: 64ch;
+  }
+
+  /* CTA final */
+  .wmp-cta {
+    padding-block: clamp(80px, 9vw, 128px);
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+  }
+  .wmp-cta h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.5rem + 1.8vw, 3rem);
+    color: var(--verde-noturno);
+    margin: 16px 0 16px 0;
+    max-width: 22ch;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+  .wmp-cta h2 em { font-style: italic; color: var(--terracota); font-weight: var(--weight-semibold); }
+  .wmp-cta .cta-sub {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    margin: 0 0 32px 0;
+    max-width: 56ch;
+  }
+  .wmp-cta .meta {
+    margin-top: 24px;
+    font-size: var(--type-small);
+    color: var(--cinza-quente);
+    letter-spacing: 0.02em;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Início</a></li>
+      <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+      <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+      <li><a href="workshop-mapa-psicossocial.html" class="nav-link" aria-current="page">Workshop NR-1</a></li>
+      <li><a href="livro.html" class="nav-link">Livro</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="na-midia.html" class="nav-link">Na Mídia</a></li>
+      <li><a href="contato.html" class="nav-link">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#1C3520" stroke-width="1.5"><line x1="3" y1="7" x2="19" y2="7"/><line x1="3" y1="15" x2="19" y2="15"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero-wmp container">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow-editorial">Workshop online · 8 horas · Trio multidisciplinar</span>
+      <h1>Mapa Psicossocial NR-1: começar com <em>método</em>, não com checklist.</h1>
+      <p class="lead">Workshop online de oito horas conduzido por médica do trabalho, psicóloga organizacional e ergonomista. Sua equipe de RH, SESMT ou liderança termina com o rascunho inicial do inventário de riscos psicossociais — pronto para sustentar a primeira camada de resposta à NR-1.</p>
+
+      <div class="meta-row">
+        <div class="meta-cell">
+          <span class="meta-k">Formato</span>
+          <span class="meta-v">Online · 2 × 4h</span>
+        </div>
+        <div class="meta-cell">
+          <span class="meta-k">Grupo</span>
+          <span class="meta-v">Até 20 pessoas</span>
+        </div>
+        <div class="meta-cell">
+          <span class="meta-k">Investimento</span>
+          <span class="meta-v">A partir de R$ 6.000</span>
+        </div>
+        <div class="meta-cell">
+          <span class="meta-k">Janela</span>
+          <span class="meta-v">Maio – julho 2026</span>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <a href="#contato" class="btn btn-primary">Solicitar proposta →</a>
+        <a href="#como-funciona" class="btn btn-secondary">Como funciona</a>
+      </div>
+      <p class="micro">Resposta em até 24h úteis. Datas conforme agenda do trio multidisciplinar.</p>
+    </div>
+
+    <aside class="urgency">
+      <span class="ur-label">Por que agora</span>
+      <h3>NR-1 em vigor com fiscalização ativa.</h3>
+      <p>A Portaria MTE 1.419/2024 tornou os fatores psicossociais parte do Programa de Gerenciamento de Riscos. Empresas precisam demonstrar inventário, plano e evidência — não bastam palestra ou treinamento genérico de bem-estar.</p>
+      <div class="figs">
+        <div>
+          <span class="fig-num">R$ 6.708</span>
+          <p class="fig-desc">por trabalhador exposto, em multa por descumprimento.</p>
+        </div>
+        <div>
+          <span class="fig-num">26/maio</span>
+          <p class="fig-desc">Início efetivo da autuação prevista pelo MTE.</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</header>
+
+<!-- O QUE VOCÊ LEVA — alinhado à tríade -->
+<section class="wmp-block reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">O que sua organização leva</span>
+    <h2 class="s-title">Pessoas, reputação e resultados — em um único entregável.</h2>
+    <p class="s-sub">O Mapa Psicossocial não é sensibilização nem auditoria genérica. É a primeira camada de método clínico aplicado, construída ao vivo com a sua equipe, em formato que respeita a complexidade do tema sem inflar prazo nem custo.</p>
+
+    <div class="triad-grid reveal-stagger">
+      <article class="triad-card">
+        <span class="t-eyebrow">Pessoas</span>
+        <h3>Cuidado com base técnica</h3>
+        <p>Sua equipe sai com vocabulário comum para nomear o que adoece — não em termos de “mindset” ou “resiliência individual”, mas com referência a fatores psicossociais reconhecidos, normativa NR-1 e Resolução CFM 2.323/2022.</p>
+      </article>
+      <article class="triad-card">
+        <span class="t-eyebrow">Reputação</span>
+        <h3>Evidência defensável</h3>
+        <p>O documento gerado é o ponto de partida do PGR psicossocial — defensável diante de fiscalização, jurídico e auditoria interna. Substitui o checklist genérico que não sustenta autuação.</p>
+      </article>
+      <article class="triad-card">
+        <span class="t-eyebrow">Resultados</span>
+        <h3>Caminho para os próximos 90 dias</h3>
+        <p>O workshop entrega prioridades claras de atuação para o trimestre seguinte — quais frentes precisam de aprofundamento, onde já há risco visível, quais áreas demandam plano específico.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" class="wmp-block reveal" style="background:var(--bege-areia)">
+  <div class="container">
+    <span class="eyebrow-editorial">Como funciona</span>
+    <h2 class="s-title">Oito horas estruturadas em duas sessões.</h2>
+    <p class="s-sub">O workshop é entregue em dois encontros online de quatro horas, com intervalo de uma a duas semanas entre eles. O intervalo é parte do método — sua equipe leva tarefas operacionais para campo, traz dados reais para a segunda sessão, e o trio multidisciplinar faz a leitura conjunta.</p>
+
+    <div class="steps-list">
+      <div class="step">
+        <span class="step-n">01</span>
+        <div class="step-body">
+          <h4>Pré-encontro · Alinhamento e contexto (30 min)</h4>
+          <p>Antes da primeira sessão, conversa breve com o ponto focal da empresa para mapear porte, setor, estrutura organizacional, indicadores disponíveis (afastamentos, CIDs, pesquisa de clima) e prioridades. O trio chega preparado.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-n">02</span>
+        <div class="step-body">
+          <h4>Sessão 1 · Linguagem técnica e leitura inicial (4h)</h4>
+          <p>Abertura conjunta com os três profissionais. Apresentação dos fatores psicossociais reconhecidos (organização do trabalho, conteúdo da tarefa, relações interpessoais, condições ergonômicas, gestão e liderança). Leitura inicial dos sintomas organizacionais já visíveis na empresa, em discussão guiada.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-n">03</span>
+        <div class="step-body">
+          <h4>Trabalho de campo · Coleta estruturada (1–2 semanas)</h4>
+          <p>A equipe da empresa aplica protocolos curtos de coleta entregues no fim da Sessão 1: entrevistas-chave, leitura de indicadores, mapeamento de áreas críticas. O trio responde por e-mail dúvidas técnicas durante o período.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-n">04</span>
+        <div class="step-body">
+          <h4>Sessão 2 · Construção do mapa (4h)</h4>
+          <p>Análise coletiva dos dados trazidos pela equipe. Construção, ao vivo, do rascunho do inventário psicossocial — com priorização por gravidade, frequência e exposição. Definição das frentes de continuidade. Encerramento com plano de próximos 90 dias.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-n">05</span>
+        <div class="step-body">
+          <h4>Pós-encontro · Documento consolidado (até 7 dias)</h4>
+          <p>O trio entrega versão consolidada do rascunho do inventário em PDF, com base nas discussões e nos dados coletados. Não substitui diagnóstico institucional aprofundado — é a primeira camada técnica defensável.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIME MULTIDISCIPLINAR -->
+<section class="wmp-block reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Quem conduz</span>
+    <h2 class="s-title">Trio multidisciplinar com responsabilidade técnica.</h2>
+    <p class="s-sub">A NR-1 trata de fatores psicossociais que não cabem em uma única especialidade. Por isso o workshop é conduzido por três profissionais, cada uma trazendo o olhar da sua área para construir leitura integrada.</p>
+
+    <div class="team-grid reveal-stagger">
+      <article class="team-card">
+        <div class="t-photo">
+          <img src="assets/photos/portrait-bookshelf.png" alt="Dra. Ana Paula Teixeira">
+        </div>
+        <span class="t-role">Medicina do Trabalho</span>
+        <h3>Dra. Ana Paula Teixeira</h3>
+        <p class="t-credit">CRM-BA 12797 · RQE 7237 · Membro ICOH</p>
+        <p class="t-bio">Médica do trabalho com quase trinta anos de prática clínica e corporativa. Autora de <em>Quando o Trabalho Dói</em>. Pesquisadora em validação da escala OMIS-R sobre Lesão Moral Ocupacional.</p>
+      </article>
+
+      <!-- placeholder: substituir por nome, foto e mini-bio reais da psicóloga organizacional -->
+      <article class="team-card">
+        <div class="t-photo">
+          <!-- placeholder: assets/photos/team-psicologa.jpg -->
+        </div>
+        <span class="t-role">Psicologia organizacional</span>
+        <h3>[Nome a confirmar]</h3>
+        <p class="t-credit">CRP · Especialização a confirmar</p>
+        <p class="t-bio">Atuação em diagnóstico de clima, riscos psicossociais e cultura organizacional. Conduz a leitura sistêmica das relações de trabalho e dos padrões de adoecimento coletivo.</p>
+      </article>
+
+      <!-- placeholder: substituir por nome, foto e mini-bio reais da ergonomista -->
+      <article class="team-card">
+        <div class="t-photo">
+          <!-- placeholder: assets/photos/team-ergonomista.jpg -->
+        </div>
+        <span class="t-role">Ergonomia</span>
+        <h3>[Nome a confirmar]</h3>
+        <p class="t-credit">Certificação ABERGO a confirmar</p>
+        <p class="t-bio">Atuação em análise ergonômica do trabalho e condições objetivas que sustentam fatores psicossociais. Conduz a leitura material das condições de exposição.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ENTREGÁVEIS -->
+<section class="wmp-block reveal" style="background:var(--bg)">
+  <div class="container">
+    <span class="eyebrow-editorial">O que está incluído</span>
+    <h2 class="s-title">Entregáveis concretos, defensáveis tecnicamente.</h2>
+    <p class="s-sub">Tudo o que o workshop produz é registrado e consolidado em material técnico que sua empresa pode levar para auditoria, conselho ou jurídico.</p>
+
+    <div class="deliverables">
+      <h3>Sua organização recebe</h3>
+      <ul>
+        <li>Rascunho do inventário de riscos psicossociais — em PDF consolidado, com priorização por gravidade e exposição.</li>
+        <li>Protocolos de coleta estruturada usados no trabalho de campo, prontos para reaplicação interna.</li>
+        <li>Glossário técnico aplicado ao contexto da empresa, alinhado a NR-1, Resolução CFM 2.323/2022 e Portaria MTE 1.419/2024.</li>
+        <li>Gravação das duas sessões para uso interno e onboarding de novos integrantes da equipe.</li>
+        <li>Material editorial de apoio: artigos, referências bibliográficas e leituras complementares.</li>
+        <li>Certificado técnico assinado pelo trio multidisciplinar — documento institucional.</li>
+        <li>Suporte por e-mail durante o intervalo entre sessões para dúvidas técnicas pontuais.</li>
+        <li>Mapa de próximos passos com prioridades para os 90 dias seguintes ao workshop.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUEM -->
+<section class="wmp-block reveal" style="background:var(--bege-areia)">
+  <div class="container">
+    <span class="eyebrow-editorial">Para quem é</span>
+    <h2 class="s-title">Empresas que precisam estruturar resposta à NR-1 com método.</h2>
+    <p class="s-sub">O Mapa Psicossocial é desenhado para organizações de médio porte que querem começar a estrutura sem assumir um diagnóstico institucional completo de imediato. É a entrada pelo caminho técnico, não pelo checklist.</p>
+
+    <div class="audience-grid">
+      <div class="audience-item">
+        <h4>Empresas 50–500 funcionários</h4>
+        <p>Que precisam mostrar evidência de método antes da fiscalização e não têm equipe interna para construir o inventário do zero.</p>
+      </div>
+      <div class="audience-item">
+        <h4>Times de RH e SESMT</h4>
+        <p>Profissionais que querem desenvolver repertório técnico próprio e construir base defensável para os próximos passos.</p>
+      </div>
+      <div class="audience-item">
+        <h4>Lideranças e diretoria</h4>
+        <p>Decisores que precisam entender a dimensão real do tema antes de aprovar plano de ação ou consultoria de longo prazo.</p>
+      </div>
+      <div class="audience-item">
+        <h4>Conselhos e comitês de ESG</h4>
+        <p>Estruturas que precisam discutir saúde mental como pauta estratégica com base técnica, não com retórica genérica.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTIMENTO -->
+<section class="wmp-block reveal">
+  <div class="container">
+    <div class="invest-block">
+      <span class="eyebrow-editorial">Investimento</span>
+      <h3>A partir de R$ 6.000.</h3>
+      <p class="from-line">Faixa: R$ 6.000 – R$ 12.000 conforme porte da empresa.</p>
+      <p>O valor varia em função do porte da organização, do número de participantes (até 20) e do escopo da coleta estruturada. Inclui as duas sessões, o material consolidado, o suporte por e-mail entre sessões e o documento técnico final assinado pelo trio.</p>
+      <div class="invest-cta-row">
+        <a href="#contato" class="btn btn-primary">Solicitar proposta personalizada →</a>
+        <a href="https://wa.me/5575983186200" class="btn btn-secondary">Falar pelo WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="wmp-block reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Perguntas frequentes</span>
+    <h2 class="s-title">Antes de solicitar a proposta.</h2>
+
+    <div class="faq-list">
+      <details>
+        <summary>O Mapa Psicossocial substitui o diagnóstico institucional aprofundado?</summary>
+        <p>Não. O workshop entrega a primeira camada técnica do inventário psicossocial — base defensável, com método, mas em escala compatível com 8 horas de trabalho conjunto. Empresas que precisam de mapping completo (entrevistas extensas, cruzamento de dados quantitativos, plano de ação detalhado) seguem para diagnóstico institucional via Escutaris após o workshop, com o material já produzido como ponto de partida.</p>
+      </details>
+      <details>
+        <summary>Por que o formato é online apenas?</summary>
+        <p>Para sustentar a presença das três especialistas em qualquer cidade do Brasil sem custo adicional de deslocamento, o workshop acontece por videoconferência. O formato 2 × 4h reduz fadiga e abre espaço para o trabalho de campo entre as sessões — que é parte essencial do método.</p>
+      </details>
+      <details>
+        <summary>Quem da empresa precisa participar?</summary>
+        <p>Idealmente um grupo de até 20 pessoas envolvendo RH, SESMT (medicina e segurança do trabalho), uma liderança sênior com poder de decisão e, quando existirem, representantes da CIPA e do jurídico. O grupo precisa ter autonomia para executar o trabalho de campo entre as sessões.</p>
+      </details>
+      <details>
+        <summary>É preciso ter pesquisa de clima ou indicadores prontos?</summary>
+        <p>Não é obrigatório, mas ajuda. O trio trabalha com o que houver disponível — indicadores de afastamento, CIDs, pesquisa de clima, registros do SESMT, dados do PGR atual. Empresas que ainda não têm nada disso saem do workshop com o roteiro de coleta para iniciar.</p>
+      </details>
+      <details>
+        <summary>O workshop emite certificado válido para auditoria?</summary>
+        <p>O certificado é técnico, assinado pelo trio multidisciplinar — Médica do Trabalho com CRM, Psicóloga organizacional com CRP e Ergonomista com certificação reconhecida. Comprova participação institucional no processo de mapeamento. O documento técnico final (rascunho do inventário) é o material que efetivamente sustenta auditoria ou fiscalização.</p>
+      </details>
+      <details>
+        <summary>Em quanto tempo é possível agendar?</summary>
+        <p>A janela atual é maio a julho de 2026, com agenda restrita pela disponibilidade simultânea do trio. Datas confirmadas após retorno da proposta. Recomenda-se solicitar com pelo menos três semanas de antecedência.</p>
+      </details>
+      <details>
+        <summary>Posso contratar só uma das sessões ou só uma das profissionais?</summary>
+        <p>Não. O método depende do trio multidisciplinar e do ciclo completo (Sessão 1 + campo + Sessão 2 + documento). Para escopos menores, sua empresa pode considerar Palestra Corporativa ou Roda de Conversa. Veja em <a href="servicos.html" style="color:var(--terracota);text-decoration:underline">Serviços</a>.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="contato" class="wmp-cta reveal bg-context bg-stage-palestra">
+  <div class="container">
+    <span class="eyebrow-editorial">Próximo passo</span>
+    <h2>Vamos construir o <em>Mapa Psicossocial</em> da sua organização.</h2>
+    <p class="cta-sub">Resposta em até 24 horas úteis. Conversa breve para alinhar contexto, porte e datas. Proposta personalizada com investimento dentro da faixa publicada.</p>
+    <div class="cta-row">
+      <a href="contato.html" class="btn btn-primary">Solicitar proposta →</a>
+      <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20o%20Workshop%20Mapa%20Psicossocial%20NR-1." class="btn btn-secondary">Falar pelo WhatsApp</a>
+    </div>
+    <p class="meta">contato@anapaulateixeira.med.br · WhatsApp (75) 98318-6200</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
+        <p class="footer-anchor">Porque empresas íntegras cuidam, com seriedade, do que impacta pessoas, cultura e trabalho.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegar</div>
+        <div class="stack-3">
+          <div><a href="sobre.html">Sobre</a></div>
+          <div><a href="servicos.html">Serviços</a></div>
+          <div><a href="workshop-mapa-psicossocial.html">Workshop NR-1</a></div>
+          <div><a href="livro.html">Livro</a></div>
+          <div><a href="blog.html">Blog</a></div>
+          <div><a href="na-midia.html">Na Mídia</a></div>
+          <div><a href="governanca.html">Governança</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contato</div>
+        <div class="stack-3">
+          <div><a href="mailto:contato@anapaulateixeira.med.br">contato@anapaulateixeira.med.br</a></div>
+          <div><a href="https://wa.me/5575983186200">WhatsApp (75) 98318-6200</a></div>
+          <div><a href="contato.html">Formulário</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>CRM-BA 12797 · RQE 7237 · Board Member ICOH</span>
+      <span>© 2026 Dra. Ana Paula Teixeira · anapaulateixeira.med.br · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidade</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="design-system.js" defer></script>
+</body>
+</html>

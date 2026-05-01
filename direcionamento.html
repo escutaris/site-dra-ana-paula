@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SEO -->
+<title>Direcionamento Executivo · Sessão clínica de 90 min para liderança · Dra. Ana Paula Teixeira</title>
+<meta name="description" content="Sessão individual de 90 minutos por Zoom para líderes, RH, médicos do trabalho e SESMT diante de situação concreta de adoecimento, conflito ou decisão difícil. Conversa clínica com método. A partir de R$ 600. Resposta em 4h úteis.">
+<meta name="author" content="Dra. Ana Paula Teixeira">
+<link rel="canonical" href="https://anapaulateixeira.med.br/direcionamento.html">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Dra. Ana Paula Teixeira">
+<meta property="og:url" content="https://anapaulateixeira.med.br/direcionamento.html">
+<meta property="og:title" content="Direcionamento Executivo · 90 min de conversa clínica para liderança">
+<meta property="og:description" content="Para quem está liderando uma situação concreta de adoecimento ou conflito agora. Não é terapia, não é coaching. Conversa clínica com médica do trabalho. A partir de R$ 600.">
+<meta property="og:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Direcionamento Executivo · Conversa clínica de 90 min">
+<meta name="twitter:description" content="Para liderança, RH ou SESMT diante de situação concreta. A partir de R$ 600. Resposta em 4h úteis.">
+<meta name="twitter:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<meta name="theme-color" content="#1C3520">
+<link rel="stylesheet" href="design-system.css">
+<style>
+  /* ===== Direcionamento Executivo — overrides locais ===== */
+
+  /* HERO — fundo escuro pra ciclo curto/urgência */
+  .hero-dir {
+    padding-block: clamp(96px, 10vw, 144px);
+    background: var(--verde-noturno);
+    color: var(--off-white);
+  }
+  .hero-dir .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  @media (min-width: 960px) {
+    .hero-dir .hero-grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 80px; }
+  }
+  .hero-dir .eyebrow-editorial { color: var(--bege-areia); }
+  .hero-dir h1 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.25rem, 1.5rem + 2.8vw, 3.75rem);
+    line-height: 1.08;
+    color: var(--off-white);
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+    max-width: 22ch;
+    margin: 24px 0 28px 0;
+  }
+  .hero-dir h1 em {
+    font-style: italic;
+    font-weight: var(--weight-semibold);
+    color: var(--terracota);
+  }
+  .hero-dir .lead {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--off-white);
+    opacity: 0.92;
+    max-width: 56ch;
+    margin: 0 0 36px 0;
+  }
+  .hero-dir .meta-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 32px;
+    padding: 24px 0;
+    border-top: 1px solid rgba(245,239,229,.18);
+    border-bottom: 1px solid rgba(245,239,229,.18);
+    margin-bottom: 32px;
+  }
+  @media (min-width: 600px) {
+    .hero-dir .meta-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+  .hero-dir .meta-cell .meta-k {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--bege-areia);
+    opacity: 0.85;
+    margin-bottom: 6px;
+  }
+  .hero-dir .meta-cell .meta-v {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-semibold);
+    font-size: 1.0625rem;
+    color: var(--off-white);
+    line-height: 1.25;
+  }
+  .hero-dir .cta-row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .hero-dir .btn-primary { background: var(--terracota); border-color: var(--terracota); }
+  .hero-dir .btn-secondary { color: var(--off-white); border-color: rgba(245,239,229,.4); }
+  .hero-dir .btn-secondary:hover { background: rgba(245,239,229,.08); color: var(--off-white); }
+  .hero-dir .micro { margin-top: 16px; font-size: 0.8125rem; color: var(--bege-areia); opacity: 0.85; max-width: 48ch; line-height: 1.5; }
+
+  .hero-dir .urgency {
+    background: rgba(245,239,229,.06);
+    border-left: 3px solid var(--terracota);
+    padding: 24px 28px;
+    border-radius: 2px;
+  }
+  .hero-dir .urgency .ur-label {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .hero-dir .urgency h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-semibold);
+    font-style: italic;
+    font-size: clamp(1.25rem, 1.05rem + 0.7vw, 1.5rem);
+    color: var(--off-white);
+    line-height: 1.3;
+    margin: 0 0 16px 0;
+    text-wrap: balance;
+  }
+  .hero-dir .urgency p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--off-white);
+    opacity: 0.9;
+    margin: 0;
+  }
+  .hero-dir .urgency .resp-time {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(245,239,229,.12);
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    color: var(--bege-areia);
+  }
+  .hero-dir .urgency .resp-time b {
+    color: var(--off-white);
+    font-weight: 600;
+  }
+
+  /* Block patterns */
+  .dir-block { padding-block: clamp(80px, 8vw, 112px); }
+  .dir-block .eyebrow-editorial { margin-bottom: 20px; }
+
+  /* Para quem / Não é grids */
+  .for-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  @media (min-width: 720px) {
+    .for-grid { grid-template-columns: 1fr 1fr; gap: 16px 32px; }
+  }
+  .for-item {
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+  }
+  .for-item:last-child,
+  .for-item:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid var(--border); }
+  .for-item h4 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-semibold);
+    font-size: 1.125rem;
+    color: var(--verde-noturno);
+    margin: 0 0 8px 0;
+  }
+  .for-item p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: var(--cinza-quente);
+    margin: 0;
+  }
+
+  /* Não é / É — bloco contraste */
+  .contrast-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 32px;
+  }
+  @media (min-width: 720px) {
+    .contrast-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+  .contrast-card {
+    padding: 32px 28px;
+    border-radius: 2px;
+  }
+  .contrast-card.is-not {
+    background: var(--bege-areia);
+    border-left: 3px solid var(--cinza-quente);
+  }
+  .contrast-card.is-yes {
+    background: var(--off-white);
+    border-left: 3px solid var(--terracota);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--terracota);
+  }
+  .contrast-card h3 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+    margin: 0 0 16px 0;
+  }
+  .contrast-card.is-yes h3 { color: var(--terracota); }
+  .contrast-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+  }
+  .contrast-card li {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: var(--preto-editorial);
+    padding-left: 24px;
+    position: relative;
+  }
+  .contrast-card.is-not li::before {
+    content: "×";
+    position: absolute;
+    left: 0;
+    color: var(--cinza-quente);
+    font-weight: 600;
+  }
+  .contrast-card.is-yes li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--terracota);
+    font-weight: 700;
+  }
+
+  /* Como funciona — passos */
+  .steps-list { margin-top: 32px; display: grid; gap: 20px; }
+  .step {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 24px;
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+  }
+  .step:last-child { border-bottom: 1px solid var(--border); }
+  .step .step-n {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--terracota);
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .step .step-body h4 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.25rem;
+    color: var(--verde-noturno);
+    margin: 0 0 8px 0;
+    line-height: 1.25;
+  }
+  .step .step-body p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    margin: 0;
+  }
+
+  /* Investimento */
+  .invest-block {
+    background: var(--bege-areia);
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 4vw, 56px);
+    border-radius: 2px;
+    margin-top: 32px;
+  }
+  .invest-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  @media (min-width: 720px) {
+    .invest-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  }
+  .invest-tier {
+    background: var(--off-white);
+    padding: 28px 24px;
+    border-radius: 2px;
+    border: 1px solid var(--border);
+  }
+  .invest-tier .tier-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .invest-tier h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.5rem;
+    color: var(--verde-noturno);
+    margin: 0 0 16px 0;
+  }
+  .invest-tier .price {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--terracota);
+    line-height: 1;
+    letter-spacing: -0.01em;
+    display: block;
+    margin-bottom: 16px;
+  }
+  .invest-tier ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+    display: grid;
+    gap: 8px;
+  }
+  .invest-tier li {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--preto-editorial);
+    padding-left: 20px;
+    position: relative;
+  }
+  .invest-tier li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--terracota);
+    font-weight: 700;
+    font-size: 0.875rem;
+  }
+
+  /* CTA final */
+  .dir-cta {
+    padding-block: clamp(80px, 9vw, 128px);
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+  }
+  .dir-cta h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.5rem + 1.8vw, 3rem);
+    color: var(--verde-noturno);
+    margin: 16px 0 16px 0;
+    max-width: 22ch;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+  .dir-cta h2 em { font-style: italic; color: var(--terracota); font-weight: var(--weight-semibold); }
+  .dir-cta .cta-sub {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    margin: 0 0 32px 0;
+    max-width: 56ch;
+  }
+  .dir-cta .meta {
+    margin-top: 24px;
+    font-size: 0.8125rem;
+    color: var(--cinza-quente);
+    letter-spacing: 0.02em;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Início</a></li>
+      <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+      <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+      <li><a href="workshop-mapa-psicossocial.html" class="nav-link">Workshop NR-1</a></li>
+      <li><a href="livro.html" class="nav-link">Livro</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="na-midia.html" class="nav-link">Na Mídia</a></li>
+      <li><a href="contato.html" class="nav-link">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#1C3520" stroke-width="1.5"><line x1="3" y1="7" x2="19" y2="7"/><line x1="3" y1="15" x2="19" y2="15"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero-dir">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow-editorial">Direcionamento Executivo · Sessão individual confidencial</span>
+        <h1>Quando a situação é <em>agora</em>, você precisa de método — não de mais opinião.</h1>
+        <p class="lead">Sessão individual de noventa minutos por Zoom, confidencial, dirigida a líderes, RH, profissionais de SESMT e medicina do trabalho diante de situação concreta — caso de adoecimento, conflito interno, decisão difícil — que precisam pensar com método clínico antes de virar processo.</p>
+
+        <div class="meta-row">
+          <div class="meta-cell">
+            <span class="meta-k">Formato</span>
+            <span class="meta-v">90 min · Zoom</span>
+          </div>
+          <div class="meta-cell">
+            <span class="meta-k">Sessão única</span>
+            <span class="meta-v">A partir de R$ 600</span>
+          </div>
+          <div class="meta-cell">
+            <span class="meta-k">Pacote 3</span>
+            <span class="meta-v">R$ 1.500</span>
+          </div>
+          <div class="meta-cell">
+            <span class="meta-k">Resposta</span>
+            <span class="meta-v">Em até 4h úteis</span>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20preciso%20de%20um%20Direcionamento%20Executivo." class="btn btn-primary">Falar pelo WhatsApp →</a>
+          <a href="#como-funciona" class="btn btn-secondary">Como funciona</a>
+        </div>
+        <p class="micro">Confidencialidade integral. CRM-BA 12797 · RQE 7237.</p>
+      </div>
+
+      <aside class="urgency">
+        <span class="ur-label">Para quem está em pressão agora</span>
+        <h3>Ciclo curto. Decisão clínica antes do processo.</h3>
+        <p>O Direcionamento existe porque quem busca interlocução técnica diante de uma situação concreta não pode esperar o ciclo de uma palestra ou um diagnóstico institucional. A conversa acontece em poucos dias — em alguns casos, no mesmo dia.</p>
+        <div class="resp-time">
+          <p><b>Fechamento típico</b> — entre 1 e 5 dias úteis, do primeiro contato à sessão.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<!-- PARA QUEM -->
+<section class="dir-block reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Para quem é</span>
+    <h2 class="s-title">Quando o Direcionamento Executivo faz diferença.</h2>
+    <p class="s-sub">Não é uma sessão para conhecer a Dra. Ana Paula nem para discutir tema genérico. É para quem chega com situação concreta na mesa e precisa de leitura clínica imediata.</p>
+
+    <div class="for-grid">
+      <div class="for-item">
+        <h4>Líder com colaborador em sofrimento</h4>
+        <p>Caso de adoecimento na equipe, afastamento que se aproxima, comportamento que começou a destoar — você precisa entender o que está vendo antes de tomar decisão.</p>
+      </div>
+      <div class="for-item">
+        <h4>RH ou SESMT diante de caso técnico</h4>
+        <p>Padrão de afastamentos repetidos, dúvida sobre nexo causal, cenário que a literatura clínica explica melhor que o organograma — você precisa de leitura técnica para argumentar internamente.</p>
+      </div>
+      <div class="for-item">
+        <h4>Diretoria ou conselho com risco emergente</h4>
+        <p>Caso reputacional iminente, pressão jurídica, situação que pode escalar em semanas — você precisa entender o risco em linguagem de governança, não em motivacional.</p>
+      </div>
+      <div class="for-item">
+        <h4>Médico do trabalho com caso atípico</h4>
+        <p>Quadro que não encaixa em diagnóstico clássico, paciente em zona cinzenta entre transtorno reativo e Lesão Moral, perícia que exige argumento técnico — você precisa trocar com colega sênior.</p>
+      </div>
+      <div class="for-item">
+        <h4>Profissional em decisão de carreira difícil</h4>
+        <p>Você está liderando em ambiente que adoece e precisa pensar a sua própria posição — sair, ficar, recomendar mudança estrutural — com leitura técnica, não com retórica de coaching.</p>
+      </div>
+      <div class="for-item">
+        <h4>Consultora ou consultor externo</h4>
+        <p>Você atende empresa com caso que exige expertise específica em saúde mental ocupacional — Lesão Moral, fatores psicossociais, NR-1 aplicada — e quer ampliar o repertório clínico do seu trabalho.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTRASTE: NÃO É / É -->
+<section class="dir-block reveal" style="background:var(--bege-areia)">
+  <div class="container">
+    <span class="eyebrow-editorial">Antes de solicitar</span>
+    <h2 class="s-title">O que o Direcionamento Executivo é — e o que não é.</h2>
+    <p class="s-sub">Distinção importa. O Direcionamento ocupa um lugar específico que não substitui terapia, coaching nem consultoria de gestão. Saber onde ele se encaixa evita frustração e protege o tempo da conversa.</p>
+
+    <div class="contrast-grid">
+      <div class="contrast-card is-not">
+        <h3>O que NÃO é</h3>
+        <ul>
+          <li>Não é terapia psicológica nem psiquiátrica.</li>
+          <li>Não é coaching de carreira ou de performance.</li>
+          <li>Não é mentoria de liderança em formato genérico.</li>
+          <li>Não é consultoria de gestão ou de RH.</li>
+          <li>Não é diagnóstico institucional aprofundado.</li>
+          <li>Não substitui acompanhamento clínico individual.</li>
+        </ul>
+      </div>
+      <div class="contrast-card is-yes">
+        <h3>O que É</h3>
+        <ul>
+          <li>Conversa clínica de 90 minutos com médica do trabalho.</li>
+          <li>Leitura técnica de situação concreta — não tema abstrato.</li>
+          <li>Confidencialidade integral, gravação privada, síntese escrita.</li>
+          <li>Encaminhamentos práticos com referências técnicas.</li>
+          <li>Espaço para nomear o que sua organização ou equipe ainda não conseguiu nomear.</li>
+          <li>Ponto de partida para decisão informada — sua, do seu time, do seu jurídico.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona" class="dir-block reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Como funciona</span>
+    <h2 class="s-title">Quatro passos. Sem fricção.</h2>
+
+    <div class="steps-list">
+      <div class="step">
+        <span class="step-n">01</span>
+        <div class="step-body">
+          <h4>Contato e contexto inicial</h4>
+          <p>Você manda mensagem (WhatsApp ou e-mail) descrevendo brevemente o cenário — sem identificar pessoas. Resposta em até 4 horas úteis com proposta de horário.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-n">02</span>
+        <div class="step-body">
+          <h4>Briefing por escrito</h4>
+          <p>Antes da sessão, você envia descrição em até uma página por e-mail. Padrões protegidos: pessoas anônimas, dados sensíveis omitidos. A Dra. Ana Paula chega preparada.</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-n">03</span>
+        <div class="step-body">
+          <h4>Sessão de 90 minutos por Zoom</h4>
+          <p>Conversa estruturada: contexto recapitulado em 10 minutos, leitura clínica em 60 minutos, encaminhamentos em 20 minutos. Gravação privada (sua, para revisitar).</p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="step-n">04</span>
+        <div class="step-body">
+          <h4>Síntese escrita em até 48h</h4>
+          <p>Você recebe documento de uma página com pontos centrais da leitura, encaminhamentos práticos, referências técnicas e — quando aplicável — sugestões de próximos passos (consultoria, formação, encaminhamento clínico para outras especialidades).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTIMENTO -->
+<section class="dir-block reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Investimento</span>
+    <h2 class="s-title">Dois formatos. Mesmo método.</h2>
+    <p class="s-sub">Sessão única para situação pontual. Pacote de três sessões para acompanhar desdobramento — ciclo curto, com espaço para ajustar leitura à medida que a situação evolui.</p>
+
+    <div class="invest-block">
+      <div class="invest-grid">
+        <article class="invest-tier">
+          <span class="tier-eyebrow">Sessão única</span>
+          <h3>Encontro pontual</h3>
+          <span class="price">A partir de R$ 600</span>
+          <ul>
+            <li>90 minutos de conversa via Zoom</li>
+            <li>Briefing por escrito antes da sessão</li>
+            <li>Gravação privada da conversa</li>
+            <li>Síntese de uma página em até 48h</li>
+            <li>Resposta priorizada em 4h úteis</li>
+          </ul>
+          <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20sess%C3%A3o%20%C3%BAnica%20de%20Direcionamento%20Executivo." class="btn btn-primary" style="width:100%;text-align:center;justify-content:center">Solicitar sessão única →</a>
+        </article>
+
+        <article class="invest-tier">
+          <span class="tier-eyebrow">Pacote 3 sessões</span>
+          <h3>Acompanhamento curto</h3>
+          <span class="price">R$ 1.500</span>
+          <ul>
+            <li>Três sessões de 90 minutos em ciclo de 6 a 8 semanas</li>
+            <li>Acesso por e-mail entre sessões para dúvidas pontuais</li>
+            <li>Sínteses individuais a cada encontro</li>
+            <li>Mapa final de encaminhamentos consolidado</li>
+            <li>Resposta priorizada em 4h úteis</li>
+          </ul>
+          <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20quero%20agendar%20o%20pacote%20de%203%20sess%C3%B5es%20de%20Direcionamento%20Executivo." class="btn btn-primary" style="width:100%;text-align:center;justify-content:center">Solicitar pacote 3 →</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="dir-cta reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Próximo passo</span>
+    <h2>Sua situação é <em>agora</em>. Resposta em quatro horas úteis.</h2>
+    <p class="cta-sub">Mande mensagem por WhatsApp ou e-mail descrevendo brevemente o cenário. Você recebe proposta de horário em até 4 horas úteis. Da primeira mensagem ao agendamento, tipicamente entre 1 e 5 dias úteis.</p>
+    <div class="cta-row">
+      <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20preciso%20de%20um%20Direcionamento%20Executivo." class="btn btn-primary">Falar pelo WhatsApp →</a>
+      <a href="mailto:contato@anapaulateixeira.med.br?subject=Direcionamento%20Executivo" class="btn btn-secondary">Enviar e-mail</a>
+    </div>
+    <p class="meta">contato@anapaulateixeira.med.br · WhatsApp (75) 98318-6200 · CRM-BA 12797 · RQE 7237</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
+        <p class="footer-anchor">Porque empresas íntegras cuidam, com seriedade, do que impacta pessoas, cultura e trabalho.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegar</div>
+        <div class="stack-3">
+          <div><a href="sobre.html">Sobre</a></div>
+          <div><a href="servicos.html">Serviços</a></div>
+          <div><a href="workshop-mapa-psicossocial.html">Workshop NR-1</a></div>
+          <div><a href="livro.html">Livro</a></div>
+          <div><a href="blog.html">Blog</a></div>
+          <div><a href="na-midia.html">Na Mídia</a></div>
+          <div><a href="governanca.html">Governança</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contato</div>
+        <div class="stack-3">
+          <div><a href="mailto:contato@anapaulateixeira.med.br">contato@anapaulateixeira.med.br</a></div>
+          <div><a href="https://wa.me/5575983186200">WhatsApp (75) 98318-6200</a></div>
+          <div><a href="contato.html">Formulário</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>CRM-BA 12797 · RQE 7237 · Board Member ICOH</span>
+      <span>© 2026 Dra. Ana Paula Teixeira · anapaulateixeira.med.br · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidade</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="design-system.js" defer></script>
+</body>
+</html>

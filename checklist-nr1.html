@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SEO -->
+<title>Checklist NR-1 para Diretoria · 12 perguntas antes da fiscalização · Dra. Ana Paula Teixeira</title>
+<meta name="description" content="Material gratuito para C-level, conselhos e RH sênior: 12 perguntas que sua organização precisa responder sobre saúde mental no trabalho antes de a fiscalização da NR-1 começar. Diagnóstico em 10 minutos.">
+<meta name="author" content="Dra. Ana Paula Teixeira">
+<link rel="canonical" href="https://anapaulateixeira.med.br/checklist-nr1.html">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Dra. Ana Paula Teixeira">
+<meta property="og:url" content="https://anapaulateixeira.med.br/checklist-nr1.html">
+<meta property="og:title" content="Checklist NR-1 para Diretoria · 12 perguntas antes da fiscalização">
+<meta property="og:description" content="Para C-level, conselhos e RH sênior. 12 perguntas que sua organização precisa responder sobre saúde mental antes da fiscalização.">
+<meta property="og:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Checklist NR-1 para Diretoria · 12 perguntas">
+<meta name="twitter:description" content="Para C-level, conselhos e RH sênior. Diagnóstico em 10 minutos.">
+<meta name="twitter:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<meta name="theme-color" content="#1C3520">
+<link rel="stylesheet" href="design-system.css">
+<link rel="stylesheet" href="form-handlers.css">
+<style>
+  /* ===== Checklist NR-1 — overrides locais ===== */
+
+  .hero-chk {
+    padding-block: clamp(96px, 10vw, 144px);
+    background: var(--bg);
+  }
+  .hero-chk .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  @media (min-width: 960px) {
+    .hero-chk .hero-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 80px; }
+  }
+  .hero-chk h1 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.125rem, 1.5rem + 2.6vw, 3.625rem);
+    line-height: 1.1;
+    color: var(--verde-noturno);
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+    max-width: 22ch;
+    margin: 24px 0 28px 0;
+  }
+  .hero-chk h1 em {
+    font-style: italic;
+    font-weight: var(--weight-semibold);
+    color: var(--terracota);
+  }
+  .hero-chk .lead {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    max-width: 56ch;
+    margin: 0 0 32px 0;
+  }
+  .hero-chk .meta-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 32px;
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 32px;
+  }
+  @media (min-width: 600px) {
+    .hero-chk .meta-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+  .hero-chk .meta-cell .meta-k {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+    margin-bottom: 6px;
+  }
+  .hero-chk .meta-cell .meta-v {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-semibold);
+    font-size: 1.0625rem;
+    color: var(--verde-noturno);
+    line-height: 1.25;
+  }
+
+  /* Form de captura */
+  .capture-form {
+    background: var(--verde-noturno);
+    color: var(--off-white);
+    padding: clamp(32px, 4vw, 48px);
+    border-radius: 2px;
+  }
+  .capture-form .cf-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--bege-areia);
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: block;
+  }
+  .capture-form h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.375rem, 1.2rem + 0.7vw, 1.75rem);
+    color: var(--off-white);
+    line-height: 1.2;
+    margin: 0 0 12px 0;
+    max-width: 22ch;
+  }
+  .capture-form p.cf-sub {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: var(--off-white);
+    opacity: 0.92;
+    margin: 0 0 24px 0;
+    max-width: 38ch;
+  }
+  .capture-form .field { margin-bottom: 16px; }
+  .capture-form .field-label {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--bege-areia);
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  .capture-form .field-input,
+  .capture-form .field-textarea {
+    width: 100%;
+    background: rgba(245,239,229,.06);
+    border: 1px solid rgba(245,239,229,.2);
+    color: var(--off-white);
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    padding: 12px 14px;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+  .capture-form .field-input:focus,
+  .capture-form .field-textarea:focus {
+    outline: none;
+    border-color: var(--terracota);
+    background: rgba(245,239,229,.1);
+  }
+  .capture-form .field-input::placeholder,
+  .capture-form .field-textarea::placeholder {
+    color: rgba(245,239,229,.4);
+  }
+  .capture-form button[type="submit"] {
+    width: 100%;
+    background: var(--terracota);
+    color: var(--off-white);
+    border: 1px solid var(--terracota);
+    padding: 14px 24px;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    letter-spacing: 0.04em;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s ease;
+  }
+  .capture-form button[type="submit"]:hover { background: var(--terracota-hover); }
+  .capture-form .cf-micro {
+    margin-top: 16px;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--bege-areia);
+    opacity: 0.85;
+  }
+
+  /* Block patterns */
+  .chk-block { padding-block: clamp(80px, 8vw, 112px); }
+  .chk-block .eyebrow-editorial { margin-bottom: 20px; }
+
+  /* Lista de perguntas (preview) */
+  .questions-list {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    counter-reset: q;
+  }
+  @media (min-width: 720px) {
+    .questions-list { grid-template-columns: 1fr 1fr; gap: 24px 40px; }
+  }
+  .question-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: start;
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+  }
+  .question-item:nth-last-child(1),
+  .question-item:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid var(--border); }
+  .question-item .q-num {
+    counter-increment: q;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--terracota);
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .question-item .q-num::before { content: counter(q, decimal-leading-zero); }
+  .question-item p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: var(--preto-editorial);
+    margin: 0;
+  }
+
+  /* Por que importa */
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 32px;
+  }
+  @media (min-width: 720px) {
+    .why-grid { grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  }
+  .why-card {
+    background: var(--bege-areia);
+    padding: 32px 28px;
+    border-radius: 2px;
+  }
+  .why-card .figure {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: var(--terracota);
+    line-height: 1;
+    letter-spacing: -0.01em;
+    display: block;
+    margin-bottom: 12px;
+  }
+  .why-card h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.125rem;
+    color: var(--verde-noturno);
+    margin: 0 0 12px 0;
+    line-height: 1.25;
+  }
+  .why-card p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: var(--preto-editorial);
+    margin: 0;
+  }
+
+  /* CTA final */
+  .chk-cta {
+    padding-block: clamp(80px, 9vw, 128px);
+    background: var(--bege-areia);
+    border-top: 1px solid rgba(28,53,32,.08);
+  }
+  .chk-cta h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.5rem + 1.8vw, 3rem);
+    color: var(--verde-noturno);
+    margin: 16px 0 16px 0;
+    max-width: 22ch;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+  .chk-cta h2 em { font-style: italic; color: var(--terracota); font-weight: var(--weight-semibold); }
+  .chk-cta .cta-sub {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    margin: 0 0 32px 0;
+    max-width: 56ch;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Início</a></li>
+      <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+      <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+      <li><a href="workshop-mapa-psicossocial.html" class="nav-link">Workshop NR-1</a></li>
+      <li><a href="livro.html" class="nav-link">Livro</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="na-midia.html" class="nav-link">Na Mídia</a></li>
+      <li><a href="contato.html" class="nav-link">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#1C3520" stroke-width="1.5"><line x1="3" y1="7" x2="19" y2="7"/><line x1="3" y1="15" x2="19" y2="15"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero-chk">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow-editorial">Material gratuito · Para C-level, conselhos e RH sênior</span>
+        <h1>Checklist NR-1 para Diretoria: <em>12 perguntas</em> antes da fiscalização.</h1>
+        <p class="lead">Em dez minutos, sua organização identifica em quais frentes da resposta à NR-1 está estruturada — e quais ainda precisam de atenção urgente. Linguagem de governança, não de coach. Para uso interno em conselhos, comitês de ESG e reuniões de diretoria.</p>
+
+        <div class="meta-row">
+          <div class="meta-cell">
+            <span class="meta-k">Formato</span>
+            <span class="meta-v">PDF · 12 páginas</span>
+          </div>
+          <div class="meta-cell">
+            <span class="meta-k">Tempo de leitura</span>
+            <span class="meta-v">10 minutos</span>
+          </div>
+          <div class="meta-cell">
+            <span class="meta-k">Para quem</span>
+            <span class="meta-v">C-level · RH sênior · ESG</span>
+          </div>
+        </div>
+
+        <p style="font-family:var(--font-sans);font-size:0.875rem;color:var(--cinza-quente);line-height:1.55;max-width:48ch;margin:0">Construído com base em NR-1, Portaria MTE 1.419/2024, Resolução CFM 2.323/2022 e prática clínica e corporativa de quase 30 anos da Dra. Ana Paula Teixeira.</p>
+      </div>
+
+      <aside class="capture-form">
+        <span class="cf-eyebrow">Receba gratuitamente</span>
+        <h2>Acesso imediato por e-mail.</h2>
+        <p class="cf-sub">Em até 2 minutos no seu inbox. Sem spam, sem sequência de vendas agressiva — apenas o material e atualizações ocasionais sobre NR-1.</p>
+
+        <form action="https://docs.google.com/forms/d/e/__FORM_ID_CHECKLIST__/formResponse" method="POST" target="_blank">
+          <div class="field">
+            <label class="field-label">Nome *</label>
+            <input class="field-input" name="entry.NOME" required placeholder="Como devemos te chamar">
+          </div>
+          <div class="field">
+            <label class="field-label">E-mail corporativo *</label>
+            <input class="field-input" name="entry.EMAIL" type="email" required placeholder="você@empresa.com.br">
+          </div>
+          <div class="field">
+            <label class="field-label">Empresa *</label>
+            <input class="field-input" name="entry.EMPRESA" required>
+          </div>
+          <div class="field">
+            <label class="field-label">Cargo *</label>
+            <input class="field-input" name="entry.CARGO" required placeholder="Diretor(a), Gerente, Conselheiro(a)...">
+          </div>
+          <button type="submit">Receber o checklist →</button>
+          <p class="cf-micro">Ao enviar, você concorda em receber o material e atualizações ocasionais. Pode descadastrar a qualquer momento. Veja a <a href="politica-privacidade.html" style="color:var(--bege-areia);text-decoration:underline">Política de Privacidade</a>.</p>
+        </form>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<!-- POR QUE IMPORTA -->
+<section class="chk-block reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Por que importa agora</span>
+    <h2 class="s-title">A NR-1 mudou. A diretoria precisa saber onde está.</h2>
+    <p class="s-sub">A inclusão dos fatores psicossociais no Programa de Gerenciamento de Riscos (PGR) deixou de ser orientação e virou exigência fiscalizável. A pergunta não é mais "se" — é "como sua organização se posiciona quando a fiscalização chegar".</p>
+
+    <div class="why-grid reveal-stagger">
+      <article class="why-card">
+        <span class="figure">R$ 6.708</span>
+        <h3>Multa por trabalhador exposto</h3>
+        <p>Valor previsto na Portaria MTE 1.419/2024 para descumprimento dos requisitos da NR-1 ampliada. Em organização de 100 pessoas, exposição financeira chega facilmente a sete dígitos.</p>
+      </article>
+      <article class="why-card">
+        <span class="figure">26/maio</span>
+        <h3>Início efetivo da autuação</h3>
+        <p>Data de início da fiscalização ativa pelos auditores fiscais do trabalho. A janela de adequação está se fechando — empresas sem evidência documental viram alvo prioritário.</p>
+      </article>
+      <article class="why-card">
+        <span class="figure">370%</span>
+        <h3>ROI médio em programas</h3>
+        <p>Retorno médio de programas de saúde mental no trabalho, segundo literatura internacional aplicada. Não é despesa de RH — é proteção de receita, reputação e talento.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- AS 12 PERGUNTAS (PREVIEW) -->
+<section class="chk-block reveal" style="background:var(--bg);border-top:1px solid var(--border)">
+  <div class="container">
+    <span class="eyebrow-editorial">As 12 perguntas · Pré-visualização</span>
+    <h2 class="s-title">Doze perguntas. Diagnóstico em dez minutos.</h2>
+    <p class="s-sub">No PDF completo, cada pergunta vem acompanhada de critério de avaliação, referência normativa, orientação prática para fechar a frente e nota explicativa para a diretoria. Aqui, as 12 perguntas no formato puro — para que sua diretoria já comece a discutir.</p>
+
+    <div class="questions-list">
+      <div class="question-item">
+        <span class="q-num"></span>
+        <p>Sua organização tem responsável técnico formal pelo PGR psicossocial — não apenas pelo PGR tradicional?</p>
+      </div>
+      <div class="question-item">
+        <span class="q-num"></span>
+        <p>Existe documento que descreva os fatores psicossociais presentes na atividade — para além de "estresse" como termo genérico?</p>
+      </div>
+      <div class="question-item">
+        <span class="q-num"></span>
+        <p>Os afastamentos por CIDs F (transtornos mentais) recebem leitura ocupacional — ou são tratados apenas como questão individual do colaborador?</p>
+      </div>
+      <div class="question-item">
+        <span class="q-num"></span>
+        <p>A liderança intermediária recebeu orientação técnica sobre como conduzir conversa de adoecimento — ou improvisa caso a caso?</p>
+      </div>
+      <div class="question-item">
+        <span class="q-num"></span>
+        <p>As decisões de retorno ao trabalho passam por leitura clínica ocupacional — ou são apenas administrativas?</p>
+      </div>
+      <div class="question-item">
+        <span class="q-num"></span>
+        <p>Existe canal de escuta interno com critério técnico de triagem — não apenas ouvidoria genérica?</p>
+      </div>
+      <div class="question-item">
+        <span class="q-num"></span>
+        <p>O programa de saúde mental está vinculado a indicadores objetivos (afastamentos, turnover, clima) — ou apenas a campanhas de bem-estar?</p>
+      </div>
+      <div class="question-item">
+        <span class="q-num"></span>
+        <p>A CIPA tem alguém com letramento técnico em fatores psicossociais — ou o tema é tratado por aproximação?</p>
+      </div>
+      <div class="question-item">
+        <span class="q-num"></span>
+        <p>Os contratos com terceirizadas e prestadores incluem responsabilidade compartilhada por saúde mental — ou a exposição fica concentrada na contratante?</p>
+      </div>
+      <div class="question-item">
+        <span class="q-num"></span>
+        <p>O jurídico interno acompanha a Portaria MTE 1.419/2024 e a Resolução CFM 2.323/2022 — ou só o time de SST?</p>
+      </div>
+      <div class="question-item">
+        <span class="q-num"></span>
+        <p>Existe trilha de capacitação para lideranças com conteúdo técnico em saúde mental — ou apenas treinamento motivacional pontual?</p>
+      </div>
+      <div class="question-item">
+        <span class="q-num"></span>
+        <p>A diretoria entende a diferença entre intervenção reativa (após adoecimento) e gestão preventiva de fatores psicossociais — em linguagem de risco e governança?</p>
+      </div>
+    </div>
+
+    <p style="margin-top:48px;font-family:var(--font-sans);font-weight:300;font-size:0.9375rem;line-height:1.6;color:var(--cinza-quente);max-width:62ch">Critério de leitura interna — quem responde majoritariamente "não" tem urgência. Quem responde "sim" precisa demonstrar evidência documental para cada item. <b style="color:var(--verde-noturno)">A fiscalização pede evidência, não declaração.</b></p>
+
+    <div style="margin-top:32px"><a href="#hero" onclick="document.querySelector('.capture-form').scrollIntoView({behavior:'smooth'});return false;" class="btn btn-primary">Receber o PDF completo →</a></div>
+  </div>
+</section>
+
+<!-- PARA QUEM RESPONDEU "NÃO" -->
+<section class="chk-block reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Depois do checklist</span>
+    <h2 class="s-title">Quem identificou frentes em aberto pode começar agora.</h2>
+    <p class="s-sub">O checklist é diagnóstico inicial. Para sustentar evidência defensável diante da fiscalização, sua organização precisa de método clínico e documento técnico — não de mais palestra motivacional.</p>
+
+    <div style="display:grid;grid-template-columns:1fr;gap:24px;margin-top:32px;">
+      <article style="background:var(--bege-areia);padding:clamp(32px,4vw,48px);border-radius:2px;border-left:3px solid var(--terracota)">
+        <span class="eyebrow-editorial" style="color:var(--terracota);display:block;margin-bottom:12px">Próximo passo recomendado</span>
+        <h3 style="font-family:var(--font-serif);font-weight:700;font-size:clamp(1.5rem,1.2rem + 1vw,2rem);color:var(--verde-noturno);line-height:1.2;margin:0 0 16px 0;max-width:24ch;text-wrap:balance">Workshop Mapa Psicossocial NR-1.</h3>
+        <p style="font-family:var(--font-sans);font-weight:300;font-size:1rem;line-height:1.65;color:var(--preto-editorial);max-width:60ch;margin:0 0 24px 0">Workshop online de 8 horas em duas sessões, conduzido por trio multidisciplinar (médica do trabalho, psicóloga organizacional e ergonomista). Sua equipe sai com o rascunho do inventário de riscos psicossociais — base defensável para responder à NR-1 com método.</p>
+        <div style="display:flex;gap:24px;flex-wrap:wrap;font-family:var(--font-sans);font-size:0.875rem;color:var(--cinza-quente);margin-bottom:24px">
+          <span><b style="color:var(--verde-noturno)">Investimento</b> a partir de R$ 6.000</span>
+          <span><b style="color:var(--verde-noturno)">Janela</b> mai – jul 2026</span>
+        </div>
+        <a href="workshop-mapa-psicossocial.html" class="btn btn-primary">Conhecer o Workshop NR-1 →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="chk-cta reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Receber o checklist</span>
+    <h2>Doze perguntas. Dez minutos. <em>Decisão informada.</em></h2>
+    <p class="cta-sub">Material gratuito enviado em até 2 minutos por e-mail. Para uso interno em conselhos, comitês de ESG, reuniões de diretoria e leituras estratégicas de RH sênior.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center">
+      <a href="#hero" onclick="document.querySelector('.capture-form').scrollIntoView({behavior:'smooth'});return false;" class="btn btn-primary">Receber o PDF completo →</a>
+      <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20baixei%20o%20Checklist%20NR-1%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Workshop%20Mapa%20Psicossocial." class="btn btn-secondary">Falar pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
+        <p class="footer-anchor">Porque empresas íntegras cuidam, com seriedade, do que impacta pessoas, cultura e trabalho.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegar</div>
+        <div class="stack-3">
+          <div><a href="sobre.html">Sobre</a></div>
+          <div><a href="servicos.html">Serviços</a></div>
+          <div><a href="workshop-mapa-psicossocial.html">Workshop NR-1</a></div>
+          <div><a href="livro.html">Livro</a></div>
+          <div><a href="blog.html">Blog</a></div>
+          <div><a href="na-midia.html">Na Mídia</a></div>
+          <div><a href="governanca.html">Governança</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contato</div>
+        <div class="stack-3">
+          <div><a href="mailto:contato@anapaulateixeira.med.br">contato@anapaulateixeira.med.br</a></div>
+          <div><a href="https://wa.me/5575983186200">WhatsApp (75) 98318-6200</a></div>
+          <div><a href="contato.html">Formulário</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>CRM-BA 12797 · RQE 7237 · Board Member ICOH</span>
+      <span>© 2026 Dra. Ana Paula Teixeira · anapaulateixeira.med.br · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidade</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="design-system.js" defer></script>
+</body>
+</html>
