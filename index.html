@@ -623,7 +623,15 @@
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
   }
-  .lead-grid { max-width: 760px; }
+  .lead-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  @media (min-width: 880px) {
+    .lead-grid { grid-template-columns: 1.4fr 1fr; gap: 80px; }
+  }
   .lead-single h2 {
     font-family: var(--font-serif);
     font-weight: var(--weight-bold);
@@ -644,6 +652,17 @@
     margin: 0 0 32px 0;
     max-width: 60ch;
   }
+  .lead-cover {
+    aspect-ratio: 3/4;
+    width: 100%;
+    max-width: 320px;
+    justify-self: center;
+    background: var(--off-white);
+    box-shadow: 0 30px 60px -25px rgba(28,53,32,.3), 0 15px 30px -15px rgba(28,53,32,.2);
+    overflow: hidden;
+    border-radius: 2px;
+  }
+  .lead-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
   /* APARIÇÕES EM MÍDIA · grid de vídeos */
   .media-grid-section {
@@ -887,7 +906,7 @@
       <span class="eyebrow-editorial">Livro · 1ª edição · 2025 · AssedioNet</span>
       <h2>Quando o Trabalho Dói.</h2>
       <p class="book-sub-it">O custo invisível do adoecimento — e quem paga essa conta.</p>
-      <p>Une psicologia, medicina, direito e gestão para explicar como o sofrimento se instala no trabalho — e como pode ser transformado. Com histórias reais e soluções práticas para líderes, gestores e profissionais que querem criar ambientes mais saudáveis.</p>
+      <p>Um livro para nomear, com clareza e base técnica, o que atravessa pessoas, cultura e trabalho. Voltado a lideranças, RH, profissionais de saúde ocupacional e leitores que desejam compreender, com mais profundidade, os fatores que sustentam adoecimento ou promovem transformação nas organizações.</p>
       <div class="book-meta">
         <span><b>Páginas</b> 253+</span>
         <span><b>Edição</b> 1ª · 2025</span>
@@ -976,6 +995,14 @@
           <span class="media-sub">Podcast sobre trajetória</span>
         </div>
       </a>
+      <a class="media-card" href="https://www.youtube.com/watch?v=0rmRJUfnH5w&t=4145s" target="_blank" rel="noopener">
+        <div class="media-thumb"><img src="https://img.youtube.com/vi/0rmRJUfnH5w/hqdefault.jpg" alt="Entrevista YouTube" loading="lazy"><span class="media-play" aria-hidden="true">▶</span></div>
+        <div class="media-meta">
+          <span class="media-channel">Entrevista</span>
+          <p class="media-title">Saúde mental no trabalho — entrevista completa</p>
+          <span class="media-sub">A confirmar veículo · participação editorial</span>
+        </div>
+      </a>
     </div>
 
     <p class="media-press">Também publicada em <b>CartaCapital · Robb Report Brasil · Record TV · RH Notícias · Bahia Notícias</b>.</p>
@@ -991,6 +1018,9 @@
         <h2>Do Relato à Tomada de Decisão.</h2>
         <p class="lead-sub">Guia de 27 páginas, baseado na Resolução CFM 2.323/2022 e na NR-1, em 12 passos para investigação técnica de adoecimento ocupacional. Material gratuito, dirigido a médicos do trabalho, SESMT, RH sênior e profissionais que conduzem casos.</p>
         <a href="https://guia.anateixeiramed.com.br/" target="_blank" rel="noopener" class="btn btn-primary">Receber o guia →</a>
+      </div>
+      <div class="lead-cover">
+        <img src="assets/photos/capa-guia.png" alt="Capa do guia Do Relato à Tomada de Decisão" loading="lazy">
       </div>
     </div>
   </div>
