@@ -3,403 +3,407 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- SEO -->
-<title>Sobre · Dra. Ana Paula Teixeira</title>
-<meta name="description" content="Três décadas de medicina do trabalho. De Alagoinhas à referência em Lesão Moral Ocupacional organizacional. Médica com CRM-BA 12797, Board Member certificada, autora indicada ao Prêmio Ecos.">
+<title>Sobre · Dra. Ana Paula Teixeira · Médica do trabalho, autora e pesquisadora</title>
+<meta name="description" content="Dra. Ana Paula Teixeira — médica do trabalho com quase três décadas de prática clínica e corporativa, autora de Quando o Trabalho Dói (indicado ao 7º Prêmio Ecos), pesquisadora pioneira de Lesão Moral Ocupacional no Brasil. CRM-BA 12797 · RQE 7237 · Membro ICOH · Board Member.">
 <meta name="author" content="Dra. Ana Paula Teixeira">
 <link rel="canonical" href="https://anapaulateixeira.med.br/sobre.html">
-<!-- Open Graph -->
-<meta property="og:type" content="website">
+<meta property="og:type" content="profile">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Dra. Ana Paula Teixeira">
 <meta property="og:url" content="https://anapaulateixeira.med.br/sobre.html">
-<meta property="og:title" content="Sobre · Trinta anos transformados em autoridade técnica">
-<meta property="og:description" content="Três décadas de medicina do trabalho. De Alagoinhas à referência em Lesão Moral Ocupacional organizacional. Médica com CRM-BA 12797, Board Member certificada, autora indicada ao Prêmio Ecos.">
+<meta property="og:title" content="Sobre · Dra. Ana Paula Teixeira">
+<meta property="og:description" content="Médica do trabalho com 30 anos de prática. Autora de Quando o Trabalho Dói. Pesquisadora pioneira de Lesão Moral Ocupacional no Brasil. CRM-BA 12797 · RQE 7237.">
 <meta property="og:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Sobre · Trinta anos transformados em autoridade técnica">
-<meta name="twitter:description" content="Três décadas de medicina do trabalho. De Alagoinhas à referência em Lesão Moral Ocupacional organizacional. Médica com CRM-BA 12797, Board Member certificada, autora indicada ao Prêmio Ecos.">
+<meta name="twitter:title" content="Sobre · Dra. Ana Paula Teixeira">
+<meta name="twitter:description" content="Médica do trabalho · Autora · Pesquisadora · CRM-BA 12797 · Salvador, Bahia.">
 <meta name="twitter:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
-<!-- Favicon -->
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/favicon.png">
 <meta name="theme-color" content="#1C3520">
 <link rel="stylesheet" href="design-system.css">
 <style>
-  /* ===== Sobre — overrides locais ===== */
-  .hero-sobre { padding-block: clamp(80px, 10vw, 160px); }
+  /* HERO */
+  .hero-sobre {
+    padding-block: clamp(96px, 11vw, 160px);
+    background: var(--bg);
+  }
   .hero-sobre .hero-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 56px;
     align-items: center;
   }
-  @media (min-width: 960px) {
-    .hero-sobre .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 480px); gap: 80px; }
-    .hero-sobre .hero-portrait { max-width: 480px; margin-inline: 0; }
+  @media (min-width: 880px) {
+    .hero-sobre .hero-grid { grid-template-columns: minmax(0, 420px) minmax(0, 1fr); gap: 80px; }
   }
-  .hero-sobre .hero-title-1 {
-    font-family: var(--font-serif);
-    font-weight: var(--weight-bold);
-    font-size: clamp(2rem, 1.5rem + 2.2vw, 2.75rem); /* max ~44px */
-    line-height: 1.15;
-    color: var(--verde-noturno);
-    letter-spacing: -0.01em;
-    text-wrap: balance;
-    margin: 0;
-  }
-  .hero-sobre .hero-title-2 {
-    font-family: var(--font-serif);
-    font-weight: var(--weight-bold);
-    font-size: clamp(1.5rem, 1.2rem + 1.4vw, 2rem); /* max 32px */
-    line-height: 1.2;
-    color: var(--verde-noturno);
-    letter-spacing: -0.005em;
-    text-wrap: balance;
-    margin: 0;
-  }
-  /* Guardrail: título do hero nunca acima de 4.5rem (72px) */
-  .hero-sobre .hero-title-1 { max-width: 18ch; }
-  .hero-sobre .hero-title-2 { max-width: 28ch; font-style: italic; font-weight: var(--weight-semibold); color: var(--fg); }
-  .hero-sobre .hero-intro {
-    max-width: 520px;
-    font-family: var(--font-sans);
-    font-weight: var(--weight-light);
-    font-size: var(--type-lead);
-    line-height: var(--lh-normal);
-    color: var(--preto-editorial);
-    margin-top: 32px;
-  }
-  .hero-sobre .hero-portrait {
+  .hero-sobre .portrait {
     aspect-ratio: 4/5;
     width: 100%;
-    max-width: 360px;
-    margin-inline: auto;
+    max-width: 420px;
     overflow: hidden;
-    border-radius: 2px;
     background: var(--bege-areia);
+    border-radius: 2px;
+    margin-inline: auto;
+    box-shadow: 0 30px 60px -25px rgba(28,53,32,.25);
   }
-  .hero-sobre .hero-portrait img {
-    width: 100%; height: 100%; object-fit: cover;
-    filter: saturate(0.95);
-  }
-
-  /* Seções genéricas */
-  .s-block { padding-block: clamp(96px, 10vw, 128px); }
-  .s-block .s-eyebrow { margin-bottom: 20px; }
-  .s-block .s-title {
+  .hero-sobre .portrait img { width: 100%; height: 100%; object-fit: cover; }
+  .hero-sobre h1 {
     font-family: var(--font-serif);
     font-weight: var(--weight-bold);
-    font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
-    line-height: 1.15;
+    font-size: clamp(2.5rem, 1.6rem + 3vw, 4rem);
+    line-height: 1.05;
     color: var(--verde-noturno);
-    letter-spacing: -0.01em;
+    letter-spacing: -0.015em;
     text-wrap: balance;
-    margin: 0 0 24px 0;
-    max-width: 24ch;
+    max-width: 16ch;
+    margin: 24px 0 16px 0;
   }
-  .s-block .s-subtitle-italic {
+  .hero-sobre .role {
     font-family: var(--font-serif);
     font-style: italic;
     font-weight: var(--weight-semibold);
-    font-size: clamp(1.375rem, 1.2rem + 0.9vw, 1.875rem);
+    font-size: clamp(1.125rem, 1rem + 0.5vw, 1.375rem);
     color: var(--terracota);
-    line-height: 1.3;
-    margin: 0 0 16px 0;
-    max-width: 32ch;
-    text-wrap: balance;
+    line-height: 1.4;
+    margin: 0 0 28px 0;
+    max-width: 36ch;
   }
-  .s-block .s-sub-muted {
+  .hero-sobre .credentials {
+    display: flex; flex-wrap: wrap; gap: 8px 16px;
+    margin: 0 0 28px 0;
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     font-family: var(--font-sans);
     font-weight: var(--weight-light);
-    font-size: var(--type-lead);
+    font-size: 0.875rem;
     color: var(--cinza-quente);
-    max-width: 40ch;
-    margin: 0 0 32px 0;
   }
-  .s-block .s-prose {
-    max-width: 640px;
+  .hero-sobre .credentials b { font-weight: var(--weight-medium); color: var(--verde-noturno); }
+  .hero-sobre .credentials span { display: inline-flex; gap: 8px; align-items: baseline; }
+  .hero-sobre .credentials span + span::before { content: '·'; color: var(--terracota); margin-right: 8px; }
+
+  /* BIO */
+  .bio {
+    padding-block: clamp(96px, 10vw, 144px);
+    background: var(--off-white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .bio h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.625rem);
+    color: var(--verde-noturno);
+    line-height: 1.18;
+    margin: 16px 0 32px 0;
+    max-width: 22ch;
+    text-wrap: balance;
+    letter-spacing: -0.005em;
+  }
+  .bio-prose {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: var(--preto-editorial);
+    max-width: 64ch;
+  }
+  .bio-prose p + p { margin-top: 18px; }
+  .bio-prose strong { font-weight: var(--weight-medium); color: var(--verde-noturno); }
+
+  /* COMO TRABALHO */
+  .como-trab {
+    padding-block: clamp(96px, 10vw, 144px);
+  }
+  .como-trab h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.625rem);
+    color: var(--verde-noturno);
+    line-height: 1.18;
+    margin: 16px 0 32px 0;
+    max-width: 22ch;
+    text-wrap: balance;
+    letter-spacing: -0.005em;
+  }
+  .como-prose {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: var(--preto-editorial);
+    max-width: 64ch;
+    margin: 0 0 40px 0;
+  }
+  .como-prose p + p { margin-top: 18px; }
+  .atende-list {
+    list-style: none; padding: 0; margin: 0;
+    display: grid;
+    gap: 14px;
+    max-width: 64ch;
+  }
+  .atende-list li {
+    padding-left: 28px;
+    position: relative;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--preto-editorial);
+  }
+  .atende-list li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0.6em;
+    width: 14px; height: 1px;
+    background: var(--terracota);
+  }
+
+  /* O QUE ME MOVE */
+  .move {
+    padding-block: clamp(96px, 10vw, 144px);
+    background: var(--bege-areia);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .move h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.625rem);
+    color: var(--verde-noturno);
+    line-height: 1.18;
+    margin: 16px 0 32px 0;
+    max-width: 22ch;
+    text-wrap: balance;
+    letter-spacing: -0.005em;
+  }
+  .move-prose {
     font-family: var(--font-sans);
     font-weight: var(--weight-light);
     font-size: 1.0625rem;
     line-height: 1.85;
     color: var(--preto-editorial);
+    max-width: 64ch;
   }
-  .s-block .s-prose p + p { margin-top: 20px; }
-
-  .callout-bar {
-    border-left: 3px solid var(--terracota);
-    padding: 20px 0 20px 28px;
-    max-width: 640px;
-    margin-top: 40px;
+  .move-prose p + p { margin-top: 20px; }
+  .move-pull {
     font-family: var(--font-serif);
     font-style: italic;
     font-weight: var(--weight-semibold);
-    font-size: 1.375rem;
+    font-size: clamp(1.375rem, 1.1rem + 1vw, 1.75rem);
     line-height: 1.4;
-    color: var(--verde-noturno);
+    color: var(--terracota);
+    margin: 32px 0;
+    padding-left: 28px;
+    border-left: 4px solid var(--terracota);
+    max-width: 56ch;
     text-wrap: balance;
   }
 
-  /* Deep section (profundidade) */
-  .s-deep {
-    background: var(--verde-noturno);
-    color: var(--off-white);
-    padding-block: clamp(96px, 10vw, 128px);
-    position: relative;
-    overflow: hidden;
+  /* LIVROS */
+  .livros {
+    padding-block: clamp(96px, 10vw, 144px);
   }
-  .s-deep::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: url('assets/photos/context-leather-chair.png');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.12;
-    filter: saturate(0.6);
-    pointer-events: none;
-  }
-  .s-deep > .container { position: relative; z-index: 1; }
-  .s-deep .s-title { color: var(--off-white); font-style: italic; font-weight: var(--weight-semibold); }
-  .s-deep .s-subtitle-highlight {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: var(--weight-semibold);
-    font-size: clamp(1.5rem, 1.25rem + 1vw, 2rem);
-    color: var(--off-white);
-    line-height: 1.3;
-    max-width: 24ch;
-    margin: 0 0 24px 0;
-    text-wrap: balance;
-  }
-  .s-deep .s-prose { color: rgba(240,237,230,.82); }
-  .s-deep .s-eyebrow { color: var(--off-white); }
-  .s-deep .s-eyebrow::before { background: var(--terracota); }
-  .s-deep .callout-bar { color: var(--off-white); border-left-color: var(--terracota); }
-
-  /* Grid credenciais */
-  .cred-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1px;
-    background: var(--border);
-    border: 1px solid var(--border);
-    margin-top: 48px;
-  }
-  @media (min-width: 480px) { .cred-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (min-width: 900px) { .cred-grid { grid-template-columns: repeat(3, 1fr); } }
-  .cred-card {
-    background: var(--off-white);
-    padding: 36px 32px;
-    display: flex; flex-direction: column; gap: 14px;
-  }
-  .cred-num {
+  .livros h2 {
     font-family: var(--font-serif);
     font-weight: var(--weight-bold);
-    font-size: clamp(3rem, 2.2rem + 2.6vw, 4.25rem);
-    line-height: 0.95;
+    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.625rem);
     color: var(--verde-noturno);
-    letter-spacing: -0.02em;
+    line-height: 1.18;
+    margin: 16px 0 48px 0;
+    max-width: 22ch;
+    letter-spacing: -0.005em;
   }
-  .cred-num sup {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: var(--weight-semibold);
-    font-size: 0.55em;
-    top: -0.3em;
-    margin-left: 2px;
+  .livros-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
-  .cred-title {
+  @media (min-width: 880px) { .livros-list { grid-template-columns: repeat(2, 1fr); gap: 32px; } }
+  .livro-card {
+    padding: clamp(28px, 3vw, 36px);
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    display: flex; flex-direction: column;
+  }
+  .livro-card.feat {
+    background: var(--bg);
+    border-color: var(--terracota);
+  }
+  .livro-card .ltag {
+    display: block;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.625rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    margin-bottom: 12px;
+  }
+  .livro-card h3 {
     font-family: var(--font-serif);
-    font-weight: var(--weight-semibold);
-    font-size: 1.25rem;
+    font-weight: var(--weight-bold);
+    font-size: 1.375rem;
     color: var(--verde-noturno);
-    margin: 0;
+    margin: 0 0 6px 0;
+    line-height: 1.25;
   }
-  .cred-desc {
+  .livro-card .meta {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.8125rem;
+    color: var(--cinza-quente);
+    margin: 0 0 14px 0;
+  }
+  .livro-card p {
     font-family: var(--font-sans);
     font-weight: var(--weight-light);
     font-size: 0.9375rem;
-    line-height: 1.6;
-    color: var(--cinza-quente);
+    line-height: 1.65;
+    color: var(--preto-editorial);
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+  }
+  .livro-card a {
+    display: inline-flex; gap: 6px; align-items: center;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.8125rem;
+    color: var(--terracota);
+    text-decoration: none;
   }
 
-  /* Lista Nunca / Sempre */
-  .contrast-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 48px;
-    margin-top: 56px;
+  /* PESQUISA */
+  .pesquisa {
+    padding-block: clamp(96px, 10vw, 144px);
+    background: var(--off-white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
   }
-  @media (min-width: 800px) { .contrast-grid { grid-template-columns: 1fr 1fr; gap: 80px; } }
-  .contrast-col .c-label { color: var(--terracota); margin-bottom: 12px; }
-  .contrast-col .c-title {
+  .pesquisa h2 {
     font-family: var(--font-serif);
     font-weight: var(--weight-bold);
-    font-size: clamp(1.75rem, 1.5rem + 1vw, 2.25rem);
+    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.625rem);
     color: var(--verde-noturno);
-    margin: 0 0 20px 0;
+    line-height: 1.18;
+    margin: 16px 0 32px 0;
+    max-width: 22ch;
+    text-wrap: balance;
+    letter-spacing: -0.005em;
   }
-  .contrast-col ul { list-style: none; padding: 0; margin: 0; }
-  .contrast-col li {
-    padding: 18px 0;
+  .pesquisa-prose {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: var(--preto-editorial);
+    max-width: 64ch;
+  }
+  .pesquisa-prose p + p { margin-top: 18px; }
+  .pesquisa-prose strong { font-weight: var(--weight-medium); color: var(--verde-noturno); }
+
+  /* APARIÇÕES */
+  .aparicoes {
+    padding-block: clamp(80px, 9vw, 128px);
+  }
+  .aparicoes h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.625rem, 1.2rem + 1.4vw, 2.25rem);
+    color: var(--verde-noturno);
+    margin: 16px 0 32px 0;
+    line-height: 1.2;
+    max-width: 26ch;
+    text-wrap: balance;
+  }
+  .aparicoes p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--preto-editorial);
+    margin: 0;
+    max-width: 64ch;
+  }
+  .aparicoes p b { font-weight: var(--weight-medium); color: var(--verde-noturno); }
+  .aparicoes-link {
+    margin-top: 24px;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.875rem;
+    color: var(--terracota);
+    text-decoration: none;
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+  }
+
+  /* ESCUTARIS */
+  .escutaris {
+    padding-block: clamp(80px, 9vw, 128px);
+    background: var(--off-white);
     border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .escutaris .escut-grid {
+    max-width: 760px;
+  }
+  .escutaris h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.625rem, 1.2rem + 1.4vw, 2.25rem);
+    color: var(--verde-noturno);
+    margin: 16px 0 24px 0;
+    line-height: 1.2;
+    max-width: 26ch;
+    text-wrap: balance;
+  }
+  .escutaris p {
     font-family: var(--font-sans);
     font-weight: var(--weight-light);
     font-size: 1rem;
-    line-height: 1.55;
+    line-height: 1.7;
     color: var(--preto-editorial);
+    margin: 0 0 20px 0;
+    max-width: 60ch;
   }
-  .contrast-col li:last-child { border-bottom: 1px solid var(--border); }
+  .escutaris p b { font-weight: var(--weight-medium); color: var(--verde-noturno); }
 
-  /* Selo pullquote grande */
-  .seal {
+  /* CTA */
+  .cta-sobre {
+    padding-block: clamp(96px, 10vw, 144px);
     background: var(--verde-noturno);
     color: var(--off-white);
-    padding: clamp(72px, 8vw, 112px) clamp(24px, 5vw, 64px);
-    text-align: center;
   }
-  .seal .seal-quote {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: var(--weight-semibold);
-    font-size: clamp(1.75rem, 1.2rem + 2.4vw, 3rem);
-    color: var(--off-white);
-    line-height: 1.3;
-    max-width: 28ch;
-    margin: 0 auto;
-    text-wrap: balance;
-  }
-  .seal .seal-mark {
-    width: 48px; height: 1px; background: var(--terracota);
-    margin: 32px auto 0;
-  }
-
-  /* CTA final */
-  .cta-final { padding-block: clamp(96px, 10vw, 128px); }
-  .cta-final h2 {
+  .cta-sobre .eyebrow-editorial { color: var(--bege-areia); }
+  .cta-sobre h2 {
     font-family: var(--font-serif);
     font-weight: var(--weight-bold);
-    font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
-    color: var(--verde-noturno);
-    margin: 0 0 20px 0;
+    font-size: clamp(2rem, 1.4rem + 2.4vw, 3rem);
+    color: var(--off-white);
+    line-height: 1.1;
+    margin: 16px 0 24px 0;
     max-width: 22ch;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
   }
-  .cta-final p {
+  .cta-sobre h2 em { font-style: italic; font-weight: var(--weight-semibold); color: var(--terracota); }
+  .cta-sobre p {
     font-family: var(--font-sans);
     font-weight: var(--weight-light);
-    font-size: var(--type-lead);
-    color: var(--preto-editorial);
-    max-width: 48ch;
-    margin: 0 0 32px 0;
-  }
-  .cta-final .meta {
-    margin-top: 32px;
-    font-size: var(--type-small);
-    color: var(--cinza-quente);
-  }
-
-  /* Âncoras laterais */
-  .sidenav {
-    position: fixed;
-    left: 32px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 20;
-    display: flex; flex-direction: column; gap: 10px;
-  }
-  @media (max-width: 1200px) { .sidenav { display: none; } }
-  .sidenav a {
-    font-family: var(--font-sans);
-    font-weight: var(--weight-medium);
-    font-size: 0.6875rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--cinza-quente);
-    text-decoration: none;
-    padding: 4px 0;
-    opacity: 0.5;
-    transition: opacity .2s, color .2s;
-    display: flex; align-items: center; gap: 8px;
-  }
-  .sidenav a::before {
-    content: ''; width: 16px; height: 1px; background: currentColor;
-    transition: width .2s;
-  }
-  .sidenav a:hover { opacity: 1; color: var(--terracota); }
-  .sidenav a.is-active { opacity: 1; color: var(--terracota); }
-  .sidenav a.is-active::before { width: 32px; }
-
-  /* Depoimentos */
-  .testimonials-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1px;
-    background: var(--border);
-    border: 1px solid var(--border);
-    margin-top: 48px;
-  }
-  @media (min-width: 900px) { .testimonials-grid { grid-template-columns: repeat(3, 1fr); } }
-  .testimonial {
-    background: var(--off-white);
-    padding: 44px 36px;
-    display: flex; flex-direction: column; gap: 24px;
-    min-height: 320px;
-  }
-  .testimonial-mark {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: var(--weight-bold);
-    font-size: 3.5rem;
-    color: var(--terracota);
-    line-height: 0.7;
-    margin: 0;
-  }
-  .testimonial-num {
-    display: inline-flex;
-    width: 40px; height: 40px;
-    border-radius: 2px;
-    background: var(--terracota);
-    color: var(--off-white);
-    font-family: var(--font-serif);
-    font-weight: 700;
-    font-size: 0.9375rem;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 0.02em;
-    line-height: 1;
-    flex-shrink: 0;
-  }
-  .testimonial-quote {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: var(--weight-regular);
     font-size: 1.0625rem;
-    line-height: 1.55;
-    color: var(--verde-noturno);
-    flex: 1;
-    margin: 0;
-    text-wrap: pretty;
+    line-height: 1.7;
+    color: var(--off-white);
+    opacity: 0.92;
+    max-width: 56ch;
+    margin: 0 0 36px 0;
   }
-  .testimonial-attr {
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
-    font-family: var(--font-sans);
-    font-weight: var(--weight-light);
-    font-size: 0.875rem;
-    line-height: 1.5;
-    color: var(--cinza-quente);
-  }
-  .testimonial-attr strong {
-    color: var(--verde-noturno);
-    font-weight: var(--weight-medium);
-    display: block;
-    margin-bottom: 4px;
-  }
+  .cta-sobre .cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
 </style>
 </head>
 <body>
@@ -409,14 +413,11 @@
   <div class="nav-inner">
     <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
     <ul class="nav-list">
-      <li><a href="index.html" class="nav-link">Início</a></li>
       <li><a href="sobre.html" class="nav-link" aria-current="page">Sobre</a></li>
       <li><a href="servicos.html" class="nav-link">Serviços</a></li>
-      <li><a href="workshop-mapa-psicossocial.html" class="nav-link">Workshop NR-1</a></li>
       <li><a href="livro.html" class="nav-link">Livro</a></li>
-      <li><a href="blog.html" class="nav-link">Blog</a></li>
-      <li><a href="na-midia.html" class="nav-link">Na Mídia</a></li>
       <li><a href="contato.html" class="nav-link">Contato</a></li>
+      <li><a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20palestra." class="btn btn-primary nav-cta" style="padding:10px 18px;font-size:0.875rem">Solicitar palestra</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Abrir menu">
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#1C3520" stroke-width="1.5"><line x1="3" y1="7" x2="19" y2="7"/><line x1="3" y1="15" x2="19" y2="15"/></svg>
@@ -424,178 +425,168 @@
   </div>
 </nav>
 
-<!-- Side nav (anchors) -->
-<aside class="sidenav" aria-label="Navegação da página">
-  <a href="#credenciais" data-anchor>01</a>
-  <a href="#s04" data-anchor>02</a>
-  <a href="#s05" data-anchor>03</a>
-  <a href="#depoimentos" data-anchor>04</a>
-  <a href="#s08" data-anchor>05</a>
-</aside>
-
 <!-- HERO -->
-<header class="hero-sobre container">
-  <div class="hero-grid">
-    <div>
-      <span class="eyebrow-editorial">Sobre · Médica · Autora · Pesquisadora</span>
-      <h1 class="hero-title-1" style="margin-top:24px">Da clínica ao palco. Do palco ao livro. Do livro à pesquisa.</h1>
-      <hr class="divider-editorial">
-      <p class="hero-title-2">30 anos de medicina do trabalho. Dois livros. Uma pesquisa pioneira.</p>
-      <p class="hero-intro">Ana Paula Teixeira nasceu em Alagoinhas, no interior da Bahia. Filha mais velha, aquela que, dizem, abre os caminhos. Hoje, três décadas depois da formatura em Medicina pela UFBA, é referência em saúde mental ocupacional e pesquisadora pioneira de Lesão Moral Ocupacional aplicado ao contexto organizacional brasileiro.</p>
-      <div style="margin-top:28px"><span class="eyebrow-editorial" style="color:var(--terracota)">CRM-BA 12797 · RQE 7237 · <a href="http://lattes.cnpq.br/6184912021314659" target="_blank" rel="noopener" class="t-link" style="color:inherit">Currículo Lattes ↗</a></span></div>
+<header class="hero-sobre">
+  <div class="container hero-grid">
+    <div class="portrait">
+      <img src="assets/photos/portrait-cream-chair.png" alt="Retrato de Dra. Ana Paula Teixeira" loading="eager">
     </div>
     <div>
-      <div class="hero-portrait">
-        <img src="assets/photos/portrait-studio-bege.png" alt="Retrato da Dra. Ana Paula Teixeira" class="scale-in">
+      <span class="eyebrow-editorial">Quem é</span>
+      <h1>Dra. Ana Paula Teixeira.</h1>
+      <p class="role">Médica do trabalho · Autora · Pesquisadora · Conselheira</p>
+      <div class="credentials">
+        <span><b>CRM-BA 12797</b></span>
+        <span><b>RQE 7237</b></span>
+        <span><b>Membro ICOH</b></span>
+        <span><b>Board Member · 2024</b></span>
+        <span>Salvador, Bahia</span>
       </div>
     </div>
   </div>
 </header>
 
-<!-- CREDENCIAIS (subidas para topo) -->
-<section id="credenciais" class="s-block container reveal">
-  <span class="eyebrow-editorial s-eyebrow">Autoridade técnica</span>
-  <h2 class="s-title">Três décadas transformadas em credenciais.</h2>
-  <div class="cred-grid reveal-stagger">
-    <div class="cred-card">
-      <span class="cred-num">1996</span>
-      <h3 class="cred-title">Formatura em Medicina</h3>
-      <p class="cred-desc">Universidade Federal da Bahia. CRM-BA 12797 · RQE 7237.</p>
-    </div>
-    <div class="cred-card">
-      <span class="cred-num"><span data-counter data-target="130">0</span>+</span>
-      <h3 class="cred-title">Palestras realizadas</h3>
-      <p class="cred-desc">10.100+ profissionais treinados. 99% de avaliações positivas.</p>
-    </div>
-    <div class="cred-card">
-      <span class="cred-num">2024</span>
-      <h3 class="cred-title">Board Member</h3>
-      <p class="cred-desc">Conselheira Consultiva em Saúde certificada. Membro ICOH.</p>
-    </div>
-    <div class="cred-card">
-      <span class="cred-num">2025</span>
-      <h3 class="cred-title">Autora indicada ao prêmio</h3>
-      <p class="cred-desc"><em>Quando o Trabalho Dói</em> indicado ao 7º Prêmio Ecos da Literatura.</p>
-    </div>
-    <div class="cred-card">
-      <span class="cred-num">1<sup>ª</sup></span>
-      <h3 class="cred-title">Autora brasileira a validar a escala OMIS-R</h3>
-      <p class="cred-desc">Primeira autora brasileira a validar uma escala internacional que avalia Lesão Moral Ocupacional para diferentes contextos organizacionais. Mestrado em andamento, em diálogo com os autores fundadores do campo.</p>
-    </div>
-    <div class="cred-card">
-      <span class="cred-num"><span data-counter data-target="30">0</span></span>
-      <h3 class="cred-title">Anos de prática</h3>
-      <p class="cred-desc">Clínica e corporativa. Paraná e Bahia. Indústria, serviços, laboratório, mineração, jornalismo.</p>
-    </div>
-  </div>
-</section>
-
-<!-- A EXPERIÊNCIA QUE REDEFINIU MINHA TRAJETÓRIA — Profundidade -->
-<section id="s04" class="s-deep modo-profundidade reveal">
+<!-- BIO -->
+<section class="bio">
   <div class="container">
-    <span class="eyebrow-editorial s-eyebrow">04 — O ponto de virada</span>
-    <h2 class="s-title">A experiência que redefiniu minha trajetória</h2>
-    <p class="s-subtitle-highlight">Eu me afastei, cuidei de mim e recomecei.</p>
-    <div class="s-prose">
-      <p>Vivi um dos auges da minha vida profissional em uma das maiores instituições do Norte e Nordeste. Havia entrega, reconhecimento e resultados. Também havia uma sobrecarga crescente, sustentada em silêncio.</p>
-      <p>A ruptura veio quando uma autoridade legítima colocou em xeque quem eu era e tudo o que eu havia construído ao longo de quase uma década.</p>
-      <p>Esse percurso marcou a transição para o trabalho que hoje desenvolvo com profundidade: saúde mental corporativa.</p>
+    <span class="eyebrow-editorial">Trajetória</span>
+    <h2>Quase três décadas dentro das empresas.</h2>
+    <div class="bio-prose">
+      <p>Sou médica do trabalho com quase três décadas de prática clínica e corporativa. Minha trajetória inteira é dentro das empresas — em mineradoras, siderúrgicas, laboratórios, polos industriais e organizações de diferentes portes — atendendo trabalhadores em situação de risco psicossocial e assessorando lideranças que precisam decidir o que fazer diante do adoecimento que aparece na equipe.</p>
+
+      <p>Formei-me em medicina pela Universidade Federal da Bahia em 1996 (CRM-BA 12797), com especialização em Medicina do Trabalho (RQE 7237). Tenho pós-graduações em <strong>Psiquiatria</strong>, <strong>Saúde Integrativa e Bem-Estar</strong> e <strong>Psicologia Corporal Reichiana</strong> — ferramentas que afinaram a escuta clínica que aplico hoje no contexto organizacional.</p>
+
+      <p>A maior parte da minha consolidação corporativa veio durante dez anos vivendo em Curitiba, em imersão profunda no mundo das empresas. Foi ali que aprendi, na prática, como cultura organizacional adoece ou floresce as pessoas que passam por ela. Há cerca de dez anos voltei à Bahia trazendo esse repertório e a clareza de que era hora de colocá-lo a serviço de algo maior — não só atendendo, mas <strong>formando, escrevendo e direcionando lideranças</strong>.</p>
+
+      <p>Sou <strong>membro da International Commission on Occupational Health (ICOH)</strong> e <strong>Conselheira Consultiva em Saúde certificada pela Board Academy (2024)</strong>. Sou também <strong>mestranda em Tecnologias da Saúde pela Escola Bahiana de Medicina e Saúde Pública</strong>, com defesa prevista para dezembro de 2026.</p>
+
+      <p>Em 2025, publiquei <em>Quando o Trabalho Dói</em> (Editora AssedioNet), indicado ao 7º Prêmio Ecos da Literatura. Já realizei <strong>mais de 130 palestras</strong> em empresas e eventos setoriais, treinando <strong>mais de 10.100 profissionais</strong>, com 99% de avaliações positivas.</p>
     </div>
-    <div class="callout-bar">Há experiências no trabalho que não ferem apenas a rotina. Ferem identidade, confiança e integridade. É preciso transformar tudo isso em Coragem Moral.</div>
   </div>
 </section>
 
-<!-- 05 MORAL INJURY -->
-<section id="s05" class="s-block container reveal">
-  <span class="eyebrow-editorial s-eyebrow">05 — O território próprio</span>
-  <h2 class="s-title">Lesão Moral Ocupacional: o conceito que explica o que o burnout não explica.</h2>
-  <div class="s-prose">
-    <p>Lesão Moral Ocupacional é a lesão psicológica que acontece quando alguém é forçado a agir contra seus valores — ou falha em impedir algo que os viola. Nas organizações, é o mecanismo invisível por trás do adoecimento que o burnout não consegue explicar.</p>
-    <p>A Dra. Ana Paula pesquisa trauma, lesão, coragem e resiliência moral. Em seu projeto de pesquisa, traduziu e validou para o português brasileiro a escala internacional OMIS-R, que permite mapear trauma e lesão moral em diferentes contextos organizacionais, oferecendo base mais consistente para ações individualizadas e institucionais voltadas ao fortalecimento da resiliência e da coragem moral. Nesse campo, dialoga naturalmente com os autores fundadores: Jonathan Shay, Brett Litz e Lauren Farnsworth.</p>
-    <p>Isso muda o diagnóstico. Muda o tratamento. Muda a responsabilidade jurídica. E muda quem precisa estar na conversa — porque Lesão Moral Ocupacional não é questão de RH. É questão de gestão, de cultura e de reputação corporativa.</p>
-  </div>
-  <div class="callout-bar">Porque empresas íntegras cuidam, com seriedade, do que impacta pessoas, cultura e trabalho.</div>
-</section>
-
-<!-- DEPOIMENTOS -->
-<section id="depoimentos" class="s-block container reveal" style="background:var(--bege-areia)">
-  <span class="eyebrow-editorial s-eyebrow">Depoimentos</span>
-  <h2 class="s-title">O que fica depois.</h2>
-  <p class="s-sub-muted">Audiência de palestras, rodas e eventos corporativos.</p>
-
-  <div class="testimonials-grid reveal-stagger">
-
-    <article class="testimonial">
-      <span class="testimonial-num">01</span>
-      <p class="testimonial-quote">É nítido que o trabalho que a Dra. Ana Paula conduz é com muita alma e entrega pessoal.</p>
-      <div class="testimonial-attr">
-        <strong>Participante presencial</strong>
-        Palestra corporativa
-      </div>
-    </article>
-
-    <article class="testimonial">
-      <span class="testimonial-num">02</span>
-      <p class="testimonial-quote">Seu comprometimento com essa causa é admirável e inspirador. Grata por compartilhar sua visão conosco.</p>
-      <div class="testimonial-attr">
-        <strong>Participante institucional</strong>
-        Evento corporativo
-      </div>
-    </article>
-
-    <article class="testimonial">
-      <span class="testimonial-num">03</span>
-      <p class="testimonial-quote">Suas abordagens nos incentivam a praticar uma das mais valiosas lições de Sócrates: &ldquo;Conhece-te a ti mesmo.&rdquo;</p>
-      <div class="testimonial-attr">
-        <strong>Participante de palestra</strong>
-        Reflexão pós-evento
-      </div>
-    </article>
-
-  </div>
-</section>
-
-<!-- O QUE ELA É E NÃO É -->
-<section id="s08" class="s-block container reveal" style="background:var(--off-white)">
-  <span class="eyebrow-editorial s-eyebrow">08 — A distinção importa</span>
-  <h2 class="s-title">O que você encontra — e o que não encontra — nela.</h2>
-  <p class="s-sub-muted">Saúde mental no trabalho virou tema lotado de promessas vagas.</p>
-  <div class="contrast-grid reveal-stagger">
-    <div class="contrast-col">
-      <div class="eyebrow-editorial c-label">Ela nunca é</div>
-      <h3 class="c-title">Nunca</h3>
-      <ul>
-        <li>Palestrante de bem-estar genérico</li>
-        <li>Coach ou especialista em mindset</li>
-        <li>Voz antiempresa que apenas denuncia</li>
-        <li>Vendedora de soluções mágicas</li>
-        <li>Profissional que culpa líderes individualmente</li>
-      </ul>
+<!-- COMO TRABALHO -->
+<section class="como-trab">
+  <div class="container">
+    <span class="eyebrow-editorial">Como trabalho</span>
+    <h2>Vocabulário clínico, em linguagem de gestão.</h2>
+    <div class="como-prose">
+      <p>Não opero no registro de palestrante motivacional nem de coach corporativo. Minha contribuição é clínica — vocabulário próprio da medicina do trabalho, com base em evidência e em regulamentação técnica (NR-1, Resolução CFM 2.323/2022, fatores psicossociais).</p>
+      <p>Trabalho com lideranças e times de RH na construção de culturas organizacionais que cuidam de pessoas, fortalecem a reputação e sustentam resultados. A empresa, na minha leitura, é parceira no processo — não vilã. Direciono, não acuso. Construo com a empresa.</p>
     </div>
-    <div class="contrast-col">
-      <div class="eyebrow-editorial c-label">Ela sempre é</div>
-      <h3 class="c-title">Sempre</h3>
-      <ul>
-        <li>Especialista que trata sofrimento como risco técnico e humano</li>
-        <li>Médica com CRM e responsabilidade técnica real</li>
-        <li>Ponte entre saúde ocupacional, reputação e gestão</li>
-        <li>Pesquisadora que nomeia o que as empresas preferem silenciar</li>
-        <li>Referência que ajuda a reconhecer risco antes de virar passivo</li>
-      </ul>
+    <h3 style="font-family:var(--font-sans);font-weight:500;font-size:0.6875rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--terracota);margin:0 0 24px 0">Atendo prioritariamente</h3>
+    <ul class="atende-list">
+      <li>Empresas de médio e grande porte estruturando programa de saúde mental ou respondendo à NR-1</li>
+      <li>Times de RH e SESMT conduzindo investigação técnica de adoecimento</li>
+      <li>Lideranças em situação de pressão concreta — caso, equipe, decisão estratégica</li>
+      <li>Eventos setoriais e associações que querem conteúdo técnico, não motivacional</li>
+      <li>Pares técnicos — médicos do trabalho, profissionais de saúde ocupacional — em interlocução clínica</li>
+    </ul>
+  </div>
+</section>
+
+<!-- O QUE ME MOVE -->
+<section class="move">
+  <div class="container">
+    <span class="eyebrow-editorial">O que me move</span>
+    <h2>Da empresa do meu pai ao palco que me transformou.</h2>
+    <div class="move-prose">
+      <p>Cresci em Alagoinhas, no interior da Bahia, filha de pai comerciante e mãe professora. Comecei a trabalhar na empresa do meu pai aos 9 anos — minha primeira imersão no mundo organizacional foi muito antes da medicina. Toda a linha materna é de professoras: minha mãe, minha avó, minha irmã. A vocação para ensinar veio dali.</p>
+
+      <p>Quando escolhi medicina, alguém disse que eu não passaria. Como boa taurina, guardei aquilo. Não como derrota. Como combustível. Passei na Federal e na Bahiana. E, quando precisei escolher especialidade, foi a Medicina do Trabalho que me permitiu juntar tudo — a ciência, a escuta, a curiosidade pela complexidade humana e o desejo de transformar empresas em lugares melhores para quem trabalha nelas.</p>
+
+      <p>Durante a pandemia, vivi na pele o que ensino: trabalhei em um polo industrial em Camaçari, com filho pequeno em casa, sustentando sozinha um laboratório em hora extra. Comecei a sentir formigamento no braço, na língua, no olho. Um dia, no ônibus de volta para casa, pensei: <em>hoje eu vou ter um AVC</em>. Decidi sair. Os sintomas passaram naquele dia. Mas a lição ficou.</p>
+
+      <p class="move-pull">"Burnout não é fraqueza. É a resposta de um corpo e de uma mente que carregaram mais do que era justo carregar. E o ambiente de trabalho tem responsabilidade nisso."</p>
+
+      <p>É isso que me move quando entro em uma empresa: nomear o que costuma passar despercebido — os fatores éticos, humanos e organizacionais que adoecem pessoas e comprometem cultura e resultado. E direcionar, com método, para que a empresa enxergue o que antes era ponto cego e aja antes que o custo se torne irreversível.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LIVROS -->
+<section class="livros">
+  <div class="container">
+    <span class="eyebrow-editorial">Obra publicada e em produção</span>
+    <h2>Livros.</h2>
+    <div class="livros-list">
+      <article class="livro-card feat">
+        <span class="ltag">Atual · 2025 · Editora AssedioNet</span>
+        <h3>Quando o Trabalho Dói</h3>
+        <p class="meta">253+ páginas · ISBN 978-6598341954 · Indicado ao 7º Prêmio Ecos da Literatura</p>
+        <p>Diagnóstico clínico e organizacional do adoecimento no trabalho, em oito capítulos, a partir de quase três décadas de prática corporativa.</p>
+        <a href="livro.html">Conhecer o livro →</a>
+      </article>
+
+      <article class="livro-card">
+        <span class="ltag">2021</span>
+        <h3>53 Formas de Encontrar Deus — Além da Pandemia</h3>
+        <p class="meta">Obra de reflexão escrita durante a pandemia</p>
+        <p>Reflexões sobre saúde, espiritualidade e transformação em tempos de crise. Primeiro livro publicado.</p>
+      </article>
+
+      <article class="livro-card">
+        <span class="ltag">Em produção · Previsão fim de 2026 / início de 2027</span>
+        <h3>Liderança Sob Pressão</h3>
+        <p class="meta">Próximo livro</p>
+        <p>Os quatro perfis de liderança em situação de pressão e como conduzir conversa difícil sem virar coach. Tema desdobrado também em palestras.</p>
+      </article>
+
+      <article class="livro-card">
+        <span class="ltag">Em projeto · Previsão 2027</span>
+        <h3>Livro 3 — Lesão Moral Ocupacional</h3>
+        <p class="meta">Em projeto · pós-defesa do mestrado</p>
+        <p>Livro dedicado ao fenômeno clínico da Lesão Moral Ocupacional, com base na escala OMIS-R validada para o português brasileiro.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PESQUISA -->
+<section class="pesquisa">
+  <div class="container">
+    <span class="eyebrow-editorial">Pesquisa em curso</span>
+    <h2>OMIS-R · Lesão Moral Ocupacional no Brasil.</h2>
+    <div class="pesquisa-prose">
+      <p>Mestrado em <strong>Tecnologias da Saúde</strong> pela Escola Bahiana de Medicina e Saúde Pública, com defesa prevista para dezembro de 2026. Pesquisa em curso: tradução e validação transcultural da <strong>OMIS-R</strong> (Occupational Moral Injury Scale, Revised) para o português brasileiro.</p>
+      <p>A OMIS-R é uma escala internacional de Lesão Moral Ocupacional — fenômeno clínico que descreve o dano causado pela violação reiterada de valores morais no contexto do trabalho, distinto de burnout e de transtorno reativo. A validação para o português brasileiro disponibiliza, pela primeira vez, instrumento científico para mapear o fenômeno em diferentes contextos profissionais brasileiros.</p>
+    </div>
+  </div>
+</section>
+
+<!-- APARIÇÕES -->
+<section class="aparicoes">
+  <div class="container">
+    <span class="eyebrow-editorial">Aparições em mídia</span>
+    <h2>Conversas em vídeo, rádio e imprensa.</h2>
+    <p>Já fui entrevistada por <b>CartaCapital</b>, <b>Robb Report Brasil</b>, <b>CBN Salvador</b>, <b>Rádio CBN Bahia</b>, <b>Rádio 93FM Alagoinhas</b>, <b>Record TV</b>, <b>TVE Bahia</b>, <b>F5 Podcast</b>, <b>Board Talks</b>, entre outros veículos. Os vídeos das principais entrevistas estão consolidados na Home — basta clicar no card pra assistir.</p>
+    <a href="index.html#midia" class="aparicoes-link">Ver os vídeos das entrevistas →</a>
+  </div>
+</section>
+
+<!-- ESCUTARIS -->
+<section class="escutaris">
+  <div class="container">
+    <div class="escut-grid">
+      <span class="eyebrow-editorial">Atuação técnica institucional</span>
+      <h2>Diretora técnica da Escutaris.</h2>
+      <p>Sou <b>diretora técnica e referência técnica da Escutaris</b>, consultoria especializada em saúde mental ocupacional, diagnóstico psicossocial e programas de saúde organizacional. Por essa frente, atendo empresas em diagnóstico organizacional, estruturação de programa de saúde mental e resposta institucional à NR-1 com acompanhamento contínuo.</p>
+      <p>Para <b>palestras, rodas de conversa e Direcionamento Executivo individuais</b>, atendo diretamente pela minha marca pessoal — esta página.</p>
     </div>
   </div>
 </section>
 
 <!-- CTA FINAL -->
-<section class="cta-final container reveal">
-  <span class="eyebrow-editorial">Porque empresas íntegras cuidam</span>
-  <h2>Leve essa conversa para sua empresa.</h2>
-  <p>130 palestras realizadas. 10.100 profissionais treinados. Saúde mental no trabalho não é luxo — é condição para que pessoas contribuam com o melhor de si, e para que a empresa sustente cultura, reputação e resultado.</p>
-  <div class="flex gap-3" style="flex-wrap:wrap">
-    <a href="servicos.html" class="btn btn-primary">Solicitar palestra →</a>
-    <a href="livro.html" class="btn btn-secondary">Conhecer o livro</a>
+<section class="cta-sobre">
+  <div class="container">
+    <span class="eyebrow-editorial">Próximo passo</span>
+    <h2>Vamos <em>conversar?</em></h2>
+    <p>Para palestra, roda de conversa, Direcionamento Executivo, mentoria, imprensa ou parceria editorial — chamamos para uma conversa breve para entender o cenário e responder com a melhor configuração.</p>
+    <div class="cta-row">
+      <a href="https://wa.me/5575983186200" class="btn btn-primary">Falar pelo WhatsApp →</a>
+      <a href="contato.html" class="btn btn-secondary" style="border-color:var(--bege-areia);color:var(--bege-areia)">Enviar mensagem</a>
+    </div>
   </div>
-  <p class="meta">contato@anapaulateixeira.med.br · (75) 98318-6200</p>
 </section>
 
 <!-- FOOTER -->
@@ -604,18 +595,18 @@
     <div class="footer-grid">
       <div>
         <div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
-        <p class="footer-anchor">Porque empresas íntegras cuidam, com seriedade, do que impacta pessoas, cultura e trabalho.</p>
+        <p class="footer-anchor">Médica do trabalho · Salvador, Bahia.<br>Cuidar de pessoas é cuidar do negócio.</p>
       </div>
       <div>
         <div class="footer-col-title">Navegar</div>
         <div class="stack-3">
           <div><a href="sobre.html">Sobre</a></div>
           <div><a href="servicos.html">Serviços</a></div>
-          <div><a href="workshop-mapa-psicossocial.html">Workshop NR-1</a></div>
+          <div><a href="palestras.html">Palestras</a></div>
+          <div><a href="rodas-de-conversa.html">Rodas de Conversa</a></div>
+          <div><a href="direcionamento.html">Direcionamento Executivo</a></div>
           <div><a href="livro.html">Livro</a></div>
-          <div><a href="blog.html">Blog</a></div>
-          <div><a href="na-midia.html">Na Mídia</a></div>
-          <div><a href="governanca.html">Governança</a></div>
+          <div><a href="contato.html">Contato</a></div>
         </div>
       </div>
       <div>
@@ -623,40 +614,25 @@
         <div class="stack-3">
           <div><a href="mailto:contato@anapaulateixeira.med.br">contato@anapaulateixeira.med.br</a></div>
           <div><a href="https://wa.me/5575983186200">WhatsApp (75) 98318-6200</a></div>
-          <div><a href="contato.html">Formulário</a></div>
+          <div><a href="https://www.instagram.com/draanapaulateixeira/" target="_blank" rel="noopener">Instagram</a></div>
+          <div><a href="https://www.linkedin.com/in/draanapaulateixeira/" target="_blank" rel="noopener">LinkedIn</a></div>
+          <div><a href="https://www.youtube.com/@draanapaulateixeira" target="_blank" rel="noopener">YouTube</a></div>
         </div>
       </div>
     </div>
     <div class="footer-meta">
-      <span>CRM-BA 12797 · RQE 7237 · Board Member ICOH</span>
-      <span>© 2026 Dra. Ana Paula Teixeira · anapaulateixeira.med.br · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidade</a></span>
+      <span>CRM-BA 12797 · RQE 7237 · Membro ICOH · Board Member 2024</span>
+      <span>© 2026 Dra. Ana Paula Teixeira · <a href="governanca.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Governança</a> · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidade</a></span>
     </div>
   </div>
 </footer>
 
 <script src="design-system.js"></script>
 <script>
-  // Sidenav active state on scroll
-  const anchors = document.querySelectorAll('.sidenav a[data-anchor]');
-  const sections = Array.from(anchors).map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        anchors.forEach(a => a.classList.remove('is-active'));
-        const id = '#' + e.target.id;
-        const m = document.querySelector('.sidenav a[href="'+id+'"]');
-        if (m) m.classList.add('is-active');
-      }
-    });
-  }, { rootMargin: '-40% 0px -50% 0px' });
-  sections.forEach(s => io.observe(s));
-
-  // Nav scrolled state
   const nav = document.getElementById('nav');
   const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 </script>
-
 </body>
 </html>
