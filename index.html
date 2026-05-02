@@ -134,10 +134,22 @@
   }
   @media (min-width: 700px) { .auth-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 1080px) { .auth-grid { grid-template-columns: repeat(4, 1fr); } }
+  /* Variante 6 cards · grid 3×2 desktop, 2×3 tablet, 1×6 mobile */
+  @media (min-width: 700px) { .auth-grid-6 { grid-template-columns: repeat(2, 1fr) !important; } }
+  @media (min-width: 1080px) { .auth-grid-6 { grid-template-columns: repeat(3, 1fr) !important; } }
   .auth-cell {
     display: flex; flex-direction: column; gap: 10px;
     padding-top: 24px;
     border-top: 1px solid var(--verde-noturno);
+  }
+  .auth-label {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    line-height: 1.2;
   }
   .auth-num {
     font-family: var(--font-serif);
@@ -164,6 +176,128 @@
     max-width: 28ch;
   }
   .auth-desc b { font-weight: var(--weight-medium); color: var(--verde-noturno); }
+
+  /* TRÍADE Pessoas/Reputação/Resultados */
+  .triade {
+    padding-block: clamp(96px, 10vw, 144px);
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .triade-h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.4rem + 2.4vw, 3rem);
+    line-height: 1.12;
+    color: var(--verde-noturno);
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 16px 0 56px 0;
+    max-width: 24ch;
+  }
+  .triade-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  @media (min-width: 880px) { .triade-grid { grid-template-columns: repeat(3, 1fr); gap: 40px; } }
+  .triade-card {
+    padding: clamp(28px, 3vw, 40px);
+    border-top: 1px solid var(--verde-noturno);
+  }
+  .triade-tag {
+    display: block;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: var(--weight-semibold);
+    font-size: 1.125rem;
+    color: var(--terracota);
+    line-height: 1.3;
+    margin: 24px 0 16px 0;
+  }
+  .triade-card p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--preto-editorial);
+    margin: 0;
+  }
+
+  /* SERVIÇOS · 3 cards na Home */
+  .servicos-home {
+    padding-block: clamp(96px, 10vw, 144px);
+    background: var(--off-white);
+  }
+  .servicos-h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.4rem + 2.4vw, 3rem);
+    line-height: 1.12;
+    color: var(--verde-noturno);
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 16px 0 16px 0;
+    max-width: 22ch;
+  }
+  .servicos-lead {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.65;
+    color: var(--preto-editorial);
+    max-width: 60ch;
+    margin: 0 0 56px 0;
+  }
+  .servicos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  @media (min-width: 880px) { .servicos-grid { grid-template-columns: repeat(3, 1fr); gap: 32px; } }
+  .servico-card {
+    background: var(--bg);
+    padding: clamp(32px, 4vw, 44px);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    display: flex; flex-direction: column;
+  }
+  .servico-card-tracao {
+    background: var(--verde-noturno);
+    border-color: var(--verde-noturno);
+  }
+  .servico-card-tracao h3,
+  .servico-card-tracao p { color: var(--off-white); }
+  .servico-card-tracao .servico-tag { color: var(--bege-areia); }
+  .servico-card-tracao .btn-ghost { color: var(--terracota); }
+  .servico-tag {
+    display: block;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    line-height: 1.3;
+    margin-bottom: 18px;
+  }
+  .servico-card h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+    color: var(--verde-noturno);
+    line-height: 1.18;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.005em;
+  }
+  .servico-card p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: var(--preto-editorial);
+    margin: 0 0 28px 0;
+    flex-grow: 1;
+  }
 
   /* TESE EDITORIAL — bloco manifesto */
   .thesis {
@@ -213,6 +347,34 @@
     color: var(--preto-editorial);
   }
   .thesis .prose-th p + p { margin-top: 20px; }
+
+  /* O QUE ME MOVE preview */
+  .move-preview {
+    padding-block: clamp(96px, 10vw, 144px);
+    background: var(--bg);
+  }
+  .move-grid { max-width: 760px; margin: 0 auto; }
+  .move-pull {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: var(--weight-semibold);
+    font-size: clamp(1.375rem, 1rem + 1.4vw, 1.875rem);
+    line-height: 1.4;
+    color: var(--terracota);
+    margin: 24px 0 32px 0;
+    padding-left: 24px;
+    border-left: 3px solid var(--terracota);
+    text-wrap: balance;
+  }
+  .move-prose {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: var(--preto-editorial);
+    margin: 0 0 32px 0;
+    max-width: 60ch;
+  }
 
   /* LIVRO CALLOUT — seção dedicada */
   .book-callout {
@@ -281,6 +443,41 @@
   }
   .book-callout .book-meta b { font-weight: var(--weight-medium); color: var(--verde-noturno); }
   .book-callout .cta-row { margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap; }
+
+  /* CLIENTES · empresas */
+  .clients-strip {
+    padding-block: clamp(80px, 9vw, 112px);
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+  }
+  .clients-strip .clients-lead {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--cinza-quente);
+    margin: 16px 0 48px 0;
+    max-width: 56ch;
+  }
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 32px;
+    align-items: center;
+  }
+  @media (min-width: 700px) { .clients-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 1080px) { .clients-grid { grid-template-columns: repeat(5, 1fr); } }
+  .client-logo {
+    aspect-ratio: 3/2;
+    display: flex; align-items: center; justify-content: center;
+    padding: 12px;
+    transition: transform 200ms ease;
+  }
+  .client-logo:hover { transform: scale(1.04); }
+  .client-logo img {
+    max-width: 100%; max-height: 100%;
+    object-fit: contain;
+  }
 
   /* MÍDIA / REFERÊNCIA — autoridade reconhecida */
   .media-strip {
@@ -426,6 +623,35 @@
     flex-shrink: 0; margin-top: 0.75em;
   }
 
+  /* ISCA · single (só Guia) */
+  .lead-single {
+    padding-block: clamp(80px, 9vw, 128px);
+    background: var(--bege-areia);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .lead-grid { max-width: 760px; }
+  .lead-single h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.625rem);
+    color: var(--verde-noturno);
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+    margin: 16px 0 20px 0;
+    max-width: 22ch;
+    text-wrap: balance;
+  }
+  .lead-single .lead-sub {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--preto-editorial);
+    margin: 0 0 32px 0;
+    max-width: 60ch;
+  }
+
   /* Vídeo destaque — Board Talks */
   .video-feature {
     padding-block: clamp(80px, 9vw, 128px);
@@ -474,14 +700,11 @@
   <div class="nav-inner">
     <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
     <ul class="nav-list">
-      <li><a href="index.html" class="nav-link" aria-current="page">Início</a></li>
       <li><a href="sobre.html" class="nav-link">Sobre</a></li>
       <li><a href="servicos.html" class="nav-link">Serviços</a></li>
-      <li><a href="workshop-mapa-psicossocial.html" class="nav-link">Workshop NR-1</a></li>
       <li><a href="livro.html" class="nav-link">Livro</a></li>
-      <li><a href="blog.html" class="nav-link">Blog</a></li>
-      <li><a href="na-midia.html" class="nav-link">Na Mídia</a></li>
       <li><a href="contato.html" class="nav-link">Contato</a></li>
+      <li><a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20palestra." class="btn btn-primary nav-cta" style="padding:10px 18px;font-size:0.875rem">Solicitar palestra</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Abrir menu">
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#1C3520" stroke-width="1.5"><line x1="3" y1="7" x2="19" y2="7"/><line x1="3" y1="15" x2="19" y2="15"/></svg>
@@ -493,14 +716,14 @@
 <header class="hero-home">
   <div class="container grid">
     <div>
-      <span class="eyebrow-editorial">Medicina do trabalho · Autora · Pesquisadora de Lesão Moral Ocupacional</span>
-      <h1>O trabalho que adoece custa caro. <em>Nomear isso</em> é o primeiro ato de integridade.</h1>
-      <p class="lead-h">Três décadas na medicina do trabalho. 130 palestras. Mais de 40.000 avaliações e 10.100 profissionais treinados. Uma trajetória dedicada a tornar visíveis os fatores que impactam a saúde mental, a cultura e a integridade das organizações.</p>
+      <span class="eyebrow-editorial">Ana Paula Teixeira · Saúde mental · Medicina do trabalho</span>
+      <h1>Cuidar de pessoas é <em>cuidar do negócio.</em></h1>
+      <p class="lead-h">Médica do trabalho com quase trinta anos de prática. Autora de <em>Quando o Trabalho Dói</em>. Construo, com lideranças e times de RH, culturas organizacionais que protegem pessoas, reputação e resultados.</p>
       <div class="cta-row">
-        <a href="servicos.html" class="btn btn-primary">Solicitar palestra →</a>
-        <a href="#pistas" class="btn btn-secondary">Como ajudo a sua organização</a>
+        <a href="servicos.html" class="btn btn-primary">Conhecer os serviços →</a>
+        <a href="https://wa.me/5575983186200" class="btn btn-secondary">Falar pelo WhatsApp</a>
       </div>
-      <p class="credit-line">Dra. Ana Paula Teixeira · CRM-BA 12797 · RQE 7237 · Board Member certificada · Membro ICOH · Salvador, Bahia.</p>
+      <p class="credit-line">Dra. Ana Paula Teixeira · CRM-BA 12797 · RQE 7237 · Membro ICOH · Board Member certificada · Salvador, Bahia.</p>
     </div>
     <div>
       <div class="portrait-wrap">
@@ -511,101 +734,100 @@
   </div>
 </header>
 
-<!-- FAIXA DE AUTORIDADE -->
+<!-- FAIXA DE AUTORIDADE · 6 cards de credibilidade -->
 <section class="auth-band">
   <div class="container">
-    <div class="auth-grid reveal-stagger">
+    <div class="auth-grid auth-grid-6 reveal-stagger">
       <div class="auth-cell">
-        <span class="auth-num"><span data-counter data-target="30">0</span></span>
-        <p class="auth-desc"><b>anos</b> de prática clínica e corporativa em medicina do trabalho.</p>
+        <span class="auth-label">Compliance médico</span>
+        <p class="auth-desc"><b>CRM-BA 12797 · RQE 7237</b><br>Medicina do Trabalho</p>
+      </div>
+      <div class="auth-cell">
+        <span class="auth-label">Pesquisa</span>
+        <p class="auth-desc"><b>Mestrado em andamento</b><br>Pesquisa inédita sobre Lesão Moral Ocupacional no Brasil</p>
       </div>
       <div class="auth-cell">
         <span class="auth-num"><span data-counter data-target="130">0</span><sup>+</sup></span>
-        <p class="auth-desc"><b>palestras</b> realizadas · 10.100 profissionais treinados · 99% aprovação.</p>
+        <p class="auth-desc"><b>palestras</b> · 10.100+ profissionais treinados · 99% de avaliações positivas</p>
       </div>
       <div class="auth-cell">
-        <span class="auth-num">1<sup>ª</sup></span>
-        <p class="auth-desc"><b>autora</b> brasileira a validar a escala internacional OMIS-R sobre Lesão Moral Ocupacional.</p>
+        <span class="auth-label">Autora</span>
+        <p class="auth-desc"><b>Quando o Trabalho Dói</b><br>Indicado ao 7º Prêmio Ecos da Literatura</p>
       </div>
       <div class="auth-cell">
-        <span class="auth-num">2025</span>
-        <p class="auth-desc"><em>Quando o Trabalho Dói</em> indicado ao <b>7º Prêmio Ecos da Literatura</b>.</p>
+        <span class="auth-label">Reconhecimento internacional</span>
+        <p class="auth-desc"><b>Membro ICOH</b><br>International Commission on Occupational Health</p>
+      </div>
+      <div class="auth-cell">
+        <span class="auth-label">Governança</span>
+        <p class="auth-desc"><b>Board Member · 2024</b><br>Conselheira Consultiva em Saúde certificada</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PISTAS BIFURCADAS · Pessoas · Reputação · Resultados -->
-<section id="pistas" class="paths reveal" style="padding-block:clamp(96px,10vw,144px);background:var(--bg);border-top:1px solid var(--border)">
+<!-- TRÍADE · Pessoas · Reputação · Resultados -->
+<section id="triade" class="triade reveal">
   <div class="container">
-    <span class="eyebrow-editorial" style="display:block;margin-bottom:16px">Tríade da marca · Pessoas · Reputação · Resultados</span>
-    <h2 style="font-family:var(--font-serif);font-weight:700;font-size:clamp(2rem,1.5rem + 1.8vw,3rem);color:var(--verde-noturno);line-height:1.15;margin:0 0 16px 0;max-width:24ch;text-wrap:balance;letter-spacing:-0.01em">Cuidar de pessoas é cuidar do negócio.</h2>
-    <p style="font-family:var(--font-sans);font-weight:300;font-size:var(--type-lead);line-height:1.6;color:var(--preto-editorial);max-width:60ch;margin:0 0 56px 0">Trabalho com lideranças e times de RH na construção de culturas organizacionais que cuidam de <b style="font-weight:600">pessoas</b>, fortalecem a <b style="font-weight:600">reputação</b> e sustentam <b style="font-weight:600">resultados</b> — com método clínico e base técnica.</p>
-
-    <div class="paths-grid reveal-stagger" style="display:grid;grid-template-columns:1fr;gap:32px">
-      <article class="path-card" style="background:var(--bege-areia);padding:clamp(40px,5vw,64px);border-radius:2px;border:1px solid var(--border)">
-        <span class="eyebrow-editorial" style="color:var(--terracota);display:block;margin-bottom:20px">Para sua organização</span>
-        <h3 style="font-family:var(--font-serif);font-weight:700;font-size:clamp(1.5rem,1.2rem + 1vw,2rem);color:var(--verde-noturno);line-height:1.2;margin:0 0 16px 0;max-width:22ch;text-wrap:balance">Sua empresa precisa estruturar saúde mental para a NR-1.</h3>
-        <p style="font-family:var(--font-sans);font-weight:300;font-size:1rem;line-height:1.65;color:var(--preto-editorial);margin:0 0 28px 0;max-width:52ch">Você está em RH, SESMT, conselho ou diretoria, e precisa demonstrar evidência defensável: inventário de riscos psicossociais, plano de ação e linguagem técnica para conversar com auditoria, jurídico e fiscalização.</p>
-        <div style="display:grid;gap:16px;margin-bottom:32px">
-          <div style="display:flex;gap:12px;align-items:start;padding:16px 20px;background:var(--off-white);border-left:3px solid var(--terracota);border-radius:2px">
-            <div>
-              <p style="font-family:var(--font-serif);font-weight:600;font-size:1.0625rem;color:var(--verde-noturno);margin:0 0 4px 0">Workshop Mapa Psicossocial NR-1</p>
-              <p style="font-family:var(--font-sans);font-weight:300;font-size:0.875rem;color:var(--cinza-quente);margin:0;line-height:1.5">Online · 8h em 2 sessões · Trio multidisciplinar · A partir de R$ 6.000</p>
-            </div>
-          </div>
-          <div style="display:flex;gap:12px;align-items:start;padding:16px 20px;background:var(--off-white);border-left:3px solid var(--terracota);border-radius:2px">
-            <div>
-              <p style="font-family:var(--font-serif);font-weight:600;font-size:1.0625rem;color:var(--verde-noturno);margin:0 0 4px 0">Palestra Corporativa</p>
-              <p style="font-family:var(--font-sans);font-weight:300;font-size:0.875rem;color:var(--cinza-quente);margin:0;line-height:1.5">Online ou presencial · NR-1, Lesão Moral, Liderança sob pressão · Investimento sob proposta</p>
-            </div>
-          </div>
-        </div>
-        <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
-          <a href="workshop-mapa-psicossocial.html" class="btn btn-primary">Conhecer o Workshop NR-1 →</a>
-          <a href="servicos.html#palestra" class="btn-ghost">Ver palestras <span class="arrow">→</span></a>
-        </div>
+    <span class="eyebrow-editorial">Pessoas · Reputação · Resultados</span>
+    <h2 class="triade-h2">Três frentes que sustentam culturas saudáveis.</h2>
+    <div class="triade-grid reveal-stagger">
+      <article class="triade-card">
+        <span class="triade-tag">Pessoas · O cuidado</span>
+        <p>Para quem a empresa cuida — colaboradores, lideranças, equipes em situação de risco psicossocial. Não é capital humano. É pessoa.</p>
       </article>
-
-      <article class="path-card" style="background:var(--verde-noturno);color:var(--off-white);padding:clamp(40px,5vw,64px);border-radius:2px">
-        <span class="eyebrow-editorial" style="color:var(--bege-areia);display:block;margin-bottom:20px">Para você que está liderando</span>
-        <h3 style="font-family:var(--font-serif);font-weight:700;font-size:clamp(1.5rem,1.2rem + 1vw,2rem);color:var(--off-white);line-height:1.2;margin:0 0 16px 0;max-width:22ch;text-wrap:balance">Você está diante de uma situação concreta agora.</h3>
-        <p style="font-family:var(--font-sans);font-weight:300;font-size:1rem;line-height:1.65;color:var(--off-white);opacity:.92;margin:0 0 28px 0;max-width:52ch">Caso de adoecimento na equipe, conflito que não resolve, dúvida sobre nexo causal, decisão difícil pendente. Você precisa de interlocução técnica rápida — não terapia, não coaching, não consultoria genérica.</p>
-        <div style="display:grid;gap:16px;margin-bottom:32px">
-          <div style="display:flex;gap:12px;align-items:start;padding:16px 20px;background:rgba(245,239,229,.06);border-left:3px solid var(--bege-areia);border-radius:2px">
-            <div>
-              <p style="font-family:var(--font-serif);font-weight:600;font-size:1.0625rem;color:var(--off-white);margin:0 0 4px 0">Direcionamento Executivo</p>
-              <p style="font-family:var(--font-sans);font-weight:300;font-size:0.875rem;color:var(--bege-areia);margin:0;line-height:1.5;opacity:.9">90 min · Zoom · A partir de R$ 600 · Resposta priorizada em 4h úteis</p>
-            </div>
-          </div>
-          <div style="display:flex;gap:12px;align-items:start;padding:16px 20px;background:rgba(245,239,229,.06);border-left:3px solid var(--bege-areia);border-radius:2px">
-            <div>
-              <p style="font-family:var(--font-serif);font-weight:600;font-size:1.0625rem;color:var(--off-white);margin:0 0 4px 0">Roda de Conversa</p>
-              <p style="font-family:var(--font-sans);font-weight:300;font-size:0.875rem;color:var(--bege-areia);margin:0;line-height:1.5;opacity:.9">Equipe pequena · Online ou presencial · 1h30 a 3h · Investimento sob proposta</p>
-            </div>
-          </div>
-        </div>
-        <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
-          <a href="direcionamento.html" class="btn btn-primary" style="background:var(--terracota);border-color:var(--terracota)">Conhecer Direcionamento →</a>
-          <a href="https://wa.me/5575983186200" class="btn-ghost" style="color:var(--off-white)">Falar pelo WhatsApp <span class="arrow">→</span></a>
-        </div>
+      <article class="triade-card">
+        <span class="triade-tag">Reputação · O risco</span>
+        <p>O que está em jogo se nada for feito — passivo trabalhista, exposição em mídia, clima organizacional, atratividade de talento, conformidade com a NR-1.</p>
+      </article>
+      <article class="triade-card">
+        <span class="triade-tag">Resultados · O ganho</span>
+        <p>Cuidar é decisão que sustenta o negócio — produtividade, retenção, redução de afastamentos, performance da liderança.</p>
       </article>
     </div>
-
-    <style>@media (min-width: 960px) { #pistas .paths-grid { grid-template-columns: 1fr 1fr !important; gap: 40px !important; } }</style>
   </div>
 </section>
 
-<!-- TESE EDITORIAL -->
-<section class="thesis container reveal">
-  <div class="wrap">
-    <span class="eyebrow-editorial">A tese editorial</span>
-    <p class="pull">Burnout se tornou a explicação mais recorrente para o sofrimento no trabalho. E, <em>justamente por isso</em>, não explica tudo.</p>
-    <div class="prose-th">
-      <p>Há experiências que envolvem conflito ético, perda de confiança, culpa, vergonha, silêncio e ruptura de sentido no trabalho — o que a literatura chama de <strong>Trauma Moral</strong>. É nesse território que concentro meu trabalho como conselheira, pesquisadora e autora: tornar visíveis os eventos morais potencialmente lesivos que afetam pessoas, cultura e decisões — e colocam em risco a reputação das organizações.</p>
-      <p>Nomear esses eventos qualifica o diagnóstico, amplia a responsabilidade institucional e fortalece coragem moral e resiliência moral, mesmo em contextos de alta pressão.</p>
-      <!-- PENDÊNCIA: link da escala de avaliação OMIS-R quando disponível.
-           Texto da cliente: "Acesse a escala de avaliação da Lesão Moral Ocupacional aqui [link]." -->
+<!-- SERVIÇOS · 3 cards apontando pras páginas dedicadas -->
+<section id="servicos" class="servicos-home reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">O que ofereço</span>
+    <h2 class="servicos-h2">Três formas de trabalharmos juntos.</h2>
+    <p class="servicos-lead">Conteúdo clínico aplicado em linguagem de gestão. Para empresas, eventos setoriais, equipes de RH e líderes que querem método — não motivação.</p>
+
+    <div class="servicos-grid reveal-stagger">
+      <article class="servico-card">
+        <span class="servico-tag">Para empresas e eventos</span>
+        <h3>Palestras</h3>
+        <p>Para SIPATs, semanas internas, eventos setoriais e encontros de liderança. Online ou presencial. NR-1, fatores psicossociais, liderança sob pressão, investigação técnica de adoecimento.</p>
+        <a href="servicos.html#palestras" class="btn-ghost">Conhecer modalidades <span class="arrow">→</span></a>
+      </article>
+      <article class="servico-card">
+        <span class="servico-tag">Para times pequenos · até 25 pessoas</span>
+        <h3>Rodas de Conversa</h3>
+        <p>Encontros aprofundados em formato dialogado, online ou presencial. Para times de RH, lideranças e SESMT que precisam destrinchar tema específico em ritmo de conversa, não de palestra.</p>
+        <a href="servicos.html#rodas" class="btn-ghost">Conhecer formatos <span class="arrow">→</span></a>
+      </article>
+      <article class="servico-card servico-card-tracao">
+        <span class="servico-tag">Sessão individual · Zoom</span>
+        <h3>Direcionamento Executivo</h3>
+        <p>Sessão individual de 90 minutos para líderes e gestores diante de situação concreta — caso de adoecimento, conflito, decisão difícil — que precisam pensar com método clínico.</p>
+        <a href="direcionamento.html" class="btn-ghost">Conhecer o produto <span class="arrow">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE ME MOVE · preview que puxa pra Sobre -->
+<section class="move-preview reveal">
+  <div class="container">
+    <div class="move-grid">
+      <div class="move-text">
+        <span class="eyebrow-editorial">O que me move</span>
+        <p class="move-pull"><em>"Burnout não é fraqueza. É a resposta de um corpo e de uma mente que carregaram mais do que era justo carregar. E o ambiente de trabalho tem responsabilidade nisso."</em></p>
+        <p class="move-prose">Cresci em Alagoinhas, no interior da Bahia, filha de pai comerciante e mãe professora. Quando precisei escolher especialidade, foi a Medicina do Trabalho que me permitiu juntar tudo — a ciência, a escuta, a curiosidade pela complexidade humana e o desejo de transformar empresas em lugares melhores para quem trabalha nelas.</p>
+        <a href="sobre.html" class="btn-ghost">Ler mais sobre mim <span class="arrow">→</span></a>
+      </div>
     </div>
   </div>
 </section>
@@ -634,21 +856,44 @@
   </div>
 </section>
 
-<!-- MÍDIA / REFERÊNCIAS — marquee horizontal -->
-<section class="media-strip-wrap reveal" style="padding-block:clamp(48px,5vw,72px)">
+<!-- CLIENTES · empresas onde prestou serviço -->
+<section class="clients-strip reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Já trabalhei com</span>
+    <p class="clients-lead">Empresas e instituições que contrataram palestras, rodas, consultoria ou direcionamento.</p>
+    <div class="clients-grid">
+      <div class="client-logo"><img src="assets/logos/forvia.jpeg" alt="Forvia" loading="lazy"></div>
+      <div class="client-logo"><img src="assets/logos/jmacedo.jpeg" alt="J.Macedo" loading="lazy"></div>
+      <div class="client-logo"><img src="assets/logos/costa-do-sauipe.jpeg" alt="Costa do Sauípe" loading="lazy"></div>
+      <div class="client-logo"><img src="assets/logos/priner.jpeg" alt="Priner" loading="lazy"></div>
+      <div class="client-logo"><img src="assets/logos/perkons.jpeg" alt="Perkons" loading="lazy"></div>
+      <div class="client-logo"><img src="assets/logos/etica-pesquisa-clinica.jpeg" alt="Ética Pesquisa Clínica" loading="lazy"></div>
+      <div class="client-logo"><img src="assets/logos/cisviver.jpeg" alt="CISVIVER" loading="lazy"></div>
+      <div class="client-logo"><img src="assets/logos/aspil.jpeg" alt="ASPIL" loading="lazy"></div>
+      <div class="client-logo"><img src="assets/logos/gelo-alagoinhas.jpeg" alt="Gelo Alagoinhas" loading="lazy"></div>
+      <div class="client-logo"><img src="assets/logos/imh.jpeg" alt="IMH" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- APARIÇÕES EM MÍDIA — marquee horizontal -->
+<section class="media-strip-wrap reveal" style="padding-block:clamp(48px,5vw,72px);background:var(--off-white)">
   <div class="container" style="padding-bottom:24px">
-    <span class="eyebrow-editorial">Já apareceu em</span>
+    <span class="eyebrow-editorial">Aparições em mídia</span>
   </div>
   <div class="marquee">
     <div class="marquee-track">
       <span class="marquee-item">CartaCapital</span>
       <span class="marquee-item">Robb Report Brasil</span>
-      <span class="marquee-item">CBN Bahia</span>
+      <span class="marquee-item">Rádio CBN Bahia</span>
       <span class="marquee-item">CBN Salvador</span>
+      <span class="marquee-item">Record TV</span>
+      <span class="marquee-item">TVE Bahia</span>
+      <span class="marquee-item">F5 Podcast</span>
+      <span class="marquee-item">Board Talks</span>
       <span class="marquee-item">RH Notícias</span>
       <span class="marquee-item">Bahia Notícias</span>
       <span class="marquee-item">TV Aratu</span>
-      <span class="marquee-item">Board Talks</span>
     </div>
   </div>
 </section>
@@ -670,42 +915,17 @@
   </div>
 </section>
 
-<!-- ISCAS BIFURCADAS — dois materiais, dois públicos -->
-<section class="leads-bifurcated reveal" style="padding-block:clamp(80px,9vw,128px);background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+<!-- ISCA · só Guia (Checklist NR-1 em standby) -->
+<section class="lead-single reveal">
   <div class="container">
-    <span class="eyebrow-editorial">Materiais autorais gratuitos</span>
-    <h2 style="font-family:var(--font-serif);font-weight:700;font-size:clamp(2rem,1.5rem + 1.6vw,2.875rem);color:var(--verde-noturno);line-height:1.15;margin:16px 0 16px 0;max-width:24ch;text-wrap:balance;letter-spacing:-0.01em">Comece pelo material editorial.</h2>
-    <p style="font-family:var(--font-sans);font-weight:300;font-size:var(--type-lead);line-height:1.6;color:var(--preto-editorial);max-width:58ch;margin:0 0 48px 0">Dois materiais autorais, dois públicos distintos. Um para profissionais que precisam transformar relato em parecer técnico. Outro para diretorias que precisam diagnosticar a posição da organização antes da fiscalização NR-1.</p>
-
-    <div class="leads-grid reveal-stagger" style="display:grid;grid-template-columns:1fr;gap:32px">
-      <article style="background:var(--off-white);padding:clamp(32px,4vw,48px);border-radius:2px;border:1px solid var(--border)">
-        <span class="eyebrow-editorial" style="color:var(--terracota);display:block;margin-bottom:12px">Para profissionais técnicos</span>
-        <h3 style="font-family:var(--font-serif);font-weight:700;font-size:clamp(1.375rem,1.2rem + 0.7vw,1.75rem);color:var(--verde-noturno);line-height:1.2;margin:0 0 8px 0">Do Relato à Tomada de Decisão</h3>
-        <p style="font-family:var(--font-serif);font-style:italic;font-weight:600;font-size:1.0625rem;color:var(--terracota);margin:0 0 16px 0">Guia técnico · 27 páginas · edição 2026</p>
-        <p style="font-family:var(--font-sans);font-weight:300;font-size:0.9375rem;line-height:1.6;color:var(--preto-editorial);margin:0 0 20px 0">Doze passos para avaliar nexo causal entre transtornos mentais e contexto ocupacional. Para médicos do trabalho, SESMT, perícia, jurídico e compliance que precisam transformar relato em parecer técnico defensável.</p>
-        <ul style="list-style:none;padding:0;margin:0 0 24px 0;display:grid;gap:8px">
-          <li style="font-family:var(--font-sans);font-size:0.875rem;color:var(--cinza-quente);padding-left:20px;position:relative"><span style="position:absolute;left:0;color:var(--terracota);font-weight:700">→</span>Roteiro de entrevista clínico-ocupacional</li>
-          <li style="font-family:var(--font-sans);font-size:0.875rem;color:var(--cinza-quente);padding-left:20px;position:relative"><span style="position:absolute;left:0;color:var(--terracota);font-weight:700">→</span>Diferenciação de adoecimento ocupacional e comórbido</li>
-          <li style="font-family:var(--font-sans);font-size:0.875rem;color:var(--cinza-quente);padding-left:20px;position:relative"><span style="position:absolute;left:0;color:var(--terracota);font-weight:700">→</span>Checklist de documentação técnica</li>
-        </ul>
-        <a href="https://guia.anateixeiramed.com.br/" target="_blank" rel="noopener" class="btn btn-primary">Receber o guia gratuitamente →</a>
-      </article>
-
-      <article style="background:var(--bege-areia);padding:clamp(32px,4vw,48px);border-radius:2px;border:1px solid var(--border)">
-        <span class="eyebrow-editorial" style="color:var(--terracota);display:block;margin-bottom:12px">Para C-level, conselhos e RH sênior</span>
-        <h3 style="font-family:var(--font-serif);font-weight:700;font-size:clamp(1.375rem,1.2rem + 0.7vw,1.75rem);color:var(--verde-noturno);line-height:1.2;margin:0 0 8px 0">Checklist NR-1 para Diretoria</h3>
-        <p style="font-family:var(--font-serif);font-style:italic;font-weight:600;font-size:1.0625rem;color:var(--terracota);margin:0 0 16px 0">12 perguntas · 10 minutos de leitura · edição 2026</p>
-        <p style="font-family:var(--font-sans);font-weight:300;font-size:0.9375rem;line-height:1.6;color:var(--preto-editorial);margin:0 0 20px 0">Diagnóstico inicial em formato de governança: doze perguntas que sua organização precisa responder antes da fiscalização. Para uso em conselhos, comitês de ESG e reuniões de diretoria.</p>
-        <ul style="list-style:none;padding:0;margin:0 0 24px 0;display:grid;gap:8px">
-          <li style="font-family:var(--font-sans);font-size:0.875rem;color:var(--cinza-quente);padding-left:20px;position:relative"><span style="position:absolute;left:0;color:var(--terracota);font-weight:700">→</span>Critério de avaliação por pergunta</li>
-          <li style="font-family:var(--font-sans);font-size:0.875rem;color:var(--cinza-quente);padding-left:20px;position:relative"><span style="position:absolute;left:0;color:var(--terracota);font-weight:700">→</span>Referência normativa (NR-1, MTE, CFM)</li>
-          <li style="font-family:var(--font-sans);font-size:0.875rem;color:var(--cinza-quente);padding-left:20px;position:relative"><span style="position:absolute;left:0;color:var(--terracota);font-weight:700">→</span>Linguagem de risco e governança</li>
-        </ul>
-        <a href="checklist-nr1.html" class="btn btn-primary">Receber o checklist →</a>
-      </article>
+    <div class="lead-grid">
+      <div class="lead-text">
+        <span class="eyebrow-editorial">Material técnico para profissionais</span>
+        <h2>Do Relato à Tomada de Decisão.</h2>
+        <p class="lead-sub">Guia de 27 páginas, baseado na Resolução CFM 2.323/2022 e na NR-1, em 12 passos para investigação técnica de adoecimento ocupacional. Material gratuito, dirigido a médicos do trabalho, SESMT, RH sênior e profissionais que conduzem casos.</p>
+        <a href="https://guia.anateixeiramed.com.br/" target="_blank" rel="noopener" class="btn btn-primary">Receber o guia →</a>
+      </div>
     </div>
-
-    <style>@media (min-width: 880px) { .leads-bifurcated .leads-grid { grid-template-columns: 1fr 1fr !important; gap: 40px !important; } }</style>
   </div>
 </section>
 
@@ -713,11 +933,11 @@
 <section class="cta-home reveal bg-context bg-stage-palestra">
   <div class="container">
     <span class="eyebrow-editorial">Próximo passo</span>
-    <h2>Leve essa conversa para <em>a sua empresa.</em></h2>
-    <p class="cta-sub">130 palestras. 10.100 profissionais treinados. 99% de avaliação positiva. O próximo pode ser o seu conselho, o seu time de liderança, o seu comitê de ESG.</p>
+    <h2>Vamos <em>conversar?</em></h2>
+    <p class="cta-sub">Se sua empresa está estruturando programa de saúde mental, respondendo à NR-1 ou enfrentando situação concreta de adoecimento — chamamos para uma conversa.</p>
     <div class="cta-row">
-      <a href="contato.html" class="btn btn-primary">Solicitar proposta →</a>
-      <a href="servicos.html" class="btn btn-secondary">Ver todos os formatos</a>
+      <a href="https://wa.me/5575983186200" class="btn btn-primary">Falar pelo WhatsApp →</a>
+      <a href="mailto:contato@anapaulateixeira.med.br" class="btn btn-secondary">Enviar e-mail</a>
     </div>
     <p class="meta">contato@anapaulateixeira.med.br · WhatsApp (75) 98318-6200</p>
   </div>
@@ -729,18 +949,18 @@
     <div class="footer-grid">
       <div>
         <div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
-        <p class="footer-anchor">Porque empresas íntegras cuidam, com seriedade, do que impacta pessoas, cultura e trabalho.</p>
+        <p class="footer-anchor">Médica do trabalho · Salvador, Bahia.<br>Cuidar de pessoas é cuidar do negócio.</p>
       </div>
       <div>
         <div class="footer-col-title">Navegar</div>
         <div class="stack-3">
           <div><a href="sobre.html">Sobre</a></div>
           <div><a href="servicos.html">Serviços</a></div>
-          <div><a href="workshop-mapa-psicossocial.html">Workshop NR-1</a></div>
+          <div><a href="servicos.html#palestras">Palestras</a></div>
+          <div><a href="servicos.html#rodas">Rodas de Conversa</a></div>
+          <div><a href="direcionamento.html">Direcionamento Executivo</a></div>
           <div><a href="livro.html">Livro</a></div>
-          <div><a href="blog.html">Blog</a></div>
-          <div><a href="na-midia.html">Na Mídia</a></div>
-          <div><a href="governanca.html">Governança</a></div>
+          <div><a href="contato.html">Contato</a></div>
         </div>
       </div>
       <div>
@@ -748,13 +968,15 @@
         <div class="stack-3">
           <div><a href="mailto:contato@anapaulateixeira.med.br">contato@anapaulateixeira.med.br</a></div>
           <div><a href="https://wa.me/5575983186200">WhatsApp (75) 98318-6200</a></div>
-          <div><a href="contato.html">Formulário</a></div>
+          <div><a href="https://www.instagram.com/draanapaulateixeira/" target="_blank" rel="noopener">Instagram</a></div>
+          <div><a href="https://www.linkedin.com/in/draanapaulateixeira/" target="_blank" rel="noopener">LinkedIn</a></div>
+          <div><a href="https://www.youtube.com/@draanapaulateixeira" target="_blank" rel="noopener">YouTube</a></div>
         </div>
       </div>
     </div>
     <div class="footer-meta">
-      <span>CRM-BA 12797 · RQE 7237 · Board Member ICOH</span>
-      <span>© 2026 Dra. Ana Paula Teixeira · anapaulateixeira.med.br · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidade</a></span>
+      <span>CRM-BA 12797 · RQE 7237 · Membro ICOH · Board Member 2024</span>
+      <span>© 2026 Dra. Ana Paula Teixeira · <a href="governanca.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Governança</a> · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidade</a></span>
     </div>
   </div>
 </footer>
