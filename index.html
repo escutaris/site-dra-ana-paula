@@ -120,42 +120,43 @@
     border-left: 2px solid var(--terracota);
   }
 
-  /* FAIXA DE AUTORIDADE (números em linha) */
+  /* FAIXA DE AUTORIDADE — minimalista */
   .auth-band {
     background: var(--off-white);
-    padding-block: clamp(64px, 7vw, 96px);
+    padding-block: clamp(48px, 5vw, 72px);
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
   }
   .auth-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 28px;
   }
-  @media (min-width: 700px) { .auth-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (min-width: 1080px) { .auth-grid { grid-template-columns: repeat(4, 1fr); } }
-  /* Variante 6 cards · grid 3×2 desktop, 2×3 tablet, 1×6 mobile */
+  @media (min-width: 700px) { .auth-grid { grid-template-columns: repeat(2, 1fr); gap: 32px 40px; } }
+  @media (min-width: 1080px) { .auth-grid { grid-template-columns: repeat(3, 1fr); gap: 36px 56px; } }
+  /* Variante 6 cards · 3×2 */
   @media (min-width: 700px) { .auth-grid-6 { grid-template-columns: repeat(2, 1fr) !important; } }
   @media (min-width: 1080px) { .auth-grid-6 { grid-template-columns: repeat(3, 1fr) !important; } }
   .auth-cell {
-    display: flex; flex-direction: column; gap: 10px;
-    padding-top: 24px;
-    border-top: 1px solid var(--verde-noturno);
+    display: flex; flex-direction: column; gap: 6px;
+    padding-top: 0;
+    border-top: 0;
   }
   .auth-label {
     font-family: var(--font-sans);
     font-weight: var(--weight-medium);
-    font-size: 0.6875rem;
-    letter-spacing: 0.18em;
+    font-size: 0.625rem;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--terracota);
     line-height: 1.2;
+    margin-bottom: 2px;
   }
   .auth-num {
     font-family: var(--font-serif);
     font-weight: var(--weight-bold);
-    font-size: clamp(2.5rem, 2rem + 1.8vw, 3.5rem);
-    line-height: 0.95;
+    font-size: clamp(1.75rem, 1.4rem + 1.2vw, 2.25rem);
+    line-height: 1;
     color: var(--verde-noturno);
     letter-spacing: -0.02em;
   }
@@ -170,10 +171,11 @@
   .auth-desc {
     font-family: var(--font-sans);
     font-weight: var(--weight-light);
-    font-size: 0.9375rem;
+    font-size: 0.8125rem;
     line-height: 1.55;
-    color: var(--preto-editorial);
-    max-width: 28ch;
+    color: var(--cinza-quente);
+    max-width: 32ch;
+    margin: 0;
   }
   .auth-desc b { font-weight: var(--weight-medium); color: var(--verde-noturno); }
 
@@ -191,8 +193,17 @@
     color: var(--verde-noturno);
     letter-spacing: -0.01em;
     text-wrap: balance;
-    margin: 16px 0 56px 0;
-    max-width: 24ch;
+    margin: 16px 0 20px 0;
+    max-width: 28ch;
+  }
+  .triade-lead {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.65;
+    color: var(--preto-editorial);
+    max-width: 60ch;
+    margin: 0 0 56px 0;
   }
   .triade-grid {
     display: grid;
@@ -260,15 +271,9 @@
     border: 1px solid var(--border);
     border-radius: 2px;
     display: flex; flex-direction: column;
+    transition: border-color 200ms ease, transform 200ms ease;
   }
-  .servico-card-tracao {
-    background: var(--verde-noturno);
-    border-color: var(--verde-noturno);
-  }
-  .servico-card-tracao h3,
-  .servico-card-tracao p { color: var(--off-white); }
-  .servico-card-tracao .servico-tag { color: var(--bege-areia); }
-  .servico-card-tracao .btn-ghost { color: var(--terracota); }
+  .servico-card:hover { border-color: var(--terracota); transform: translateY(-2px); }
   .servico-tag {
     display: block;
     font-family: var(--font-sans);
@@ -348,34 +353,6 @@
   }
   .thesis .prose-th p + p { margin-top: 20px; }
 
-  /* O QUE ME MOVE preview */
-  .move-preview {
-    padding-block: clamp(96px, 10vw, 144px);
-    background: var(--bg);
-  }
-  .move-grid { max-width: 760px; margin: 0 auto; }
-  .move-pull {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: var(--weight-semibold);
-    font-size: clamp(1.375rem, 1rem + 1.4vw, 1.875rem);
-    line-height: 1.4;
-    color: var(--terracota);
-    margin: 24px 0 32px 0;
-    padding-left: 24px;
-    border-left: 3px solid var(--terracota);
-    text-wrap: balance;
-  }
-  .move-prose {
-    font-family: var(--font-sans);
-    font-weight: var(--weight-light);
-    font-size: 1.0625rem;
-    line-height: 1.75;
-    color: var(--preto-editorial);
-    margin: 0 0 32px 0;
-    max-width: 60ch;
-  }
-
   /* LIVRO CALLOUT — seção dedicada */
   .book-callout {
     padding-block: clamp(120px, 13vw, 176px);
@@ -444,39 +421,55 @@
   .book-callout .book-meta b { font-weight: var(--weight-medium); color: var(--verde-noturno); }
   .book-callout .cta-row { margin-top: 40px; display: flex; gap: 16px; flex-wrap: wrap; }
 
-  /* CLIENTES · empresas */
-  .clients-strip {
-    padding-block: clamp(80px, 9vw, 112px);
+  /* CLIENTES · marquee horizontal */
+  .clients-marquee-wrap {
+    padding-block: clamp(64px, 7vw, 96px);
     background: var(--bg);
     border-top: 1px solid var(--border);
+    overflow: hidden;
   }
-  .clients-strip .clients-lead {
-    font-family: var(--font-sans);
-    font-weight: var(--weight-light);
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--cinza-quente);
-    margin: 16px 0 48px 0;
-    max-width: 56ch;
+  .logos-marquee {
+    overflow: hidden;
+    width: 100%;
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
   }
-  .clients-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px 32px;
+  .logos-marquee-track {
+    display: flex;
+    gap: 64px;
     align-items: center;
+    width: max-content;
+    animation: logos-scroll 50s linear infinite;
   }
-  @media (min-width: 700px) { .clients-grid { grid-template-columns: repeat(3, 1fr); } }
-  @media (min-width: 1080px) { .clients-grid { grid-template-columns: repeat(5, 1fr); } }
-  .client-logo {
-    aspect-ratio: 3/2;
+  .logos-marquee-track:hover { animation-play-state: paused; }
+  @keyframes logos-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  .logo-item {
+    flex: 0 0 auto;
+    width: 140px;
+    height: 80px;
     display: flex; align-items: center; justify-content: center;
-    padding: 12px;
-    transition: transform 200ms ease;
+    background: var(--off-white);
+    padding: 12px 16px;
+    border-radius: 2px;
   }
-  .client-logo:hover { transform: scale(1.04); }
-  .client-logo img {
+  .logo-item img {
     max-width: 100%; max-height: 100%;
     object-fit: contain;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%) contrast(1.1);
+    opacity: 0.85;
+    transition: filter 250ms ease, opacity 250ms ease;
+  }
+  .logo-item img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+  @media (max-width: 600px) {
+    .logo-item { width: 110px; height: 64px; }
+    .logos-marquee-track { gap: 40px; }
   }
 
   /* MÍDIA / REFERÊNCIA — autoridade reconhecida */
@@ -652,12 +645,12 @@
     max-width: 60ch;
   }
 
-  /* Vídeo destaque — Board Talks */
-  .video-feature {
-    padding-block: clamp(80px, 9vw, 128px);
+  /* APARIÇÕES EM MÍDIA · grid de vídeos */
+  .media-grid-section {
+    padding-block: clamp(96px, 10vw, 144px);
     background: var(--off-white);
   }
-  .video-feature h2 {
+  .media-h2 {
     font-family: var(--font-serif);
     font-weight: var(--weight-bold);
     font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.625rem);
@@ -667,30 +660,94 @@
     max-width: 26ch;
     text-wrap: balance;
   }
-  .video-feature .vf-sub {
+  .media-lead {
     font-family: var(--font-sans);
     font-weight: var(--weight-light);
-    font-size: var(--type-lead);
-    line-height: 1.6;
-    color: var(--preto-editorial);
-    max-width: 60ch;
-    margin: 0 0 40px 0;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--cinza-quente);
+    max-width: 56ch;
+    margin: 0 0 48px 0;
   }
-  .video-feature .vf-embed {
+  .media-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  @media (min-width: 700px) { .media-cards { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1080px) { .media-cards { grid-template-columns: repeat(3, 1fr); gap: 32px 28px; } }
+  .media-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 200ms ease;
+  }
+  .media-card:hover { transform: translateY(-3px); }
+  .media-card:hover .media-play { background: var(--terracota); transform: translate(-50%, -50%) scale(1.08); }
+  .media-card:hover .media-title { color: var(--terracota); }
+  .media-thumb {
     position: relative;
-    padding-top: 56.25%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
     background: var(--bege-areia);
     border-radius: 2px;
-    overflow: hidden;
-    max-width: 960px;
-    box-shadow: 0 24px 60px rgba(28,53,32,.12);
+    margin-bottom: 16px;
   }
-  .video-feature .vf-embed iframe {
-    position: absolute;
-    inset: 0;
+  .media-thumb img {
     width: 100%; height: 100%;
-    border: 0;
+    object-fit: cover;
+    display: block;
   }
+  .media-play {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    background: var(--verde-noturno);
+    color: var(--off-white);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    padding-left: 4px;
+    transition: background 200ms ease, transform 200ms ease;
+  }
+  .media-channel {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    line-height: 1.3;
+  }
+  .media-title {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-semibold);
+    font-size: 1.0625rem;
+    line-height: 1.35;
+    color: var(--verde-noturno);
+    margin: 8px 0 6px 0;
+    transition: color 200ms ease;
+  }
+  .media-sub {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.8125rem;
+    color: var(--cinza-quente);
+  }
+  .media-press {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--cinza-quente);
+    margin: 56px 0 0 0;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    max-width: 60ch;
+  }
+  .media-press b { font-weight: var(--weight-medium); color: var(--verde-noturno); }
 </style>
 </head>
 <body>
@@ -769,8 +826,9 @@
 <!-- TRÍADE · Pessoas · Reputação · Resultados -->
 <section id="triade" class="triade reveal">
   <div class="container">
-    <span class="eyebrow-editorial">Pessoas · Reputação · Resultados</span>
-    <h2 class="triade-h2">Três frentes que sustentam culturas saudáveis.</h2>
+    <span class="eyebrow-editorial">Como atuo</span>
+    <h2 class="triade-h2">Trabalho com lideranças e times de RH em três frentes inseparáveis.</h2>
+    <p class="triade-lead">Saúde mental no trabalho não é tema isolado de bem-estar. É decisão que conecta — em todas as direções — o que a empresa faz com pessoas, o que isso comunica e o que volta como resultado.</p>
     <div class="triade-grid reveal-stagger">
       <article class="triade-card">
         <span class="triade-tag">Pessoas · O cuidado</span>
@@ -808,7 +866,7 @@
         <p>Encontros aprofundados em formato dialogado, online ou presencial. Para times de RH, lideranças e SESMT que precisam destrinchar tema específico em ritmo de conversa, não de palestra.</p>
         <a href="servicos.html#rodas" class="btn-ghost">Conhecer formatos <span class="arrow">→</span></a>
       </article>
-      <article class="servico-card servico-card-tracao">
+      <article class="servico-card">
         <span class="servico-tag">Sessão individual · Zoom</span>
         <h3>Direcionamento Executivo</h3>
         <p>Sessão individual de 90 minutos para líderes e gestores diante de situação concreta — caso de adoecimento, conflito, decisão difícil — que precisam pensar com método clínico.</p>
@@ -818,19 +876,6 @@
   </div>
 </section>
 
-<!-- O QUE ME MOVE · preview que puxa pra Sobre -->
-<section class="move-preview reveal">
-  <div class="container">
-    <div class="move-grid">
-      <div class="move-text">
-        <span class="eyebrow-editorial">O que me move</span>
-        <p class="move-pull"><em>"Burnout não é fraqueza. É a resposta de um corpo e de uma mente que carregaram mais do que era justo carregar. E o ambiente de trabalho tem responsabilidade nisso."</em></p>
-        <p class="move-prose">Cresci em Alagoinhas, no interior da Bahia, filha de pai comerciante e mãe professora. Quando precisei escolher especialidade, foi a Medicina do Trabalho que me permitiu juntar tudo — a ciência, a escuta, a curiosidade pela complexidade humana e o desejo de transformar empresas em lugares melhores para quem trabalha nelas.</p>
-        <a href="sobre.html" class="btn-ghost">Ler mais sobre mim <span class="arrow">→</span></a>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- LIVRO CALLOUT -->
 <section class="book-callout reveal bg-context bg-coffee-journal">
@@ -856,62 +901,84 @@
   </div>
 </section>
 
-<!-- CLIENTES · empresas onde prestou serviço -->
-<section class="clients-strip reveal">
-  <div class="container">
+<!-- CLIENTES · marquee horizontal de logos -->
+<section class="clients-marquee-wrap reveal">
+  <div class="container" style="padding-bottom:32px">
     <span class="eyebrow-editorial">Já trabalhei com</span>
-    <p class="clients-lead">Empresas e instituições que contrataram palestras, rodas, consultoria ou direcionamento.</p>
-    <div class="clients-grid">
-      <div class="client-logo"><img src="assets/logos/forvia.jpeg" alt="Forvia" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/logos/jmacedo.jpeg" alt="J.Macedo" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/logos/costa-do-sauipe.jpeg" alt="Costa do Sauípe" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/logos/priner.jpeg" alt="Priner" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/logos/perkons.jpeg" alt="Perkons" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/logos/etica-pesquisa-clinica.jpeg" alt="Ética Pesquisa Clínica" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/logos/cisviver.jpeg" alt="CISVIVER" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/logos/aspil.jpeg" alt="ASPIL" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/logos/gelo-alagoinhas.jpeg" alt="Gelo Alagoinhas" loading="lazy"></div>
-      <div class="client-logo"><img src="assets/logos/imh.jpeg" alt="IMH" loading="lazy"></div>
+  </div>
+  <div class="logos-marquee">
+    <div class="logos-marquee-track">
+      <div class="logo-item"><img src="assets/logos/forvia.jpeg" alt="Forvia" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/jmacedo.jpeg" alt="J.Macedo" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/costa-do-sauipe.jpeg" alt="Costa do Sauípe" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/priner.jpeg" alt="Priner" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/perkons.jpeg" alt="Perkons" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/etica-pesquisa-clinica.jpeg" alt="Ética Pesquisa Clínica" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/cisviver.jpeg" alt="CISVIVER" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/aspil.jpeg" alt="ASPIL" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/gelo-alagoinhas.jpeg" alt="Gelo Alagoinhas" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/imh.jpeg" alt="IMH" loading="lazy"></div>
+      <!-- Duplicado pra loop infinito -->
+      <div class="logo-item"><img src="assets/logos/forvia.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/jmacedo.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/costa-do-sauipe.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/priner.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/perkons.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
     </div>
   </div>
 </section>
 
-<!-- APARIÇÕES EM MÍDIA — marquee horizontal -->
-<section class="media-strip-wrap reveal" style="padding-block:clamp(48px,5vw,72px);background:var(--off-white)">
-  <div class="container" style="padding-bottom:24px">
-    <span class="eyebrow-editorial">Aparições em mídia</span>
-  </div>
-  <div class="marquee">
-    <div class="marquee-track">
-      <span class="marquee-item">CartaCapital</span>
-      <span class="marquee-item">Robb Report Brasil</span>
-      <span class="marquee-item">Rádio CBN Bahia</span>
-      <span class="marquee-item">CBN Salvador</span>
-      <span class="marquee-item">Record TV</span>
-      <span class="marquee-item">TVE Bahia</span>
-      <span class="marquee-item">F5 Podcast</span>
-      <span class="marquee-item">Board Talks</span>
-      <span class="marquee-item">RH Notícias</span>
-      <span class="marquee-item">Bahia Notícias</span>
-      <span class="marquee-item">TV Aratu</span>
-    </div>
-  </div>
-</section>
-
-<!-- VÍDEO DESTAQUE — Board Talks -->
-<section class="video-feature reveal">
+<!-- APARIÇÕES EM MÍDIA · grid de vídeos clicáveis -->
+<section class="media-grid-section reveal">
   <div class="container">
-    <span class="eyebrow-editorial">Em vídeo · Board Talks</span>
-    <h2>Sustentabilidade e governança humana.</h2>
-    <p class="vf-sub">Conversa de C-level sobre o papel da liderança na saúde mental como ativo de governança corporativa.</p>
-    <div class="vf-embed">
-      <iframe src="https://www.youtube.com/embed/ZAZ-KYTJnmU"
-              title="Board Talks com Dra. Ana Paula Teixeira"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              loading="lazy"></iframe>
+    <span class="eyebrow-editorial">Aparições em mídia</span>
+    <h2 class="media-h2">Conversas em vídeo, rádio e imprensa.</h2>
+    <p class="media-lead">Entrevistas e participações em veículos de grande circulação. Clique pra assistir.</p>
+
+    <div class="media-cards">
+      <a class="media-card" href="https://www.youtube.com/watch?v=ZAZ-KYTJnmU" target="_blank" rel="noopener">
+        <div class="media-thumb"><img src="https://img.youtube.com/vi/ZAZ-KYTJnmU/hqdefault.jpg" alt="Board Talks" loading="lazy"><span class="media-play" aria-hidden="true">▶</span></div>
+        <div class="media-meta">
+          <span class="media-channel">Board Talks</span>
+          <p class="media-title">Sustentabilidade nos Planos de Saúde</p>
+          <span class="media-sub">Entrevista especializada</span>
+        </div>
+      </a>
+      <a class="media-card" href="https://www.youtube.com/watch?v=eNpFczxoUf8" target="_blank" rel="noopener">
+        <div class="media-thumb"><img src="https://img.youtube.com/vi/eNpFczxoUf8/hqdefault.jpg" alt="CBN Salvador" loading="lazy"><span class="media-play" aria-hidden="true">▶</span></div>
+        <div class="media-meta">
+          <span class="media-channel">CBN Salvador · Isso é Bahia</span>
+          <p class="media-title">Saúde Mental no Trabalho — Conexão Sociedade</p>
+          <span class="media-sub">Programa Papo da Hora</span>
+        </div>
+      </a>
+      <a class="media-card" href="https://www.youtube.com/watch?v=f4KWwgZnyvI" target="_blank" rel="noopener">
+        <div class="media-thumb"><img src="https://img.youtube.com/vi/f4KWwgZnyvI/hqdefault.jpg" alt="Rádio CBN Bahia" loading="lazy"><span class="media-play" aria-hidden="true">▶</span></div>
+        <div class="media-meta">
+          <span class="media-channel">Rádio CBN Bahia</span>
+          <p class="media-title">Redução de Acidentes de Trabalho: Estratégias para Aliviar o Ônus Previdenciário</p>
+          <span class="media-sub">Entrevista</span>
+        </div>
+      </a>
+      <a class="media-card" href="https://www.youtube.com/watch?v=8-2xZy5eITY" target="_blank" rel="noopener">
+        <div class="media-thumb"><img src="https://img.youtube.com/vi/8-2xZy5eITY/hqdefault.jpg" alt="TV Aratu / TVE Bahia" loading="lazy"><span class="media-play" aria-hidden="true">▶</span></div>
+        <div class="media-meta">
+          <span class="media-channel">TV Aratu · TVE Bahia</span>
+          <p class="media-title">Síndrome do Impostor</p>
+          <span class="media-sub">Entrevista em TV aberta</span>
+        </div>
+      </a>
+      <a class="media-card" href="https://www.youtube.com/watch?v=2WgClkHtW4c" target="_blank" rel="noopener">
+        <div class="media-thumb"><img src="https://img.youtube.com/vi/2WgClkHtW4c/hqdefault.jpg" alt="F5 Podcast" loading="lazy"><span class="media-play" aria-hidden="true">▶</span></div>
+        <div class="media-meta">
+          <span class="media-channel">F5 Podcast</span>
+          <p class="media-title">Como eu me tornei (médica) — Saúde Mental no Trabalho</p>
+          <span class="media-sub">Podcast sobre trajetória</span>
+        </div>
+      </a>
     </div>
-    <a href="na-midia.html" class="btn-ghost" style="margin-top:32px;display:inline-flex">Ver outras entrevistas <span class="arrow">→</span></a>
+
+    <p class="media-press">Também publicada em <b>CartaCapital · Robb Report Brasil · Record TV · RH Notícias · Bahia Notícias</b>.</p>
   </div>
 </section>
 
