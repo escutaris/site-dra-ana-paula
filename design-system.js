@@ -124,6 +124,45 @@
     });
   }
 
+  /* ----- Language switcher: original PT + Google translated pages ----- */
+  function initLanguageSwitcher() {
+    const navList = document.querySelector('.nav-list');
+    if (!navList || navList.querySelector('.lang-switcher')) return;
+
+    const canonical = document.querySelector('link[rel="canonical"]');
+    const originalUrl = canonical && canonical.href
+      ? canonical.href
+      : new URL(window.location.pathname || '/', 'https://anapaulateixeira.med.br/').href;
+
+    const buildTranslateUrl = (lang) => {
+      const params = new URLSearchParams({
+        sl: 'pt',
+        tl: lang,
+        u: originalUrl
+      });
+      return 'https://translate.google.com/translate?' + params.toString();
+    };
+
+    const li = document.createElement('li');
+    li.className = 'lang-switcher';
+    li.setAttribute('aria-label', 'Selecionar idioma');
+    li.innerHTML = [
+      '<a class="lang-link" href="' + originalUrl + '" aria-label="Português" title="Português">',
+      '<span class="flag-icon flag-br" aria-hidden="true"></span><span class="sr-only">Português</span>',
+      '</a>',
+      '<a class="lang-link" href="' + buildTranslateUrl('en') + '" aria-label="English" title="English" rel="noopener">',
+      '<span class="flag-icon flag-us" aria-hidden="true"></span><span class="sr-only">English</span>',
+      '</a>',
+      '<a class="lang-link" href="' + buildTranslateUrl('es') + '" aria-label="Español" title="Español" rel="noopener">',
+      '<span class="flag-icon flag-es" aria-hidden="true"></span><span class="sr-only">Español</span>',
+      '</a>'
+    ].join('');
+
+    const cta = navList.querySelector('.nav-cta');
+    const ctaItem = cta ? cta.closest('li') : null;
+    navList.insertBefore(li, ctaItem || null);
+  }
+
   /* ----- Smooth scroll for in-page anchors ----- */
   function initSmoothScroll() {
     if (prefersReduced) return;
@@ -156,6 +195,7 @@
     initReveal();
     initCounters();
     initNav();
+    initLanguageSwitcher();
     // intentionally NOT using scrollIntoView — causes layout issues in embedded views
     // initSmoothScroll();
     initMarquee();
