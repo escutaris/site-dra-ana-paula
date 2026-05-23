@@ -16,13 +16,27 @@
       e.preventDefault();
       var form = btn.closest('form');
       if (!form) return;
-
-      var phone = form.getAttribute('data-wa-phone') || '5575983186200';
-      var msg = buildWhatsAppMessage(form);
-      var url = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(msg);
-      window.open(url, '_blank', 'noopener');
+      openWhatsAppFromForm(form);
     });
   });
+
+  document.querySelectorAll('form[data-wa-submit]').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (typeof form.checkValidity === 'function' && !form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      openWhatsAppFromForm(form);
+    });
+  });
+
+  function openWhatsAppFromForm(form) {
+    var phone = form.getAttribute('data-wa-phone') || '5575983186200';
+    var msg = buildWhatsAppMessage(form);
+    var url = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(msg);
+    window.open(url, '_blank', 'noopener');
+  }
 
   function buildWhatsAppMessage(form) {
     var lines = ['*Solicitação via site — Dra. Ana Paula Teixeira*', ''];

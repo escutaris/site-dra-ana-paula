@@ -48,7 +48,6 @@ project/
 ├── form-handlers.js             handlers de submissão
 │
 ├── index.html                   Home
-├── sobre.html                   Quem é (inclui seção Moral Injury)
 ├── servicos.html                Palestra · Roda · Círculo NR-1 · ebook isca
 ├── livro.html                   Quando o Trabalho Dói
 ├── blog.html                    Textos autorais

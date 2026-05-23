@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Palestras · Saúde mental, NR-1 e Lesão Moral Ocupacional · Dra. Ana Paula Teixeira</title>
-<meta name="description" content="Palestras corporativas online ou presencial sobre NR-1, fatores psicossociais, liderança sob pressão, investigação de adoecimento e Lesão Moral Ocupacional. Para SIPATs, encontros de liderança, eventos setoriais. A partir de R$ 1.000.">
+<meta name="description" content="Palestras corporativas online ou presenciais sobre NR-1, fatores psicossociais, liderança sob pressão, investigação de adoecimento e Lesão Moral Ocupacional. Para SIPATs, encontros de liderança e eventos setoriais.">
 <meta name="author" content="Dra. Ana Paula Teixeira">
 <link rel="canonical" href="https://anapaulateixeira.med.br/palestras.html">
 <meta property="og:type" content="website">
@@ -12,13 +12,13 @@
 <meta property="og:site_name" content="Dra. Ana Paula Teixeira">
 <meta property="og:url" content="https://anapaulateixeira.med.br/palestras.html">
 <meta property="og:title" content="Palestras · Saúde mental, NR-1 e Lesão Moral Ocupacional">
-<meta property="og:description" content="Conteúdo clínico aplicado em linguagem de gestão. Para SIPATs, encontros de liderança e eventos setoriais. A partir de R$ 1.000.">
+<meta property="og:description" content="Conteúdo clínico aplicado em linguagem de gestão. Para SIPATs, encontros de liderança e eventos setoriais.">
 <meta property="og:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Palestras · Dra. Ana Paula Teixeira">
-<meta name="twitter:description" content="NR-1, liderança sob pressão, investigação de adoecimento, Lesão Moral Ocupacional. A partir de R$ 1.000.">
+<meta name="twitter:description" content="NR-1, liderança sob pressão, investigação de adoecimento e Lesão Moral Ocupacional para empresas e eventos.">
 <meta name="twitter:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/favicon.png">
@@ -71,34 +71,6 @@
     justify-self: end;
   }
   .hero-pal .stage-img img { width: 100%; height: 100%; object-fit: cover; }
-
-  /* Como conduzo */
-  .conduce {
-    padding-block: clamp(96px, 10vw, 144px);
-    background: var(--off-white);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-  }
-  .conduce h2 {
-    font-family: var(--font-serif);
-    font-weight: var(--weight-bold);
-    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.625rem);
-    color: var(--verde-noturno);
-    line-height: 1.18;
-    margin: 16px 0 32px 0;
-    max-width: 24ch;
-    text-wrap: balance;
-    letter-spacing: -0.005em;
-  }
-  .conduce-prose {
-    font-family: var(--font-sans);
-    font-weight: var(--weight-light);
-    font-size: 1.0625rem;
-    line-height: 1.75;
-    color: var(--preto-editorial);
-    max-width: 64ch;
-  }
-  .conduce-prose p + p { margin-top: 18px; }
 
   /* Temas */
   .temas { padding-block: clamp(96px, 10vw, 144px); }
@@ -257,7 +229,8 @@
     grid-template-columns: 1fr;
     gap: 24px;
   }
-  @media (min-width: 880px) { .mods-grid { grid-template-columns: repeat(3, 1fr); gap: 28px; } }
+  @media (min-width: 760px) { .mods-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; } }
+  @media (min-width: 1180px) { .mods-grid { grid-template-columns: repeat(4, 1fr); } }
   .mod-card {
     padding: clamp(28px, 3vw, 36px);
     background: var(--off-white);
@@ -305,9 +278,44 @@
 
   /* Para quem */
   .paraquem {
+    position: relative;
+    overflow: hidden;
     padding-block: clamp(80px, 9vw, 120px);
     background: var(--off-white);
     border-top: 1px solid var(--border);
+  }
+  .paraquem::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('assets/optimized/dra-ana-paula-teixeira-palestra-palco-forum-saude-360.webp');
+    background-repeat: no-repeat;
+    background-size: min(50vw, 700px) auto;
+    background-position: right 8% center;
+    opacity: 0.34;
+    filter: saturate(0.82) contrast(1.04);
+    pointer-events: none;
+  }
+  .paraquem::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, var(--off-white) 0%, rgba(245,239,229,.92) 48%, rgba(245,239,229,.56) 100%);
+    pointer-events: none;
+  }
+  .paraquem > .container {
+    position: relative;
+    z-index: 1;
+  }
+  @media (max-width: 760px) {
+    .paraquem::before {
+      background-size: 110% auto;
+      background-position: center bottom;
+      opacity: 0.16;
+    }
+    .paraquem::after {
+      background: rgba(245,239,229,.86);
+    }
   }
   .paraquem h2 {
     font-family: var(--font-serif);
@@ -388,12 +396,13 @@
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
-    <ul class="nav-list">
-      <li><a href="sobre.html" class="nav-link">Sobre</a></li>
-      <li><a href="servicos.html" class="nav-link" aria-current="page">Serviços</a></li>
+        <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Início</a></li>
+      <li><a href="palestras.html" class="nav-link" aria-current="page">Palestras</a></li>
+      <li><a href="rodas-de-conversa.html" class="nav-link">Rodas</a></li>
+      <li><a href="direcionamento.html" class="nav-link">Direcionamento</a></li>
       <li><a href="livro.html" class="nav-link">Livro</a></li>
-      <li><a href="contato.html" class="nav-link">Contato</a></li>
-      <li><a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20palestra." class="btn btn-primary nav-cta" style="padding:10px 18px;font-size:0.875rem">Solicitar palestra</a></li>
+      <li><a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20palestra%20para%20minha%20empresa%2Fevento.%20Podemos%20conversar%3F" class="btn btn-primary nav-cta" style="padding:10px 18px;font-size:0.875rem">Pedir informações</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Abrir menu">
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#1C3520" stroke-width="1.5"><line x1="3" y1="7" x2="19" y2="7"/><line x1="3" y1="15" x2="19" y2="15"/></svg>
@@ -406,67 +415,55 @@
   <div class="container hero-grid">
     <div>
       <span class="eyebrow-editorial">Palestras corporativas e setoriais</span>
-      <h1>Conteúdo clínico aplicado em <em>linguagem de gestão.</em></h1>
-      <p class="lead">Para empresas, eventos setoriais e equipes de RH que querem método — não motivação. Vocabulário próprio da medicina do trabalho, com base na NR-1, na Resolução CFM 2.323/2022 e em quase trinta anos de prática dentro das empresas.</p>
+      <h1>Palestras para empresas que precisam falar de saúde mental com seriedade.</h1>
+      <p class="lead">Conteúdo clínico aplicado em linguagem de gestão, para empresas, eventos setoriais, RH, SESMT e lideranças. Sem palestra motivacional: método, NR-1, fatores psicossociais e quase três décadas de prática corporativa.</p>
       <div style="display:flex;gap:16px;flex-wrap:wrap">
-        <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20palestra." class="btn btn-primary">Solicitar proposta →</a>
+        <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20palestra%20para%20minha%20empresa%2Fevento.%20Podemos%20conversar%3F" class="btn btn-primary">Pedir informações →</a>
         <a href="#temas" class="btn btn-secondary">Ver temas</a>
       </div>
     </div>
     <div>
       <div class="stage-img">
-        <img src="assets/photos/dra-anapaula-palestra-terno-preto-bandeiras.png" alt="Dra. Ana Paula em palestra" loading="eager">
+        <img src="assets/optimized/dra-ana-paula-teixeira-palestra-saude-mental-trabalho.webp" alt="Dra. Ana Paula Teixeira em palestra corporativa sobre saúde mental no trabalho" width="1100" height="1375" loading="eager" fetchpriority="high" decoding="async">
       </div>
     </div>
   </div>
 </header>
 
-<!-- COMO CONDUZO -->
-<section class="conduce">
-  <div class="container">
-    <span class="eyebrow-editorial">Como conduzo</span>
-    <h2>Sem discurso motivacional. Sem técnica de palco. Sem retórica genérica sobre saúde mental.</h2>
-    <div class="conduce-prose">
-      <p>Cada palestra parte de conteúdo clínico aplicado — vocabulário próprio da medicina do trabalho, com base na NR-1, na Resolução CFM 2.323/2022 e em quase trinta anos de prática dentro das empresas.</p>
-      <p>A linguagem é acessível para o RH operacional, sem rebaixar densidade técnica. Propositiva para o decisor: aponta caminho concreto, não só diagnóstico do problema. Honesta com a complexidade: reconhece que cuidar de pessoas em ambiente corporativo é decisão difícil, com tensões reais entre cuidado e produtividade.</p>
-    </div>
-  </div>
-</section>
-
 <!-- TEMAS -->
 <section class="temas" id="temas">
   <div class="container">
-    <span class="eyebrow-editorial">Quatro palestras em destaque</span>
-    <h2>Temas que domino.</h2>
-    <p class="temas-lead">Quatro palestras consolidadas com base em demanda recorrente e em prática clínica dentro das empresas.</p>
+    <span class="eyebrow-editorial">Temas mais solicitados</span>
+    <h2>Escolha pelo problema que a empresa precisa enfrentar.</h2>
+    <p class="temas-lead">Quatro temas centrais, ajustáveis ao público, ao momento da empresa e ao objetivo do evento.</p>
 
     <div class="tema-grid">
       <article class="tema-card">
-        <span class="ttag">Para empresas, RH, SESMT e jurídico · Janela mai-jul 2026</span>
-        <h3>NR-1 em vigor: o que sua empresa precisa documentar antes da próxima fiscalização</h3>
-        <p>Fatores psicossociais reconhecidos: o que é exigência e o que é orientação. Estrutura mínima de PGR psicossocial defensável diante de auditoria. Indicadores que sustentam evidência (afastamentos, retorno, clima). Roteiro prático para empresas que precisam responder em 60 dias.</p>
-        <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20a%20palestra%20%22NR-1%20em%20vigor%22.">Solicitar palestra →</a>
+        <span class="ttag">Para RH, SESMT, jurídico e diretoria</span>
+        <h3>NR-1 em vigor: fatores psicossociais sem checklist vazio</h3>
+        <p>O que documentar, como sustentar evidências e como transformar fatores psicossociais em linguagem útil para gestão, prevenção e fiscalização.</p>
+        <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20palestra%20%22NR-1%20em%20vigor%22.%20Podemos%20conversar%3F">Pedir informações →</a>
       </article>
 
       <article class="tema-card">
-        <span class="ttag">Para liderança e RH · Foco em competência aplicada</span>
+        <span class="ttag">Para liderança e RH</span>
         <h3>O líder diante do sofrimento que não é dele: o que a NR-1 exige de quem gerencia pessoas</h3>
-        <p>Como reconhecer sinais de adoecimento na equipe antes do afastamento. O que dizer (e o que evitar) na primeira conversa de adoecimento. Diferenciação entre suporte de líder e papel de profissional de saúde. Autoavaliação prática de perfis de liderança sob pressão.</p>
-        <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20a%20palestra%20%22O%20l%C3%ADder%20diante%20do%20sofrimento%22.">Solicitar palestra →</a>
+        <p>Como reconhecer sinais, conduzir primeiras conversas, diferenciar suporte de liderança e papel clínico, e evitar decisões improvisadas diante de sofrimento.</p>
+        <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20palestra%20%22O%20l%C3%ADder%20diante%20do%20sofrimento%22.%20Podemos%20conversar%3F">Pedir informações →</a>
       </article>
 
       <article class="tema-card">
-        <span class="ttag">Para RH, jurídico, SESMT · Diferenciação técnica</span>
+        <span class="ttag">Para RH, jurídico e SESMT</span>
         <h3>Assédio moral, violência ocupacional e Lesão Moral Ocupacional: o que a medicina do trabalho distingue</h3>
-        <p>Critérios técnicos por categoria: o que a medicina do trabalho diferencia. Lesão Moral Ocupacional: conceito, escala OMIS-R, validação para o português. Implicações jurídicas de nomear errado: nexo causal e responsabilidade. O que muda na investigação interna e no parecer técnico.</p>
-        <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20a%20palestra%20sobre%20Les%C3%A3o%20Moral%20Ocupacional.">Solicitar palestra →</a>
+        <p>Critérios técnicos para nomear melhor situações que envolvem adoecimento, valores violados, nexo causal, investigação interna e responsabilidade.</p>
+        <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20palestra%20sobre%20Les%C3%A3o%20Moral%20Ocupacional.%20Podemos%20conversar%3F">Pedir informações →</a>
       </article>
 
       <article class="tema-card">
-        <span class="ttag">Para qualquer público · Palestra editorial baseada no livro</span>
+        <span class="ttag">Para públicos amplos</span>
         <h3>Quando o Trabalho Dói: o custo invisível do adoecimento</h3>
-        <p>O que adoece no trabalho contemporâneo: território, sintomas, sinais. Como o adoecimento compromete pessoas, reputação e resultado. O que distingue a empresa que cuida da que apenas faz comunicação. Linguagem comum entre clínica, gestão e jurídico — sem jargão de coach. Inclui exemplar autografado nas presenciais.</p>
-        <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20a%20palestra%20%22Quando%20o%20Trabalho%20D%C3%B3i%22.">Solicitar palestra →</a>
+        <p>Uma palestra editorial baseada no livro, para criar linguagem comum entre pessoas, liderança, saúde ocupacional e gestão.</p>
+        <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20palestra%20%22Quando%20o%20Trabalho%20D%C3%B3i%22.%20Podemos%20conversar%3F">Pedir informações →</a>
       </article>
     </div>
   </div>
@@ -476,34 +473,34 @@
 <section class="recortes">
   <div class="container">
     <span class="eyebrow-editorial">Recortes especializados</span>
-    <h2>Sob consulta · cinco temas adicionais.</h2>
-    <p class="recortes-lead">Temas mais nichados, configuráveis conforme contexto do evento. Investimento e formato sob proposta.</p>
+    <h2>Outros recortes possíveis.</h2>
+    <p class="recortes-lead">Para eventos com demanda mais específica, o tema pode ser ajustado ao contexto da empresa.</p>
 
     <ul class="recortes-list">
       <li>
         <span class="rt">A palestra depois da fiscalização: quando a empresa foi autuada e precisa agir</span>
         <span class="rp">Para empresa autuada · jurídico · RH · diretoria</span>
-        <a class="rl" href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20a%20palestra%20p%C3%B3s-autua%C3%A7%C3%A3o.">Consultar →</a>
+        <a class="rl" href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20palestra%20p%C3%B3s-autua%C3%A7%C3%A3o.%20Podemos%20conversar%3F">Consultar →</a>
       </li>
       <li>
         <span class="rt">Segurança psicológica: o que o líder precisa fazer antes de falar em cultura</span>
         <span class="rp">Para liderança · RH · diretoria</span>
-        <a class="rl" href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20a%20palestra%20sobre%20seguran%C3%A7a%20psicol%C3%B3gica.">Consultar →</a>
+        <a class="rl" href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20palestra%20sobre%20seguran%C3%A7a%20psicol%C3%B3gica.%20Podemos%20conversar%3F">Consultar →</a>
       </li>
       <li>
         <span class="rt">Quando o afastamento vira série: como investigar antes de virar processo</span>
         <span class="rp">Para RH · SESMT · liderança</span>
-        <a class="rl" href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20a%20palestra%20sobre%20afastamentos%20em%20s%C3%A9rie.">Consultar →</a>
+        <a class="rl" href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20palestra%20sobre%20afastamentos%20em%20s%C3%A9rie.%20Podemos%20conversar%3F">Consultar →</a>
       </li>
       <li>
         <span class="rt">Presenteísmo: o adoecimento que não aparece no afastamento</span>
         <span class="rp">Para RH · liderança · SESMT</span>
-        <a class="rl" href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20a%20palestra%20sobre%20presente%C3%ADsmo.">Consultar →</a>
+        <a class="rl" href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20palestra%20sobre%20presente%C3%ADsmo.%20Podemos%20conversar%3F">Consultar →</a>
       </li>
       <li>
         <span class="rt">Retorno ao trabalho após afastamento por transtorno mental</span>
         <span class="rp">Para SESMT · RH · liderança imediata</span>
-        <a class="rl" href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20a%20palestra%20sobre%20retorno%20ao%20trabalho.">Consultar →</a>
+        <a class="rl" href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20palestra%20sobre%20retorno%20ao%20trabalho.%20Podemos%20conversar%3F">Consultar →</a>
       </li>
     </ul>
   </div>
@@ -513,32 +510,32 @@
 <section class="mods">
   <div class="container">
     <span class="eyebrow-editorial">Modalidades</span>
-    <h2>Como funciona a contratação.</h2>
+    <h2>Formatos de palestra.</h2>
 
     <div class="mods-grid">
       <article class="mod-card">
         <span class="mtag">Online · até 100 pessoas · 60 min</span>
         <h3>Online padrão</h3>
         <p>Para empresas e eventos com plateia distribuída. Inclui gravação enviada ao contratante e slides em PDF para distribuição interna.</p>
-        <p class="price">A partir de R$ 1.000</p>
+        <p class="price">Proposta conforme escopo</p>
       </article>
       <article class="mod-card">
         <span class="mtag">Online · 100 a 300 pessoas · 60 min</span>
         <h3>Online ampliado</h3>
         <p>Para grandes eventos online com plateia ampla. Inclui mesmo entregável da modalidade padrão, com produção dedicada ao evento.</p>
-        <p class="price">A partir de R$ 1.500</p>
+        <p class="price">Proposta conforme escopo</p>
       </article>
       <article class="mod-card">
         <span class="mtag">Presencial Salvador · até 90 min</span>
         <h3>Presencial Salvador</h3>
         <p>Para empresas e eventos na região metropolitana de Salvador. Inclui gravação, slides em PDF e livro autografado para o organizador.</p>
-        <p class="price">A partir de R$ 2.500</p>
+        <p class="price">Proposta conforme escopo</p>
       </article>
       <article class="mod-card">
-        <span class="mtag">Presencial outras capitais · até 90 min</span>
-        <h3>Presencial outras capitais</h3>
-        <p>Para eventos em capitais próximas (Recife, Aracaju, Maceió, Fortaleza) e demais. Mesmo entregável das presenciais. Deslocamento, hospedagem e per diem por conta do contratante.</p>
-        <p class="price">A partir de R$ 3.500</p>
+        <span class="mtag">Presencial outras cidades · até 90 min</span>
+        <h3>Presencial outras cidades</h3>
+        <p>Para eventos em capitais, cidades do interior e outras localidades. Mesmo entregável das presenciais, com deslocamento, hospedagem e per diem definidos conforme a cidade.</p>
+        <p class="price">Proposta conforme escopo</p>
       </article>
     </div>
   </div>
@@ -547,8 +544,8 @@
 <!-- PARA QUEM -->
 <section class="paraquem">
   <div class="container">
-    <span class="eyebrow-editorial">Para quem trabalho</span>
-    <h2>Empresas, eventos e times prioritários.</h2>
+    <span class="eyebrow-editorial">Para quem</span>
+    <h2>Empresas, eventos e times que precisam de repertório técnico.</h2>
     <ul class="paraquem-list">
       <li>Empresas de médio e grande porte estruturando programa de saúde mental</li>
       <li>Times de RH e SESMT respondendo à NR-1 ou conduzindo investigação de adoecimento</li>
@@ -556,7 +553,7 @@
       <li>Encontros de liderança, semanas internas e SIPATs</li>
       <li>Empresas em momento de crise reputacional ou estrutural ligada a adoecimento</li>
     </ul>
-    <p class="paraquem-numbers">Já trabalhei com <b>PetroRecôncavo, Alvopetro, ABRH-BA, ABRH Sergipe</b> e outras. <b>130+ palestras realizadas</b> · <b>mais de 10 mil profissionais treinados</b> · <b>99% de avaliações positivas</b>.</p>
+    <p class="paraquem-numbers">Experiência com empresas e eventos setoriais, incluindo <b>PetroRecôncavo, Alvopetro, ABRH-BA e ABRH Sergipe</b>. <b>130+ palestras realizadas</b> · <b>mais de 10 mil profissionais treinados</b> · <b>99% de avaliações positivas</b>.</p>
   </div>
 </section>
 
@@ -564,11 +561,11 @@
 <section class="cta-pal">
   <div class="container">
     <span class="eyebrow-editorial">Próximo passo</span>
-    <h2>Leve essa conversa para <em>a sua empresa.</em></h2>
-    <p>Cada evento tem contexto próprio — porte da empresa, perfil da plateia, objetivo do evento. A conversa começa com troca breve para entender o cenário e fechar formato, data e investimento.</p>
+    <h2>Leve repertório técnico para <em>a sua empresa.</em></h2>
+    <p>Envie o contexto do evento, público, objetivo e data prevista. A proposta volta com tema recomendado, formato e próximos passos.</p>
     <div class="cta-row">
-      <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20proposta%20de%20palestra." class="btn btn-primary">Solicitar proposta pelo WhatsApp →</a>
-      <a href="contato.html" class="btn btn-secondary" style="border-color:var(--bege-areia);color:var(--bege-areia)">Enviar briefing por e-mail</a>
+      <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20para%20uma%20proposta%20de%20palestra.%20Podemos%20conversar%3F" class="btn btn-primary">Pedir informações pelo WhatsApp →</a>
+      <a href="mailto:contato@anapaulateixeira.med.br?subject=Briefing%20para%20palestra&body=Ol%C3%A1%2C%20gostaria%20de%20enviar%20um%20briefing%20para%20uma%20palestra.%0A%0AContexto%20do%20evento%3A%0AP%C3%BAblico%3A%0AData%20prevista%3A%0AFormato%3A%0AObjetivo%3A" class="btn btn-secondary" style="border-color:var(--bege-areia);color:var(--bege-areia)">Enviar briefing por e-mail</a>
     </div>
   </div>
 </section>
@@ -584,8 +581,8 @@
       <div>
         <div class="footer-col-title">Navegar</div>
         <div class="stack-3">
-          <div><a href="sobre.html">Sobre</a></div>
-          <div><a href="servicos.html">Serviços</a></div>
+          <div><a href="index.html">Início</a></div>
+          <div><a href="https://guia.anateixeiramed.com.br/#receber-guia" target="_blank" rel="noopener">Guia gratuito</a></div>
           <div><a href="palestras.html">Palestras</a></div>
           <div><a href="rodas-de-conversa.html">Rodas de Conversa</a></div>
           <div><a href="direcionamento.html">Direcionamento Executivo</a></div>
@@ -597,7 +594,7 @@
         <div class="footer-col-title">Contato</div>
         <div class="stack-3">
           <div><a href="mailto:contato@anapaulateixeira.med.br">contato@anapaulateixeira.med.br</a></div>
-          <div><a href="https://wa.me/5575983186200">WhatsApp (75) 98318-6200</a></div>
+          <div><a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20palestra%20para%20minha%20empresa%2Fevento.%20Podemos%20conversar%3F">WhatsApp (75) 98318-6200</a></div>
           <div><a href="https://www.instagram.com/draanapaulateixeira/" target="_blank" rel="noopener">Instagram</a></div>
           <div><a href="https://www.linkedin.com/in/draanapaulateixeira/" target="_blank" rel="noopener">LinkedIn</a></div>
           <div><a href="https://www.youtube.com/@draanapaulateixeira" target="_blank" rel="noopener">YouTube</a></div>

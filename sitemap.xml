@@ -8,13 +8,19 @@
   </url>
 
   <url>
-    <loc>https://anapaulateixeira.med.br/sobre.html</loc>
-    <changefreq>yearly</changefreq>
+    <loc>https://anapaulateixeira.med.br/palestras.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://anapaulateixeira.med.br/rodas-de-conversa.html</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://anapaulateixeira.med.br/servicos.html</loc>
+    <loc>https://anapaulateixeira.med.br/direcionamento.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -22,25 +28,25 @@
   <url>
     <loc>https://anapaulateixeira.med.br/livro.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://anapaulateixeira.med.br/blog.html</loc>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://anapaulateixeira.med.br/na-midia.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://anapaulateixeira.med.br/contato.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://anapaulateixeira.med.br/governanca.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://anapaulateixeira.med.br/politica-privacidade.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
 
 </urlset>

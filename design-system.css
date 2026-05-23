@@ -763,12 +763,13 @@
   z-index: 0;
   filter: saturate(0.85);
 }
-.bg-context.bg-coffee-journal::before { background-image: url('assets/photos/context-coffee-journal.png'); }
-.bg-context.bg-stage-palestra::before { background-image: url('assets/photos/stage-palestra.png'); opacity: 0.05; }
-.bg-context.bg-circle-chairs::before { background-image: url('assets/photos/context-circle-chairs.png'); opacity: 0.06; }
-.bg-context.bg-pen-documents::before { background-image: url('assets/photos/context-pen-documents.png'); }
-.bg-context.bg-handmade-paper::before { background-image: url('assets/photos/context-handmade-paper.png'); background-position: center top; opacity: 0.08; }
-.bg-context.bg-leather-chair::before { background-image: url('assets/photos/context-leather-chair.png'); opacity: 0.06; }
+.bg-context.bg-coffee-journal::before { background-image: url('assets/optimized/context-coffee-journal.webp'); }
+.bg-context.bg-stage-palestra::before { background-image: url('assets/optimized/context-stage-palestra.webp'); opacity: 0.05; }
+.bg-context.bg-roda-conversa-forum::before { background-image: url('assets/optimized/dra-ana-paula-teixeira-roda-conversa-forum-saude-360.webp'); background-position: center; opacity: 0.12; }
+.bg-context.bg-circle-chairs::before { background-image: url('assets/optimized/context-circle-chairs.webp'); opacity: 0.06; }
+.bg-context.bg-pen-documents::before { background-image: url('assets/optimized/context-pen-documents.webp'); }
+.bg-context.bg-handmade-paper::before { background-image: url('assets/optimized/context-handmade-paper.webp'); background-position: center top; opacity: 0.08; }
+.bg-context.bg-leather-chair::before { background-image: url('assets/optimized/context-leather-chair.webp'); opacity: 0.06; }
 
 /* ============================================================
    UTILITÁRIOS

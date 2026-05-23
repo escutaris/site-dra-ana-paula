@@ -109,7 +109,7 @@ Sugestão de mensagem:
 Quando você pedir mudanças aqui na ferramenta, eu aplico os arquivos. Para atualizar o site:
 
 1. Vá em `https://github.com/escutaris/site-anapaula`
-2. Clique no arquivo que mudou (ex: `sobre.html`)
+2. Clique no arquivo que mudou (ex: `index.html`)
 3. Clique no ícone de lápis (editar)
 4. Cole o novo conteúdo → **Commit**
 

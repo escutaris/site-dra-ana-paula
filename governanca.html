@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- SEO -->
-<title>Governança em Saúde Mental no Trabalho · Regras de Ouro · Dra. Ana Paula Teixeira</title>
-<meta name="description" content="Indicadores e perguntas estratégicas para a alta liderança qualificar a gestão de saúde mental no trabalho. Custo, retorno e lacuna entre intenção e governança.">
+<title>Governança em Saúde Mental no Trabalho · Indicadores, NR-1 e Riscos Psicossociais · Dra. Ana Paula Teixeira</title>
+<meta name="description" content="Indicadores, fontes e perguntas estratégicas para qualificar governança em saúde mental no trabalho, NR-1, riscos psicossociais, liderança e decisões organizacionais.">
 <meta name="author" content="Dra. Ana Paula Teixeira">
 <link rel="canonical" href="https://anapaulateixeira.med.br/governanca.html">
 <!-- Open Graph -->
@@ -13,15 +13,15 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Dra. Ana Paula Teixeira">
 <meta property="og:url" content="https://anapaulateixeira.med.br/governanca.html">
-<meta property="og:title" content="Governança em Saúde Mental no Trabalho · Regras de Ouro">
-<meta property="og:description" content="Indicadores e perguntas estratégicas para a alta liderança qualificar a gestão de saúde mental no trabalho.">
+<meta property="og:title" content="Governança em Saúde Mental no Trabalho · Indicadores e Riscos Psicossociais">
+<meta property="og:description" content="Indicadores e perguntas estratégicas para qualificar saúde mental no trabalho, NR-1 e riscos psicossociais.">
 <meta property="og:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Governança em Saúde Mental no Trabalho · Regras de Ouro">
-<meta name="twitter:description" content="Indicadores e perguntas estratégicas para a alta liderança qualificar a gestão de saúde mental no trabalho.">
+<meta name="twitter:title" content="Governança em Saúde Mental no Trabalho · Indicadores e Riscos Psicossociais">
+<meta name="twitter:description" content="Indicadores e perguntas estratégicas para qualificar saúde mental no trabalho, NR-1 e riscos psicossociais.">
 <meta name="twitter:image" content="https://anapaulateixeira.med.br/assets/og-default.png">
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -111,6 +111,20 @@
     color: var(--preto-editorial);
     margin: 0;
   }
+  .source-note {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    color: var(--cinza-quente);
+    margin: 22px 0 0;
+    max-width: 78ch;
+  }
+  .source-note a {
+    color: var(--verde-noturno);
+    border-bottom: 1px solid rgba(194,84,57,.45);
+    text-decoration: none;
+  }
 
   /* Gap — verde-noturno, dados da lacuna */
   .gap-block { background: var(--verde-noturno); color: var(--off-white); }
@@ -156,6 +170,13 @@
     color: var(--off-white);
     opacity: 0.78;
     margin: 0;
+  }
+  .gap-block .source-note {
+    color: rgba(245,239,229,.72);
+  }
+  .gap-block .source-note a {
+    color: var(--bege-areia);
+    border-bottom-color: rgba(194,84,57,.7);
   }
 
   /* FAQ — Regras de Ouro em accordion */
@@ -284,12 +305,13 @@
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
-    <ul class="nav-list">
-      <li><a href="sobre.html" class="nav-link">Sobre</a></li>
-      <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+        <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Início</a></li>
+      <li><a href="palestras.html" class="nav-link">Palestras</a></li>
+      <li><a href="rodas-de-conversa.html" class="nav-link">Rodas</a></li>
+      <li><a href="direcionamento.html" class="nav-link">Direcionamento</a></li>
       <li><a href="livro.html" class="nav-link">Livro</a></li>
-      <li><a href="contato.html" class="nav-link">Contato</a></li>
-      <li><a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20palestra." class="btn btn-primary nav-cta" style="padding:10px 18px;font-size:0.875rem">Solicitar palestra</a></li>
+      <li><a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20demanda%20relacionada%20%C3%A0%20sa%C3%BAde%20mental%20no%20trabalho.%20Podemos%20conversar%3F" class="btn btn-primary nav-cta" style="padding:10px 18px;font-size:0.875rem">Falar pelo WhatsApp</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Abrir menu">
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#1C3520" stroke-width="1.5"><line x1="3" y1="7" x2="19" y2="7"/><line x1="3" y1="15" x2="19" y2="15"/></svg>
@@ -309,26 +331,26 @@
 <section class="block kpi-band reveal">
   <div class="container">
     <span class="eyebrow-editorial">A conta que ninguém quer ver</span>
-    <h2>Custo, retorno e o que os dados clínicos revelam.</h2>
-    <p class="intro">Saúde mental no trabalho deixou de ser pauta de RH. É linha de balanço: produtividade perdida, retorno sobre treinamento de liderança e nexo causal direto com a operação.</p>
+    <h2>Custo, retorno e o que os dados globais mostram.</h2>
+    <p class="intro">Saúde mental no trabalho deixou de ser pauta de RH. É linha de balanço, cultura, produtividade, liderança e risco psicossocial.</p>
     <div class="kpi-grid reveal-stagger">
       <div class="kpi-cell">
         <span class="kpi-tag">Custo global</span>
         <span class="kpi-num">US$ 1 tri</span>
-        <p class="kpi-desc"><strong>Em perda de produtividade por ano.</strong> 12 bilhões de dias de trabalho perdidos no mundo, segundo estimativas de mercado.</p>
+        <p class="kpi-desc"><strong>Em perda de produtividade por ano.</strong> A OMS estima 12 bilhões de dias de trabalho perdidos anualmente por depressão e ansiedade.</p>
       </div>
       <div class="kpi-cell">
-        <span class="kpi-tag">Retorno</span>
-        <span class="kpi-num">370%</span>
-        <p class="kpi-desc"><strong>ROI médio</strong> em programas de saúde mental no trabalho. Pode chegar a <strong>1.000%</strong> quando aplicado em treinamento de lideranças.</p>
+        <span class="kpi-tag">Retorno documentado</span>
+        <span class="kpi-num">4,7x</span>
+        <p class="kpi-desc"><strong>Retorno médio por investimento.</strong> Análise da Deloitte UK indica cerca de £4,70 de retorno para cada £1 investido em suporte à saúde mental e bem-estar.</p>
       </div>
       <div class="kpi-cell">
-        <span class="kpi-tag">Nexo causal</span>
+        <span class="kpi-tag">Escala do problema</span>
         <span class="kpi-num">15%</span>
-        <p class="kpi-desc"><strong>Dos casos acompanhados pela psicologia</strong> apresentam provável nexo causal direto com o trabalho — exigindo ação na fonte do estresse, não só na consequência individual.</p>
+        <p class="kpi-desc"><strong>Dos adultos em idade produtiva</strong> foram estimados com transtorno mental em 2019, segundo a OMS. O dado reforça a necessidade de gestão, prevenção e apoio no trabalho.</p>
       </div>
     </div>
-    <!-- PENDÊNCIA: confirmar com cliente as fontes exatas (OMS / Deloitte / estudo brasileiro) para citação técnica abaixo da banda. -->
+    <p class="source-note">Fontes: <a href="https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work" target="_blank" rel="noopener">OMS, Mental health at work</a>; <a href="https://www.deloitte.com/uk/en/about/press-room/poor-mental-health-costs-uk-employers-51-billion-a-year-for-employees.html" target="_blank" rel="noopener">Deloitte UK, Mental health and employers 2024</a>.</p>
   </div>
 </section>
 
@@ -368,6 +390,7 @@
         <p style="font-family:var(--font-serif);font-style:italic;font-size:1.0625rem;line-height:1.5;color:var(--off-white);margin:0;text-wrap:balance">A saúde mental no trabalho não se fortalece apenas com intenção. Ela se fortalece quando a empresa aprende a medir o que revela confiança, estresse, apoio, equilíbrio e mudança real de cultura.</p>
       </div>
     </div>
+    <p class="source-note">Fonte dos percentuais: <a href="https://www.ccla.co.uk/documents/ccla-corporate-mental-health-benchmark-global-100-2025/download?inline=1" target="_blank" rel="noopener">CCLA Corporate Mental Health Benchmark Global 100+ 2025</a>, relatório baseado em informações públicas das empresas avaliadas.</p>
   </div>
 </section>
 
@@ -375,7 +398,7 @@
 <section class="block container reveal">
   <span class="eyebrow-editorial">Regras de Ouro · Perguntas e Respostas</span>
   <h2>As perguntas que qualificam a gestão.</h2>
-  <p class="intro">Oito perguntas para a alta liderança avaliar maturidade real em saúde mental no trabalho — e os indicadores correspondentes que transformam intenção em decisão.</p>
+  <p class="intro">Doze perguntas para a alta liderança avaliar maturidade real em saúde mental no trabalho, riscos psicossociais, NR-1 e indicadores que transformam intenção em decisão.</p>
 
   <div class="faq-list">
 
@@ -467,6 +490,50 @@
       </div>
     </details>
 
+    <details class="faq-item">
+      <summary>
+        <span class="faq-num">09</span>
+        <span class="faq-q">Como a NR-1 se conecta à governança em saúde mental no trabalho?</span>
+        <span class="faq-toggle">+</span>
+      </summary>
+      <div class="faq-body">
+        <p>A NR-1 exige que riscos ocupacionais sejam identificados, avaliados e gerenciados dentro do GRO e do PGR. Quando fatores psicossociais entram na conversa, a empresa precisa sair da ação pontual e construir evidência: onde o risco aparece, quem está exposto, que controles existem e como a liderança acompanha a evolução.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <span class="faq-num">10</span>
+        <span class="faq-q">Qual é a diferença entre benefício emocional e gestão de risco psicossocial?</span>
+        <span class="faq-toggle">+</span>
+      </summary>
+      <div class="faq-body">
+        <p>Benefícios de apoio emocional ajudam pessoas que já estão em sofrimento. Gestão de risco psicossocial olha também para a organização do trabalho: carga, autonomia, justiça, clareza de papéis, relações, conflitos e práticas de liderança. Uma empresa madura precisa dos dois, mas não deve confundir suporte individual com prevenção na fonte.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <span class="faq-num">11</span>
+        <span class="faq-q">Que indicadores de saúde mental a empresa pode acompanhar sem expor pessoas?</span>
+        <span class="faq-toggle">+</span>
+      </summary>
+      <div class="faq-body">
+        <p>Indicadores úteis podem ser acompanhados de forma agregada: absenteísmo, afastamentos, rotatividade, adesão a programas, percepção de apoio, segurança psicológica, carga de trabalho, qualidade da liderança e uso de canais de cuidado. O ponto não é vigiar indivíduos, mas enxergar padrões para agir com responsabilidade.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>
+        <span class="faq-num">12</span>
+        <span class="faq-q">Quando faz sentido chamar apoio técnico externo?</span>
+        <span class="faq-toggle">+</span>
+      </summary>
+      <div class="faq-body">
+        <p>Quando há adoecimento recorrente, conflitos sensíveis, dúvida sobre nexo com o trabalho, retorno após afastamento, pressão regulatória ou dificuldade de transformar dados em decisão. O apoio técnico ajuda a separar opinião de critério, proteger pessoas e orientar a empresa sem reduzir tudo a comunicação interna.</p>
+      </div>
+    </details>
+
   </div>
 </section>
 
@@ -475,9 +542,9 @@
   <div class="container">
     <span class="eyebrow-editorial">Próximo passo</span>
     <h2>Levar essa governança para dentro da sua empresa.</h2>
-    <p>Palestras, rodas de conversa e o Círculo Técnico NR-1 traduzem esse repertório em decisão executiva — com critério clínico, base regulatória e linguagem de gestão.</p>
+    <p>Palestras, rodas de conversa e Direcionamento Executivo traduzem esse repertório em decisão executiva — com critério clínico, base regulatória e linguagem de gestão.</p>
     <div class="flex gap-3" style="flex-wrap:wrap">
-      <a href="servicos.html" class="btn btn-primary">Conhecer os formatos →</a>
+      <a href="index.html#servicos" class="btn btn-primary">Ver serviços →</a>
       <a href="contato.html" class="btn btn-secondary">Falar com a Dra. Ana Paula</a>
     </div>
   </div>
@@ -494,8 +561,8 @@
       <div>
         <div class="footer-col-title">Navegar</div>
         <div class="stack-3">
-          <div><a href="sobre.html">Sobre</a></div>
-          <div><a href="servicos.html">Serviços</a></div>
+          <div><a href="index.html">Início</a></div>
+          <div><a href="https://guia.anateixeiramed.com.br/#receber-guia" target="_blank" rel="noopener">Guia gratuito</a></div>
           <div><a href="palestras.html">Palestras</a></div>
           <div><a href="rodas-de-conversa.html">Rodas de Conversa</a></div>
           <div><a href="direcionamento.html">Direcionamento Executivo</a></div>
@@ -507,7 +574,7 @@
         <div class="footer-col-title">Contato</div>
         <div class="stack-3">
           <div><a href="mailto:contato@anapaulateixeira.med.br">contato@anapaulateixeira.med.br</a></div>
-          <div><a href="https://wa.me/5575983186200">WhatsApp (75) 98318-6200</a></div>
+          <div><a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20demanda%20relacionada%20%C3%A0%20sa%C3%BAde%20mental%20no%20trabalho.%20Podemos%20conversar%3F">WhatsApp (75) 98318-6200</a></div>
           <div><a href="https://www.instagram.com/draanapaulateixeira/" target="_blank" rel="noopener">Instagram</a></div>
           <div><a href="https://www.linkedin.com/in/draanapaulateixeira/" target="_blank" rel="noopener">LinkedIn</a></div>
           <div><a href="https://www.youtube.com/@draanapaulateixeira" target="_blank" rel="noopener">YouTube</a></div>

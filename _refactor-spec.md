@@ -8,7 +8,7 @@
 
 ## 1 · Princípio orientador
 
-Modelo **hub-and-spoke**: hub one-page institucional (`index.html`) sustenta autoridade e captura leads quentes; LPs avulsas (`direcionamento.html`, `checklist-nr1.html`) recebem tráfego pago e WhatsApp pré-qualificado e convertem em venda.
+Modelo **hub-and-spoke**: hub one-page institucional (`index.html`) sustenta autoridade e captura leads quentes; LP avulsa (`direcionamento.html`) recebe tráfego pago e WhatsApp pré-qualificado e converte em venda.
 
 **Objetivo Fase 1 (mai–dez/2026):** gerar caixa via tripé Palestras + Roda + Direcionamento, sem perder a reputação editorial em construção. "Parecer quem ela é, não quem vai ser."
 
@@ -29,7 +29,7 @@ Modelo **hub-and-spoke**: hub one-page institucional (`index.html`) sustenta aut
 | 7 | Livro | `#livro` | Bloco completo de *Quando o Trabalho Dói* |
 | 8 | Na Mídia | `#midia` | 10 logos + marquee imprensa + vídeos |
 | 9 | Publicações | `#publicacoes` | Links pra textos em mídias externas |
-| 10 | Iscas | `#iscas` | Guia técnico + Checklist NR-1 |
+| 10 | Isca | `#isca` | Guia técnico gratuito |
 | 11 | Contato | `#contato` | Formulário + WhatsApp + CTA final |
 | — | Footer | — | Governança · Política · Direitos |
 
@@ -39,15 +39,14 @@ Modelo **hub-and-spoke**: hub one-page institucional (`index.html`) sustenta aut
 
 Sem "Workshop NR-1" no nav (será removido). Sem páginas separadas no nav.
 
-### LPs avulsas (mantém · não no nav)
+### LP avulsa (mantém · não no nav)
 
 - `direcionamento.html` — máquina de venda do produto-tração
-- `checklist-nr1.html` — captura de isca corporativa B2B
 
 ### Páginas arquivadas (movem pra `_arquivado/`)
 
 - `workshop-mapa-psicossocial.html` — sem trio formado, não vende como produto detalhado
-- `sobre.html` — conteúdo migra pra hub seção 5
+- Página separada de Sobre removida — conteúdo consolidado na home
 - `servicos.html` — conteúdo migra pra hub seção 6
 - `livro.html` — conteúdo migra pra hub seção 7
 - `na-midia.html` — conteúdo migra pra hub seção 8
@@ -237,9 +236,9 @@ Cada um com link "Consultar disponibilidade →" (wa.me pré-preenchido por tema
 
 | Formato | Investimento |
 |---|---|
-| Avulsa Online · até 25 pessoas · 1h30–2h | A partir de R$ 1.500 |
-| Avulsa Presencial Salvador · até 25 · 2h | A partir de R$ 2.500 |
-| Programa 4 sessões (online ou presencial) | A partir de R$ 5.000 |
+| Avulsa Online · até 25 pessoas · 1h30–2h | Proposta conforme escopo |
+| Avulsa Presencial Salvador · até 25 · 2h | Proposta conforme escopo |
+| Programa 4 sessões (online ou presencial) | Proposta conforme escopo |
 
 **CTA:** "Solicitar Roda de Conversa →" (wa.me)
 
@@ -251,8 +250,8 @@ Cada um com link "Consultar disponibilidade →" (wa.me pré-preenchido por tema
 
 | Formato | Investimento |
 |---|---|
-| Sessão única · 90 min · Zoom | A partir de R$ 600 |
-| Pacote 3 sessões · ciclo 6–8 semanas | R$ 1.500 |
+| Sessão única · 90 min · Zoom | Proposta conforme contexto |
+| Pacote 3 sessões · ciclo 6–8 semanas | Proposta conforme contexto |
 
 **CTA primário:** "Conhecer Direcionamento Executivo →" (link `direcionamento.html`)
 **CTA secundário:** "Falar pelo WhatsApp" (wa.me)
@@ -361,29 +360,20 @@ iframes YouTube em grid 2 col desktop:
 
 ---
 
-### Seção 10 · Iscas
+### Seção 10 · Isca
 
-**Eyebrow:** `Materiais autorais gratuitos`
+**Eyebrow:** `Material autoral gratuito`
 
 **H2:** Comece pelo material editorial.
 
-**Lead:** Dois materiais autorais, dois públicos distintos.
+**Lead:** Um guia técnico gratuito para profissionais que precisam avaliar, com método, a relação entre transtornos mentais e contexto ocupacional.
 
-**Card A — Para profissionais técnicos:**
 - Eyebrow: Guia técnico · 27 páginas · edição 2026
 - H3: Do Relato à Tomada de Decisão
 - Subtítulo: Doze passos para avaliar nexo causal entre transtornos mentais e contexto ocupacional.
 - Para: médicos do trabalho · SESMT · perícia · jurídico · compliance
-- Bullets de conteúdo (3): roteiro de entrevista clínico-ocupacional · diferenciação adoecimento ocupacional × comórbido · checklist de documentação técnica
+- Bullets de conteúdo (3): roteiro de entrevista clínico-ocupacional · diferenciação adoecimento ocupacional × comórbido · lista de documentação técnica
 - CTA: "Receber o guia gratuitamente →" (link `https://guia.anateixeiramed.com.br/`)
-
-**Card B — Para C-level, conselhos e RH sênior:**
-- Eyebrow: 12 perguntas · 10 min de leitura · edição 2026
-- H3: Checklist NR-1 para Diretoria
-- Subtítulo: Diagnóstico inicial em formato de governança.
-- Para: conselhos · comitês de ESG · diretoria · RH sênior
-- Bullets (3): critério de avaliação por pergunta · referência normativa · linguagem de risco e governança
-- CTA: "Receber o checklist →" (link `checklist-nr1.html`)
 
 ---
 
@@ -426,19 +416,19 @@ iframes YouTube em grid 2 col desktop:
 
 ---
 
-## 4 · Tabela de preços final
+## 4 · Lógica comercial final
 
 | Produto | Formato | Investimento |
 |---|---|---|
-| **Palestra** | Online · até 100 pessoas · 60 min | A partir de R$ 1.000 |
-| Palestra | Online · 100–300 pessoas · 60 min | A partir de R$ 1.500 |
-| Palestra | Presencial Salvador · até 100 · 60–90 min | A partir de R$ 2.500 |
-| Palestra | Presencial outras capitais · 60–90 min | A partir de R$ 3.500 + deslocamento |
-| **Roda** | Avulsa Online · até 25 · 1h30–2h | A partir de R$ 1.500 |
-| Roda | Avulsa Presencial Salvador · até 25 · 2h | A partir de R$ 2.500 |
-| Roda | Programa 4 sessões | A partir de R$ 5.000 |
-| **Direcionamento** | Sessão única · 90 min · Zoom | A partir de R$ 600 |
-| Direcionamento | Pacote 3 sessões · 6–8 semanas | R$ 1.500 |
+| **Palestra** | Online · até 100 pessoas · 60 min | Proposta conforme escopo |
+| Palestra | Online · 100–300 pessoas · 60 min | Proposta conforme escopo |
+| Palestra | Presencial Salvador · até 100 · 60–90 min | Proposta conforme escopo |
+| Palestra | Presencial outras cidades · 60–90 min | Proposta conforme escopo e deslocamento |
+| **Roda** | Avulsa Online · até 25 · 1h30–2h | Proposta conforme escopo |
+| Roda | Avulsa Presencial Salvador · até 25 · 2h | Proposta conforme escopo |
+| Roda | Programa 4 sessões | Proposta conforme escopo |
+| **Direcionamento** | Sessão única · 90 min · Zoom | Proposta conforme contexto |
+| Direcionamento | Pacote 3 sessões · 6–8 semanas | Proposta conforme contexto |
 | **Mentoria** | Encontros quinzenais | Sob consulta |
 | **Workshop "Fatores Psicossociais na Prática"** | Sob projeto, multidisciplinar | Sob consulta |
 
@@ -492,7 +482,6 @@ Listar nesta spec, não no site público:
 3. **Seção 9 Publicações** — pedir 4-6 links externos (textos em CartaCapital, Robb Report, LinkedIn pulse, podcasts).
 4. **YouTube IDs dos vídeos CBN Bahia, CBN Salvador e TV Aratu** — confirmar quais ficam.
 5. **Programa-piloto OMIS-R** — quando começar outreach. Kit pronto em Downloads.
-6. **Form ID Google Forms do Checklist NR-1** — substituir placeholder na LP.
 
 ---
 
@@ -501,14 +490,13 @@ Listar nesta spec, não no site público:
 **Milestone 1** — Spec aprovada (este documento)
 **Milestone 2** — Arquivar páginas mortas (mover pra `_arquivado/`) + atualizar links nas LPs ativas
 **Milestone 3** — Reescrever `index.html` como hub one-page (CSS local consolidado, smooth scroll, 11 seções)
-**Milestone 3-bis** — Refatorar form do `checklist-nr1.html`: trocar Google Forms (placeholder `__FORM_ID_CHECKLIST__`) por Supabase Edge Function `submit-lead` do Marketing Hub. Detalhes na Seção 9.
-**Milestone 4** — Atualizar nav nas 2 LPs ativas (`direcionamento.html`, `checklist-nr1.html`) e nas 2 páginas footer-only (`governanca.html`, `politica-privacidade.html`) para refletir o novo nav (sem Workshop NR-1, anchors do hub)
+**Milestone 4** — Atualizar nav na LP ativa (`direcionamento.html`) e nas 2 páginas footer-only (`governanca.html`, `politica-privacidade.html`) para refletir o novo nav (sem Workshop NR-1, anchors do hub)
 **Milestone 5** — Commit + push pra origin/main
 **Milestone 6** — Validar deploy (URL `escutaris.github.io/site-dra-ana-paula/`) e atualizar memória
 
 Cada milestone gera commit próprio. Se algo der errado num milestone, dá pra reverter sem afetar o anterior.
 
-**Estimativa total:** 1h30-2h do M2 ao M5 (M3-bis adiciona ~20-30 min).
+**Estimativa total:** 1h15-1h45 do M2 ao M5.
 
 ---
 
@@ -523,37 +511,11 @@ Cada milestone gera commit próprio. Se algo der errado num milestone, dá pra r
 
 ---
 
-## 9 · Funis das iscas e captura unificada (Supabase Marketing Hub)
+## 9 · Funil da isca digital
 
-**Decisão estratégica (2026-05-02):** as duas iscas digitais usam **a mesma infraestrutura de captura** (Supabase Marketing Hub, Edge Function `submit-lead`) e **a mesma lógica de entrega** (PDF por e-mail imediato + entrada em funil de e-mail marketing). O que muda é **o público de destino e a oferta downstream**.
+**Decisão estratégica atualizada:** a única isca digital ativa será o Guia técnico gratuito **Do Relato à Tomada de Decisão**, com link externo para a landing já publicada em `https://guia.anateixeiramed.com.br/`.
 
-### 9.1 · Infraestrutura compartilhada
-
-**Backend (já existente, em produção):**
-- **Projeto Supabase:** `ywmqphwdzbmntfusemkl` (Marketing Hub centralizado)
-- **Edge Function:** `/functions/v1/submit-lead` — recebe payload JSON, persiste lead, dispara e-mail com PDF anexado/linkado
-- **Configuração no front:** `window.__SUPABASE_URL__` + `window.__SUPABASE_ANON_KEY__` no `<head>` da página (mesmo padrão da landing do guia)
-
-**Schema de payload (já implementado na landing do guia, replicar no checklist):**
-
-```json
-{
-  "nome": "...",
-  "email": "...",
-  "profissao": "...",          // slug do role (ex: medico-trabalho, c-level, rh-senior, ...)
-  "empresa": "...",             // opcional
-  "consentimento_lgpd": true,
-  "fonte": "checklist-nr1-diretoria",   // ★ chave de segmentação do funil
-  "fonte_titulo": "Checklist NR-1 para Diretoria",
-  "marca": "ana-paula",
-  "canal": "site-direto",
-  "user_agent": "..."
-}
-```
-
-O campo **`fonte`** é a chave que roteia cada lead pro funil correto. A ferramenta de e-mail marketing (a definir — Brevo, Mailchimp, Resend, etc.) lê esse campo e segmenta automaticamente.
-
-### 9.2 · Funil A — Guia técnico "Do Relato à Tomada de Decisão"
+### 9.1 · Guia técnico "Do Relato à Tomada de Decisão"
 
 **`fonte: 'guia-relato-diagnostico'`** (já em produção em `guia.anateixeiramed.com.br`)
 
@@ -567,40 +529,14 @@ O campo **`fonte`** é a chave que roteia cada lead pro funil correto. A ferrame
 | Lógica da oferta | Direcionamento serve quando o profissional técnico tem caso pendente. Roda serve pra equipes técnicas (SESMT, medicina do trabalho de uma empresa) que querem aprofundar coletivamente. |
 | Não oferecer | Palestra (esse público não é decisor de compra de palestra corporativa) |
 
-### 9.3 · Funil B — Checklist NR-1 para Diretoria
+### 9.2 · Tabela de roteamento (pra o futuro funil de e-mail)
 
-**`fonte: 'checklist-nr1-diretoria'`** (a implementar no M3-bis)
-
-| Atributo | Valor |
-|---|---|
-| Público | C-level · conselhos · comitês de ESG · diretoria · RH sênior |
-| Função do funil | Venda B2B corporativa (motor de caixa Fase 1) |
-| Entrega imediata | E-mail com PDF do checklist (12 perguntas, edição 2026) |
-| Funil de nutrição | A construir pela cliente posteriormente |
-| **Ofertas downstream** | **Direcionamento Executivo** + **Palestra** (em especial NR-1 em vigor) |
-| Lógica da oferta | Direcionamento serve quando o decisor tem decisão pendente concreta. Palestra serve quando ele identifica que precisa formar a empresa — janela mai-jul/2026 quente para Palestra 01 NR-1. |
-| Não oferecer | Roda (formato pequeno e dialogado, não é o que C-level compra) |
-
-### 9.4 · O que precisa ser feito no M3-bis (refator do form do checklist)
-
-1. Remover `<form action="https://docs.google.com/forms/d/e/__FORM_ID_CHECKLIST__/formResponse" ...>` em `checklist-nr1.html`
-2. Adicionar no `<head>` o bloco `window.__SUPABASE_URL__` + `__SUPABASE_ANON_KEY__` (copiar de `guia-relato-diagnostico-temp/index.html`)
-3. Replicar o handler de submit JS (linhas ~1438-1539 da landing do guia) com payload adaptado:
-   - `fonte: 'checklist-nr1-diretoria'`
-   - `fonte_titulo: 'Checklist NR-1 para Diretoria'`
-   - Adaptar o `ROLE_MAP` pro público C-level: `{ 'C-level / Diretoria', 'Conselho / Board', 'RH Sênior', 'ESG / Sustentabilidade', 'Jurídico', 'Outro' }`
-4. Remover a pendência #6 da Seção 6 (Form ID Google Forms) — não é mais necessária
-5. **Pendência nova pra cliente:** subir o PDF final do checklist no storage do Marketing Hub e configurar a Edge Function `submit-lead` pra reconhecer a `fonte: 'checklist-nr1-diretoria'` e enviar o link do PDF correto no e-mail.
-
-### 9.5 · Tabela de roteamento (pra o futuro funil de e-mail)
-
-Quando a cliente configurar a ferramenta de e-mail marketing, basta usar essas regras:
+Quando a cliente configurar a ferramenta de e-mail marketing, basta usar esta regra:
 
 | `fonte` | Lista/segmento | Sequência E-mail | Oferta no fim do funil |
 |---|---|---|---|
 | `guia-relato-diagnostico` | Profissionais técnicos | (a definir) | Direcionamento + Roda |
-| `checklist-nr1-diretoria` | Decisores corporativos | (a definir) | Direcionamento + Palestra NR-1 |
 
 ---
 
-**Fim da spec · Aguardando revisão da cliente · 2026-05-01 · Atualizada 2026-05-02 com Seção 9 (funis das iscas)**
+**Fim da spec · Aguardando revisão da cliente · 2026-05-01 · Atualizada com decisão de isca única: Guia técnico gratuito**
