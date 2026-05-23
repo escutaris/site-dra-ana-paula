@@ -74,7 +74,8 @@
     grid-template-columns: 1fr;
     gap: 28px;
   }
-  @media (min-width: 880px) { .canais-grid { grid-template-columns: repeat(3, 1fr); gap: 28px; } }
+  @media (min-width: 760px) { .canais-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; } }
+  @media (min-width: 1180px) { .canais-grid { grid-template-columns: repeat(4, 1fr); } }
   .canal {
     padding: clamp(32px, 4vw, 44px);
     background: var(--bg);
@@ -337,7 +338,7 @@
 <section class="canais">
   <div class="container">
     <span class="eyebrow-editorial">Canais diretos</span>
-    <h2>Três caminhos.</h2>
+    <h2>Escolha o melhor caminho.</h2>
 
     <div class="canais-grid">
       <article class="canal feat">
@@ -346,6 +347,14 @@
         <p>Para pedir informações sobre palestras, Rodas de Conversa, Direcionamento Executivo ou projetos institucionais.</p>
         <p class="num">(75) 98318-6200</p>
         <a href="https://wa.me/5575983186200?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20demanda%20relacionada%20%C3%A0%20sa%C3%BAde%20mental%20no%20trabalho.%20Podemos%20conversar%3F" class="btn btn-primary">Abrir conversa →</a>
+      </article>
+
+      <article class="canal">
+        <span class="ctag">Com horário marcado</span>
+        <h3>Agenda</h3>
+        <p>Para marcar uma conversa inicial e entender o melhor formato antes de enviar briefing ou proposta formal.</p>
+        <p class="num">Google Agenda</p>
+        <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Yjoyksn9Vt9PRmAO_eAq2B8JaYhVDtcc3cLVbWySjaW4tpjXOcf0J--8nsaYp1NCr3B9wL8Nu" target="_blank" rel="noopener" class="btn btn-secondary">Agendar conversa →</a>
       </article>
 
       <article class="canal">
