@@ -129,10 +129,15 @@
     const navList = document.querySelector('.nav-list');
     if (!navList || navList.querySelector('.lang-switcher')) return;
 
+    const currentUrl = new URL(window.location.href);
     const canonical = document.querySelector('link[rel="canonical"]');
-    const originalUrl = canonical && canonical.href
-      ? canonical.href
-      : new URL(window.location.pathname || '/', 'https://anapaulateixeira.med.br/').href;
+    const isPublicPage = currentUrl.protocol === 'http:' || currentUrl.protocol === 'https:';
+    const isTranslateProxy = currentUrl.hostname.endsWith('.translate.goog');
+    const originalUrl = isPublicPage && !isTranslateProxy
+      ? currentUrl.href
+      : (canonical && canonical.href
+        ? canonical.href
+        : new URL(window.location.pathname || '/', 'https://anapaulateixeira.med.br/').href);
 
     const buildTranslateUrl = (lang) => {
       const params = new URLSearchParams({
