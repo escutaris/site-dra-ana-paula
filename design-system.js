@@ -130,14 +130,15 @@
     if (!navList || navList.querySelector('.lang-switcher')) return;
 
     const currentUrl = new URL(window.location.href);
-    const canonical = document.querySelector('link[rel="canonical"]');
+    const fallbackOrigin = 'https://site-dra-ana-paula.vercel.app';
     const isPublicPage = currentUrl.protocol === 'http:' || currentUrl.protocol === 'https:';
     const isTranslateProxy = currentUrl.hostname.endsWith('.translate.goog');
-    const originalUrl = isPublicPage && !isTranslateProxy
+    const pageMatch = currentUrl.pathname.match(/\/([^/]+\.html)$/);
+    const fallbackPath = pageMatch ? '/' + pageMatch[1] : '/';
+    const mustUseFallback = isTranslateProxy || currentUrl.hostname === 'anapaulateixeira.med.br';
+    const originalUrl = isPublicPage && !mustUseFallback
       ? currentUrl.href
-      : (canonical && canonical.href
-        ? canonical.href
-        : new URL(window.location.pathname || '/', 'https://anapaulateixeira.med.br/').href);
+      : new URL(fallbackPath, fallbackOrigin).href;
 
     const buildTranslateUrl = (lang) => {
       const params = new URLSearchParams({
