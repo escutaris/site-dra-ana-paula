@@ -10,9 +10,9 @@ O site tem 3 formulários:
 
 | Página           | Finalidade             | Campos                                                               |
 | ---------------- | ---------------------- | -------------------------------------------------------------------- |
-| `servicos.html`  | Solicitação comercial  | Nome, Empresa, Cargo, Email, Telefone, Serviço, Mensagem             |
-| `contato.html`   | Contato institucional  | Nome, Email, Empresa, Cargo, Natureza, Porte, Prazo, Mensagem        |
-| `blog.html`      | Newsletter             | Email                                                                |
+| `servicos.html`  | Solicitação comercial  | Nome, Empresa, Cargo, E-mail, Telefone, Serviço, Mensagem             |
+| `contato.html`   | Contato institucional  | Nome, E-mail, Empresa, Cargo, Natureza, Porte, Prazo, Mensagem        |
+| `blog.html`      | Newsletter             | E-mail                                                                |
 
 Cada um tem, **em paralelo**, um botão **"Enviar via WhatsApp"** que já funciona — ele coleta os campos preenchidos e abre o WhatsApp da Dra. Ana Paula (75 98318-6200) com a mensagem formatada. Esse caminho não depende de nenhuma configuração.
 

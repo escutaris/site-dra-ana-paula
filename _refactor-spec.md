@@ -396,7 +396,7 @@ iframes YouTube em grid 2 col desktop:
 **Microcopy:** Respondemos em até 48h úteis (Direcionamento em até 4h úteis).
 
 **Contato direto (4 itens):**
-- E-mail · contato@anapaulateixeira.med.br
+- E-mail · contato@anateixeiramed.com.br
 - WhatsApp · (75) 98318-6200
 - Instagram · @draanapaulateixeira
 - LinkedIn · /in/draanapaulateixeira

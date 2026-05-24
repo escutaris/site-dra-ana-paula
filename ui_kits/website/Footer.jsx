@@ -25,7 +25,7 @@ function Footer() {
           <div>
             <div className="footer-col-title">Contato</div>
             <div className="stack-3">
-              <div><a href="mailto:contato@anapaulateixeira.med.br">contato@anapaulateixeira.med.br</a></div>
+              <div><a href="mailto:contato@anateixeiramed.com.br">E-mail: contato@anateixeiramed.com.br</a></div>
               <div><a href="https://wa.me/5575983186200">WhatsApp</a></div>
               <div><a href="https://instagram.com/draanapaulateixeira">@draanapaulateixeira</a></div>
               <div><a href="https://linkedin.com/in/draanapaulateixeira">LinkedIn</a></div>
