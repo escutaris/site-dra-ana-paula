@@ -27,6 +27,22 @@
   .grid-editorial { grid-template-columns: 1fr 2fr; gap: var(--space-8); }
 }
 
+.foreground-photo-frame {
+  box-sizing: border-box;
+  overflow: hidden;
+  background: var(--bege-areia);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: clamp(8px, 1vw, 14px);
+  box-shadow: 0 28px 70px -44px rgba(28, 53, 32, 0.55);
+}
+.foreground-photo-frame > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ============================================================
    EYEBROW — label uppercase com ponto terracota
    "ANA PAULA TEIXEIRA · SAÚDE MENTAL · MEDICINA DO TRABALHO"
@@ -914,17 +930,15 @@
   text-wrap: balance;
 }
 .footer-disclaimer {
-  margin: var(--space-6) 0 0;
-  padding-top: var(--space-4);
-  border-top: 1px solid rgba(240, 237, 230, 0.14);
-  max-width: 72rem;
+  margin: var(--space-5) 0 0;
+  max-width: 62rem;
   font-family: var(--font-sans);
-  font-size: var(--type-caption);
-  line-height: 1.6;
-  color: rgba(245, 239, 229, 0.68);
+  font-size: 0.6875rem;
+  line-height: 1.55;
+  color: rgba(245, 239, 229, 0.46);
 }
 .footer-meta {
-  margin-top: var(--space-4);
+  margin-top: var(--space-5);
   padding-top: var(--space-4);
   border-top: 1px solid rgba(240, 237, 230, 0.18);
   display: flex;
@@ -1035,7 +1049,7 @@
 .bg-context.bg-coffee-journal::before { background-image: url('assets/optimized/context-coffee-journal.webp'); }
 .bg-context.bg-stage-palestra::before { background-image: url('assets/optimized/context-stage-palestra.webp'); opacity: 0.05; }
 .bg-context.bg-roda-conversa-forum::before { background-image: url('assets/optimized/dra-ana-paula-teixeira-roda-conversa-forum-saude-360.webp'); background-position: center; opacity: 0.12; }
-.bg-context.bg-workshop-painel::before { background-image: url('assets/optimized/riscos-psicossociais-workshop-abrh-escutaris-painel.jpg'); background-position: center 42%; opacity: 0.18; }
+.bg-context.bg-workshop-painel::before { background-image: url('assets/optimized/riscos-psicossociais-workshop-abrh-escutaris-dra-ana-paula.jpg'); background-position: center right; opacity: 0.18; }
 .bg-context.bg-circle-chairs::before { background-image: url('assets/optimized/context-circle-chairs.webp'); opacity: 0.06; }
 .bg-context.bg-pen-documents::before { background-image: url('assets/optimized/context-pen-documents.webp'); }
 .bg-context.bg-handmade-paper::before { background-image: url('assets/optimized/context-handmade-paper.webp'); background-position: center top; opacity: 0.08; }

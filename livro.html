@@ -217,13 +217,38 @@
 
   /* Depoimento âncora */
   .dep-anchor {
+    position: relative;
+    overflow: hidden;
     background: var(--bege-areia);
     padding: clamp(40px, 5vw, 64px);
     border-radius: 2px;
     margin-bottom: 56px;
     border-left: 4px solid var(--terracota);
   }
+  .dep-anchor::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: min(48%, 620px);
+    background-image:
+      linear-gradient(90deg, rgba(230,218,205,0) 0%, rgba(230,218,205,.72) 46%, rgba(230,218,205,.2) 100%),
+      url('assets/optimized/dra-anapaula-segurando-oculos-livro-blusa-verde.jpg');
+    background-size: cover;
+    background-position: center 40%;
+    opacity: 0.34;
+    filter: saturate(0.9) contrast(0.95);
+    pointer-events: none;
+  }
+  .dep-anchor::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(230,218,205,.98) 0%, rgba(230,218,205,.9) 52%, rgba(230,218,205,.42) 100%);
+    pointer-events: none;
+  }
   .dep-anchor blockquote {
+    position: relative;
+    z-index: 1;
     margin: 0;
     max-width: 820px;
   }
@@ -253,6 +278,16 @@
     display: block;
     margin-bottom: 4px;
     font-size: 1rem;
+  }
+  @media (max-width: 720px) {
+    .dep-anchor::before {
+      width: 100%;
+      opacity: 0.18;
+      background-position: center 34%;
+    }
+    .dep-anchor::after {
+      background: rgba(230,218,205,.88);
+    }
   }
 
   /* Cards Amazon */
@@ -441,16 +476,6 @@
   </div>
 </nav>
 
-<aside class="event-strip" aria-label="Evento em destaque">
-  <div class="event-strip-inner">
-    <div class="event-strip-copy">
-      <span class="event-strip-kicker">NR-1 em pauta</span>
-      <strong class="event-strip-title">Formação presencial em parceria com a ABRH</strong>
-      <span class="event-strip-meta">Riscos psicossociais na prática · 31/07 e 01/08 · Salvador</span>
-    </div>
-    <a class="event-strip-cta" href="https://abrhba.org.br/formacao-profissional/riscos-psicossociais-na-pratica.html" target="_blank" rel="noopener">Ver inscrição</a>
-  </div>
-</aside>
 
 <!-- HERO -->
 <header class="hero-livro">
@@ -522,7 +547,7 @@
 <!-- A AUTORA -->
 <section class="a-autora" style="padding-block:clamp(96px,10vw,144px);background:var(--bg)">
   <div class="container" style="display:grid;grid-template-columns:1fr;gap:56px;align-items:center" data-grid-2col>
-    <div style="aspect-ratio:4/5;width:100%;max-width:420px;justify-self:center;overflow:hidden;background:var(--bege-areia);border-radius:2px;box-shadow:0 30px 60px -25px rgba(28,53,32,.25)">
+    <div class="foreground-photo-frame" style="aspect-ratio:4/5;width:100%;max-width:420px;justify-self:center">
       <img src="assets/optimized/dra-ana-paula-livro-quando-o-trabalho-doi-sorrindo.webp" alt="Dra. Ana Paula Teixeira segurando o livro Quando o Trabalho Dói" width="1119" height="1400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:center 18%;display:block">
     </div>
     <div>
