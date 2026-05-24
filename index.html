@@ -936,10 +936,18 @@
   }
   @media (min-width: 780px) {
     .pub-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pub-card-featured { grid-column: 1 / -1; }
+  }
+  @media (min-width: 1080px) {
+    .pub-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .pub-card-featured { grid-column: span 2; }
   }
   .pub-card {
+    position: relative;
+    overflow: hidden;
     display: grid;
     gap: 12px;
+    align-content: start;
     padding: clamp(24px, 3vw, 32px);
     border: 1px solid var(--border);
     border-radius: 2px;
@@ -981,6 +989,50 @@
     font-weight: var(--weight-medium);
     font-size: 0.82rem;
     color: var(--terracota);
+  }
+  .pub-card-featured {
+    min-height: 300px;
+    background: var(--verde-noturno);
+    border-color: rgba(245,239,229,.12);
+    isolation: isolate;
+  }
+  .pub-card-featured::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: min(42%, 300px);
+    background-image: url('assets/optimized/quando-o-trabalho-doi-livro-dra-ana-paula-teixeira.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.18;
+    z-index: -1;
+  }
+  .pub-card-featured::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(28,53,32,1) 0%, rgba(28,53,32,.92) 58%, rgba(28,53,32,.62) 100%);
+    z-index: -1;
+  }
+  .pub-card-featured:hover {
+    background: var(--verde-noturno);
+    border-color: rgba(248,220,163,.45);
+  }
+  .pub-card-featured .pub-k,
+  .pub-card-featured .pub-action { color: #F8DCA3; }
+  .pub-card-featured strong {
+    color: var(--off-white);
+    font-size: clamp(1.55rem, 1.2rem + 1vw, 2.1rem);
+    max-width: 18ch;
+  }
+  .pub-card-featured p {
+    color: rgba(245,239,229,.88);
+    max-width: 54ch;
+  }
+  @media (max-width: 760px) {
+    .pub-card-featured::before { opacity: 0.1; width: 56%; }
+    .pub-card-featured::after { background: rgba(28,53,32,.92); }
   }
 
   /* PROVA DE AUTORIDADE · mídia com links */
@@ -1295,38 +1347,21 @@
 </section>
 
 
-<!-- LIVRO CALLOUT -->
-<section class="book-callout reveal bg-context bg-coffee-journal">
-  <div class="container grid">
-    <div class="cover">
-      <img src="assets/optimized/quando-o-trabalho-doi-livro-dra-ana-paula-teixeira.webp" alt="Capa do livro Quando o Trabalho Dói, de Dra. Ana Paula Teixeira" width="900" height="1125" loading="lazy" decoding="async">
-    </div>
-    <div>
-      <span class="eyebrow-editorial">Livro · 1ª edição · 2025 · AssedioNet</span>
-      <h2>Quando o Trabalho Dói.</h2>
-      <p class="book-sub-it">O custo invisível do adoecimento — e quem paga essa conta.</p>
-      <p>Um livro para nomear, com clareza e base técnica, o que atravessa pessoas, cultura e trabalho. Voltado a lideranças, RH, profissionais de saúde ocupacional e leitores que desejam compreender, com mais profundidade, os fatores que sustentam adoecimento ou promovem transformação nas organizações.</p>
-      <div class="book-meta">
-        <span><b>Páginas</b> 253+</span>
-        <span><b>Edição</b> 1ª · 2025</span>
-        <span><b>ISBN</b> 978-6598341954</span>
-      </div>
-      <div class="cta-row">
-        <a href="livro.html" class="btn btn-primary">Conhecer o livro →</a>
-        <a href="https://amzn.to/4w5qqU9" target="_blank" rel="noopener" class="btn btn-secondary">Comprar na Amazon</a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- PUBLICAÇÕES E AGENDA -->
 <section id="publicacoes-agenda" class="pub-agenda reveal">
   <div class="container">
-    <span class="eyebrow-editorial">Publicações e agenda</span>
-    <h2>Outros caminhos para aprofundar.</h2>
-    <p class="section-sub">Livros, guias e formações para quem quer estudar saúde mental no trabalho por ângulos complementares: adoecimento, voz feminina, burnout, espiritualidade e gestão de riscos psicossociais.</p>
+    <span class="eyebrow-editorial">Publicações, guias e agenda</span>
+    <h2>Livros, guias e formação para aprofundar.</h2>
+    <p class="section-sub">Publicações e agenda para quem quer estudar saúde mental no trabalho por ângulos complementares: adoecimento, voz feminina, burnout, espiritualidade e gestão de riscos psicossociais.</p>
 
     <div class="pub-grid">
+      <a class="pub-card pub-card-featured" href="livro.html">
+        <span class="pub-k">Livro principal · 2025 · AssedioNet</span>
+        <strong>Quando o Trabalho Dói</strong>
+        <p>O livro central da atuação da Dra. Ana Paula sobre adoecimento ocupacional, cultura organizacional e o custo invisível quando o trabalho fere pessoas e instituições.</p>
+        <span class="pub-action">Conhecer o livro →</span>
+      </a>
+
       <a class="pub-card" href="https://amzn.to/4a3MhC0" target="_blank" rel="noopener">
         <span class="pub-k">Livro</span>
         <strong>Cinquenta e três formas de encontrar Deus</strong>
@@ -1335,7 +1370,7 @@
       </a>
 
       <a class="pub-card" href="https://guiaquandoelafala.escutaris.com/" target="_blank" rel="noopener">
-        <span class="pub-k">Guia gratuito</span>
+        <span class="pub-k">Guia digital</span>
         <strong>Quando Ela Fala</strong>
         <p>Material de apoio para reconhecer, escutar e responder com mais responsabilidade quando uma mulher nomeia sofrimento ou violência.</p>
         <span class="pub-action">Acessar guia →</span>
