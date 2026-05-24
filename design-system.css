@@ -104,6 +104,17 @@
   outline: 2px solid var(--terracota);
   outline-offset: 3px;
 }
+@media (max-width: 560px) {
+  .cta-row .btn,
+  .lead-single .btn,
+  .book-callout .btn {
+    width: 100%;
+    min-height: 52px;
+    line-height: 1.2;
+    text-align: center;
+    padding-inline: 18px;
+  }
+}
 
 .btn-primary {
   background: var(--terracota);
@@ -249,9 +260,10 @@
 .event-popup {
   position: fixed;
   right: clamp(16px, 3vw, 32px);
-  bottom: clamp(16px, 3vw, 32px);
+  bottom: max(clamp(16px, 3vw, 32px), env(safe-area-inset-bottom));
   z-index: 90;
   width: min(420px, calc(100vw - 32px));
+  max-height: calc(100vh - 32px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
   opacity: 0;
   pointer-events: none;
   transform: translateY(16px) scale(0.98);
@@ -266,6 +278,7 @@
 .event-popup-card {
   position: relative;
   overflow: hidden;
+  max-height: inherit;
   border-radius: var(--radius-md);
   border: 1px solid rgba(172, 94, 73, 0.26);
   background: var(--off-white);
@@ -372,9 +385,11 @@
 @media (max-width: 560px) {
   .event-popup {
     right: 12px;
-    bottom: 12px;
+    bottom: max(12px, env(safe-area-inset-bottom));
     width: calc(100vw - 24px);
+    max-height: calc(100vh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
   }
+  .event-popup-card { overflow-y: auto; }
   .event-popup-body { padding: 20px; }
   .event-popup-title { max-width: 21ch; }
   .event-popup-cta { width: 100%; }
@@ -485,7 +500,7 @@
 }
 .nav-toggle svg { display: block; margin: auto; }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) {
   .nav-list {
     position: fixed;
     inset: 64px 0 0 0;
@@ -494,6 +509,9 @@
     align-items: flex-start;
     padding: var(--space-6) var(--space-4);
     gap: var(--space-3);
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
     transform: translateX(100%);
     transition: transform var(--dur-slow) var(--ease-editorial);
     border-top: 1px solid var(--border);
@@ -505,7 +523,7 @@
   .nav-toggle { display: block; }
 }
 
-@media (min-width: 801px) and (max-width: 1120px) {
+@media (min-width: 981px) and (max-width: 1120px) {
   .nav-list { gap: var(--space-3); }
   .nav-link { font-size: 0.8125rem; }
   .lang-switcher { gap: 6px; }
@@ -895,8 +913,18 @@
   max-width: 24rem;
   text-wrap: balance;
 }
+.footer-disclaimer {
+  margin: var(--space-6) 0 0;
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(240, 237, 230, 0.14);
+  max-width: 72rem;
+  font-family: var(--font-sans);
+  font-size: var(--type-caption);
+  line-height: 1.6;
+  color: rgba(245, 239, 229, 0.68);
+}
 .footer-meta {
-  margin-top: var(--space-6);
+  margin-top: var(--space-4);
   padding-top: var(--space-4);
   border-top: 1px solid rgba(240, 237, 230, 0.18);
   display: flex;
@@ -1007,6 +1035,7 @@
 .bg-context.bg-coffee-journal::before { background-image: url('assets/optimized/context-coffee-journal.webp'); }
 .bg-context.bg-stage-palestra::before { background-image: url('assets/optimized/context-stage-palestra.webp'); opacity: 0.05; }
 .bg-context.bg-roda-conversa-forum::before { background-image: url('assets/optimized/dra-ana-paula-teixeira-roda-conversa-forum-saude-360.webp'); background-position: center; opacity: 0.12; }
+.bg-context.bg-workshop-painel::before { background-image: url('assets/optimized/riscos-psicossociais-workshop-abrh-escutaris-painel.jpg'); background-position: center 42%; opacity: 0.18; }
 .bg-context.bg-circle-chairs::before { background-image: url('assets/optimized/context-circle-chairs.webp'); opacity: 0.06; }
 .bg-context.bg-pen-documents::before { background-image: url('assets/optimized/context-pen-documents.webp'); }
 .bg-context.bg-handmade-paper::before { background-image: url('assets/optimized/context-handmade-paper.webp'); background-position: center top; opacity: 0.08; }

@@ -1070,13 +1070,16 @@
     gap: 28px;
     align-items: start;
   }
-  @media (min-width: 980px) {
+  @media (min-width: 1120px) {
     .media-proof {
-      grid-template-columns: minmax(280px, 0.7fr) minmax(0, 1.3fr);
-      gap: clamp(36px, 5vw, 72px);
+      grid-template-columns: minmax(260px, 0.88fr) minmax(340px, 1fr) minmax(340px, 1fr);
+      gap: clamp(24px, 3vw, 36px);
     }
+    .media-intro { grid-column: 1; grid-row: 1; }
+    .media-feature.media-print { grid-column: 1; grid-row: 2; }
+    .media-video-column { grid-column: 2; grid-row: 1 / span 2; }
     .media-link-groups {
-      grid-column: 2;
+      grid-column: 3;
       grid-row: 1 / span 2;
       align-self: start;
     }
@@ -1087,7 +1090,7 @@
     margin-top: 0;
   }
   @media (min-width: 720px) {
-    .media-link-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .media-link-groups { grid-template-columns: 1fr; }
   }
   .media-link-group {
     border-top: 1px solid var(--border);
@@ -1186,6 +1189,15 @@
     display: grid;
     gap: 12px;
     margin-top: 14px;
+  }
+  .media-video-title {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-semibold);
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    margin: 0 0 12px;
   }
   .media-video-card {
     display: grid;
@@ -1524,6 +1536,8 @@
         </div>
       </div>
 
+      <div class="media-video-column">
+        <h3 class="media-video-title">Vídeos e entrevistas</h3>
       <div class="media-video-stack" aria-label="Vídeos em destaque">
         <a class="media-video-card" href="https://www.youtube.com/watch?v=IQLtccj2jms" target="_blank" rel="noopener">
           <span class="media-video-thumb" aria-hidden="true">
@@ -1543,29 +1557,84 @@
             <strong>Calma no Caos: ioga para o estresse no mundo moderno</strong>
           </span>
         </a>
+        <a class="media-video-card" href="https://www.youtube.com/watch?v=f4KWwgZnyvI" target="_blank" rel="noopener">
+          <span class="media-video-thumb" aria-hidden="true">
+            <img src="https://img.youtube.com/vi/f4KWwgZnyvI/hqdefault.jpg" alt="" loading="lazy">
+          </span>
+          <span class="media-video-copy">
+            <span>Rádio CBN Bahia</span>
+            <strong>Redução de Acidentes de Trabalho</strong>
+          </span>
+        </a>
+        <a class="media-video-card" href="https://youtu.be/eNpFczxoUf8" target="_blank" rel="noopener">
+          <span class="media-video-thumb" aria-hidden="true">
+            <img src="https://img.youtube.com/vi/eNpFczxoUf8/hqdefault.jpg" alt="" loading="lazy">
+          </span>
+          <span class="media-video-copy">
+            <span>CBN Salvador</span>
+            <strong>Saúde Mental no Trabalho — Conexão Sociedade</strong>
+          </span>
+        </a>
+        <a class="media-video-card" href="https://www.youtube.com/watch?v=ZAZ-KYTJnmU" target="_blank" rel="noopener">
+          <span class="media-video-thumb" aria-hidden="true">
+            <img src="https://img.youtube.com/vi/ZAZ-KYTJnmU/hqdefault.jpg" alt="" loading="lazy">
+          </span>
+          <span class="media-video-copy">
+            <span>Board Talks</span>
+            <strong>Sustentabilidade</strong>
+          </span>
+        </a>
+        <a class="media-video-card" href="https://www.youtube.com/watch?v=8-2xZy5eITY" target="_blank" rel="noopener">
+          <span class="media-video-thumb" aria-hidden="true">
+            <img src="https://img.youtube.com/vi/8-2xZy5eITY/hqdefault.jpg" alt="" loading="lazy">
+          </span>
+          <span class="media-video-copy">
+            <span>TV Aratu / TVE Bahia</span>
+            <strong>Síndrome do Impostor</strong>
+          </span>
+        </a>
+        <a class="media-video-card" href="https://www.youtube.com/watch?v=2WgClkHtW4c" target="_blank" rel="noopener">
+          <span class="media-video-thumb" aria-hidden="true">
+            <img src="https://img.youtube.com/vi/2WgClkHtW4c/hqdefault.jpg" alt="" loading="lazy">
+          </span>
+          <span class="media-video-copy">
+            <span>F5 Podcast</span>
+            <strong>Trajetória</strong>
+          </span>
+        </a>
+        <a class="media-video-card" href="https://youtu.be/S6DwuYlanoQ" target="_blank" rel="noopener">
+          <span class="media-video-thumb" aria-hidden="true">
+            <img src="https://img.youtube.com/vi/S6DwuYlanoQ/hqdefault.jpg" alt="" loading="lazy">
+          </span>
+          <span class="media-video-copy">
+            <span>Programa Intera</span>
+            <strong>Lei 14.831/24 e saúde mental</strong>
+          </span>
+        </a>
+        <a class="media-video-card" href="https://www.youtube.com/watch?v=0rmRJUfnH5w" target="_blank" rel="noopener">
+          <span class="media-video-thumb" aria-hidden="true">
+            <img src="https://img.youtube.com/vi/0rmRJUfnH5w/hqdefault.jpg" alt="" loading="lazy">
+          </span>
+          <span class="media-video-copy">
+            <span>Rádio 93FM</span>
+            <strong>Saúde mental e trabalho</strong>
+          </span>
+        </a>
+      </div>
       </div>
 
       <div class="media-link-groups">
         <div class="media-link-group">
-          <h3 class="media-group-title">Vídeos e entrevistas</h3>
-          <ul class="media-proof-list">
-            <li><a href="https://youtu.be/eNpFczxoUf8" target="_blank" rel="noopener"><strong>CBN Salvador</strong><span>Saúde Mental no Trabalho</span></a></li>
-            <li><a href="https://www.youtube.com/watch?v=2WgClkHtW4c" target="_blank" rel="noopener"><strong>F5 Podcast</strong><span>Como eu me tornei médica</span></a></li>
-            <li><a href="https://youtu.be/S6DwuYlanoQ" target="_blank" rel="noopener"><strong>Programa Intera</strong><span>Lei 14.831/24 e saúde mental</span></a></li>
-            <li><a href="https://www.youtube.com/watch?v=f4KWwgZnyvI" target="_blank" rel="noopener"><strong>CBN Bahia</strong><span>Acidentes de trabalho e prevenção</span></a></li>
-            <li><a href="https://www.youtube.com/watch?v=8-2xZy5eITY" target="_blank" rel="noopener"><strong>TV Aratu / TVE Bahia</strong><span>Síndrome do impostor</span></a></li>
-            <li><a href="https://www.youtube.com/watch?v=0rmRJUfnH5w" target="_blank" rel="noopener"><strong>Rádio 93FM</strong><span>Saúde mental e trabalho</span></a></li>
-          </ul>
-        </div>
-
-        <div class="media-link-group">
           <h3 class="media-group-title">Reportagens e publicações</h3>
           <ul class="media-proof-list">
+            <li><a href="https://www.cartacapital.com.br/do-micro-ao-macro/mulheres-ganham-21-menos-burnout-desigualdade/" target="_blank" rel="noopener"><strong>CartaCapital · Do Micro ao Macro</strong><span>Mulheres ganham 21% menos e representam 60% dos casos de burnout no país</span></a></li>
+            <li><a href="https://www.robbreportbrasil.com.br/noticias-lide/sociedade-tendencias/mulheres-ganham-21-menos-e-representam-60-dos-casos-de-burnout-no-pais" target="_blank" rel="noopener"><strong>Robb Report Brasil · Lide</strong><span>Mulheres, desigualdade e burnout no país</span></a></li>
+            <li><a href="https://www.rhnoticias.com.br/desigualdade-eleva-burnout-e-afasta-mulheres-no-trabalho" target="_blank" rel="noopener"><strong>RH Notícias</strong><span>Desigualdade eleva burnout e afasta mulheres no trabalho</span></a></li>
+            <li><a href="https://www.bahianoticias.com.br/saude/artigo/1064-mulheres-ganham-21-menos-e-representam-60-dos-casos-de-burnout-no-pais" target="_blank" rel="noopener"><strong>Bahia Notícias · Saúde</strong><span>Recorte regional Bahia sobre mulheres e burnout</span></a></li>
             <li><a href="https://muitainformacao.com.br/saude/mulheres-lideram-casos-de-burnout-e-afastamentos-no-brasil-especialistas-apontam-desigualdade-como-gatilho-silencioso/" target="_blank" rel="noopener"><strong>Muita Informação</strong><span>Mulheres lideram casos de burnout e afastamentos no Brasil</span></a></li>
             <li><a href="https://www.bnews.com.br/amp/noticias/economia-e-mercado/crise-silenciosa-no-trabalho-ansiedade-e-burnout-disparam-no-brasil-e-nova-nr-1-obriga-empresas-agir.html" target="_blank" rel="noopener"><strong>BNews</strong><span>Ansiedade, burnout e nova NR-1 nas empresas</span></a></li>
             <li><a href="https://newsba.com.br/2026/05/21/nova-nr-1-coloca-saude-mental-no-centro-da-gestao-empresarial/" target="_blank" rel="noopener"><strong>NewsBA</strong><span>Nova NR-1 coloca saúde mental no centro da gestão empresarial</span></a></li>
             <li><a href="https://portaldosmunicipios.com.br/2026/05/21/nova-nr-1-coloca-saude-mental-no-centro-da-gestao-empresarial-afastamentos-por-transtornos-mentais-ultrapassam-meio-milhao-em-2025/" target="_blank" rel="noopener"><strong>Portal dos Municípios</strong><span>Saúde mental nas empresas e afastamentos em 2025</span></a></li>
-            <li><a href="https://www.robbreportbrasil.com.br/noticias-lide/sociedade-tendencias/mulheres-ganham-21-menos-e-representam-60-dos-casos-de-burnout-no-pais" target="_blank" rel="noopener"><strong>Robb Report Brasil</strong><span>Burnout e mulheres no país</span></a></li>
             <li><a href="https://bahiaeconomica.com.br/wp/2025/11/14/preconceito-contra-populacao-negra-afeta-28-dos-trabalhadores-diferenca-no-trato-causa-adoecimento-psicologico/" target="_blank" rel="noopener"><strong>Bahia Econômica</strong><span>Preconceito e adoecimento</span></a></li>
             <li><a href="https://www.bahianoticias.com.br/saude/artigo/1042-medico-do-trabalho-a-importancia-do-profissional-que-cuida-da-saude-de-quem-move-as-empresas" target="_blank" rel="noopener"><strong>Bahia Notícias</strong><span>Médico do trabalho nas empresas</span></a></li>
             <li><a href="https://www.bahianoticias.com.br/saude/artigo/1019-home-office-flexibilidade-ou-pratica-que-levara-trabalhadores-ao-esgotamento-mental" target="_blank" rel="noopener"><strong>Bahia Notícias</strong><span>Home office e esgotamento</span></a></li>
@@ -1595,7 +1664,7 @@
 </section>
 
 <!-- CTA FINAL -->
-<section class="cta-home reveal bg-context bg-roda-conversa-forum">
+<section class="cta-home reveal bg-context bg-workshop-painel">
   <div class="container">
     <div class="cta-grid">
       <div>
@@ -1651,6 +1720,7 @@
         </div>
       </div>
     </div>
+    <p class="footer-disclaimer">Este site não substitui acompanhamento médico ou psicológico individualizado. Conteúdo informativo conforme a Resolução CFM nº 2.336/2023 sobre publicidade médica.</p>
     <div class="footer-meta">
       <span>Membro ICOH · Board Member 2024 · ABERGO · ANAMT/AMB · CRM-BA 12797 · RQE 7237</span>
       <span>© 2026 Dra. Ana Paula Teixeira · <a href="governanca.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Governança</a> · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidade</a></span>

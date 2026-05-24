@@ -109,6 +109,7 @@
     // mobile toggle
     const toggle = nav.querySelector('.nav-toggle');
     if (toggle) {
+      toggle.setAttribute('aria-expanded', 'false');
       toggle.addEventListener('click', () => {
         const open = nav.classList.toggle('is-open');
         toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
@@ -121,6 +122,12 @@
         nav.classList.remove('is-open');
         if (toggle) toggle.setAttribute('aria-expanded', 'false');
       });
+    });
+
+    window.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape' || !nav.classList.contains('is-open')) return;
+      nav.classList.remove('is-open');
+      if (toggle) toggle.setAttribute('aria-expanded', 'false');
     });
   }
 

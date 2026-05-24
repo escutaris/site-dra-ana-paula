@@ -107,6 +107,25 @@
   .hero-dir .btn-secondary { color: var(--off-white); border-color: rgba(245,239,229,.4); }
   .hero-dir .btn-secondary:hover { background: rgba(245,239,229,.08); color: var(--off-white); }
   .hero-dir .micro { margin-top: 16px; font-size: 0.8125rem; color: var(--bege-areia); opacity: 0.85; max-width: 48ch; line-height: 1.5; }
+  @media (max-width: 640px) {
+    .hero-dir {
+      padding-block: 64px 72px;
+    }
+    .hero-dir .hero-grid {
+      gap: 32px;
+    }
+    .hero-dir h1 {
+      margin: 18px 0 22px;
+    }
+    .hero-dir .lead {
+      margin-bottom: 26px;
+    }
+    .hero-dir .meta-row {
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+  }
 
   .hero-dir .urgency {
     background: rgba(245,239,229,.06);
@@ -689,6 +708,7 @@
         </div>
       </div>
     </div>
+    <p class="footer-disclaimer">Este site não substitui acompanhamento médico ou psicológico individualizado. Conteúdo informativo conforme a Resolução CFM nº 2.336/2023 sobre publicidade médica.</p>
     <div class="footer-meta">
       <span>Membro ICOH · Board Member 2024 · ABERGO · ANAMT/AMB · CRM-BA 12797 · RQE 7237</span>
       <span>© 2026 Dra. Ana Paula Teixeira · <a href="governanca.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Governança</a> · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidade</a></span>

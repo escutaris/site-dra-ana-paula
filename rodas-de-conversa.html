@@ -63,14 +63,42 @@
   .hero-roda .stage-img {
     aspect-ratio: 4/5;
     width: 100%;
-    max-width: 480px;
+    max-width: 510px;
     overflow: hidden;
     background: var(--bege-areia);
+    border: 1px solid var(--border);
     border-radius: 2px;
+    padding: clamp(8px, 1vw, 14px);
+    box-shadow: 0 28px 70px -44px rgba(28,53,32,.55);
     margin-inline: auto;
     justify-self: end;
   }
-  .hero-roda .stage-img img { width: 100%; height: 100%; object-fit: cover; }
+  .hero-roda .stage-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 44%;
+  }
+  @media (max-width: 640px) {
+    .hero-roda {
+      padding-block: 64px 72px;
+    }
+    .hero-roda .hero-grid {
+      gap: 32px;
+    }
+    .hero-roda h1 {
+      margin: 18px 0 22px;
+    }
+    .hero-roda .lead {
+      margin-bottom: 28px;
+    }
+    .hero-roda .stage-img {
+      max-width: 420px;
+      aspect-ratio: 4 / 4.9;
+      justify-self: center;
+    }
+  }
 
   /* QUOTE-ÂNCORA */
   .quote-anchor {
@@ -106,12 +134,12 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('assets/optimized/dra-ana-paula-roda-auditorio-vestido-vermelho.webp');
+    background-image: url('assets/optimized/riscos-psicossociais-workshop-abrh-escutaris-sala.jpg');
     background-repeat: no-repeat;
-    background-size: min(54vw, 760px) auto;
-    background-position: right 6% center;
-    opacity: 0.24;
-    filter: saturate(0.55) contrast(1.04);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.22;
+    filter: saturate(0.55) contrast(1.04) brightness(0.96);
     pointer-events: none;
   }
   .formato::after {
@@ -127,9 +155,9 @@
   }
   @media (max-width: 760px) {
     .formato::before {
-      background-size: 110% auto;
-      background-position: center bottom;
-      opacity: 0.2;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.18;
     }
     .formato::after {
       background: rgba(250,247,240,.78);
@@ -503,6 +531,7 @@
         </div>
       </div>
     </div>
+    <p class="footer-disclaimer">Este site não substitui acompanhamento médico ou psicológico individualizado. Conteúdo informativo conforme a Resolução CFM nº 2.336/2023 sobre publicidade médica.</p>
     <div class="footer-meta">
       <span>Membro ICOH · Board Member 2024 · ABERGO · ANAMT/AMB · CRM-BA 12797 · RQE 7237</span>
       <span>© 2026 Dra. Ana Paula Teixeira · <a href="governanca.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Governança</a> · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidade</a></span>
