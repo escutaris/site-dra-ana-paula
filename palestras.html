@@ -101,7 +101,45 @@
   }
 
   /* Temas */
-  .temas { padding-block: clamp(96px, 10vw, 144px); }
+  .temas {
+    position: relative;
+    overflow: hidden;
+    padding-block: clamp(96px, 10vw, 144px);
+    background: var(--bg);
+  }
+  .temas::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('assets/optimized/dra-ana-paula-palestra-abrh-vestido-vermelho.webp');
+    background-repeat: no-repeat;
+    background-size: min(42vw, 560px) auto;
+    background-position: right 7% center;
+    opacity: 0.09;
+    filter: saturate(0.9) contrast(1.02);
+    pointer-events: none;
+  }
+  .temas::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, var(--bg) 0%, rgba(240,237,230,.92) 52%, rgba(240,237,230,.62) 100%);
+    pointer-events: none;
+  }
+  .temas > .container {
+    position: relative;
+    z-index: 1;
+  }
+  @media (max-width: 760px) {
+    .temas::before {
+      opacity: 0.05;
+      background-size: 120% auto;
+      background-position: center bottom;
+    }
+    .temas::after {
+      background: rgba(240,237,230,.92);
+    }
+  }
   .temas h2 {
     font-family: var(--font-serif);
     font-weight: var(--weight-bold);
@@ -504,7 +542,7 @@
     </div>
     <div>
       <div class="stage-img">
-        <img src="assets/optimized/dra-ana-paula-palestra-abrh-vestido-vermelho.webp" alt="Dra. Ana Paula Teixeira em palestra para público corporativo sobre saúde mental no trabalho" width="1120" height="1400" loading="eager" fetchpriority="high" decoding="async">
+        <img src="assets/optimized/dra-ana-paula-palestra-vestido-preto-microfone.jpg" alt="Dra. Ana Paula Teixeira sorrindo em palestra corporativa sobre saúde mental no trabalho" width="1080" height="1350" loading="eager" fetchpriority="high" decoding="async">
       </div>
     </div>
   </div>
