@@ -169,6 +169,53 @@
     navList.insertBefore(li, ctaItem || null);
   }
 
+  /* ----- Event popup: delayed ABRH callout ----- */
+  function initEventPopup() {
+    if (document.querySelector('.event-popup')) return;
+    const storageKey = 'draAnaEventPopupDismissed';
+    try {
+      if (sessionStorage.getItem(storageKey) === '1') return;
+    } catch (err) {
+      // Ignore storage restrictions in private or embedded contexts.
+    }
+
+    const popup = document.createElement('aside');
+    popup.className = 'event-popup';
+    popup.setAttribute('aria-label', 'Evento em destaque');
+    popup.innerHTML = [
+      '<div class="event-popup-card">',
+      '<div class="event-popup-accent" aria-hidden="true"></div>',
+      '<button class="event-popup-close" type="button" aria-label="Fechar aviso do evento" data-event-popup-close>&times;</button>',
+      '<div class="event-popup-body">',
+      '<span class="event-popup-kicker">NR-1 em pauta</span>',
+      '<strong class="event-popup-title">Formação presencial em parceria com a ABRH</strong>',
+      '<p class="event-popup-text">Riscos psicossociais na prática · 31/07 e 01/08 · Salvador.</p>',
+      '<a class="event-popup-cta" href="https://abrhba.org.br/formacao-profissional/riscos-psicossociais-na-pratica.html" target="_blank" rel="noopener">Ver inscrição</a>',
+      '</div>',
+      '</div>'
+    ].join('');
+    document.body.appendChild(popup);
+
+    const close = popup.querySelector('[data-event-popup-close]');
+    const timer = window.setTimeout(() => {
+      popup.classList.add('is-visible');
+    }, 20000);
+    const dismiss = () => {
+      window.clearTimeout(timer);
+      popup.classList.remove('is-visible');
+      try {
+        sessionStorage.setItem(storageKey, '1');
+      } catch (err) {
+        // Nothing to persist.
+      }
+    };
+
+    close.addEventListener('click', dismiss);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && popup.classList.contains('is-visible')) dismiss();
+    });
+  }
+
   /* ----- Smooth scroll for in-page anchors ----- */
   function initSmoothScroll() {
     if (prefersReduced) return;
@@ -202,6 +249,7 @@
     initCounters();
     initNav();
     initLanguageSwitcher();
+    initEventPopup();
     // intentionally NOT using scrollIntoView — causes layout issues in embedded views
     // initSmoothScroll();
     initMarquee();

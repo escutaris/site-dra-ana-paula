@@ -991,48 +991,53 @@
     color: var(--terracota);
   }
   .pub-card-featured {
-    min-height: 300px;
-    background: var(--verde-noturno);
-    border-color: rgba(245,239,229,.12);
-    isolation: isolate;
-  }
-  .pub-card-featured::before {
-    content: '';
-    position: absolute;
-    inset: 0 0 0 auto;
-    width: min(42%, 300px);
-    background-image: url('assets/optimized/quando-o-trabalho-doi-livro-dra-ana-paula-teixeira.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.18;
-    z-index: -1;
-  }
-  .pub-card-featured::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(28,53,32,1) 0%, rgba(28,53,32,.92) 58%, rgba(28,53,32,.62) 100%);
-    z-index: -1;
+    grid-template-columns: minmax(120px, 170px) minmax(0, 1fr);
+    align-items: center;
+    min-height: 0;
+    background: var(--off-white);
+    border-color: rgba(172,94,73,.32);
   }
   .pub-card-featured:hover {
-    background: var(--verde-noturno);
-    border-color: rgba(248,220,163,.45);
+    background: #fff;
+    border-color: rgba(172,94,73,.58);
   }
   .pub-card-featured .pub-k,
-  .pub-card-featured .pub-action { color: #F8DCA3; }
+  .pub-card-featured .pub-action { color: var(--terracota); }
   .pub-card-featured strong {
-    color: var(--off-white);
+    color: var(--verde-noturno);
     font-size: clamp(1.55rem, 1.2rem + 1vw, 2.1rem);
     max-width: 18ch;
   }
   .pub-card-featured p {
-    color: rgba(245,239,229,.88);
+    color: var(--preto-editorial);
     max-width: 54ch;
   }
-  @media (max-width: 760px) {
-    .pub-card-featured::before { opacity: 0.1; width: 56%; }
-    .pub-card-featured::after { background: rgba(28,53,32,.92); }
+  .pub-cover {
+    width: 100%;
+    max-width: 170px;
+    aspect-ratio: 2 / 3;
+    border-radius: 2px;
+    overflow: hidden;
+    background: var(--bege-areia);
+    box-shadow: 0 24px 48px -26px rgba(28,53,32,.55);
+  }
+  .pub-cover img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .pub-feature-copy {
+    display: grid;
+    gap: 12px;
+  }
+  @media (max-width: 640px) {
+    .pub-card-featured {
+      grid-template-columns: 1fr;
+    }
+    .pub-cover {
+      max-width: 148px;
+    }
   }
 
   /* PROVA DE AUTORIDADE · mídia com links */
@@ -1194,17 +1199,6 @@
   </div>
 </nav>
 
-<aside class="event-strip" aria-label="Evento em destaque">
-  <div class="event-strip-inner">
-    <div class="event-strip-copy">
-      <span class="event-strip-kicker">NR-1 em pauta</span>
-      <strong class="event-strip-title">Formação presencial em parceria com a ABRH</strong>
-      <span class="event-strip-meta">Riscos psicossociais na prática · 31/07 e 01/08 · Salvador</span>
-    </div>
-    <a class="event-strip-cta" href="https://abrhba.org.br/formacao-profissional/riscos-psicossociais-na-pratica.html" target="_blank" rel="noopener">Ver inscrição</a>
-  </div>
-</aside>
-
 <!-- HERO -->
 <header class="hero-home">
   <div class="container grid">
@@ -1356,37 +1350,42 @@
 
     <div class="pub-grid">
       <a class="pub-card pub-card-featured" href="livro.html">
-        <span class="pub-k">Livro principal · 2025 · AssedioNet</span>
-        <strong>Quando o Trabalho Dói</strong>
-        <p>O livro central da atuação da Dra. Ana Paula sobre adoecimento ocupacional, cultura organizacional e o custo invisível quando o trabalho fere pessoas e instituições.</p>
-        <span class="pub-action">Conhecer o livro →</span>
+        <span class="pub-cover" aria-hidden="true">
+          <img src="assets/optimized/quando-o-trabalho-doi-livro-dra-ana-paula-teixeira.webp" alt="">
+        </span>
+        <span class="pub-feature-copy">
+          <span class="pub-k">Livro principal · 2025 · AssedioNet</span>
+          <strong>Quando o Trabalho Dói</strong>
+          <p>O livro central da atuação da Dra. Ana Paula sobre adoecimento ocupacional, cultura organizacional e o custo invisível quando o trabalho fere pessoas e instituições.</p>
+          <span class="pub-action">Conhecer o livro →</span>
+        </span>
       </a>
 
       <a class="pub-card" href="https://amzn.to/4a3MhC0" target="_blank" rel="noopener">
         <span class="pub-k">Livro</span>
-        <strong>Cinquenta e três formas de encontrar Deus</strong>
-        <p>Uma obra de reflexão e travessia, para leitores que acompanham a dimensão humana e espiritual da autora.</p>
+        <strong>Cinquenta e três formas de encontrar Deus (além das pandemias): Um convite a ação</strong>
+        <p>Reflexões sobre crise, espiritualidade e crescimento pessoal, nascidas das perguntas que a pandemia reacendeu sobre Deus, sentido e travessia.</p>
         <span class="pub-action">Ver na Amazon →</span>
       </a>
 
       <a class="pub-card" href="https://guiaquandoelafala.escutaris.com/" target="_blank" rel="noopener">
         <span class="pub-k">Guia digital</span>
-        <strong>Quando Ela Fala</strong>
-        <p>Material de apoio para reconhecer, escutar e responder com mais responsabilidade quando uma mulher nomeia sofrimento ou violência.</p>
+        <strong>Quando Ela Fala, Todo Mundo Ouve</strong>
+        <p>Guia prático para mulheres que desejam se posicionar com clareza no ambiente profissional, com exemplos reais de comunicação consciente, firme e respeitosa.</p>
         <span class="pub-action">Acessar guia →</span>
       </a>
 
       <a class="pub-card" href="https://hotmart.com/pt-br/marketplace/produtos/burnout-como-proteger-sua-vida-e-seu-trabalho-da-exaustao/R85607602S" target="_blank" rel="noopener">
         <span class="pub-k">E-book</span>
         <strong>Burnout: como proteger sua vida e seu trabalho da exaustão</strong>
-        <p>Conteúdo direto para quem precisa entender sinais, limites e estratégias de proteção diante da exaustão ocupacional.</p>
+        <p>Guia prático sobre os quatro níveis do esgotamento, sinais de alerta, busca de apoio profissional e caminhos de proteção diante da exaustão.</p>
         <span class="pub-action">Ver na Hotmart →</span>
       </a>
 
       <a class="pub-card" href="https://abrhba.org.br/formacao-profissional/riscos-psicossociais-na-pratica.html" target="_blank" rel="noopener">
         <span class="pub-k">Formação presencial · 31/07 e 01/08</span>
         <strong>Riscos Psicossociais: do risco trabalhista à performance sustentável</strong>
-        <p>Formação ABRH-BA com perspectivas integradas de psicologia, medicina do trabalho e jurídico para profissionais de RH.</p>
+        <p>Formação presencial em parceria com a ABRH, integrando psicologia, medicina do trabalho e jurídico para aplicar riscos psicossociais na gestão.</p>
         <span class="pub-action">Ver inscrição →</span>
       </a>
     </div>
