@@ -335,9 +335,34 @@
 
   /* CTA FINAL */
   .cta-roda {
+    position: relative;
+    overflow: hidden;
     padding-block: clamp(96px, 10vw, 144px);
     background: var(--verde-noturno);
     color: var(--off-white);
+  }
+  .cta-roda::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('assets/optimized/riscos-psicossociais-workshop-abrh-escutaris-sala-cta-roda.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .28;
+    filter: saturate(.82) brightness(.72);
+    pointer-events: none;
+  }
+  .cta-roda::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(28, 53, 32, .96) 0%, rgba(28, 53, 32, .86) 50%, rgba(28, 53, 32, .62) 100%);
+    pointer-events: none;
+  }
+  .cta-roda > .container {
+    position: relative;
+    z-index: 1;
   }
   .cta-roda h2 {
     font-family: var(--font-serif);
@@ -363,6 +388,15 @@
     margin: 0 0 36px 0;
   }
   .cta-roda .cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
+  @media (max-width: 720px) {
+    .cta-roda::before {
+      opacity: .18;
+      background-position: center;
+    }
+    .cta-roda::after {
+      background: rgba(28, 53, 32, .9);
+    }
+  }
 </style>
 </head>
 <body>
