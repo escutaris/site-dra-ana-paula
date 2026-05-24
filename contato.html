@@ -30,6 +30,15 @@
     padding-block: clamp(96px, 11vw, 160px);
     background: var(--bg);
   }
+  .hero-cont .hero-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  @media (min-width: 900px) {
+    .hero-cont .hero-contact-grid { grid-template-columns: minmax(0, 1fr) minmax(280px, 0.48fr); gap: 80px; }
+  }
   .hero-cont h1 {
     font-family: var(--font-serif);
     font-weight: var(--weight-bold);
@@ -50,6 +59,27 @@
     color: var(--preto-editorial);
     max-width: 60ch;
     margin: 0;
+  }
+  .contact-portrait {
+    display: none;
+    aspect-ratio: 4 / 5;
+    width: 100%;
+    max-width: 340px;
+    justify-self: end;
+    overflow: hidden;
+    border-radius: 2px;
+    background: var(--bege-areia);
+    box-shadow: 0 28px 60px -30px rgba(28,53,32,.28);
+  }
+  .contact-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 22%;
+    display: block;
+  }
+  @media (min-width: 900px) {
+    .contact-portrait { display: block; }
   }
 
   /* CANAIS DIRETOS */
@@ -325,12 +355,28 @@
   </div>
 </nav>
 
+<aside class="event-strip" aria-label="Evento em destaque">
+  <div class="event-strip-inner">
+    <div class="event-strip-copy">
+      <span class="event-strip-kicker">NR-1 em pauta</span>
+      <strong class="event-strip-title">Formação presencial ABRH-BA sobre riscos psicossociais</strong>
+      <span class="event-strip-meta">31/07 e 01/08 · Salvador</span>
+    </div>
+    <a class="event-strip-cta" href="https://abrhba.org.br/formacao-profissional/riscos-psicossociais-na-pratica.html" target="_blank" rel="noopener">Ver inscrição</a>
+  </div>
+</aside>
+
 <!-- HERO -->
 <header class="hero-cont">
-  <div class="container">
-    <span class="eyebrow-editorial">Próximo passo</span>
-    <h1>Vamos <em>conversar.</em></h1>
-    <p class="lead">Para palestra, roda de conversa, Direcionamento Executivo, mentoria, imprensa ou parceria editorial. A operação da agenda é feita pela Ana Cecília Teixeira, irmã e responsável pela operação da marca.</p>
+  <div class="container hero-contact-grid">
+    <div>
+      <span class="eyebrow-editorial">Próximo passo</span>
+      <h1>Vamos <em>conversar.</em></h1>
+      <p class="lead">Para palestra, roda de conversa, Direcionamento Executivo, mentoria, imprensa ou parceria editorial. A operação da agenda é feita pela Ana Cecília Teixeira, irmã e responsável pela operação da marca.</p>
+    </div>
+    <div class="contact-portrait">
+      <img src="assets/optimized/dra-ana-paula-cadeira-blusa-offwhite-saia-plissada.webp" alt="Dra. Ana Paula Teixeira em retrato editorial" width="1120" height="1400" loading="eager" decoding="async">
+    </div>
   </div>
 </header>
 

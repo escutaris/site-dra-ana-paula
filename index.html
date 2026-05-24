@@ -905,6 +905,84 @@
   }
   .lead-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
+  .pub-agenda {
+    padding-block: clamp(72px, 8vw, 112px);
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+  }
+  .pub-agenda h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.625rem);
+    color: var(--verde-noturno);
+    line-height: 1.18;
+    margin: 16px 0 16px;
+    max-width: 24ch;
+    text-wrap: balance;
+  }
+  .pub-agenda .section-sub {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--cinza-quente);
+    max-width: 62ch;
+    margin: 0 0 40px;
+  }
+  .pub-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  @media (min-width: 780px) {
+    .pub-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  .pub-card {
+    display: grid;
+    gap: 12px;
+    padding: clamp(24px, 3vw, 32px);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    background: var(--off-white);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
+  }
+  .pub-card:hover {
+    border-color: rgba(172,94,73,.55);
+    background: #fff;
+    transform: translateY(-2px);
+  }
+  .pub-card .pub-k {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terracota);
+  }
+  .pub-card strong {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.25rem;
+    line-height: 1.25;
+    color: var(--verde-noturno);
+  }
+  .pub-card p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: var(--preto-editorial);
+    margin: 0;
+  }
+  .pub-card .pub-action {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.82rem;
+    color: var(--terracota);
+  }
+
   /* PROVA DE AUTORIDADE · mídia com links */
   .media-grid-section {
     padding-block: clamp(72px, 8vw, 112px);
@@ -1018,6 +1096,11 @@
     object-fit: cover;
     display: block;
   }
+  .media-feature.media-print img {
+    aspect-ratio: 515 / 750;
+    object-fit: contain;
+    background: #fff;
+  }
   .media-feature-body { padding: 16px 18px 18px; }
   .media-feature-body span {
     display: block;
@@ -1058,6 +1141,17 @@
     </button>
   </div>
 </nav>
+
+<aside class="event-strip" aria-label="Evento em destaque">
+  <div class="event-strip-inner">
+    <div class="event-strip-copy">
+      <span class="event-strip-kicker">NR-1 em pauta</span>
+      <strong class="event-strip-title">Formação presencial ABRH-BA sobre riscos psicossociais</strong>
+      <span class="event-strip-meta">31/07 e 01/08 · Salvador</span>
+    </div>
+    <a class="event-strip-cta" href="https://abrhba.org.br/formacao-profissional/riscos-psicossociais-na-pratica.html" target="_blank" rel="noopener">Ver inscrição</a>
+  </div>
+</aside>
 
 <!-- HERO -->
 <header class="hero-home">
@@ -1225,6 +1319,45 @@
   </div>
 </section>
 
+<!-- PUBLICAÇÕES E AGENDA -->
+<section id="publicacoes-agenda" class="pub-agenda reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Publicações e agenda</span>
+    <h2>Outros caminhos para aprofundar.</h2>
+    <p class="section-sub">Livros, guias e formações para quem quer estudar saúde mental no trabalho por ângulos complementares: adoecimento, voz feminina, burnout, espiritualidade e gestão de riscos psicossociais.</p>
+
+    <div class="pub-grid">
+      <a class="pub-card" href="https://amzn.to/4a3MhC0" target="_blank" rel="noopener">
+        <span class="pub-k">Livro</span>
+        <strong>Cinquenta e três formas de encontrar Deus</strong>
+        <p>Uma obra de reflexão e travessia, para leitores que acompanham a dimensão humana e espiritual da autora.</p>
+        <span class="pub-action">Ver na Amazon →</span>
+      </a>
+
+      <a class="pub-card" href="https://guiaquandoelafala.escutaris.com/" target="_blank" rel="noopener">
+        <span class="pub-k">Guia gratuito</span>
+        <strong>Quando Ela Fala</strong>
+        <p>Material de apoio para reconhecer, escutar e responder com mais responsabilidade quando uma mulher nomeia sofrimento ou violência.</p>
+        <span class="pub-action">Acessar guia →</span>
+      </a>
+
+      <a class="pub-card" href="https://hotmart.com/pt-br/marketplace/produtos/burnout-como-proteger-sua-vida-e-seu-trabalho-da-exaustao/R85607602S" target="_blank" rel="noopener">
+        <span class="pub-k">E-book</span>
+        <strong>Burnout: como proteger sua vida e seu trabalho da exaustão</strong>
+        <p>Conteúdo direto para quem precisa entender sinais, limites e estratégias de proteção diante da exaustão ocupacional.</p>
+        <span class="pub-action">Ver na Hotmart →</span>
+      </a>
+
+      <a class="pub-card" href="https://abrhba.org.br/formacao-profissional/riscos-psicossociais-na-pratica.html" target="_blank" rel="noopener">
+        <span class="pub-k">Formação presencial · 31/07 e 01/08</span>
+        <strong>Riscos Psicossociais: do risco trabalhista à performance sustentável</strong>
+        <p>Formação ABRH-BA com perspectivas integradas de psicologia, medicina do trabalho e jurídico para profissionais de RH.</p>
+        <span class="pub-action">Ver inscrição →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- CLIENTES · marquee horizontal de logos -->
 <section class="clients-marquee-wrap reveal">
   <div class="container" style="padding-bottom:32px">
@@ -1262,13 +1395,13 @@
         <p class="media-lead">Uma curadoria de participações públicas em imprensa, rádio, TV, podcasts e canais especializados em saúde, gestão e trabalho.</p>
       </div>
 
-      <a class="media-feature" href="https://www.youtube.com/watch?v=L9b2zZn6rmU" target="_blank" rel="noopener">
-        <img src="https://img.youtube.com/vi/L9b2zZn6rmU/hqdefault.jpg" alt="Dra. Ana Paula Teixeira em entrevista sobre saúde mental no trabalho na TVE Bahia" loading="lazy">
+      <div class="media-feature media-print">
+        <img src="assets/optimized/dra-ana-paula-imprensa-a-tarde-saude-mental.webp" alt="Reportagem do jornal A Tarde sobre saúde mental nas empresas brasileiras com participação da Dra. Ana Paula Teixeira" loading="lazy">
         <div class="media-feature-body">
-          <span>Vídeo em destaque</span>
-          <p>TVE Bahia · Saúde Mental no Trabalho é Lei</p>
+          <span>Imprensa</span>
+          <p>A Tarde · Saúde mental vira obrigação nas empresas brasileiras</p>
         </div>
-      </a>
+      </div>
 
       <div class="media-link-groups">
         <div class="media-link-group">
