@@ -551,6 +551,9 @@
   .logo-main { font-size: 0.9375rem; letter-spacing: 0.12em; }
   .nav-inner { gap: var(--space-3); padding: var(--space-3); }
 }
+@media (max-width: 560px) {
+  .nav .logo-editorial-tag { display: none; }
+}
 
 /* ============================================================
    CARDS EDITORIAIS

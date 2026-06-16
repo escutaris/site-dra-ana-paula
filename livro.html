@@ -155,8 +155,14 @@
     width: 100%;
     max-width: 390px;
     justify-self: end;
+    border-radius: 6px;
+    overflow: hidden;
   }
   .sinopse-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     object-position: center 38%;
     filter: saturate(0.95) contrast(1.02);
   }
@@ -420,7 +426,7 @@
   /* CTA AUTORA */
   .cta-autora {
     padding-block: clamp(96px, 10vw, 144px);
-    background: var(--verde-noturno);
+    background: linear-gradient(135deg, var(--terracota) 0%, #8a4a35 32%, var(--verde-noturno) 78%);
     color: var(--off-white);
   }
   .cta-autora .eyebrow-editorial { color: var(--bege-areia); }
@@ -454,7 +460,7 @@
 <!-- NAV -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
-    <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
+    <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span><span class="logo-editorial-tag">Medicina do Trabalho · Saúde Mental Ocupacional</span></a>
         <ul class="nav-list">
       <li><a href="index.html" class="nav-link">Início</a></li>
       <li><a href="palestras.html" class="nav-link">Palestras</a></li>
@@ -510,7 +516,7 @@
       <h2>Para nomear, com clareza, o que adoece e o que transforma.</h2>
       <p>Um livro para nomear, com clareza e base técnica, o que atravessa pessoas, cultura e trabalho. Voltado a lideranças, RH, profissionais de saúde ocupacional e leitores que desejam compreender, com mais profundidade, os fatores que sustentam adoecimento ou promovem transformação nas organizações.</p>
     </div>
-    <div class="sinopse-photo foreground-photo-frame">
+    <div class="sinopse-photo">
       <img src="assets/optimized/dra-anapaula-segurando-oculos-livro-blusa-verde.jpg" alt="Dra. Ana Paula Teixeira lendo e segurando óculos" width="1200" height="1500" loading="lazy" decoding="async">
     </div>
   </div>
@@ -545,7 +551,7 @@
 <!-- A AUTORA -->
 <section class="a-autora" style="padding-block:clamp(96px,10vw,144px);background:var(--bg)">
   <div class="container" style="display:grid;grid-template-columns:1fr;gap:56px;align-items:center" data-grid-2col>
-    <div class="foreground-photo-frame" style="aspect-ratio:4/5;width:100%;max-width:420px;justify-self:center">
+    <div style="aspect-ratio:4/5;width:100%;max-width:420px;justify-self:center;border-radius:6px;overflow:hidden">
       <img src="assets/optimized/dra-ana-paula-livro-quando-o-trabalho-doi-sorrindo.webp" alt="Dra. Ana Paula Teixeira segurando o livro Quando o Trabalho Dói" width="1119" height="1400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:center 18%;display:block">
     </div>
     <div>

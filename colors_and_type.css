@@ -36,8 +36,8 @@
 
 :root {
   /* ----- PALETA FIXA (sem exceção) ----- */
-  --off-white:         #F0EDE6;   /* fundo dominante, mín. 75% da área */
-  --bege-areia:        #E8DDD2;   /* cards, superfícies secundárias */
+  --off-white:         #F7F4F0;   /* fundo dominante, mín. 75% da área — clareado p/ visual mais leve e arejado */
+  --bege-areia:        #EDE8E0;   /* cards, superfícies secundárias — clareado junto com off-white */
   --verde-noturno:     #1C3520;   /* texto, elementos, fundo editorial pontual */
   --terracota:         #B95839;   /* CTAs, destaques — máx. 1x por seção */
   --preto-editorial:   #1A1A1A;   /* corpo de texto */

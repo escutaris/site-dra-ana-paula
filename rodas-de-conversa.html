@@ -66,10 +66,8 @@
     max-width: 510px;
     overflow: hidden;
     background: var(--bege-areia);
-    border: 1px solid var(--border);
-    border-radius: 2px;
-    padding: clamp(8px, 1vw, 14px);
-    box-shadow: 0 28px 70px -44px rgba(28,53,32,.55);
+    border-radius: 8px;
+    box-shadow: 0 28px 70px -44px rgba(28,53,32,.45);
     margin-inline: auto;
     justify-self: end;
   }
@@ -338,7 +336,7 @@
     position: relative;
     overflow: hidden;
     padding-block: clamp(96px, 10vw, 144px);
-    background: var(--verde-noturno);
+    background: linear-gradient(135deg, var(--terracota) 0%, #8a4a35 32%, var(--verde-noturno) 78%);
     color: var(--off-white);
   }
   .cta-roda::before {
@@ -357,7 +355,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, rgba(28, 53, 32, .96) 0%, rgba(28, 53, 32, .86) 50%, rgba(28, 53, 32, .62) 100%);
+    background: linear-gradient(90deg, rgba(138, 74, 53, .9) 0%, rgba(28, 53, 32, .88) 55%, rgba(28, 53, 32, .62) 100%);
     pointer-events: none;
   }
   .cta-roda > .container {
@@ -404,7 +402,7 @@
 <!-- NAV -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
-    <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
+    <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span><span class="logo-editorial-tag">Medicina do Trabalho · Saúde Mental Ocupacional</span></a>
         <ul class="nav-list">
       <li><a href="index.html" class="nav-link">Início</a></li>
       <li><a href="palestras.html" class="nav-link">Palestras</a></li>
