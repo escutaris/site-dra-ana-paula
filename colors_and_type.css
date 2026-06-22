@@ -35,32 +35,41 @@
 @font-face { font-family: 'Poppins'; font-style: italic; font-weight: 900; font-display: swap; src: url('fonts/Poppins-BlackItalic.ttf') format('truetype'); }
 
 :root {
-  /* ----- PALETA FIXA (sem exceção) ----- */
-  --off-white:         #F7F4F0;   /* fundo dominante, mín. 75% da área — clareado p/ visual mais leve e arejado */
-  --bege-areia:        #EDE8E0;   /* cards, superfícies secundárias — clareado junto com off-white */
-  --verde-noturno:     #1C3520;   /* texto, elementos, fundo editorial pontual */
+  /* ----- PALETA v4.1 — marca pessoal Dra. Ana Paula ----- */
+  --ionic-beige:       #F6F0E9;   /* fundo dominante quente, mín. 75% da área */
+  --areia-quente:      #EDE2D4;   /* cards, superfícies secundárias */
+  --apollo:            #2B180A;   /* marrom-café — títulos e tinta editorial */
+  --artemis:           #362512;   /* corpo de texto (marrom escuro) */
+  --poseidon:          #222D19;   /* verde — reservado a 1 bloco de autoridade por página */
+  --zeus-ambar:        #C98A42;   /* cor-luz — labels e números de destaque */
   --terracota:         #B95839;   /* CTAs, destaques — máx. 1x por seção */
-  --preto-editorial:   #1A1A1A;   /* corpo de texto */
   --cinza-quente:      #5C5852;   /* texto secundário */
 
-  /* Derivadas (ainda dentro da paleta) */
-  --verde-noturno-80:  rgba(28, 53, 32, 0.80);
-  --verde-noturno-24:  rgba(28, 53, 32, 0.24);
-  --verde-noturno-12:  rgba(28, 53, 32, 0.12);
-  --verde-noturno-06:  rgba(28, 53, 32, 0.06);
+  /* Aliases dos nomes antigos (mantêm o CSS/HTML existente funcionando) */
+  --off-white:         var(--ionic-beige);
+  --bege-areia:        var(--areia-quente);
+  --verde-noturno:     var(--poseidon);    /* agora só como bloco/fundo verde */
+  --preto-editorial:   var(--artemis);
+
+  /* Derivadas — tinta marrom (Apollo) em baixa opacidade → bordas e hovers */
+  --verde-noturno-80:  rgba(43, 24, 10, 0.80);
+  --verde-noturno-24:  rgba(43, 24, 10, 0.24);
+  --verde-noturno-12:  rgba(43, 24, 10, 0.12);
+  --verde-noturno-06:  rgba(43, 24, 10, 0.06);
   --terracota-hover:   #A44B30;   /* -8% luminância para hover */
-  --off-white-80:      rgba(240, 237, 230, 0.80);
+  --off-white-80:      rgba(246, 240, 233, 0.82);
 
   /* ----- SEMÂNTICOS (Modo Clareza — padrão) ----- */
-  --bg:                var(--off-white);
-  --bg-surface:        var(--bege-areia);
-  --bg-inverse:        var(--verde-noturno);
-  --fg:                var(--preto-editorial);
+  --bg:                var(--ionic-beige);
+  --bg-surface:        var(--areia-quente);
+  --bg-inverse:        var(--poseidon);
+  --fg:                var(--artemis);
   --fg-muted:          var(--cinza-quente);
-  --fg-strong:         var(--verde-noturno);
-  --fg-inverse:        var(--off-white);
+  --fg-strong:         var(--apollo);
+  --fg-inverse:        var(--ionic-beige);
   --accent:            var(--terracota);
   --accent-hover:      var(--terracota-hover);
+  --highlight:         var(--zeus-ambar);
   --border:            var(--verde-noturno-12);
   --border-strong:     var(--verde-noturno-24);
 
@@ -153,6 +162,10 @@
   --border:            rgba(240, 237, 230, 0.18);
   --border-strong:     rgba(240, 237, 230, 0.32);
 }
+
+/* Amber Zeus é "cor-luz": reluz sobre o bloco escuro de autoridade */
+.modo-profundidade .label,
+.modo-profundidade .eyebrow { color: var(--highlight); }
 
 /* ----- BASE ----- */
 *, *::before, *::after { box-sizing: border-box; }

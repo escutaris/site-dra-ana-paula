@@ -73,7 +73,7 @@
   justify-content: center;
   padding: 64px 32px;
   background: var(--bege-claro, #F5EFE5);
-  border-left: 3px solid var(--verde-noturno, #1C3520);
+  border-left: 3px solid var(--verde-noturno, #222D19);
   border-radius: 2px;
   animation: formSuccessIn .45s cubic-bezier(.25, .75, .3, 1) both;
 }
@@ -95,7 +95,7 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: var(--verde-noturno, #1C3520);
+  background: var(--verde-noturno, #222D19);
   color: white;
   font-size: 1.75rem;
   font-weight: 300;
@@ -106,7 +106,7 @@
   font-family: var(--font-serif);
   font-weight: var(--weight-bold);
   font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
-  color: var(--verde-noturno, #1C3520);
+  color: var(--apollo, #2B180A);
   margin: 0 0 16px 0;
   letter-spacing: -0.01em;
 }
@@ -115,14 +115,14 @@
   font-family: var(--font-sans);
   font-weight: var(--weight-light);
   font-size: 1rem;
-  color: var(--preto-suave, #1A1A1A);
+  color: var(--artemis, #362512);
   line-height: 1.6;
   margin: 0 0 12px 0;
 }
 
 .form-success-inner p strong {
   font-weight: var(--weight-medium);
-  color: var(--verde-noturno, #1C3520);
+  color: var(--apollo, #2B180A);
 }
 
 .form-success-note {

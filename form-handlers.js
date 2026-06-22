@@ -7,6 +7,44 @@
 (function () {
   'use strict';
 
+  /* ---------- 0. Backup silencioso no Supabase ---------- */
+  /* Grava uma cópia de cada envio antes de abrir o WhatsApp, para que
+     nenhum lead se perca caso a pessoa não conclua a mensagem.
+     Insert puro (Prefer: return=minimal) — sem leitura de volta (RLS). */
+  var SUPABASE_URL = 'https://nufozcsdcgmihwusowfm.supabase.co';
+  var SUPABASE_KEY = 'sb_publishable_kfdyNSEt5y4nzoz2nmr-rg_1qlhHUAQ';
+
+  function getVal(form, name) {
+    var el = form.querySelector('[name="' + name + '"]');
+    return el ? (el.value || '').trim() : null;
+  }
+
+  function saveLeadToSupabase(form) {
+    try {
+      var data = {
+        nome: getVal(form, 'nome'),
+        empresa: getVal(form, 'empresa'),
+        cargo: getVal(form, 'cargo'),
+        email: getVal(form, 'email'),
+        telefone: getVal(form, 'telefone'),
+        motivo: getVal(form, 'motivo'),
+        mensagem: getVal(form, 'mensagem'),
+        origem: form.getAttribute('data-origem') || (location.pathname || 'site')
+      };
+      fetch(SUPABASE_URL + '/rest/v1/leads_anapaula', {
+        method: 'POST',
+        headers: {
+          'apikey': SUPABASE_KEY,
+          'Authorization': 'Bearer ' + SUPABASE_KEY,
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        },
+        body: JSON.stringify(data),
+        keepalive: true
+      }).catch(function () {});
+    } catch (e) { /* nunca bloqueia o envio pelo WhatsApp */ }
+  }
+
   /* ---------- 1. WhatsApp parallel path ---------- */
   /* Botão [data-wa-prefill] dentro de um <form data-wa-phone="..."> coleta
      os campos preenchidos e abre wa.me com mensagem formatada. */
@@ -32,6 +70,7 @@
   });
 
   function openWhatsAppFromForm(form) {
+    saveLeadToSupabase(form);
     var phone = form.getAttribute('data-wa-phone') || '5575983186200';
     var msg = buildWhatsAppMessage(form);
     var url = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(msg);
