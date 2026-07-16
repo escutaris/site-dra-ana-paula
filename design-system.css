@@ -217,6 +217,10 @@
 /* ============================================================
    NAV — fixa, fundo off-white translúcido ao scrollar
    ============================================================ */
+/* Âncoras do menu: rolagem suave e folga p/ a seção não sumir atrás da nav fixa */
+html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 104px; }
+
 .nav {
   position: sticky;
   top: 0;
@@ -255,7 +259,9 @@
   text-decoration: none;
   padding-block: var(--space-2);
   position: relative;
+  white-space: nowrap;
 }
+.nav-list .nav-cta { white-space: nowrap; }
 .nav-link::after {
   content: '';
   position: absolute;
@@ -269,6 +275,47 @@
 .nav-link:hover::after,
 .nav-link[aria-current="page"]::after { transform: scaleX(1); }
 .modo-profundidade .nav-link::after { background: var(--off-white); }
+
+/* Dropdown "Serviços" */
+.nav-has-drop { position: relative; }
+.nav-drop-trigger { display: inline-flex; align-items: center; gap: 6px; }
+.nav-caret { flex-shrink: 0; transition: transform var(--dur-link) var(--ease-out); }
+.nav-drop { list-style: none; margin: 0; }
+@media (min-width: 1121px) {
+  .nav-drop {
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    min-width: 220px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    box-shadow: 0 22px 48px -20px rgba(28, 53, 32, 0.35);
+    padding: 12px 20px;
+    display: grid;
+    gap: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: opacity var(--dur-base) var(--ease-standard),
+                transform var(--dur-base) var(--ease-out),
+                visibility 0s linear var(--dur-base);
+  }
+  .nav-has-drop:hover .nav-drop,
+  .nav-has-drop:focus-within .nav-drop {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition-delay: 0s;
+  }
+  .nav-has-drop:hover .nav-caret,
+  .nav-has-drop:focus-within .nav-caret { transform: rotate(180deg); }
+}
+@media (max-width: 1120px) {
+  /* No menu mobile os três serviços aparecem abertos, recuados sob "Serviços" */
+  .nav-drop { padding: 6px 0 0 20px; display: grid; gap: var(--space-2); }
+  .nav-drop .nav-link { font-size: 1.0625rem; }
+}
 
 /* ============================================================
    POPUP DE EVENTO - aparece sem ocupar a leitura principal
@@ -516,7 +563,7 @@
 }
 .nav-toggle svg { display: block; margin: auto; }
 
-@media (max-width: 980px) {
+@media (max-width: 1120px) {
   .nav-list {
     position: fixed;
     inset: 64px 0 0 0;
@@ -539,7 +586,7 @@
   .nav-toggle { display: block; }
 }
 
-@media (min-width: 981px) and (max-width: 1120px) {
+@media (min-width: 1121px) and (max-width: 1280px) {
   .nav-list { gap: var(--space-3); }
   .nav-link { font-size: 0.8125rem; }
   .lang-switcher { gap: 6px; }
