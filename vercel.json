@@ -1,0 +1,22 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.draanapaulateixeira.com.br" }],
+      "destination": "https://draanapaulateixeira.com.br/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "draanapaulateixeira.com" }],
+      "destination": "https://draanapaulateixeira.com.br/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "site-dra-ana-paula.vercel.app" }],
+      "destination": "https://draanapaulateixeira.com.br/:path*",
+      "permanent": true
+    }
+  ]
+}
