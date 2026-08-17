@@ -69,6 +69,43 @@
     });
   });
 
+  /* ---------- 1b. Caminho por e-mail ---------- */
+  /* [data-email-submit] dentro de um <form>: leva os campos preenchidos no
+     corpo da mensagem e grava a mesma cópia de segurança do caminho WhatsApp.
+     Sem isso o mailto abria um e-mail em branco e o que a pessoa digitou
+     se perdia. */
+
+  document.querySelectorAll('[data-email-submit]').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      var form = btn.closest('form');
+      if (!form) return;
+      e.preventDefault();
+      if (typeof form.checkValidity === 'function' && !form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      saveLeadToSupabase(form);
+      var to = btn.getAttribute('data-email-submit');
+      var motivo = getVal(form, 'motivo');
+      var subject = 'Contato pelo site' + (motivo ? ': ' + motivo : '');
+      window.location.href = 'mailto:' + to +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(buildEmailBody(form));
+    });
+  });
+
+  function buildEmailBody(form) {
+    var lines = [];
+    form.querySelectorAll('input, select, textarea').forEach(function (f) {
+      if (!f.name || f.type === 'submit' || f.type === 'button') return;
+      var value = (f.value || '').trim();
+      if (value) lines.push(getFieldLabel(f) + ': ' + value);
+    });
+    lines.push('');
+    lines.push('Enviado pelo formulário de draanapaulateixeira.com.br');
+    return lines.join('\n');
+  }
+
   function openWhatsAppFromForm(form) {
     saveLeadToSupabase(form);
     var phone = form.getAttribute('data-wa-phone') || '5571981357004';
@@ -87,7 +124,7 @@
       if (value) lines.push('*' + label + ':* ' + value);
     });
     lines.push('');
-    lines.push('_Enviado pelo site anapaulateixeira.med.br_');
+    lines.push('_Enviado pelo site draanapaulateixeira.com.br_');
     return lines.join('\n');
   }
 
