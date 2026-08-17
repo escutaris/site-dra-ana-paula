@@ -960,6 +960,7 @@ html { scroll-behavior: smooth; }
 .bg-context.bg-handmade-paper::before { background-image: url('assets/optimized/context-handmade-paper.webp'); background-position: center top; opacity: 0.08; }
 .bg-context.bg-leather-chair::before { background-image: url('assets/optimized/context-leather-chair.webp'); opacity: 0.06; }
 .bg-context.bg-corredor-kintsugi::before { background-image: url('assets/optimized/context-corredor-kintsugi.jpg'); }
+.bg-context.bg-palestra-offwhite::before { background-image: url('assets/optimized/context-palestra-vestido-offwhite.webp'); background-position: center 22%; opacity: 0.09; filter: saturate(0.85); }
 
 /* ============================================================
    UTILITÁRIOS
