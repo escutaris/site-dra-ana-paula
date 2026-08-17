@@ -397,7 +397,7 @@ iframes YouTube em grid 2 col desktop:
 
 **Contato direto (4 itens):**
 - E-mail · contato@anateixeiramed.com.br
-- WhatsApp · (75) 98318-6200
+- WhatsApp · (71) 98135-7004
 - Instagram · @draanapaulateixeira
 - LinkedIn · /in/draanapaulateixeira
 

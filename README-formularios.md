@@ -14,7 +14,7 @@ O site tem 3 formulários:
 | `contato.html`   | Contato institucional  | Nome, E-mail, Empresa, Cargo, Natureza, Porte, Prazo, Mensagem        |
 | `blog.html`      | Newsletter             | E-mail                                                                |
 
-Cada um tem, **em paralelo**, um botão **"Enviar via WhatsApp"** que já funciona — ele coleta os campos preenchidos e abre o WhatsApp da Dra. Ana Paula (75 98318-6200) com a mensagem formatada. Esse caminho não depende de nenhuma configuração.
+Cada um tem, **em paralelo**, um botão **"Enviar via WhatsApp"** que já funciona — ele coleta os campos preenchidos e abre o WhatsApp da Dra. Ana Paula (71 98135-7004) com a mensagem formatada. Esse caminho não depende de nenhuma configuração.
 
 O caminho formal (Google Forms) precisa dos passos abaixo para ativar.
 
@@ -112,7 +112,7 @@ Se não aparecer na planilha:
 ## Onde os leads chegam
 
 - **Via formulário** → planilha Google vinculada (acesse em forms.google.com → Respostas).
-- **Via WhatsApp** → mensagem direta em 75 98318-6200.
+- **Via WhatsApp** → mensagem direta em 71 98135-7004.
 
 Opcional: em cada Google Form, vá em **⋮ (três pontos) → Obter notificações por email** para receber um email a cada novo envio.
 
@@ -133,11 +133,11 @@ Pronto. Toda vez que alguém preencher o form no site, você recebe email.
 
 O número está em **2 lugares**:
 
-1. `form-handlers.js` (linha com `|| '5575983186200'`) — número-fallback do script.
-2. Atributo `data-wa-phone="5575983186200"` dentro das tags `<form>` de `servicos.html` e `contato.html`.
-3. Links diretos `https://wa.me/5575983186200` espalhados pelo site (footer de todas as páginas, página contato, botões flutuantes).
+1. `form-handlers.js` (linha com `|| '5571981357004'`) — número-fallback do script.
+2. Atributo `data-wa-phone="5571981357004"` dentro das tags `<form>` de `servicos.html` e `contato.html`.
+3. Links diretos `https://wa.me/5571981357004` espalhados pelo site (footer de todas as páginas, página contato, botões flutuantes).
 
-Use Ctrl+F e substitua `5575983186200` globalmente. **Formato obrigatório:** 55 (Brasil) + DDD sem zero + número sem espaços/hífens.
+Use Ctrl+F e substitua `5571981357004` globalmente. **Formato obrigatório:** 55 (Brasil) + DDD sem zero + número sem espaços/hífens.
 
 ---
 

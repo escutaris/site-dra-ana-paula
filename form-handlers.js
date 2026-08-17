@@ -71,7 +71,7 @@
 
   function openWhatsAppFromForm(form) {
     saveLeadToSupabase(form);
-    var phone = form.getAttribute('data-wa-phone') || '5575983186200';
+    var phone = form.getAttribute('data-wa-phone') || '5571981357004';
     var msg = buildWhatsAppMessage(form);
     var url = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(msg);
     window.open(url, '_blank', 'noopener');
@@ -133,7 +133,7 @@
         '<h3>Mensagem recebida.</h3>' +
         '<p>Obrigada pelo contato. Respondemos em até <strong>48h úteis</strong>.</p>' +
         '<p class="form-success-note">Se preferir resposta mais rápida, continue pelo WhatsApp.</p>' +
-        '<a href="https://wa.me/5575983186200" target="_blank" rel="noopener" class="form-success-wa">Abrir WhatsApp →</a>' +
+        '<a href="https://wa.me/5571981357004" target="_blank" rel="noopener" class="form-success-wa">Abrir WhatsApp →</a>' +
       '</div>';
     form.parentNode.replaceChild(wrap, form);
   }
