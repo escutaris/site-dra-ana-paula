@@ -41,10 +41,10 @@
 }
 @media (min-width: 960px) {
   .hero-home .grid {
-    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-    gap: 80px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 64px;
   }
-  .hero-home .portrait-wrap { max-width: 440px; margin-inline: 0; }
+  .hero-home .portrait-wrap { max-width: 520px; margin-inline: 0; }
 }
 .hero-home .eyebrow-home {
   font-family: var(--font-sans);
@@ -154,6 +154,10 @@
   opacity: 0.14;
   border-radius: 50%;
   z-index: -1;
+}
+/* No desktop o retrato ganha a largura da coluna (a regra do topo era anulada por esta) */
+@media (min-width: 960px) {
+  .hero-home .portrait-wrap { max-width: 520px; margin-inline: 0; }
 }
 .hero-home .portrait-wrap img {
   width: 100%; height: 100%; object-fit: cover;
@@ -1204,7 +1208,7 @@
     </div>
     <div>
       <div class="portrait-wrap">
-        <img src="assets/optimized/portrait-terracota-2.webp" alt="Dra. Ana Paula Teixeira, médica do trabalho, autora e pesquisadora em saúde mental ocupacional, sorrindo" width="1400" height="1750" fetchpriority="high" decoding="async">
+        <img src="assets/optimized/portrait-vestido-vermelho-bracos-cruzados.webp" alt="Dra. Ana Paula Teixeira, médica do trabalho, autora e pesquisadora em saúde mental ocupacional, de braços cruzados" width="1000" height="1250" fetchpriority="high" decoding="async">
       </div>
     </div>
   </div>
@@ -1341,7 +1345,7 @@
 <section id="sobre" class="about-home reveal">
   <div class="container about-home-grid">
     <figure class="about-home-portrait">
-      <img src="assets/optimized/dra-ana-paula-mesa-madeira-vestido-offwhite.webp" alt="Retrato da Dra. Ana Paula Teixeira, médica do trabalho e pesquisadora em saúde ocupacional, sentada à mesa de madeira em ambiente acolhedor" width="941" height="1672" style="object-position:center 30%" loading="lazy" decoding="async">
+      <img src="assets/optimized/dra-ana-paula-poltrona-offwhite-estante.webp" alt="Retrato da Dra. Ana Paula Teixeira, médica do trabalho e pesquisadora em saúde ocupacional, sentada em poltrona diante de uma estante com livros e plantas" width="1000" height="1250" style="object-position:center 25%" loading="lazy" decoding="async">
     </figure>
     <div>
       <span class="eyebrow-editorial">Quem sou eu</span>
