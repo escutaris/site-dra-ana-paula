@@ -972,7 +972,7 @@ html { scroll-behavior: smooth; }
   color: var(--apollo);
   line-height: 1.18;
   letter-spacing: -0.005em;
-  margin: 16px 0 16px;
+  margin: 16px 0 0;
   text-wrap: balance;
 }
 .faq-head p { font-family: var(--font-sans); font-weight: var(--weight-light); font-size: 1rem; line-height: 1.65; color: var(--cinza-quente); margin: 0; }
