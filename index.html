@@ -479,6 +479,51 @@
   .depo-card { scroll-snap-align: start; }
   .depo-card[aria-hidden="true"] { display: none; }
 }
+.depo-featured-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin: 0 0 56px;
+}
+@media (min-width: 900px) {
+  .depo-featured-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; align-items: start; }
+}
+@media (min-width: 1180px) {
+  .depo-featured-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
+}
+.depo-featured {
+  margin: 0;
+  padding: 8px 0 8px 32px;
+  border-left: 4px solid var(--terracota);
+  background: transparent;
+}
+@media (max-width: 700px) {
+  .depo-featured { padding: 4px 0 4px 22px; }
+}
+.depo-featured-text {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: var(--weight-medium);
+  font-size: clamp(1.125rem, 1rem + 0.45vw, 1.375rem);
+  line-height: 1.55;
+  color: var(--apollo);
+  margin: 0;
+}
+.depo-featured-text::before { content: '“'; }
+.depo-featured-text::after  { content: '”'; }
+.depo-featured-author {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--cinza-quente);
+  margin: 20px 0 0;
+}
+.depo-featured-author strong {
+  display: block;
+  font-weight: var(--weight-semibold);
+  color: var(--apollo);
+  letter-spacing: 0.01em;
+}
 .depo-hint {
   font-family: var(--font-sans);
   font-weight: var(--weight-medium);
@@ -1403,6 +1448,20 @@
     <div class="depo-header">
       <span class="eyebrow-editorial">O que dizem</span>
       <h2 style="font-family:var(--font-serif);font-weight:700;font-size:clamp(1.875rem,1.4rem + 1.8vw,2.625rem);line-height:1.15;color:var(--apollo);letter-spacing:-0.01em;margin:16px 0 0;max-width:24ch;text-wrap:balance">Quem já me ouviu numa palestra, leu o livro ou esteve comigo numa roda de conversa.</h2>
+    </div>
+    <div class="depo-featured-grid">
+      <figure class="depo-featured">
+        <p class="depo-featured-text">Dra. Ana Paula nos convida a importantes reflexões sobre o quanto cuidar das pessoas também é cuidar das organizações e dos resultados que elas buscam. [...] Como Gestora de RH, esse olhar contribui para tornar minha atuação como líder cada vez mais consciente.</p>
+        <figcaption class="depo-featured-author"><strong>Sanyara Freitas</strong>Gestora de RH</figcaption>
+      </figure>
+      <figure class="depo-featured">
+        <p class="depo-featured-text">Passando para agradecer pelas orientações e pelo envio do material. Tenho certeza de que será muito útil e contribuirá bastante para continuarmos avançando nesse processo. Muito obrigada pela atenção, disponibilidade e por todo o suporte!</p>
+        <figcaption class="depo-featured-author"><strong>Joana Santana</strong>Coordenadora de RH</figcaption>
+      </figure>
+      <figure class="depo-featured">
+        <p class="depo-featured-text">Fiz a leitura dos relatórios. Fiquei impressionada com a qualidade e a riqueza das informações apresentadas.</p>
+        <figcaption class="depo-featured-author"><strong>Neusa Dantas</strong>Coordenadora de RH · Rádio Sociedade da Bahia</figcaption>
+      </figure>
     </div>
     <p class="depo-hint"><span class="depo-hint-hover">Passam automaticamente — passe o mouse para pausar e ler</span><span class="depo-hint-touch">Arraste para o lado para ver mais →</span></p>
     <div class="depo-marquee">
