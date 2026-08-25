@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sala de imprensa · Dra. Ana Paula Teixeira</title>
+<meta name="description" content="Biografia, credenciais, pautas, fotos e aparições da Dra. Ana Paula Teixeira, médica do trabalho. Pedidos de entrevista respondidos em até 48 horas úteis.">
+<meta name="author" content="Dra. Ana Paula Teixeira">
+<link rel="canonical" href="https://draanapaulateixeira.com.br/imprensa.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Dra. Ana Paula Teixeira">
+<meta property="og:url" content="https://draanapaulateixeira.com.br/imprensa.html">
+<meta property="og:title" content="Sala de imprensa · Dra. Ana Paula Teixeira">
+<meta property="og:description" content="Biografia em três tamanhos, credenciais, pautas, fotos e histórico de entrevistas, para quem vai citar ou entrevistar.">
+<meta property="og:image" content="https://draanapaulateixeira.com.br/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sala de imprensa · Dra. Ana Paula Teixeira">
+<meta name="twitter:description" content="Material de imprensa: bio, credenciais, pautas, fotos e entrevistas anteriores.">
+<meta name="twitter:image" content="https://draanapaulateixeira.com.br/assets/og-default.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<meta name="theme-color" content="#2B180A">
+<link rel="stylesheet" href="design-system.css">
+<style>
+  /* HERO */
+  .hero-press { padding-block: clamp(88px, 10vw, 144px); background: var(--bg); }
+  .hero-press .grid { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; }
+  @media (min-width: 960px) {
+    .hero-press .grid { grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: 72px; }
+  }
+  .hero-press h1 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.25rem, 1.6rem + 2.4vw, 3.5rem);
+    line-height: 1.08;
+    color: var(--apollo);
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+    max-width: 20ch;
+    margin: 24px 0 28px;
+  }
+  .hero-press .lead {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.65;
+    color: var(--preto-editorial);
+    max-width: 54ch;
+    margin: 0 0 36px;
+  }
+  .hero-press .portrait {
+    aspect-ratio: 4/5;
+    width: 100%;
+    max-width: 460px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: var(--bege-areia);
+    box-shadow: 0 28px 70px -44px rgba(28,53,32,.45);
+    margin-inline: auto;
+  }
+  .hero-press .portrait img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+  /* BLOCO DE CONTATO */
+  .press-contact { padding-block: clamp(56px, 6vw, 80px); background: var(--bg-inverse); color: var(--fg-inverse); }
+  .press-contact-grid { display: grid; grid-template-columns: 1fr; gap: 32px; }
+  @media (min-width: 820px) { .press-contact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; } }
+  .press-contact .label {
+    font-family: var(--font-sans); font-weight: var(--weight-medium); font-size: 0.75rem;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--zeus-ambar); margin: 0 0 10px;
+  }
+  .press-contact .value { font-family: var(--font-sans); font-size: 1.0625rem; line-height: 1.6; margin: 0; }
+  .press-contact .value a { color: var(--fg-inverse); border-bottom: 1px solid rgba(246,240,233,.35); text-decoration: none; }
+  .press-contact .value a:hover { border-bottom-color: var(--zeus-ambar); }
+  .press-contact .note { font-family: var(--font-sans); font-size: 0.9375rem; color: rgba(246,240,233,.72); margin: 8px 0 0; }
+
+  /* SEÇÕES */
+  .press-sec { padding-block: clamp(72px, 8vw, 112px); }
+  .press-sec.alt { background: var(--bg-surface); }
+  .press-sec h2 {
+    font-family: var(--font-serif); font-weight: var(--weight-bold);
+    font-size: clamp(1.75rem, 1.4rem + 1.6vw, 2.5rem); line-height: 1.15;
+    color: var(--apollo); letter-spacing: -0.01em; max-width: 26ch; margin: 16px 0 40px;
+  }
+  .press-sec h3 {
+    font-family: var(--font-sans); font-weight: var(--weight-semibold);
+    font-size: 0.8125rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--cinza-quente); margin: 0 0 14px;
+  }
+  .press-sec p { font-family: var(--font-sans); font-weight: var(--weight-light); font-size: 1.0625rem; line-height: 1.75; color: var(--preto-editorial); }
+
+  /* BIO */
+  .bio-item { padding: 28px 0; border-top: 1px solid var(--border); }
+  .bio-item:last-child { border-bottom: 1px solid var(--border); }
+  .bio-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .bio-text { max-width: 76ch; margin: 0; }
+  .copy-btn {
+    font-family: var(--font-sans); font-weight: var(--weight-medium); font-size: 0.8125rem;
+    letter-spacing: 0.04em; color: var(--terracota); background: transparent;
+    border: 1px solid var(--terracota); border-radius: 4px; padding: 7px 14px; cursor: pointer;
+    transition: background var(--dur-base) var(--ease-standard), color var(--dur-base) var(--ease-standard);
+  }
+  .copy-btn:hover { background: var(--terracota); color: var(--off-white); }
+  .copy-btn[data-copied="1"] { background: var(--poseidon); border-color: var(--poseidon); color: var(--off-white); }
+
+  /* FICHA / COMO CITAR */
+  .cite-grid { display: grid; grid-template-columns: 1fr; gap: 28px; }
+  @media (min-width: 820px) { .cite-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; align-items: start; } }
+  .cite-card { background: #ffffff; border-radius: 8px; padding: 32px; border: 1px solid var(--border); }
+  .cite-card p { margin: 0 0 12px; font-size: 1rem; }
+  .cite-card p:last-child { margin-bottom: 0; }
+  .cite-card strong { font-weight: var(--weight-semibold); color: var(--apollo); }
+  .cite-wrong { color: var(--cinza-quente); font-size: 0.9375rem; }
+
+  /* NÚMEROS */
+  .press-numbers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin-top: 8px; }
+  @media (min-width: 820px) { .press-numbers { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  .press-num strong {
+    display: block; font-family: var(--font-serif); font-weight: var(--weight-bold);
+    font-size: clamp(2.25rem, 1.8rem + 2vw, 3.25rem); line-height: 1; color: var(--terracota); margin-bottom: 10px;
+  }
+  .press-num span { font-family: var(--font-sans); font-size: 0.9375rem; line-height: 1.5; color: var(--cinza-quente); }
+
+  /* PAUTAS */
+  .pauta-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 0; }
+  .pauta-list li { padding: 20px 0; border-top: 1px solid var(--border); font-family: var(--font-sans); font-size: 1.0625rem; line-height: 1.6; color: var(--apollo); }
+  .pauta-list li:last-child { border-bottom: 1px solid var(--border); }
+  .pauta-list li span { display: block; font-size: 0.875rem; color: var(--cinza-quente); margin-top: 6px; }
+
+  /* FOTOS */
+  .photo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  @media (min-width: 900px) { .photo-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; } }
+  .photo-grid a { display: block; aspect-ratio: 3/4; overflow: hidden; border-radius: 6px; background: var(--bege-areia); }
+  .photo-grid img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-slow) var(--ease-editorial); }
+  .photo-grid a:hover img { transform: scale(1.03); }
+
+  /* APARIÇÕES */
+  .press-links { display: grid; grid-template-columns: 1fr; gap: 48px; }
+  @media (min-width: 980px) { .press-links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; } }
+  .press-list { list-style: none; margin: 0; padding: 0; }
+  .press-list li { border-top: 1px solid var(--border); }
+  .press-list li:last-child { border-bottom: 1px solid var(--border); }
+  .press-list a { display: block; padding: 16px 0; text-decoration: none; }
+  .press-list strong { display: block; font-family: var(--font-sans); font-weight: var(--weight-semibold); font-size: 0.9375rem; color: var(--apollo); }
+  .press-list span { display: block; font-family: var(--font-sans); font-weight: var(--weight-light); font-size: 0.9375rem; line-height: 1.5; color: var(--cinza-quente); margin-top: 4px; }
+  .press-list a:hover strong { color: var(--terracota); }
+
+  /* CTA FINAL */
+  .press-cta { padding-block: clamp(80px, 9vw, 120px); background: var(--bg-surface); }
+  .press-cta h2 { margin-bottom: 20px; }
+  .press-cta .btns { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 28px; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://draanapaulateixeira.com.br/#dra-ana-paula",
+      "name": "Dra. Ana Paula Teixeira",
+      "alternateName": "Ana Paula Teixeira",
+      "jobTitle": "Médica do trabalho",
+      "description": "Médica do trabalho, autora de Quando o Trabalho Dói e pesquisadora de Lesão Moral Ocupacional, com quase três décadas de atuação corporativa.",
+      "url": "https://draanapaulateixeira.com.br/",
+      "image": "https://draanapaulateixeira.com.br/assets/optimized/portrait-vestido-vermelho-bracos-cruzados.webp",
+      "telephone": "+55-71-98135-7004",
+      "email": "escutaris@zohomail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Salvador",
+        "addressRegion": "BA",
+        "addressCountry": "BR"
+      },
+      "knowsAbout": [
+        "Saúde mental no trabalho",
+        "Lesão Moral Ocupacional",
+        "NR-1 e fatores de risco psicossociais",
+        "Medicina do trabalho",
+        "Burnout e adoecimento ocupacional",
+        "Retorno ao trabalho após afastamento"
+      ],
+      "knowsLanguage": "pt-BR",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Universidade Federal da Bahia"
+      },
+      "memberOf": [
+        { "@type": "Organization", "name": "International Commission on Occupational Health (ICOH)" },
+        { "@type": "Organization", "name": "Associação Brasileira de Ergonomia (ABERGO)" },
+        { "@type": "Organization", "name": "Associação Nacional de Medicina do Trabalho (ANAMT/AMB)" }
+      ],
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Registro profissional", "name": "CRM-BA 12797" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Registro de qualificação de especialista", "name": "RQE 7237 (Medicina do Trabalho)" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Certificação", "name": "Board Member 2024 (Board Academy)" }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/draanapaulateixeira/",
+        "https://www.linkedin.com/in/draanapaulateixeira/",
+        "https://www.youtube.com/@draanapaulateixeira"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://draanapaulateixeira.com.br/imprensa.html",
+      "name": "Sala de imprensa · Dra. Ana Paula Teixeira",
+      "description": "Biografia, credenciais, pautas, fotos e histórico de entrevistas da Dra. Ana Paula Teixeira, médica do trabalho.",
+      "url": "https://draanapaulateixeira.com.br/imprensa.html",
+      "inLanguage": "pt-BR",
+      "about": { "@id": "https://draanapaulateixeira.com.br/#dra-ana-paula" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://draanapaulateixeira.com.br/" },
+        { "@type": "ListItem", "position": 2, "name": "Sala de imprensa", "item": "https://draanapaulateixeira.com.br/imprensa.html" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span><span class="logo-editorial-tag">Medicina do Trabalho · Saúde Mental Ocupacional</span></a>
+    <ul class="nav-list">
+      <li><a href="index.html" class="nav-link">Início</a></li>
+      <li class="nav-has-drop">
+        <a href="index.html#servicos" class="nav-link nav-drop-trigger">Serviços<svg class="nav-caret" width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4 4-4"/></svg></a>
+        <ul class="nav-drop">
+          <li><a href="palestras.html" class="nav-link">Palestras</a></li>
+          <li><a href="rodas-de-conversa.html" class="nav-link">Rodas de Conversa</a></li>
+          <li><a href="direcionamento.html" class="nav-link">Direcionamento</a></li>
+        </ul>
+      </li>
+      <li><a href="livro.html" class="nav-link">Livro</a></li>
+      <li><a href="index.html#depoimentos" class="nav-link">Depoimentos</a></li>
+      <li><a href="index.html#midia" class="nav-link">Na mídia</a></li>
+      <li><a href="index.html#publicacoes-agenda" class="nav-link">Publicações</a></li>
+      <li><a href="https://wa.me/5571981357004?text=Ol%C3%A1%2C%20sou%20jornalista%20e%20gostaria%20de%20falar%20com%20a%20Dra.%20Ana%20Paula%20sobre%20uma%20pauta." class="btn btn-primary nav-cta" style="padding:10px 18px;font-size:0.875rem">Falar com a assessoria</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menu">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#2B180A" stroke-width="1.5"><line x1="3" y1="7" x2="19" y2="7"/><line x1="3" y1="15" x2="19" y2="15"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero-press">
+  <div class="container grid">
+    <div>
+      <span class="eyebrow-editorial">Sala de imprensa</span>
+      <h1>Material pronto para quem vai citar, entrevistar ou divulgar.</h1>
+      <p class="lead">Biografia em três tamanhos, credenciais para checagem, temas que comento com base em prática clínica, fotos e o histórico de entrevistas. Pedidos de pauta são respondidos em até 48 horas úteis.</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap">
+        <a href="https://wa.me/5571981357004?text=Ol%C3%A1%2C%20sou%20jornalista%20e%20gostaria%20de%20falar%20com%20a%20Dra.%20Ana%20Paula%20sobre%20uma%20pauta." class="btn btn-primary">Falar pelo WhatsApp →</a>
+        <a href="assets/material-organizadores-dra-ana-paula-teixeira.pdf" target="_blank" rel="noopener" class="btn btn-secondary">Material em PDF</a>
+      </div>
+    </div>
+    <div>
+      <div class="portrait">
+        <img src="assets/optimized/dra-ana-paula-teixeira-medica-do-trabalho-retrato-principal.webp" alt="Retrato da Dra. Ana Paula Teixeira, médica do trabalho" width="1080" height="1350" loading="eager" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- CONTATO DE IMPRENSA -->
+<section class="press-contact">
+  <div class="container press-contact-grid">
+    <div>
+      <p class="label">WhatsApp</p>
+      <p class="value"><a href="https://wa.me/5571981357004?text=Ol%C3%A1%2C%20sou%20jornalista%20e%20gostaria%20de%20falar%20com%20a%20Dra.%20Ana%20Paula%20sobre%20uma%20pauta.">(71) 98135-7004</a></p>
+      <p class="note">Canal mais rápido para fechamento de matéria.</p>
+    </div>
+    <div>
+      <p class="label">E-mail</p>
+      <p class="value"><a href="mailto:escutaris@zohomail.com?subject=Pedido%20de%20pauta%20ou%20entrevista">escutaris@zohomail.com</a></p>
+      <p class="note">Para envio de perguntas, roteiros e convites formais.</p>
+    </div>
+    <div>
+      <p class="label">Prazo de resposta</p>
+      <p class="value">Até 48 horas úteis</p>
+      <p class="note">Fotos em alta resolução e gravações são enviadas sob solicitação.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BIOGRAFIA -->
+<section class="press-sec reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Biografia</span>
+    <h2>Três tamanhos, para usar conforme o espaço.</h2>
+
+    <div class="bio-item">
+      <div class="bio-head">
+        <h3>Uma linha</h3>
+        <button class="copy-btn" type="button" data-copy="bio-1">Copiar</button>
+      </div>
+      <p class="bio-text" id="bio-1">Médica do trabalho, autora de Quando o Trabalho Dói e pesquisadora de Lesão Moral Ocupacional no Brasil.</p>
+    </div>
+
+    <div class="bio-item">
+      <div class="bio-head">
+        <h3>Um parágrafo</h3>
+        <button class="copy-btn" type="button" data-copy="bio-2">Copiar</button>
+      </div>
+      <p class="bio-text" id="bio-2">Dra. Ana Paula Teixeira é médica do trabalho com quase trinta anos de prática clínica e corporativa em mineradoras, siderúrgicas, laboratórios, hospitais, empresas de comunicação e comércio. Autora de Quando o Trabalho Dói (Editora AssedioNet, 2025), indicado ao 7º Prêmio Ecos da Literatura. É membro da International Commission on Occupational Health (ICOH), da ABERGO e da ANAMT/AMB, e Board Member certificada pela Board Academy em 2024.</p>
+    </div>
+
+    <div class="bio-item">
+      <div class="bio-head">
+        <h3>Meia página</h3>
+        <button class="copy-btn" type="button" data-copy="bio-3">Copiar</button>
+      </div>
+      <p class="bio-text" id="bio-3">Dra. Ana Paula Teixeira é médica do trabalho com quase trinta anos de prática clínica e corporativa em mineradoras, siderúrgicas, laboratórios, hospitais, empresas de comunicação e comércio. Pesquisadora de Lesão Moral Ocupacional no Brasil, conduz no mestrado na Bahiana a tradução e validação da escala OMIS-R para o português brasileiro, um dos primeiros estudos do tema no país. É autora de Quando o Trabalho Dói: do adoecimento silencioso à cultura de bem-estar (Editora AssedioNet, 2025, 253 páginas), indicado ao 7º Prêmio Ecos da Literatura. Membro da International Commission on Occupational Health (ICOH), da ABERGO e da ANAMT/AMB, e Board Member certificada pela Board Academy em 2024. Leva a empresas, eventos setoriais e associações de classe uma leitura clínica dos temas que hoje chegam à mesa da gestão: NR-1 e fatores psicossociais, assédio moral, adoecimento por saúde mental, retorno ao trabalho e segurança psicológica. Já atendeu organizações como PetroRecôncavo, Alvopetro, ABRH-BA e ABRH Sergipe.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMO CITAR -->
+<section class="press-sec alt reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Como citar</span>
+    <h2>Nome, título e registro para checagem.</h2>
+    <div class="cite-grid">
+      <div class="cite-card">
+        <h3>Forma correta</h3>
+        <p><strong>Dra. Ana Paula Teixeira</strong>, médica do trabalho.</p>
+        <p>Registro profissional: <strong>CRM-BA 12797 · RQE 7237</strong> (Medicina do Trabalho).</p>
+        <p>Quando houver espaço para uma credencial só, a que sustenta a fala é <strong>médica do trabalho e autora de Quando o Trabalho Dói</strong>.</p>
+      </div>
+      <div class="cite-card">
+        <h3>Atenção na checagem</h3>
+        <p class="cite-wrong">O registro é de medicina (CRM), não de psicologia (CRP). Ela é médica, não psicóloga.</p>
+        <p class="cite-wrong">A Escutaris é a empresa de saúde mental ocupacional da qual é sócia-fundadora. Em pauta jornalística, o nome que assina é o dela.</p>
+        <p class="cite-wrong">A pesquisa de Lesão Moral Ocupacional está em andamento no mestrado na Bahiana. Resultados ainda não foram publicados.</p>
+      </div>
+    </div>
+
+    <div class="press-numbers" style="margin-top:56px">
+      <div class="press-num"><strong>130+</strong><span>palestras realizadas</span></div>
+      <div class="press-num"><strong>10 mil+</strong><span>profissionais treinados</span></div>
+      <div class="press-num"><strong>28</strong><span>anos de atuação clínica e corporativa</span></div>
+      <div class="press-num"><strong>253</strong><span>páginas do livro, 1ª edição de 2025</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PAUTAS -->
+<section class="press-sec reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Pautas</span>
+    <h2>Temas que ela comenta a partir do consultório e da empresa.</h2>
+    <ul class="pauta-list">
+      <li>NR-1 e fatores psicossociais: o que muda na prática para quem gerencia pessoas<span>Prazos, fiscalização, o que a norma exige e o que virou checklist vazio.</span></li>
+      <li>Assédio moral, violência ocupacional e Lesão Moral Ocupacional<span>O que a medicina do trabalho distingue entre conflito, assédio e lesão moral.</span></li>
+      <li>Burnout, afastamentos e adoecimento por saúde mental<span>Leitura clínica dos números de afastamento e do que aparece antes deles.</span></li>
+      <li>Retorno ao trabalho depois de afastamento por transtorno mental<span>O que costuma dar errado na volta e o papel da chefia direta.</span></li>
+      <li>Presenteísmo: o adoecimento que não aparece na estatística de afastamento<span>Como identificar queda de desempenho ligada a sofrimento.</span></li>
+      <li>Desigualdade, gênero e raça no adoecimento ocupacional<span>Recorte já publicado em CartaCapital, Robb Report e Bahia Notícias.</span></li>
+      <li>Segurança psicológica e liderança<span>O que precede qualquer campanha de cultura organizacional.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- FOTOS -->
+<section class="press-sec alt reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Fotos</span>
+    <h2>Imagens para uso editorial.</h2>
+    <p style="max-width:60ch;margin:-24px 0 36px">As versões abaixo são de baixa resolução, para consulta. Os arquivos em alta, com crédito e autorização de uso, são enviados por WhatsApp ou e-mail a pedido.</p>
+    <div class="photo-grid">
+      <a href="assets/optimized/dra-ana-paula-teixeira-medica-do-trabalho-retrato-principal.webp" target="_blank" rel="noopener"><img src="assets/optimized/dra-ana-paula-teixeira-medica-do-trabalho-retrato-principal.webp" alt="Retrato da Dra. Ana Paula Teixeira" loading="lazy"></a>
+      <a href="assets/optimized/portrait-vestido-vermelho-bracos-cruzados.webp" target="_blank" rel="noopener"><img src="assets/optimized/portrait-vestido-vermelho-bracos-cruzados.webp" alt="Dra. Ana Paula Teixeira de vestido vermelho, retrato vertical" loading="lazy"></a>
+      <a href="assets/optimized/dra-ana-paula-palestra-vestido-preto-microfone.webp" target="_blank" rel="noopener"><img src="assets/optimized/dra-ana-paula-palestra-vestido-preto-microfone.webp" alt="Dra. Ana Paula Teixeira falando ao microfone em palestra corporativa" loading="lazy"></a>
+      <a href="assets/optimized/dra-ana-paula-teixeira-palestra-palco-forum-saude-360.webp" target="_blank" rel="noopener"><img src="assets/optimized/dra-ana-paula-teixeira-palestra-palco-forum-saude-360.webp" alt="Dra. Ana Paula Teixeira no palco do Fórum Saúde 360" loading="lazy"></a>
+      <a href="assets/optimized/dra-ana-paula-roda-painel-microfone.webp" target="_blank" rel="noopener"><img src="assets/optimized/dra-ana-paula-roda-painel-microfone.webp" alt="Dra. Ana Paula Teixeira em painel, falando ao microfone" loading="lazy"></a>
+      <a href="assets/optimized/dra-ana-paula-teixeira-autora-quando-o-trabalho-doi.webp" target="_blank" rel="noopener"><img src="assets/optimized/dra-ana-paula-teixeira-autora-quando-o-trabalho-doi.webp" alt="Dra. Ana Paula Teixeira com o livro Quando o Trabalho Dói" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<!-- APARIÇÕES -->
+<section class="press-sec reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Já publicado</span>
+    <h2>Entrevistas e reportagens anteriores.</h2>
+    <div class="press-links">
+      <div>
+        <h3>Reportagens e artigos</h3>
+        <ul class="press-list">
+          <li><a href="https://www.cartacapital.com.br/do-micro-ao-macro/mulheres-ganham-21-menos-burnout-desigualdade/" target="_blank" rel="noopener"><strong>CartaCapital · Do Micro ao Macro</strong><span>Mulheres ganham 21% menos e representam 60% dos casos de burnout no país</span></a></li>
+          <li><a href="https://www.robbreportbrasil.com.br/noticias-lide/sociedade-tendencias/mulheres-ganham-21-menos-e-representam-60-dos-casos-de-burnout-no-pais" target="_blank" rel="noopener"><strong>Robb Report Brasil · Lide</strong><span>Mulheres, desigualdade e burnout no país</span></a></li>
+          <li><a href="https://www.rhnoticias.com.br/desigualdade-eleva-burnout-e-afasta-mulheres-no-trabalho" target="_blank" rel="noopener"><strong>RH Notícias</strong><span>Desigualdade eleva burnout e afasta mulheres no trabalho</span></a></li>
+          <li><a href="https://www.bahianoticias.com.br/saude/artigo/1064-mulheres-ganham-21-menos-e-representam-60-dos-casos-de-burnout-no-pais" target="_blank" rel="noopener"><strong>Bahia Notícias · Saúde</strong><span>Recorte regional Bahia sobre mulheres e burnout</span></a></li>
+          <li><a href="https://muitainformacao.com.br/saude/mulheres-lideram-casos-de-burnout-e-afastamentos-no-brasil-especialistas-apontam-desigualdade-como-gatilho-silencioso/" target="_blank" rel="noopener"><strong>Muita Informação</strong><span>Mulheres lideram casos de burnout e afastamentos no Brasil</span></a></li>
+          <li><a href="https://www.bnews.com.br/amp/noticias/economia-e-mercado/crise-silenciosa-no-trabalho-ansiedade-e-burnout-disparam-no-brasil-e-nova-nr-1-obriga-empresas-agir.html" target="_blank" rel="noopener"><strong>BNews</strong><span>Ansiedade, burnout e nova NR-1 nas empresas</span></a></li>
+          <li><a href="https://newsba.com.br/2026/05/21/nova-nr-1-coloca-saude-mental-no-centro-da-gestao-empresarial/" target="_blank" rel="noopener"><strong>NewsBA</strong><span>Nova NR-1 coloca saúde mental no centro da gestão empresarial</span></a></li>
+          <li><a href="https://portaldosmunicipios.com.br/2026/05/21/nova-nr-1-coloca-saude-mental-no-centro-da-gestao-empresarial-afastamentos-por-transtornos-mentais-ultrapassam-meio-milhao-em-2025/" target="_blank" rel="noopener"><strong>Portal dos Municípios</strong><span>Saúde mental nas empresas e afastamentos em 2025</span></a></li>
+          <li><a href="https://bahiaeconomica.com.br/wp/2025/11/14/preconceito-contra-populacao-negra-afeta-28-dos-trabalhadores-diferenca-no-trato-causa-adoecimento-psicologico/" target="_blank" rel="noopener"><strong>Bahia Econômica</strong><span>Preconceito e adoecimento</span></a></li>
+          <li><a href="https://www.bahianoticias.com.br/saude/artigo/1042-medico-do-trabalho-a-importancia-do-profissional-que-cuida-da-saude-de-quem-move-as-empresas" target="_blank" rel="noopener"><strong>Bahia Notícias</strong><span>Médico do trabalho nas empresas</span></a></li>
+          <li><a href="https://www.bahianoticias.com.br/saude/artigo/1019-home-office-flexibilidade-ou-pratica-que-levara-trabalhadores-ao-esgotamento-mental" target="_blank" rel="noopener"><strong>Bahia Notícias</strong><span>Home office e esgotamento</span></a></li>
+          <li><a href="https://www.bahianoticias.com.br/saude/artigo/981-o-futuro-do-trabalho-comecou" target="_blank" rel="noopener"><strong>Bahia Notícias</strong><span>O futuro do trabalho começou</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Rádio, TV e podcasts</h3>
+        <ul class="press-list">
+          <li><a href="https://www.youtube.com/watch?v=f4KWwgZnyvI" target="_blank" rel="noopener"><strong>Rádio CBN Bahia</strong><span>Redução de Acidentes de Trabalho</span></a></li>
+          <li><a href="https://youtu.be/eNpFczxoUf8" target="_blank" rel="noopener"><strong>CBN Salvador</strong><span>Saúde Mental no Trabalho — Conexão Sociedade</span></a></li>
+          <li><a href="https://youtu.be/S6DwuYlanoQ" target="_blank" rel="noopener"><strong>Programa Intera</strong><span>Lei 14.831/24 e saúde mental</span></a></li>
+          <li><a href="https://www.youtube.com/watch?v=IQLtccj2jms" target="_blank" rel="noopener"><strong>YouTube</strong><span>Carga de Trabalho: ferramentas e diagnóstico</span></a></li>
+          <li><a href="https://www.youtube.com/watch?v=ZAZ-KYTJnmU" target="_blank" rel="noopener"><strong>Board Talks</strong><span>Sustentabilidade</span></a></li>
+          <li><a href="https://www.youtube.com/watch?v=8-2xZy5eITY" target="_blank" rel="noopener"><strong>TV Aratu / TVE Bahia</strong><span>Síndrome do Impostor</span></a></li>
+          <li><a href="https://www.youtube.com/watch?v=2WgClkHtW4c" target="_blank" rel="noopener"><strong>F5 Podcast</strong><span>Trajetória</span></a></li>
+          <li><a href="https://www.youtube.com/watch?v=0rmRJUfnH5w" target="_blank" rel="noopener"><strong>Rádio 93FM</strong><span>Saúde mental e trabalho</span></a></li>
+          <li><a href="https://youtu.be/HNi9j_bsPFs?si=C0Gf13fS6-WEi-wB" target="_blank" rel="noopener"><strong>YouTube</strong><span>Calma no Caos: ioga para o estresse no mundo moderno</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIVRO -->
+<section class="press-sec alt reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Livro</span>
+    <h2>Ficha técnica de Quando o Trabalho Dói.</h2>
+    <div class="cite-grid">
+      <div class="cite-card">
+        <p><strong>Título:</strong> Quando o Trabalho Dói: do adoecimento silencioso à cultura de bem-estar</p>
+        <p><strong>Autora:</strong> Ana Paula Teixeira</p>
+        <p><strong>Editora:</strong> AssedioNet · <strong>Ano:</strong> 2025 · <strong>Páginas:</strong> 253</p>
+        <p><strong>Reconhecimento:</strong> indicado ao 7º Prêmio Ecos da Literatura</p>
+      </div>
+      <div class="cite-card">
+        <p>Exemplar para resenha e trechos autorizados para publicação são enviados a pedido.</p>
+        <p style="margin-top:20px"><a href="https://www.amazon.com.br/Quando-Trabalho-D%C3%B3i-Adoecimento-Silencioso/dp/6598341957" target="_blank" rel="noopener" class="btn btn-secondary">Ver na Amazon</a></p>
+        <p style="margin-top:12px"><a href="livro.html" class="btn btn-ghost">Página do livro <span class="arrow">→</span></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="press-cta reveal">
+  <div class="container">
+    <span class="eyebrow-editorial">Pedido de pauta</span>
+    <h2>Diga o tema, o veículo e o prazo.</h2>
+    <p style="max-width:58ch">Com essas três informações a resposta sai mais rápida, com a indicação de disponibilidade para entrevista ao vivo, gravada ou por escrito.</p>
+    <div class="btns">
+      <a href="https://wa.me/5571981357004?text=Ol%C3%A1%2C%20sou%20jornalista%20e%20gostaria%20de%20falar%20com%20a%20Dra.%20Ana%20Paula%20sobre%20uma%20pauta." class="btn btn-primary">Falar pelo WhatsApp →</a>
+      <a href="mailto:escutaris@zohomail.com?subject=Pedido%20de%20pauta%20ou%20entrevista" class="btn btn-secondary">Enviar por e-mail</a>
+      <a href="assets/material-organizadores-dra-ana-paula-teixeira.pdf" target="_blank" rel="noopener" class="btn btn-secondary">Material em PDF</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
+        <p class="footer-anchor">Médica do trabalho · Salvador, Bahia.<br>Cuidar de pessoas é cuidar do negócio.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegar</div>
+        <div class="stack-3">
+          <div><a href="index.html">Início</a></div>
+          <div><a href="https://guia.anateixeiramed.com.br/#receber-guia" target="_blank" rel="noopener">Guia gratuito</a></div>
+          <div><a href="palestras.html">Palestras</a></div>
+          <div><a href="rodas-de-conversa.html">Rodas de Conversa</a></div>
+          <div><a href="direcionamento.html">Direcionamento Executivo</a></div>
+          <div><a href="livro.html">Livro</a></div>
+          <div><a href="imprensa.html">Imprensa</a></div>
+          <div><a href="contato.html">Contato</a></div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contato</div>
+        <div class="stack-3">
+          <div><a href="mailto:escutaris@zohomail.com">E-mail: escutaris@zohomail.com</a></div>
+          <div><a href="https://wa.me/5571981357004?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20palestra%20para%20minha%20empresa%2Fevento.%20Podemos%20conversar%3F">WhatsApp (71) 98135-7004</a></div>
+          <div><a href="https://www.instagram.com/draanapaulateixeira/" target="_blank" rel="noopener">Instagram</a></div>
+          <div><a href="https://www.linkedin.com/in/draanapaulateixeira/" target="_blank" rel="noopener">LinkedIn</a></div>
+          <div><a href="https://www.youtube.com/@draanapaulateixeira" target="_blank" rel="noopener">YouTube</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <span>CRM-BA 12797 · RQE 7237 · ICOH · ABERGO · Board Academy 2024</span>
+      <span>© 2026 Dra. Ana Paula Teixeira · <a href="governanca.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Governança</a> · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidade</a></span>
+    </div>
+    <p class="footer-disclaimer">Este site não substitui acompanhamento médico ou psicológico individualizado. Conteúdo informativo conforme a Resolução CFM nº 2.336/2023 sobre publicidade médica.</p>
+  </div>
+</footer>
+
+<script src="design-system.js?v=lang-fallback-2"></script>
+<script>
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const alvo = document.getElementById(btn.dataset.copy);
+      if (!alvo) return;
+      const texto = alvo.textContent.trim();
+      try {
+        await navigator.clipboard.writeText(texto);
+      } catch (e) {
+        const campo = document.createElement('textarea');
+        campo.value = texto;
+        campo.setAttribute('readonly', '');
+        campo.style.position = 'fixed';
+        campo.style.opacity = '0';
+        document.body.appendChild(campo);
+        campo.select();
+        try { document.execCommand('copy'); } catch (err) { console.log('[imprensa] copia indisponivel'); }
+        document.body.removeChild(campo);
+      }
+      const rotulo = btn.textContent;
+      btn.textContent = 'Copiado';
+      btn.dataset.copied = '1';
+      setTimeout(() => { btn.textContent = rotulo; btn.removeAttribute('data-copied'); }, 2000);
+    });
+  });
+</script>
+</body>
+</html>
