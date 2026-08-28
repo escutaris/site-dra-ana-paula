@@ -817,6 +817,21 @@
 .pub-card-featured:hover { background: #fff; border-color: rgba(172,94,73,.58); }
 .pub-card-featured strong { color: var(--apollo); font-size: clamp(1.55rem, 1.2rem + 1vw, 2.1rem); max-width: 18ch; }
 .pub-card-featured p { color: var(--preto-editorial); max-width: 54ch; }
+/* capa dos cards menores: sem caixa, a capa flutua sobre o fundo do card */
+.pub-thumb {
+  display: block;
+  width: 100%;
+  height: 215px;
+  margin-bottom: 8px;
+}
+.pub-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 26px rgba(28, 53, 32, 0.3));
+}
+@media (max-width: 640px) { .pub-thumb { height: 190px; } }
 .pub-cover {
   width: 100%; max-width: 170px; aspect-ratio: 2/3;
   border-radius: 3px; overflow: hidden;
@@ -1623,6 +1638,9 @@
       </a>
 
       <a class="pub-card" href="https://amzn.to/4a3MhC0" target="_blank" rel="noopener">
+        <span class="pub-thumb" aria-hidden="true">
+          <img src="assets/optimized/cinquenta-e-tres-formas-de-encontrar-deus-ana-paula-teixeira.webp" alt="Capa do livro Cinquenta e três formas de encontrar Deus, de Ana Paula Teixeira" loading="lazy" decoding="async">
+        </span>
         <span class="pub-k">Livro</span>
         <strong>Cinquenta e três formas de encontrar Deus (além das pandemias)</strong>
         <p>Reflexões sobre crise, espiritualidade e crescimento pessoal, nascidas das perguntas que a pandemia reacendeu sobre Deus, sentido e travessia.</p>
@@ -1630,6 +1648,9 @@
       </a>
 
       <a class="pub-card" href="https://guiaquandoelafala.escutaris.com/" target="_blank" rel="noopener">
+        <span class="pub-thumb" aria-hidden="true">
+          <img src="assets/optimized/quando-ela-fala-todo-mundo-ouve-guia-ana-paula-teixeira.webp" alt="Capa do guia digital Quando Ela Fala, Todo Mundo Ouve" loading="lazy" decoding="async">
+        </span>
         <span class="pub-k">Guia digital</span>
         <strong>Quando Ela Fala, Todo Mundo Ouve</strong>
         <p>Guia prático para mulheres que desejam se posicionar com clareza no ambiente profissional, com exemplos reais de comunicação consciente, firme e respeitosa.</p>
@@ -1637,6 +1658,9 @@
       </a>
 
       <a class="pub-card" href="https://hotmart.com/pt-br/marketplace/produtos/burnout-como-proteger-sua-vida-e-seu-trabalho-da-exaustao/R85607602S" target="_blank" rel="noopener">
+        <span class="pub-thumb" aria-hidden="true">
+          <img src="assets/optimized/burnout-proteger-vida-trabalho-exaustao-ana-paula-teixeira.webp" alt="Capa do e-book Burnout: como proteger sua vida e seu trabalho da exaustão" loading="lazy" decoding="async">
+        </span>
         <span class="pub-k">E-book</span>
         <strong>Burnout: como proteger sua vida e seu trabalho da exaustão</strong>
         <p>Guia prático sobre os quatro níveis do esgotamento, sinais de alerta, busca de apoio profissional e caminhos de proteção diante da exaustão.</p>
