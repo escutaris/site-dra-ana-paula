@@ -262,6 +262,10 @@ html { scroll-behavior: smooth; }
   white-space: nowrap;
 }
 .nav-list .nav-cta { white-space: nowrap; }
+
+/* Guia gratuito: item do menu com destaque leve, sem competir com o CTA */
+.nav-link-guia { color: var(--terracota); font-weight: var(--weight-medium); }
+.nav-link-guia::after { background: var(--terracota); }
 .nav-link::after {
   content: '';
   position: absolute;
