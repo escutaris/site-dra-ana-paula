@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- SEO -->
 <title>Direcionamento Executivo · Dra. Ana Paula Teixeira</title>
-<meta name="description" content="Sessão de 90 minutos por Zoom para liderança, RH, SESMT e medicina do trabalho diante de nexo, afastamento, retorno ao trabalho ou conflito.">
+<meta name="description" content="Sessão de 90 minutos, por Zoom ou presencial em Salvador, para liderança, RH e SESMT diante de nexo, afastamento, retorno ao trabalho ou conflito.">
 <meta name="author" content="Dra. Ana Paula Teixeira">
 <link rel="canonical" href="https://draanapaulateixeira.com.br/direcionamento.html">
 <!-- Open Graph -->
@@ -21,7 +21,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Direcionamento Executivo · Conversa clínica de 90 min">
-<meta name="twitter:description" content="Decisões sensíveis exigem mais do que opinião. Sessão individual de 90 minutos por Zoom.">
+<meta name="twitter:description" content="Decisões sensíveis exigem mais do que opinião. Sessão individual de 90 minutos, por Zoom ou presencial em Salvador.">
 <meta name="twitter:image" content="https://draanapaulateixeira.com.br/assets/og-default.png">
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -296,6 +296,34 @@
     left: 0;
     color: var(--terracota);
     font-weight: 700;
+  }
+
+  /* Como funciona - passos com foto da sala */
+  .steps-with-photo { display: grid; gap: 40px; align-items: start; }
+  @media (min-width: 980px) {
+    .steps-with-photo { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 56px; }
+    .steps-with-photo .steps-list { margin-top: 0; }
+  }
+  .sala-fig { margin: 0; }
+  .sala-fig img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 70%;
+    border-radius: 2px;
+  }
+  .sala-fig figcaption {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--preto-editorial);
+    opacity: 0.75;
+    margin-top: 12px;
+    padding-left: 16px;
+    border-left: 2px solid var(--terracota);
   }
 
   /* Como funciona — passos */
@@ -588,12 +616,12 @@
       <div>
         <span class="eyebrow-editorial">Direcionamento Executivo · Sessão individual confidencial</span>
         <h1>Decisões sensíveis exigem mais do que opinião.</h1>
-        <p class="lead">Exigem leitura técnica, confidencialidade e precisão. Sessão individual de 90 minutos, por Zoom, para lideranças, RH, SESMT e medicina do trabalho diante de casos concretos de adoecimento, conflito, afastamento, retorno ao trabalho ou impasses técnicos que pedem critério e responsabilidade institucional.</p>
+        <p class="lead">Exigem leitura técnica, confidencialidade e precisão. Sessão individual de 90 minutos, por Zoom ou presencial em Salvador, para lideranças, RH, SESMT e medicina do trabalho diante de casos concretos de adoecimento, conflito, afastamento, retorno ao trabalho ou impasses técnicos que pedem critério e responsabilidade institucional.</p>
 
         <div class="meta-row">
           <div class="meta-cell">
             <span class="meta-k">Formato</span>
-            <span class="meta-v">90 min · Zoom</span>
+            <span class="meta-v">90 min · Zoom ou presencial</span>
           </div>
           <div class="meta-cell">
             <span class="meta-k">Entrada</span>
@@ -696,6 +724,7 @@
     <span class="eyebrow-editorial">Como funciona</span>
     <h2 class="s-title">Quatro passos. Sem fricção.</h2>
 
+    <div class="steps-with-photo">
     <div class="steps-list">
       <div class="step">
         <span class="step-n">01</span>
@@ -714,7 +743,7 @@
       <div class="step">
         <span class="step-n">03</span>
         <div class="step-body">
-          <h4>Sessão de 90 minutos por Zoom</h4>
+          <h4>Sessão de 90 minutos, por Zoom ou presencial</h4>
           <p>A conversa organiza contexto, leitura clínica, riscos e próximos passos. A gravação é privada, para consulta posterior.</p>
         </div>
       </div>
@@ -725,6 +754,11 @@
           <p>Você recebe uma página com pontos centrais, encaminhamentos e referências técnicas quando aplicável.</p>
         </div>
       </div>
+    </div>
+      <figure class="sala-fig">
+        <img src="assets/optimized/sala-atendimento-direcionamento-salvador.webp" alt="Sala de atendimento em Salvador, com duas poltronas frente a frente e ambiente reservado" width="900" height="1600" loading="lazy" decoding="async">
+        <figcaption>A sala de atendimento presencial, em Salvador. As sessões também acontecem por Zoom.</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -743,7 +777,7 @@
           <h3>Encontro pontual</h3>
           <span class="price">Proposta conforme contexto</span>
           <ul>
-            <li>90 minutos de conversa via Zoom</li>
+            <li>90 minutos de conversa, por Zoom ou presencial em Salvador</li>
             <li>Briefing por escrito antes da sessão</li>
             <li>Devolutiva formal em até 72h</li>
             <li>Gravação privada da sessão para consulta posterior</li>
