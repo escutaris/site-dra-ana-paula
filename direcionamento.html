@@ -325,6 +325,9 @@
     padding-left: 16px;
     border-left: 2px solid var(--terracota);
   }
+  .sala-fig figcaption strong { font-weight: var(--weight-medium); }
+  .sala-fig figcaption a { color: var(--terracota); text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; }
+  .sala-fig figcaption a:hover { color: var(--terracota-hover); }
 
   /* Como funciona — passos */
   .steps-list { margin-top: 32px; display: grid; gap: 20px; }
@@ -552,6 +555,21 @@
         "@type": "Country",
         "name": "Brasil"
       },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "servicePhone": "+55-71-99989-9133",
+        "serviceLocation": {
+          "@type": "Place",
+          "name": "Clínica Kirinonomori Serviços e Saúde",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Metódio Coelho, 62, Ed. Cidadela Center I, sala 212",
+            "addressLocality": "Salvador",
+            "addressRegion": "BA",
+            "addressCountry": "BR"
+          }
+        }
+      },
       "audience": {
         "@type": "BusinessAudience",
         "name": "Profissionais de RH e lideranças"
@@ -630,7 +648,7 @@
           </div>
           <div class="meta-cell">
             <span class="meta-k">Onde</span>
-            <span class="meta-v">Presencial em Salvador ou on-line</span>
+            <span class="meta-v">Presencial em Salvador (Parque Bela Vista) ou on-line</span>
           </div>
           <div class="meta-cell">
             <span class="meta-k">Intervalo</span>
@@ -752,7 +770,7 @@
     </div>
       <figure class="sala-fig">
         <img src="assets/optimized/sala-atendimento-direcionamento-salvador.webp" alt="Sala de atendimento em Salvador, com duas poltronas frente a frente e ambiente reservado" width="900" height="1600" loading="lazy" decoding="async">
-        <figcaption>A sala de atendimento presencial, em Salvador. A devolutiva também acontece por plataforma virtual.</figcaption>
+        <figcaption><strong>Atendimento presencial na Clínica Kirinonomori Serviços e Saúde</strong><br>Ed. Cidadela Center I, sala 212, Rua Metódio Coelho, 62, Parque Bela Vista, Salvador-BA · <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Met%C3%B3dio%20Coelho%2C%2062%2C%20Parque%20Bela%20Vista%2C%20Salvador%20-%20BA" target="_blank" rel="noopener">ver no mapa</a><br>Agendamento presencial: <a href="https://wa.me/5571999899133" target="_blank" rel="noopener">(71) 99989-9133</a>. A devolutiva também acontece por plataforma virtual.</figcaption>
       </figure>
     </div>
   </div>
