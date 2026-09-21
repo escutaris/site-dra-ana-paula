@@ -43,6 +43,39 @@
         keepalive: true
       }).catch(function () {});
     } catch (e) { /* nunca bloqueia o envio pelo WhatsApp */ }
+    saveLeadToZoho(form);
+  }
+
+  /* ---------- 0b. Cópia do lead no Zoho CRM ---------- */
+  /* Transição do Supabase para o Zoho (21/09/2026). Formulário web
+     "Sites e landings - leads"; as chaves abaixo são públicas. Envio por
+     fora: se o Zoho falhar, nada muda para quem está preenchendo. */
+  function saveLeadToZoho(form) {
+    try {
+      var email = getVal(form, 'email');
+      if (!email) return;
+      var partes = (getVal(form, 'nome') || '').split(/\s+/).filter(Boolean);
+      var sobrenome = partes.length > 1 ? partes.pop() : (partes[0] || 'Sem nome');
+      var nome = partes.length ? partes.join(' ') : '';
+      var d = new URLSearchParams();
+      d.append('xnQsjsdp', '7cfa33e6b9556bf57389e3bdd8c348d4458747e166e2592f6ec4a1425c1a7445');
+      d.append('xmIwtLD', '3a9dee7718f233d47ee2be042fb1642d7cd055de14277d0ee26ba09821b1aef116ea37815d5e470e4b3220a416417990');
+      d.append('actionType', 'TGVhZHM=');
+      d.append('returnURL', 'https://www.escutaris.com.br');
+      d.append('zc_gad', '');
+      d.append('aG9uZXlwb3Q', '');
+      d.append('Company', getVal(form, 'empresa') || 'Não informado');
+      d.append('First Name', nome);
+      d.append('Last Name', sobrenome);
+      d.append('Email', email);
+      d.append('Phone', getVal(form, 'telefone') || '');
+      d.append('Designation', getVal(form, 'cargo') || '');
+      d.append('Description', getVal(form, 'mensagem') || '');
+      d.append('LEADCF14', 'Site Dra. Ana Paula (' + (form.getAttribute('data-origem') || location.pathname || 'site') + ')');
+      d.append('LEADCF15', getVal(form, 'motivo') || '');
+      fetch('https://crm.zoho.com/crm/WebToLeadForm', { method: 'POST', mode: 'no-cors', keepalive: true, body: d })
+        .catch(function () {});
+    } catch (e) { /* nunca bloqueia o envio pelo WhatsApp */ }
   }
 
   /* ---------- 1. WhatsApp parallel path ---------- */
