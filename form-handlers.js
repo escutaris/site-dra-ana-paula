@@ -20,6 +20,8 @@
   }
 
   function saveLeadToSupabase(form) {
+    // Lead no pixel da Meta (só envia se a pessoa aceitou os cookies)
+    if (window.escutarisLead) window.escutarisLead();
     try {
       var data = {
         nome: getVal(form, 'nome'),
