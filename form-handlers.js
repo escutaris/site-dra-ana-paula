@@ -199,13 +199,24 @@
     var wrap = document.createElement('div');
     wrap.className = 'form-success';
     wrap.style.minHeight = h + 'px';
+    var TXT = {
+      pt: ['Mensagem recebida.', 'Obrigada pelo contato. Respondemos em até <strong>48h úteis</strong>.',
+           'Se preferir resposta mais rápida, continue pelo WhatsApp.', 'Abrir WhatsApp →'],
+      en: ['Message received.', 'Thank you for reaching out. We reply within <strong>2 business days</strong>.',
+           'For a faster reply, continue on WhatsApp.', 'Open WhatsApp →'],
+      es: ['Mensaje recibido.', 'Gracias por escribirnos. Respondemos en un plazo de <strong>48 horas hábiles</strong>.',
+           'Si prefiere una respuesta más rápida, continúe por WhatsApp.', 'Abrir WhatsApp →'],
+      zh: ['留言已收到。', '感谢您的联系，我们将在<strong>两个工作日内</strong>回复。',
+           '如需更快回复，请通过 WhatsApp 联系。', '打开 WhatsApp →']
+    };
+    var t = TXT[(document.documentElement.lang || 'pt').slice(0, 2)] || TXT.pt;
     wrap.innerHTML =
       '<div class="form-success-inner">' +
         '<div class="form-success-mark">✓</div>' +
-        '<h3>Mensagem recebida.</h3>' +
-        '<p>Obrigada pelo contato. Respondemos em até <strong>48h úteis</strong>.</p>' +
-        '<p class="form-success-note">Se preferir resposta mais rápida, continue pelo WhatsApp.</p>' +
-        '<a href="https://wa.me/5571981357004" target="_blank" rel="noopener" class="form-success-wa">Abrir WhatsApp →</a>' +
+        '<h3>' + t[0] + '</h3>' +
+        '<p>' + t[1] + '</p>' +
+        '<p class="form-success-note">' + t[2] + '</p>' +
+        '<a href="https://wa.me/5571981357004" target="_blank" rel="noopener" class="form-success-wa">' + t[3] + '</a>' +
       '</div>';
     form.parentNode.replaceChild(wrap, form);
   }

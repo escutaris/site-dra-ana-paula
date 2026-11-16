@@ -1,58 +1,256 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://draanapaulateixeira.com.br/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/"/>
   </url>
-
+  <url>
+    <loc>https://draanapaulateixeira.com.br/en/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/es/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/"/>
+  </url>
   <url>
     <loc>https://draanapaulateixeira.com.br/palestras.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/palestras.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/palestras.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/palestras.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/palestras.html"/>
   </url>
-
+  <url>
+    <loc>https://draanapaulateixeira.com.br/en/palestras.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/palestras.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/palestras.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/palestras.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/palestras.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/es/palestras.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/palestras.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/palestras.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/palestras.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/palestras.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/zh/palestras.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/palestras.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/palestras.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/palestras.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/palestras.html"/>
+  </url>
   <url>
     <loc>https://draanapaulateixeira.com.br/rodas-de-conversa.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/rodas-de-conversa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/rodas-de-conversa.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/rodas-de-conversa.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/rodas-de-conversa.html"/>
   </url>
-
+  <url>
+    <loc>https://draanapaulateixeira.com.br/en/rodas-de-conversa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/rodas-de-conversa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/rodas-de-conversa.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/rodas-de-conversa.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/rodas-de-conversa.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/es/rodas-de-conversa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/rodas-de-conversa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/rodas-de-conversa.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/rodas-de-conversa.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/rodas-de-conversa.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/zh/rodas-de-conversa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/rodas-de-conversa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/rodas-de-conversa.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/rodas-de-conversa.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/rodas-de-conversa.html"/>
+  </url>
   <url>
     <loc>https://draanapaulateixeira.com.br/direcionamento.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/direcionamento.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/direcionamento.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/direcionamento.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/direcionamento.html"/>
   </url>
-
+  <url>
+    <loc>https://draanapaulateixeira.com.br/en/direcionamento.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/direcionamento.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/direcionamento.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/direcionamento.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/direcionamento.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/es/direcionamento.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/direcionamento.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/direcionamento.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/direcionamento.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/direcionamento.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/zh/direcionamento.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/direcionamento.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/direcionamento.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/direcionamento.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/direcionamento.html"/>
+  </url>
   <url>
     <loc>https://draanapaulateixeira.com.br/livro.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/livro.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/livro.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/livro.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/livro.html"/>
   </url>
-
+  <url>
+    <loc>https://draanapaulateixeira.com.br/en/livro.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/livro.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/livro.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/livro.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/livro.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/es/livro.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/livro.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/livro.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/livro.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/livro.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/zh/livro.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/livro.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/livro.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/livro.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/livro.html"/>
+  </url>
   <url>
     <loc>https://draanapaulateixeira.com.br/contato.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/contato.html"/>
   </url>
-
+  <url>
+    <loc>https://draanapaulateixeira.com.br/en/contato.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/contato.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/es/contato.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/contato.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/zh/contato.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/contato.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/contato.html"/>
+  </url>
   <url>
     <loc>https://draanapaulateixeira.com.br/imprensa.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/imprensa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/imprensa.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/imprensa.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/imprensa.html"/>
   </url>
-
+  <url>
+    <loc>https://draanapaulateixeira.com.br/en/imprensa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/imprensa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/imprensa.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/imprensa.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/imprensa.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/es/imprensa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/imprensa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/imprensa.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/imprensa.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/imprensa.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/zh/imprensa.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/imprensa.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/imprensa.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/imprensa.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/imprensa.html"/>
+  </url>
   <url>
     <loc>https://draanapaulateixeira.com.br/governanca.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/governanca.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/governanca.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/governanca.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/governanca.html"/>
   </url>
-
+  <url>
+    <loc>https://draanapaulateixeira.com.br/en/governanca.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/governanca.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/governanca.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/governanca.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/governanca.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/es/governanca.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/governanca.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/governanca.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/governanca.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/governanca.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/zh/governanca.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/governanca.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/governanca.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/governanca.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/governanca.html"/>
+  </url>
   <url>
     <loc>https://draanapaulateixeira.com.br/politica-privacidade.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/politica-privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/politica-privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/politica-privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/politica-privacidade.html"/>
   </url>
-
+  <url>
+    <loc>https://draanapaulateixeira.com.br/en/politica-privacidade.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/politica-privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/politica-privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/politica-privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/politica-privacidade.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/es/politica-privacidade.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/politica-privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/politica-privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/politica-privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/politica-privacidade.html"/>
+  </url>
+  <url>
+    <loc>https://draanapaulateixeira.com.br/zh/politica-privacidade.html</loc>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://draanapaulateixeira.com.br/politica-privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://draanapaulateixeira.com.br/en/politica-privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://draanapaulateixeira.com.br/es/politica-privacidade.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://draanapaulateixeira.com.br/zh/politica-privacidade.html"/>
+  </url>
 </urlset>

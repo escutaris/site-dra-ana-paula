@@ -23,7 +23,7 @@
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/favicon.png">
 <meta name="theme-color" content="#2B180A">
-<link rel="stylesheet" href="design-system.css">
+<link rel="stylesheet" href="design-system.css?v=i18n-1">
 <style>
 
 /* ===== HERO ===== */
@@ -369,6 +369,56 @@
   max-width: 72ch;
 }
 .servico-card-note b { font-weight: var(--weight-medium); color: var(--apollo); }
+.servicos-sub {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-light);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--cinza-quente);
+  margin: 16px 0 0;
+  max-width: 60ch;
+}
+.servico-card-formato {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-light);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--cinza-quente);
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  width: 100%;
+}
+.servico-card-formato b { font-weight: var(--weight-medium); color: var(--apollo); }
+.servico-cta-box {
+  margin-top: 32px;
+  padding: 28px 32px;
+  background: var(--off-white);
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px 40px;
+}
+.servico-cta-box > div { flex: 1 1 420px; }
+.servico-cta-box h3 {
+  font-family: var(--font-serif);
+  font-weight: var(--weight-bold);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: var(--apollo);
+  margin: 0 0 8px;
+}
+.servico-cta-box p {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--cinza-quente);
+  margin: 0;
+  max-width: 62ch;
+}
 
 /* ===== QUEM É ===== */
 .about-home {
@@ -1297,10 +1347,11 @@
   <div class="container grid">
     <div>
       <span class="eyebrow-home">Salvador, Bahia · Medicina do Trabalho · CRM-BA 12797</span>
-      <h1>Saúde mental no trabalho: <em>do cuidado à integridade organizacional.</em></h1>
-      <p class="lead-h">Há quase três décadas acompanho o que acontece quando o trabalho adoece pessoas e organizações. Trago método clínico e linguagem de gestão para construir ambientes que cuidam de pessoas, fortalecem a reputação e sustentam a integridade do negócio.</p>
+      <h1>Saúde mental no trabalho, com método: <em>da prevenção à decisão.</em></h1>
+      <p class="lead-h">Ajudo empresas a reconhecer e enfrentar riscos psicossociais, apoiar lideranças e conduzir situações de adoecimento no trabalho. Com quase 30 anos de experiência em Medicina do Trabalho, uno leitura clínica e realidade corporativa para transformar problemas complexos em próximos passos claros.</p>
       <div class="cta-row">
-        <a href="#servicos" class="btn btn-secondary">Ver os formatos de atuação</a>
+        <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Yjoyksn9Vt9PRmAO_eAq2B8JaYhVDtcc3cLVbWySjaW4tpjXOcf0J--8nsaYp1NCr3B9wL8Nu" target="_blank" rel="noopener" class="btn btn-primary">Agendar uma conversa inicial</a>
+        <a href="#servicos" class="btn btn-secondary">Conhecer os formatos de atuação</a>
       </div>
       <p class="credit-line">Dra. Ana Paula Teixeira · CRM-BA 12797 · RQE 7237 · ICOH · ABERGO · Board Academy 2024</p>
     </div>
@@ -1348,7 +1399,8 @@
   <div class="container">
     <div class="servicos-header">
       <span class="eyebrow-editorial">Meus serviços</span>
-      <h2 class="servicos-h2">Como posso apoiar sua empresa?</h2>
+      <h2 class="servicos-h2">O que sua empresa precisa resolver agora?</h2>
+      <p class="servicos-sub">Escolha o ponto de partida mais próximo da sua demanda. Na conversa inicial, eu entendo o contexto e indico o formato mais adequado.</p>
     </div>
 
     <div class="servico-cards reveal-stagger">
@@ -1357,9 +1409,10 @@
         <span class="servico-card-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-6v14L3 13v-2z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
         </span>
-        <span class="servico-card-kicker">Preciso alinhar muita gente</span>
+        <span class="servico-card-kicker">Precisa preparar muita gente?</span>
         <h3 class="servico-card-title">Palestras</h3>
-        <p class="servico-card-desc">Para empresas, eventos e públicos maiores que precisam de linguagem comum sobre NR-1, fatores psicossociais, liderança e adoecimento no trabalho.</p>
+        <p class="servico-card-desc">Para sensibilizar equipes e alinhar lideranças sobre saúde mental, fatores psicossociais, NR-1 e prevenção do adoecimento.</p>
+        <p class="servico-card-formato"><b>Formato:</b> palestras para eventos, convenções e grupos maiores, online ou presencial.</p>
         <span class="servico-card-link">Conhecer as palestras →</span>
       </a>
 
@@ -1367,9 +1420,10 @@
         <span class="servico-card-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3 21l1.9-5.8a8.5 8.5 0 1 1 16.1-3.7z"/></svg>
         </span>
-        <span class="servico-card-kicker">Preciso aprofundar com um grupo</span>
+        <span class="servico-card-kicker">Precisa trabalhar uma situação com mais profundidade?</span>
         <h3 class="servico-card-title">Rodas de Conversa</h3>
-        <p class="servico-card-desc">Para times menores que precisam elaborar situações reais, abrir escuta com segurança e sair com repertório prático.</p>
+        <p class="servico-card-desc">Para grupos menores que precisam elaborar situações reais, ampliar a escuta e construir repertório para agir no dia a dia.</p>
+        <p class="servico-card-formato"><b>Formato:</b> encontros facilitados de 8 a 25 pessoas, com tema e público definidos junto com a empresa.</p>
         <span class="servico-card-link">Conhecer as rodas →</span>
       </a>
 
@@ -1377,85 +1431,52 @@
         <span class="servico-card-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="15.5 8.5 13.3 13.3 8.5 15.5 10.7 10.7 15.5 8.5"/></svg>
         </span>
-        <span class="servico-card-kicker">Quero desenvolver competências de gestão</span>
+        <span class="servico-card-kicker">Precisa preparar quem lidera para a pressão da equipe?</span>
         <h3 class="servico-card-title">Direcionamento Executivo</h3>
-        <p class="servico-card-desc">Para RH e lideranças que querem prevenir e gerenciar estressores da própria equipe, com diagnóstico e mentoria individual.</p>
+        <p class="servico-card-desc">Para RH e lideranças que querem prevenir e gerenciar os estressores da própria equipe, com mais clareza e método.</p>
+        <p class="servico-card-formato"><b>Formato:</b> questionário SMCIT e mentoria individual, em duas etapas.</p>
         <span class="servico-card-link">Entender o Direcionamento →</span>
       </a>
 
     </div>
 
-    <p class="servico-card-note"><b>Em dúvida por onde começar?</b> Agende uma conversa inicial breve. Nela, eu entendo o contexto e indico o caminho com mais efeito para o seu momento — palestra, roda de conversa, Direcionamento Executivo ou diagnóstico institucional.</p>
-  </div>
-</section>
-
-<!-- O QUE MUDA -->
-<div class="kintsugi-band" role="img" aria-label="Cinco painéis de pedra em tons da marca unidos por um veio de ouro, no espírito do kintsugi"></div>
-<section class="outcome-section reveal">
-  <div class="container">
-    <div class="outcome-header">
-      <span class="eyebrow-editorial">O que muda para a sua empresa</span>
-      <h2 class="outcome-h2">Do problema que ninguém nomeia à decisão que se sustenta.</h2>
-    </div>
-
-    <div class="outcome-grid reveal-stagger">
-      <article class="outcome-card">
-        <div class="outcome-before">
-          <span class="outcome-tag">Antes</span>
-          <p>Afastamentos por saúde mental se repetem e ninguém consegue explicar a causa.</p>
-        </div>
-        <div class="outcome-after">
-          <span class="outcome-tag">Depois</span>
-          <p>RH e liderança reconhecem sinais cedo e conduzem as primeiras conversas com método — antes de virar afastamento ou processo.</p>
-        </div>
-      </article>
-
-      <article class="outcome-card">
-        <div class="outcome-before">
-          <span class="outcome-tag">Antes</span>
-          <p>A NR-1 passou a cobrar fatores psicossociais e a empresa não sabe por onde começar nem o que documentar.</p>
-        </div>
-        <div class="outcome-after">
-          <span class="outcome-tag">Depois</span>
-          <p>A gestão ganha linguagem comum e critérios técnicos para sustentar evidências e organizar o próximo passo.</p>
-        </div>
-      </article>
-
-      <article class="outcome-card">
-        <div class="outcome-before">
-          <span class="outcome-tag">Antes</span>
-          <p>Um caso sensível — nexo, retorno ao trabalho, conflito — parado por medo de decidir errado.</p>
-        </div>
-        <div class="outcome-after">
-          <span class="outcome-tag">Depois</span>
-          <p>A decisão sai do improviso: leitura clínica, riscos mapeados e encaminhamentos por escrito.</p>
-        </div>
-      </article>
-    </div>
-
-    <p class="outcome-note"><b>Os resultados variam conforme o contexto de cada organização.</b> O método, não.</p>
-  </div>
-</section>
-
-<!-- QUEM É -->
-<section id="sobre" class="about-home reveal">
-  <div class="container about-home-grid">
-    <figure class="about-home-portrait">
-      <img src="assets/optimized/dra-ana-paula-poltrona-offwhite-estante.webp" alt="Retrato da Dra. Ana Paula Teixeira, médica do trabalho e pesquisadora em saúde ocupacional, sentada em poltrona diante de uma estante com livros e plantas" width="1000" height="1250" style="object-position:center 25%" loading="lazy" decoding="async">
-    </figure>
-    <div>
-      <span class="eyebrow-editorial">Quem sou eu</span>
-      <h2>Dra. Ana Paula Teixeira.</h2>
-      <p class="role">Médica do trabalho, autora, pesquisadora e conselheira em saúde ocupacional.</p>
-      <div class="about-home-text">
-        <p>Cresci em Alagoinhas, trabalhei desde cedo na empresa do pai e cheguei à medicina com uma escuta formada por família, gestão e experiência organizacional real. Essa trajetória moldou o jeito como eu converso com empresas: não como quem veio de fora, mas como quem conhece o peso de um dia de trabalho.</p>
-        <p>Formada em medicina pela UFBA (1996), com especialização em Medicina do Trabalho (RQE 7237) e pós-graduações em Psiquiatria e Saúde Integrativa. Mestranda em Tecnologias da Saúde pela Escola Bahiana, com pesquisa de validação da escala OMIS-R para o português brasileiro. Membro da ICOH, ABERGO e ANAMT/AMB; Board Member 2024 certificada pela Board Academy.</p>
-        <p>Quase três décadas de atuação corporativa em mineradoras, siderúrgicas, laboratórios e organizações de diferentes portes. Autora de <em>Quando o Trabalho Dói</em> (Editora AssedioNet, 2025), indicado ao 7º Prêmio Ecos da Literatura.</p>
-        <p>Hoje assessoro organizações a nomear o que costuma ficar invisível: adoecimento ocupacional, conflitos éticos, retorno ao trabalho e situações que não têm resposta em protocolo padrão.</p>
+    <div class="servico-cta-box">
+      <div>
+        <h3>Não sabe qual formato faz sentido?</h3>
+        <p>Conte brevemente o que está acontecendo. Na conversa inicial, eu entendo o contexto e indico um caminho possível, sem presumir que toda demanda precisa do mesmo serviço.</p>
       </div>
+      <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Yjoyksn9Vt9PRmAO_eAq2B8JaYhVDtcc3cLVbWySjaW4tpjXOcf0J--8nsaYp1NCr3B9wL8Nu" target="_blank" rel="noopener" class="btn btn-primary">Agendar conversa inicial</a>
     </div>
   </div>
 </section>
+
+<!-- CLIENTES · marquee horizontal de logos -->
+<section class="clients-marquee-wrap reveal">
+  <div class="container" style="padding-bottom:32px">
+    <span class="eyebrow-editorial">Organizações atendidas</span>
+  </div>
+  <div class="logos-marquee">
+    <div class="logos-marquee-track">
+      <div class="logo-item"><img src="assets/logos/forvia.jpeg" alt="Forvia" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/jmacedo.jpeg" alt="J.Macedo" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/costa-do-sauipe.jpeg" alt="Costa do Sauípe" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/priner.jpeg" alt="Priner" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/perkons.jpeg" alt="Perkons" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/etica-pesquisa-clinica.jpeg" alt="Ética Pesquisa Clínica" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/cisviver.jpeg" alt="CISVIVER" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/aspil.jpeg" alt="ASPIL" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/gelo-alagoinhas.jpeg" alt="Gelo Alagoinhas" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/imh.jpeg" alt="IMH" loading="lazy"></div>
+      <!-- Duplicado p/ loop infinito -->
+      <div class="logo-item"><img src="assets/logos/forvia.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/jmacedo.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/costa-do-sauipe.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/priner.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
+      <div class="logo-item"><img src="assets/logos/perkons.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
 
 <!-- DEPOIMENTOS -->
 <section id="depoimentos" class="depo-section reveal bg-context bg-palestra-offwhite">
@@ -1558,6 +1579,75 @@
         <p class="depo-text">É minha inspiração. Admiro sua inteligência, sua força, seu respeito e sua busca por conhecimento para ajudar pessoas.</p>
       </div>
 
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- O QUE MUDA -->
+<div class="kintsugi-band" role="img" aria-label="Cinco painéis de pedra em tons da marca unidos por um veio de ouro, no espírito do kintsugi"></div>
+<section class="outcome-section reveal">
+  <div class="container">
+    <div class="outcome-header">
+      <span class="eyebrow-editorial">O que muda para a sua empresa</span>
+      <h2 class="outcome-h2">Do problema que ninguém nomeia à decisão que se sustenta.</h2>
+    </div>
+
+    <div class="outcome-grid reveal-stagger">
+      <article class="outcome-card">
+        <div class="outcome-before">
+          <span class="outcome-tag">Antes</span>
+          <p>Afastamentos por saúde mental se repetem e ninguém consegue explicar a causa.</p>
+        </div>
+        <div class="outcome-after">
+          <span class="outcome-tag">Depois</span>
+          <p>RH e liderança reconhecem sinais cedo e conduzem as primeiras conversas com método — antes de virar afastamento ou processo.</p>
+        </div>
+      </article>
+
+      <article class="outcome-card">
+        <div class="outcome-before">
+          <span class="outcome-tag">Antes</span>
+          <p>A NR-1 passou a cobrar fatores psicossociais e a empresa não sabe por onde começar nem o que documentar.</p>
+        </div>
+        <div class="outcome-after">
+          <span class="outcome-tag">Depois</span>
+          <p>A gestão ganha linguagem comum e critérios técnicos para sustentar evidências e organizar o próximo passo.</p>
+        </div>
+      </article>
+
+      <article class="outcome-card">
+        <div class="outcome-before">
+          <span class="outcome-tag">Antes</span>
+          <p>Um caso sensível — nexo, retorno ao trabalho, conflito — parado por medo de decidir errado.</p>
+        </div>
+        <div class="outcome-after">
+          <span class="outcome-tag">Depois</span>
+          <p>A decisão sai do improviso: leitura clínica, riscos mapeados e encaminhamentos por escrito.</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="outcome-note"><b>Os resultados variam conforme o contexto de cada organização.</b> O método, não.</p>
+  </div>
+</section>
+
+<!-- QUEM É -->
+<section id="sobre" class="about-home reveal">
+  <div class="container about-home-grid">
+    <figure class="about-home-portrait">
+      <img src="assets/optimized/dra-ana-paula-poltrona-offwhite-estante.webp" alt="Retrato da Dra. Ana Paula Teixeira, médica do trabalho e pesquisadora em saúde ocupacional, sentada em poltrona diante de uma estante com livros e plantas" width="1000" height="1250" style="object-position:center 25%" loading="lazy" decoding="async">
+    </figure>
+    <div>
+      <span class="eyebrow-editorial">Quem sou eu</span>
+      <h2>Experiência em saúde ocupacional para decisões que afetam pessoas e organizações.</h2>
+      <p class="role">Medicina do Trabalho · CRM-BA 12797 · RQE 7237 · Quase 30 anos de atuação · Pesquisa em saúde mental ocupacional</p>
+      <div class="about-home-text">
+        <p>Sou a Dra. Ana Paula Teixeira, médica do trabalho, autora e pesquisadora em saúde mental ocupacional. Há quase três décadas atuo com organizações de diferentes portes e setores, entre elas mineradoras, siderúrgicas e laboratórios.</p>
+        <p>Sou formada em Medicina pela UFBA (1996), especialista em Medicina do Trabalho (RQE 7237) e mestranda em Tecnologias da Saúde pela Escola Bahiana, onde pesquiso a validação da escala OMIS-R para o português brasileiro.</p>
+        <p>Com as empresas, analiso situações em que saúde mental, condições de trabalho e decisões de gestão se cruzam. Meu foco é organizar o problema e definir próximos passos que caibam no contexto de cada organização, sem tratar situações diferentes como se tivessem a mesma resposta.</p>
+        <p>Sou autora de <em>Quando o Trabalho Dói</em> (Editora AssedioNet, 2025), indicado ao 7º Prêmio Ecos da Literatura, e membro da ICOH, da ABERGO e da ANAMT/AMB. Cresci em Alagoinhas e trabalhei cedo na empresa do meu pai: conheço o peso de um dia de trabalho também do lado de quem gerencia.</p>
       </div>
     </div>
   </div>
@@ -1763,33 +1853,6 @@
   </div>
 </section>
 
-<!-- CLIENTES · marquee horizontal de logos -->
-<section class="clients-marquee-wrap reveal">
-  <div class="container" style="padding-bottom:32px">
-    <span class="eyebrow-editorial">Organizações atendidas</span>
-  </div>
-  <div class="logos-marquee">
-    <div class="logos-marquee-track">
-      <div class="logo-item"><img src="assets/logos/forvia.jpeg" alt="Forvia" loading="lazy"></div>
-      <div class="logo-item"><img src="assets/logos/jmacedo.jpeg" alt="J.Macedo" loading="lazy"></div>
-      <div class="logo-item"><img src="assets/logos/costa-do-sauipe.jpeg" alt="Costa do Sauípe" loading="lazy"></div>
-      <div class="logo-item"><img src="assets/logos/priner.jpeg" alt="Priner" loading="lazy"></div>
-      <div class="logo-item"><img src="assets/logos/perkons.jpeg" alt="Perkons" loading="lazy"></div>
-      <div class="logo-item"><img src="assets/logos/etica-pesquisa-clinica.jpeg" alt="Ética Pesquisa Clínica" loading="lazy"></div>
-      <div class="logo-item"><img src="assets/logos/cisviver.jpeg" alt="CISVIVER" loading="lazy"></div>
-      <div class="logo-item"><img src="assets/logos/aspil.jpeg" alt="ASPIL" loading="lazy"></div>
-      <div class="logo-item"><img src="assets/logos/gelo-alagoinhas.jpeg" alt="Gelo Alagoinhas" loading="lazy"></div>
-      <div class="logo-item"><img src="assets/logos/imh.jpeg" alt="IMH" loading="lazy"></div>
-      <!-- Duplicado p/ loop infinito -->
-      <div class="logo-item"><img src="assets/logos/forvia.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
-      <div class="logo-item"><img src="assets/logos/jmacedo.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
-      <div class="logo-item"><img src="assets/logos/costa-do-sauipe.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
-      <div class="logo-item"><img src="assets/logos/priner.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
-      <div class="logo-item"><img src="assets/logos/perkons.jpeg" alt="" aria-hidden="true" loading="lazy"></div>
-    </div>
-  </div>
-</section>
-
 <!-- PROVA DE AUTORIDADE · mídia com links -->
 <section id="midia" class="media-grid-section reveal">
   <div class="container">
@@ -1944,7 +2007,7 @@
   </div>
 </footer>
 
-<script src="design-system.js?v=lang-fallback-2"></script>
+<script src="design-system.js?v=i18n-1"></script>
 <script>
   const nav = document.getElementById('nav');
   const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);

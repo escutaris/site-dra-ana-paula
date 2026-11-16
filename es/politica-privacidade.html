@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- SEO -->
+<title>Política de Privacidad · Dra. Ana Paula Teixeira</title>
+<meta content="Cómo tratamos los datos personales recopilados en este sitio. Política conforme a la Ley General de Protección de Datos de Brasil (Ley 13.709/2018)." name="description"/>
+<meta content="Dra. Ana Paula Teixeira" name="author"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://draanapaulateixeira.com.br/es/politica-privacidade.html" rel="canonical"/><link href="https://draanapaulateixeira.com.br/politica-privacidade.html" hreflang="pt-BR" rel="alternate"/><link href="https://draanapaulateixeira.com.br/en/politica-privacidade.html" hreflang="en" rel="alternate"/><link href="https://draanapaulateixeira.com.br/es/politica-privacidade.html" hreflang="es" rel="alternate"/><link href="https://draanapaulateixeira.com.br/zh/politica-privacidade.html" hreflang="zh-CN" rel="alternate"/><link href="https://draanapaulateixeira.com.br/politica-privacidade.html" hreflang="x-default" rel="alternate"/>
+<!-- Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="es_ES" property="og:locale"/>
+<meta content="Dra. Ana Paula Teixeira" property="og:site_name"/>
+<meta content="https://draanapaulateixeira.com.br/es/politica-privacidade.html" property="og:url"/>
+<meta content="Política de Privacidad · Dra. Ana Paula Teixeira" property="og:title"/>
+<meta content="Cómo tratamos los datos personales recopilados en este sitio. Política conforme a la Ley General de Protección de Datos de Brasil." property="og:description"/>
+<meta content="https://draanapaulateixeira.com.br/assets/og-default.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Política de Privacidad · Dra. Ana Paula Teixeira" name="twitter:title"/>
+<meta content="Cómo tratamos los datos personales recopilados en este sitio. Política conforme a la LGPD." name="twitter:description"/>
+<meta content="https://draanapaulateixeira.com.br/assets/og-default.png" name="twitter:image"/>
+<!-- Favicon -->
+<link href="../assets/favicon.png" rel="icon" type="image/png"/>
+<link href="../assets/favicon.png" rel="apple-touch-icon"/>
+<meta content="#2B180A" name="theme-color"/>
+<link href="../design-system.css?v=i18n-1" rel="stylesheet"/>
+<style>
+  .hero-privacidade {
+    background: var(--bege-areia);
+    padding-block: clamp(72px, 8vw, 120px);
+    border-bottom: 1px solid var(--border);
+  }
+  .hero-privacidade h1 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.5rem + 2.4vw, 3.25rem);
+    line-height: 1.1;
+    color: var(--apollo);
+    letter-spacing: -0.01em;
+    margin: 24px 0 16px 0;
+    max-width: 18ch;
+  }
+  .hero-privacidade .subtitle {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: var(--weight-regular);
+    font-size: clamp(1.125rem, 1rem + 0.6vw, 1.375rem);
+    color: var(--terracota);
+    line-height: 1.4;
+    margin: 0 0 28px 0;
+    max-width: 40ch;
+  }
+  .meta-info {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+    margin-top: 40px;
+    max-width: 600px;
+  }
+  .meta-info span b {
+    display: block;
+    font-weight: var(--weight-light);
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--preto-editorial);
+    margin-top: 6px;
+    font-family: var(--font-sans);
+  }
+
+  /* Corpo editorial: grid com índice lateral + conteúdo */
+  .privacidade {
+    padding-block: clamp(64px, 7vw, 96px);
+  }
+  .privacidade-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 64px;
+  }
+  @media (min-width: 960px) {
+    .privacidade-grid { grid-template-columns: 240px 1fr; gap: 80px; align-items: start; }
+  }
+
+  /* Índice lateral sticky */
+  .privacidade-toc {
+    position: sticky;
+    top: 88px;
+    font-family: var(--font-sans);
+  }
+  .privacidade-toc .toc-label {
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .privacidade-toc ol {
+    list-style: none; padding: 0; margin: 0;
+    counter-reset: toc;
+  }
+  .privacidade-toc li {
+    counter-increment: toc;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  .privacidade-toc li::before {
+    content: counter(toc, decimal-leading-zero);
+    display: inline-block;
+    width: 28px;
+    font-size: 0.75rem;
+    color: var(--cinza-quente);
+    font-feature-settings: "tnum";
+  }
+  .privacidade-toc a {
+    color: var(--preto-editorial);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: var(--weight-light);
+    transition: color .2s;
+  }
+  .privacidade-toc a:hover { color: var(--terracota); }
+
+  /* Conteúdo */
+  .privacidade-content {
+    max-width: 720px;
+  }
+  .privacidade-content section + section {
+    margin-top: 64px;
+    padding-top: 48px;
+    border-top: 1px solid var(--border);
+  }
+  .privacidade-content h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+    color: var(--apollo);
+    letter-spacing: -0.005em;
+    margin: 0 0 24px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+  }
+  .privacidade-content h2::before {
+    content: attr(data-num);
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.75rem;
+    letter-spacing: 0.22em;
+    color: var(--terracota);
+    min-width: 40px;
+    flex-shrink: 0;
+    position: relative;
+    top: -2px;
+  }
+  .privacidade-content h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.125rem;
+    color: var(--apollo);
+    margin: 32px 0 12px 0;
+  }
+  .privacidade-content p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--preto-editorial);
+    margin: 0 0 16px 0;
+    text-wrap: pretty;
+  }
+  .privacidade-content ul {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--preto-editorial);
+    padding-left: 0;
+    list-style: none;
+    margin: 0 0 16px 0;
+  }
+  .privacidade-content ul li {
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .privacidade-content ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.75em;
+    width: 12px;
+    height: 1px;
+    background: var(--terracota);
+  }
+  .privacidade-content strong {
+    font-weight: var(--weight-medium);
+    color: var(--apollo);
+  }
+  .privacidade-content a {
+    color: var(--apollo);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: color .2s, border-color .2s;
+  }
+  .privacidade-content a:hover {
+    color: var(--terracota);
+    border-color: var(--terracota);
+  }
+
+  /* Bloco destacado: encarregado / direitos */
+  .destaque-box {
+    background: var(--bege-areia);
+    border-left: 3px solid var(--terracota);
+    padding: 32px;
+    margin: 32px 0;
+  }
+  .destaque-box .destaque-label {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    margin-bottom: 12px;
+  }
+  .destaque-box p:last-child { margin-bottom: 0; }
+
+  /* Tabela de dados coletados */
+  .tabela-dados {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    margin: 24px 0;
+  }
+  .tabela-dados th {
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+    text-align: left;
+    padding: 12px 16px 12px 0;
+    border-bottom: 1px solid var(--verde-noturno);
+  }
+  .tabela-dados td {
+    padding: 16px 16px 16px 0;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    color: var(--preto-editorial);
+    font-weight: var(--weight-light);
+    line-height: 1.55;
+  }
+  .tabela-dados td:first-child {
+    font-weight: var(--weight-medium);
+    color: var(--apollo);
+    min-width: 160px;
+  }
+  @media (max-width: 640px) {
+    .tabela-dados, .tabela-dados thead, .tabela-dados tbody, .tabela-dados tr, .tabela-dados td { display: block; }
+    .tabela-dados thead { display: none; }
+    .tabela-dados tr { border-bottom: 1px solid var(--border); padding: 16px 0; }
+    .tabela-dados td { border: 0; padding: 4px 0; }
+    .tabela-dados td:first-child { padding-bottom: 6px; }
+  }
+
+  /* CTA final */
+  .cta-duvidas {
+    background: var(--verde-noturno);
+    color: var(--off-white);
+    padding-block: clamp(64px, 7vw, 96px);
+  }
+  .cta-duvidas .inner { max-width: 680px; }
+  .cta-duvidas .eyebrow-editorial { color: var(--off-white); opacity: 0.7; }
+  .cta-duvidas h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.75rem, 1.3rem + 1.4vw, 2.25rem);
+    color: var(--off-white);
+    letter-spacing: -0.005em;
+    margin: 16px 0 20px 0;
+    max-width: 20ch;
+  }
+  .cta-duvidas p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: var(--off-white);
+    opacity: 0.85;
+    margin: 0 0 32px 0;
+    max-width: 54ch;
+  }
+  .cta-duvidas a {
+    color: var(--off-white);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(245, 239, 229, 0.4);
+    transition: border-color .2s;
+    font-weight: var(--weight-medium);
+  }
+  .cta-duvidas a:hover { border-color: var(--terracota); }
+</style>
+<!-- Pixel da Meta (Ana Paula) + aviso de cookies -->
+<script defer="" src="/meta-pixel.js"></script>
+</head>
+<body>
+<nav class="nav" id="nav">
+<div class="nav-inner">
+<a class="logo" href="index.html"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
+<ul class="nav-list">
+<li><a class="nav-link" href="index.html">Inicio</a></li>
+<li class="nav-has-drop">
+<a class="nav-link nav-drop-trigger" href="index.html#servicos">Servicios<svg class="nav-caret" fill="none" height="6" stroke="currentColor" stroke-width="1.5" viewbox="0 0 10 6" width="10"><path d="M1 1l4 4 4-4"></path></svg></a>
+<ul class="nav-drop">
+<li><a class="nav-link" href="palestras.html">Charlas</a></li>
+<li><a class="nav-link" href="rodas-de-conversa.html">Círculos de Conversación</a></li>
+<li><a class="nav-link" href="direcionamento.html">Orientación Ejecutiva</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="livro.html">Libro</a></li>
+<li><a class="nav-link" href="index.html#depoimentos">Testimonios</a></li>
+<li><a class="nav-link" href="index.html#midia">En los medios</a></li>
+<li><a class="nav-link" href="index.html#publicacoes-agenda">Publicaciones</a></li>
+<li><a class="nav-link nav-link-guia" href="https://guia.draanapaulateixeira.com.br/#receber-guia" rel="noopener" target="_blank">Guía gratuita</a></li>
+<li><a class="btn btn-primary nav-cta" href="https://wa.me/5571981357004?text=Hola%2C%20me%20gustar%C3%ADa%20conversar%20sobre%20una%20necesidad%20relacionada%20con%20la%20salud%20mental%20en%20el%20trabajo.%20%C2%BFPodemos%20hablar%3F" style="padding:10px 18px;font-size:0.875rem">Escribir por WhatsApp</a></li>
+</ul>
+<button aria-label="Abrir menú" class="nav-toggle">
+<svg fill="none" height="22" stroke="#2B180A" stroke-width="1.5" viewbox="0 0 22 22" width="22"><line x1="3" x2="19" y1="7" y2="7"></line><line x1="3" x2="19" y1="15" y2="15"></line></svg>
+</button>
+</div>
+</nav>
+<header class="hero-privacidade">
+<div class="container">
+<span class="eyebrow-editorial">Política de Privacidad</span>
+<h1>Transparencia en el tratamiento de sus datos</h1>
+<p class="subtitle">Este documento explica, en lenguaje claro, cómo se recopilan, tratan y protegen sus datos cuando navega por este sitio o se pone en contacto con nosotros.</p>
+<div class="meta-info"><span>Versión<b>1.0</b></span> <span>Vigencia<b>Enero de 2026</b></span> <span>Base legal<b>Ley 13.709/2018 (LGPD)</b></span></div>
+</div>
+</header>
+<section class="privacidade container">
+<div class="privacidade-grid">
+<aside class="privacidade-toc">
+<div class="toc-label">En este documento</div>
+<ol>
+<li><a href="#quem-somos">Quién es el responsable</a></li>
+<li><a href="#dados-coletados">Datos recopilados</a></li>
+<li><a href="#finalidades">Finalidades del tratamiento</a></li>
+<li><a href="#base-legal">Base legal</a></li>
+<li><a href="#compartilhamento">Comunicación a terceros</a></li>
+<li><a href="#armazenamento">Almacenamiento y seguridad</a></li>
+<li><a href="#direitos">Sus derechos</a></li>
+<li><a href="#cookies">Cookies</a></li>
+<li><a href="#alteracoes">Cambios en esta política</a></li>
+<li><a href="#encarregado">Encargado de datos</a></li>
+</ol>
+</aside>
+<div class="privacidade-content">
+<section id="quem-somos">
+<h2 data-num="01">Quién es el responsable de los datos</h2>
+<p>El <strong>responsable</strong> de los datos personales tratados en este sitio es <strong>Ana Paula Cunha Teixeira</strong>, médica del trabajo (CRM-BA 12797 · RQE 7237), que actúa en nombre propio como profesional independiente en la oferta de charlas, consultorías, formaciones y contenidos editoriales sobre salud ocupacional, NR-1 y Lesión Moral Ocupacional.</p>
+<p>Esta política se aplica a todas las interacciones realizadas a través del dominio <strong>draanapaulateixeira.com.br</strong> y sus subdominios, incluidos formularios, suscripciones a la newsletter y comunicaciones posteriores.</p>
+</section>
+<section id="dados-coletados">
+<h2 data-num="02">Qué datos se recopilan</h2>
+<p>Recopilamos solo los datos estrictamente necesarios para responder a su contacto, confirmar su suscripción a contenidos o elaborar una propuesta comercial. Ningún dato sensible (datos de salud, origen racial, opinión política, afiliación religiosa, datos biométricos) se recopila a través de este sitio.</p>
+<table class="tabela-dados">
+<thead>
+<tr>
+<th>Categoría</th>
+<th>Datos</th>
+<th>Cuándo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identificación</td>
+<td>Nombre completo, cargo, empresa</td>
+<td>Formularios de contacto y de solicitud de propuesta</td>
+</tr>
+<tr>
+<td>Contacto</td>
+<td>Correo electrónico, teléfono</td>
+<td>Formularios y suscripción a la newsletter</td>
+</tr>
+<tr>
+<td>Contexto comercial</td>
+<td>Naturaleza de la solicitud, tamaño de la empresa, plazo, mensaje libre</td>
+<td>Formulario de solicitud de propuesta</td>
+</tr>
+<tr>
+<td>Técnicos</td>
+<td>Dirección IP, tipo de navegador, páginas visitadas, fecha y hora</td>
+<td>Automáticamente, durante la navegación</td>
+</tr>
+</tbody>
+</table>
+<p>Los datos enviados a través de los formularios se almacenan en <strong>Google Forms / Google Sheets</strong>, vinculados a la cuenta profesional de la responsable. Los datos técnicos de navegación son tratados por el proveedor de alojamiento del sitio y, cuando corresponde, por la herramienta de análisis de tráfico (Google Analytics, de forma anonimizada).</p>
+</section>
+<section id="finalidades">
+<h2 data-num="03">Para qué usamos sus datos</h2>
+<ul>
+<li><strong>Responder a solicitudes de contacto</strong>: devolver el contacto por el canal indicado en el formulario o en el mensaje enviado.</li>
+<li><strong>Elaborar propuestas comerciales</strong>: analizar el contexto de la solicitud (tamaño, sector, plazo) y preparar una propuesta adecuada.</li>
+<li><strong>Enviar comunicaciones editoriales</strong>: si usted se suscribió voluntariamente a la newsletter, enviar los contenidos acordados con la periodicidad declarada.</li>
+<li><strong>Cumplir obligaciones legales y regulatorias</strong>: cuando corresponda, en atención a órdenes de autoridades competentes.</li>
+<li><strong>Mejorar la experiencia en el sitio</strong>: entender, de forma agregada y anonimizada, qué páginas son las más visitadas.</li>
+</ul>
+<p>Los datos <strong>no se usan</strong> para publicidad dirigida, venta a terceros ni para ninguna finalidad distinta de las descritas.</p>
+</section>
+<section id="base-legal">
+<h2 data-num="04">Con qué base legal tratamos los datos</h2>
+<p>Conforme al art. 7 de la LGPD, los datos personales se tratan con fundamento en una de las siguientes bases:</p>
+<ul>
+<li><strong>Consentimiento</strong> (art. 7, I): cuando usted completa voluntariamente un formulario de contacto o se suscribe a la newsletter.</li>
+<li><strong>Ejecución de procedimientos preliminares a un contrato</strong> (art. 7, V): cuando el tratamiento es necesario para elaborar una propuesta comercial solicitada por usted.</li>
+<li><strong>Interés legítimo</strong> (art. 7, IX): para fines de análisis técnico agregado y seguridad del sitio, siempre respetando sus expectativas y derechos.</li>
+<li><strong>Cumplimiento de una obligación legal</strong> (art. 7, II): cuando la conservación o comunicación sea exigida por ley u orden judicial.</li>
+</ul>
+</section>
+<section id="compartilhamento">
+<h2 data-num="05">Con quién compartimos</h2>
+<p>Sus datos <strong>no se venden, alquilan ni ceden</strong> a terceros con fines comerciales. Pueden compartirse exclusivamente con:</p>
+<ul>
+<li><strong>Encargados contratados</strong> para hacer posible el funcionamiento del sitio y la atención: Google (Forms, Sheets, Gmail), el proveedor de alojamiento y la plataforma de email marketing, todos sujetos a contratos de tratamiento de datos compatibles con la LGPD.</li>
+<li><strong>Autoridades públicas</strong>, cuando sea obligatorio por ley u orden judicial.</li>
+</ul>
+<p>En ningún caso sus datos se transfieren internacionalmente a países sin un nivel adecuado de protección, fuera de las condiciones previstas en la LGPD.</p>
+</section>
+<section id="armazenamento">
+<h2 data-num="06">Durante cuánto tiempo los conservamos</h2>
+<p>Los datos se conservan durante el tiempo necesario para cumplir las finalidades descritas:</p>
+<ul>
+<li><strong>Contactos comerciales</strong> que no resultaron en contratación: hasta <strong>24 meses</strong> después del último contacto.</li>
+<li><strong>Contactos que generaron contratación</strong>: durante el plazo legal de conservación fiscal y contractual, normalmente <strong>5 años</strong> después del fin de la relación.</li>
+<li><strong>Suscripciones a la newsletter</strong>: mientras la suscripción esté activa. La baja es inmediata y está disponible en todos los correos enviados.</li>
+<li><strong>Datos técnicos de navegación</strong>: hasta <strong>6 meses</strong>.</li>
+</ul>
+<p>Adoptamos medidas técnicas y administrativas razonables para proteger sus datos contra el acceso no autorizado, la destrucción, la pérdida, la alteración o la comunicación indebida: almacenamiento en cuentas corporativas con autenticación en dos pasos, transmisión por canales cifrados (HTTPS) y acceso restringido a la titular.</p>
+</section>
+<section id="direitos">
+<h2 data-num="07">Sus derechos como titular</h2>
+<p>La LGPD le garantiza a usted, titular de los datos, los siguientes derechos, que puede ejercer gratuitamente en cualquier momento:</p>
+<ul>
+<li><strong>Confirmación</strong> de que tratamos sus datos.</li>
+<li><strong>Acceso</strong> a los datos que mantenemos sobre usted.</li>
+<li><strong>Rectificación</strong> de datos incompletos, inexactos o desactualizados.</li>
+<li><strong>Anonimización, bloqueo o eliminación</strong> de datos innecesarios, excesivos o tratados en disconformidad con la LGPD.</li>
+<li><strong>Portabilidad</strong> de los datos a otro proveedor, en los supuestos legales aplicables.</li>
+<li><strong>Eliminación</strong> de los datos tratados con base en su consentimiento.</li>
+<li><strong>Información</strong> sobre las entidades con las que compartimos sus datos.</li>
+<li><strong>Revocación</strong> del consentimiento en cualquier momento.</li>
+<li><strong>Oposición</strong> al tratamiento basado en el interés legítimo, en caso de incumplimiento legal.</li>
+</ul>
+<div class="destaque-box">
+<div class="destaque-label">Cómo ejercerlos</div>
+<p>Envíe su solicitud a <a href="mailto:escutaris@zohomail.com">escutaris@zohomail.com</a> con el asunto <strong>"LGPD: Solicitud del titular"</strong>. Respondemos en un plazo de <strong>15 días corridos</strong>, conforme al plazo legal. Podemos solicitar una prueba de identidad antes de atender pedidos que involucren datos sensibles o identificados.</p>
+</div>
+</section>
+<section id="cookies">
+<h2 data-num="08">Cookies y tecnologías similares</h2>
+<p>Este sitio utiliza cookies estrictamente necesarias para la navegación (por ejemplo, para recordar preferencias de visualización) y cookies analíticas agregadas (Google Analytics, cuando está activo), que no lo identifican a usted individualmente.</p>
+<p>Puede, en cualquier momento, configurar su navegador para rechazar cookies o recibir un aviso antes de aceptarlas. El rechazo puede afectar algunas funciones del sitio, pero no impide la navegación por las páginas principales.</p>
+</section>
+<section id="alteracoes">
+<h2 data-num="09">Cambios en esta política</h2>
+<p>Esta política puede actualizarse para reflejar cambios normativos, tecnológicos o de nuestros procesos. La versión y la fecha de vigencia se indican al inicio de este documento.</p>
+<p>Los cambios relevantes se señalarán de forma destacada en la página de inicio del sitio y, cuando corresponda, mediante comunicación directa a los titulares cuyos datos se estén tratando activamente.</p>
+</section>
+<section id="encarregado">
+<h2 data-num="10">Encargado de datos (DPO)</h2>
+<p>En los términos del art. 41 de la LGPD, la responsable actúa directamente como punto de contacto para los asuntos relativos a la protección de datos personales, sin haber designado un encargado externo, debido al volumen y la naturaleza del tratamiento realizado (profesional independiente, sin operación a gran escala).</p>
+<div class="destaque-box">
+<div class="destaque-label">Canal oficial</div>
+<p><strong>Dra. Ana Paula Cunha Teixeira</strong><br/> Correo: <a href="mailto:escutaris@zohomail.com">escutaris@zohomail.com</a><br/> WhatsApp: <a href="https://wa.me/5571981357004?text=Hola%2C%20me%20gustar%C3%ADa%20conversar%20sobre%20una%20necesidad%20relacionada%20con%20la%20salud%20mental%20en%20el%20trabajo.%20%C2%BFPodemos%20hablar%3F">+55 71 98135-7004</a></p>
+<p>También puede presentar una reclamación directamente ante la <strong>Autoridad Nacional de Protección de Datos de Brasil (ANPD)</strong> en <a href="https://www.gov.br/anpd/" rel="noopener" target="_blank">gov.br/anpd</a>.</p>
+</div>
+</section>
+</div>
+</div>
+</section>
+<section class="cta-duvidas">
+<div class="container inner">
+<span class="eyebrow-editorial">Dudas</span>
+<h2>¿Todavía tiene dudas sobre cómo se tratan sus datos?</h2>
+<p>Escriba a <a href="mailto:escutaris@zohomail.com">escutaris@zohomail.com</a> o por <a href="https://wa.me/5571981357004?text=Hola%2C%20me%20gustar%C3%ADa%20conversar%20sobre%20una%20necesidad%20relacionada%20con%20la%20salud%20mental%20en%20el%20trabajo.%20%C2%BFPodemos%20hablar%3F">WhatsApp</a>. La respuesta es personal, sin formularios automáticos.</p>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
+<p class="footer-anchor">Médica del trabajo · Salvador, Bahía, Brasil.<br/>Cuidar de las personas es cuidar del negocio.</p>
+</div>
+<div>
+<div class="footer-col-title">Navegar</div>
+<div class="stack-3">
+<div><a href="index.html">Inicio</a></div>
+<div><a href="https://guia.draanapaulateixeira.com.br/#receber-guia" rel="noopener" target="_blank">Guía gratuita</a></div>
+<div><a href="palestras.html">Charlas</a></div>
+<div><a href="rodas-de-conversa.html">Círculos de Conversación</a></div>
+<div><a href="direcionamento.html">Orientación Ejecutiva</a></div>
+<div><a href="livro.html">Libro</a></div>
+<div><a href="imprensa.html">Prensa</a></div>
+<div><a href="contato.html">Contacto</a></div>
+</div>
+</div>
+<div>
+<div class="footer-col-title">Contacto</div>
+<div class="stack-3">
+<div><a href="mailto:escutaris@zohomail.com">Correo: escutaris@zohomail.com</a></div>
+<div><a href="https://wa.me/5571981357004?text=Hola%2C%20me%20gustar%C3%ADa%20conversar%20sobre%20una%20necesidad%20relacionada%20con%20la%20salud%20mental%20en%20el%20trabajo.%20%C2%BFPodemos%20hablar%3F">WhatsApp +55 71 98135-7004</a></div>
+<div><a href="https://www.instagram.com/draanapaulateixeira/" rel="noopener" target="_blank">Instagram</a></div>
+<div><a href="https://www.linkedin.com/in/draanapaulateixeira/" rel="noopener" target="_blank">LinkedIn</a></div>
+<div><a href="https://www.youtube.com/@draanapaulateixeira" rel="noopener" target="_blank">YouTube</a></div>
+</div>
+</div>
+</div>
+<div class="footer-meta"><span>CRM-BA 12797 · RQE 7237 · ICOH · ABERGO · Board Academy 2024</span> <span>© 2026 Dra. Ana Paula Teixeira · draanapaulateixeira.com.br · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3)">Política de Privacidad</a></span></div>
+<p class="footer-disclaimer">Este sitio no sustituye el acompañamiento médico o psicológico individualizado. Contenido informativo conforme a la Resolución 2.336/2023 del Consejo Federal de Medicina de Brasil sobre publicidad médica.</p>
+</div>
+</footer>
+<script src="../design-system.js?v=i18n-1"></script>
+<script>
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Smooth scroll for TOC
+  document.querySelectorAll('.privacidade-toc a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        const top = target.getBoundingClientRect().top + window.scrollY - 100;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>

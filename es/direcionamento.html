@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- SEO -->
+<title>Orientación Ejecutiva · Dra. Ana Paula Teixeira</title>
+<meta content="Diagnóstico y mentoría individual para RR. HH. y líderes, con el cuestionario SMCIT. Etapa previa de 30 minutos y devolución de 60, presencial en Salvador o en línea." name="description"/>
+<meta content="Dra. Ana Paula Teixeira" name="author"/>
+<link href="https://draanapaulateixeira.com.br/es/direcionamento.html" rel="canonical"/><link href="https://draanapaulateixeira.com.br/direcionamento.html" hreflang="pt-BR" rel="alternate"/><link href="https://draanapaulateixeira.com.br/en/direcionamento.html" hreflang="en" rel="alternate"/><link href="https://draanapaulateixeira.com.br/es/direcionamento.html" hreflang="es" rel="alternate"/><link href="https://draanapaulateixeira.com.br/zh/direcionamento.html" hreflang="zh-CN" rel="alternate"/><link href="https://draanapaulateixeira.com.br/direcionamento.html" hreflang="x-default" rel="alternate"/>
+<!-- Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="es_ES" property="og:locale"/>
+<meta content="Dra. Ana Paula Teixeira" property="og:site_name"/>
+<meta content="https://draanapaulateixeira.com.br/es/direcionamento.html" property="og:url"/>
+<meta content="Orientación Ejecutiva · Diagnóstico y mentoría para RR. HH. y líderes" property="og:title"/>
+<meta content="Gestionar el estrés del equipo es una competencia. Diagnóstico y mentoría individual para RR. HH. y líderes, con el cuestionario SMCIT." property="og:description"/>
+<meta content="https://draanapaulateixeira.com.br/assets/og-default.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Orientación Ejecutiva · Diagnóstico y mentoría para RR. HH. y líderes" name="twitter:title"/>
+<meta content="Gestionar el estrés del equipo es una competencia. Diagnóstico y mentoría individual para RR. HH. y líderes, con el cuestionario SMCIT." name="twitter:description"/>
+<meta content="https://draanapaulateixeira.com.br/assets/og-default.png" name="twitter:image"/>
+<!-- Favicon -->
+<link href="../assets/favicon.png" rel="icon" type="image/png"/>
+<link href="../assets/favicon.png" rel="apple-touch-icon"/>
+<meta content="#2B180A" name="theme-color"/>
+<link href="../design-system.css?v=i18n-1" rel="stylesheet"/>
+<style>
+  /* ===== Direcionamento Executivo — overrides locais ===== */
+
+  /* HERO */
+  .hero-dir {
+    padding-block: clamp(72px, 8vw, 120px);
+    background: radial-gradient(ellipse 80% 60% at 80% 30%, var(--bege-areia) 0%, #ffffff 62%);
+    color: var(--preto-editorial);
+  }
+  .hero-dir .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+  @media (min-width: 960px) {
+    .hero-dir .hero-grid { grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.75fr); gap: 72px; }
+  }
+  .hero-dir .eyebrow-editorial { color: var(--terracota); }
+  .hero-dir h1 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.25rem, 1.5rem + 2.8vw, 3.75rem);
+    line-height: 1.08;
+    color: var(--apollo);
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+    max-width: 22ch;
+    margin: 22px 0 24px 0;
+  }
+  .hero-dir h1 em {
+    font-style: italic;
+    font-weight: var(--weight-semibold);
+    color: var(--terracota);
+  }
+  .hero-dir .lead {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--cinza-quente);
+    max-width: 56ch;
+    margin: 0 0 30px 0;
+  }
+  .hero-dir .meta-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 32px;
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 32px;
+  }
+  @media (min-width: 600px) {
+    .hero-dir .meta-row { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  }
+  .hero-dir .meta-cell .meta-k {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    margin-bottom: 6px;
+  }
+  .hero-dir .meta-cell .meta-v {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-semibold);
+    font-size: 1.0625rem;
+    color: var(--apollo);
+    line-height: 1.25;
+  }
+  .hero-dir .cta-row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .hero-dir .btn-primary { background: var(--terracota); border-color: var(--terracota); }
+  .hero-dir .micro { margin-top: 16px; font-size: 0.8125rem; color: var(--cinza-quente); max-width: 48ch; line-height: 1.5; }
+  @media (max-width: 640px) {
+    .hero-dir {
+      padding-block: 64px 72px;
+    }
+    .hero-dir .hero-grid {
+      gap: 32px;
+    }
+    .hero-dir h1 {
+      margin: 18px 0 22px;
+    }
+    .hero-dir .lead {
+      margin-bottom: 26px;
+    }
+    .hero-dir .meta-row {
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+  }
+
+  .hero-dir .urgency {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--terracota);
+    padding: 28px 28px;
+    border-radius: 4px;
+    box-shadow: 0 24px 56px -32px rgba(28,53,32,.18);
+  }
+  .hero-dir .urgency .ur-label {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+  }
+  .hero-dir .urgency h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-semibold);
+    font-style: italic;
+    font-size: clamp(1.25rem, 1.05rem + 0.7vw, 1.5rem);
+    color: var(--apollo);
+    line-height: 1.3;
+    margin: 0 0 16px 0;
+    text-wrap: balance;
+  }
+  .hero-dir .urgency p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    margin: 0;
+  }
+  .hero-dir .urgency .resp-time {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    color: var(--cinza-quente);
+  }
+  .hero-dir .urgency .resp-time b {
+    color: var(--apollo);
+    font-weight: 600;
+  }
+  .hero-dir .authority-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: grid;
+    gap: 10px;
+  }
+  .hero-dir .authority-list li {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--cinza-quente);
+    padding-left: 18px;
+    position: relative;
+  }
+  .hero-dir .authority-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.68em;
+    width: 9px;
+    height: 1px;
+    background: var(--terracota);
+  }
+
+  /* Block patterns */
+  .dir-block { padding-block: clamp(64px, 7vw, 96px); }
+  .dir-block .eyebrow-editorial { margin-bottom: 20px; }
+
+  /* Para quem / Não é grids */
+  .for-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  @media (min-width: 720px) {
+    .for-grid { grid-template-columns: 1fr 1fr; gap: 16px 32px; }
+  }
+  .for-item {
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+  }
+  .for-item:last-child,
+  .for-item:nth-last-child(2):nth-child(odd) { border-bottom: 1px solid var(--border); }
+  .for-item h4 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-semibold);
+    font-size: 1.125rem;
+    color: var(--apollo);
+    margin: 0 0 8px 0;
+  }
+  .for-item p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: var(--cinza-quente);
+    margin: 0;
+  }
+
+  /* Não é / É — bloco contraste */
+  .contrast-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 32px;
+  }
+  @media (min-width: 720px) {
+    .contrast-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+  .contrast-card {
+    padding: 32px 28px;
+    border-radius: 2px;
+  }
+  .contrast-card.is-not {
+    background: var(--bege-areia);
+    border-left: 3px solid var(--cinza-quente);
+  }
+  .contrast-card.is-yes {
+    background: var(--off-white);
+    border-left: 3px solid var(--terracota);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--terracota);
+  }
+  .contrast-card h3 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+    margin: 0 0 16px 0;
+  }
+  .contrast-card.is-yes h3 { color: var(--terracota); }
+  .contrast-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+  }
+  .contrast-card li {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.55;
+    color: var(--preto-editorial);
+    padding-left: 24px;
+    position: relative;
+  }
+  .contrast-card.is-not li::before {
+    content: "×";
+    position: absolute;
+    left: 0;
+    color: var(--cinza-quente);
+    font-weight: 600;
+  }
+  .contrast-card.is-yes li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--terracota);
+    font-weight: 700;
+  }
+
+  /* Como funciona - passos com foto da sala */
+  .steps-with-photo { display: grid; gap: 40px; align-items: start; }
+  @media (min-width: 980px) {
+    .steps-with-photo { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 56px; align-items: center; }
+    .steps-with-photo .steps-list { margin-top: 0; }
+  }
+  .sala-fig { margin: 0; }
+  .sala-fig img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center 70%;
+    border-radius: 2px;
+  }
+  .sala-fig figcaption {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--preto-editorial);
+    opacity: 0.75;
+    margin-top: 12px;
+    padding-left: 16px;
+    border-left: 2px solid var(--terracota);
+  }
+  .sala-fig figcaption strong { font-weight: var(--weight-medium); }
+  .sala-fig figcaption a { color: var(--terracota); text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; }
+  .sala-fig figcaption a:hover { color: var(--terracota-hover); }
+
+  /* Como funciona — passos */
+  .steps-list { margin-top: 32px; display: grid; gap: 20px; }
+  .step {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 24px;
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+  }
+  .step:last-child { border-bottom: 1px solid var(--border); }
+  .step .step-n {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--terracota);
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .step .step-body h4 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.25rem;
+    color: var(--apollo);
+    margin: 0 0 8px 0;
+    line-height: 1.25;
+  }
+  .step .step-body p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    margin: 0;
+  }
+
+  /* Contratação */
+  .invest-block {
+    background: var(--bege-areia);
+    padding: clamp(48px, 6vw, 80px) clamp(32px, 4vw, 56px);
+    border-radius: 2px;
+    margin-top: 32px;
+  }
+  .invest-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  @media (min-width: 720px) {
+    .invest-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  }
+  .invest-tier {
+    background: var(--off-white);
+    padding: 28px 24px;
+    border-radius: 2px;
+    border: 1px solid var(--border);
+  }
+  .invest-tier .tier-eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .invest-tier h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.5rem;
+    color: var(--apollo);
+    margin: 0 0 16px 0;
+  }
+  .invest-tier .price {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--terracota);
+    line-height: 1;
+    letter-spacing: -0.01em;
+    display: block;
+    margin-bottom: 16px;
+  }
+  .invest-tier ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+    display: grid;
+    gap: 8px;
+  }
+  .invest-tier li {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--preto-editorial);
+    padding-left: 20px;
+    position: relative;
+  }
+  .invest-tier li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--terracota);
+    font-weight: 700;
+    font-size: 0.875rem;
+  }
+
+  /* CTA final */
+  .dir-cta {
+    padding-block: clamp(80px, 9vw, 128px);
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+  }
+  .dir-cta h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.5rem + 1.8vw, 3rem);
+    color: var(--apollo);
+    margin: 16px 0 16px 0;
+    max-width: 22ch;
+    line-height: 1.15;
+    text-wrap: balance;
+  }
+  .dir-cta h2 em { font-style: italic; color: var(--terracota); font-weight: var(--weight-semibold); }
+  .dir-cta .cta-sub {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    margin: 0 0 32px 0;
+    max-width: 56ch;
+  }
+  .dir-cta .meta {
+    margin-top: 24px;
+    font-size: 0.8125rem;
+    color: var(--cinza-quente);
+    letter-spacing: 0.02em;
+  }
+.s-close { margin-top: 28px; font-family: var(--font-sans); font-weight: var(--weight-medium); font-size: 1rem; line-height: 1.6; color: var(--apollo); max-width: 60ch; }
+</style>
+<!-- dados estruturados -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://draanapaulateixeira.com.br/#dra-ana-paula",
+      "name": "Dra. Ana Paula Teixeira",
+      "alternateName": "Ana Paula Teixeira",
+      "jobTitle": "Médica del trabajo",
+      "description": "Médica del trabajo, autora de Quando o Trabalho Dói (Cuando el trabajo duele) e investigadora de la Lesión Moral Ocupacional, con casi tres décadas de actuación corporativa.",
+      "url": "https://draanapaulateixeira.com.br/",
+      "image": "https://draanapaulateixeira.com.br/assets/optimized/portrait-vestido-vermelho-bracos-cruzados.webp",
+      "telephone": "+55-71-98135-7004",
+      "email": "escutaris@zohomail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Salvador",
+        "addressRegion": "BA",
+        "addressCountry": "BR"
+      },
+      "knowsAbout": [
+        "Salud mental en el trabajo",
+        "Lesión Moral Ocupacional",
+        "NR-1 y factores de riesgo psicosocial",
+        "Medicina del trabajo",
+        "Burnout y enfermedad ocupacional",
+        "Reincorporación al trabajo tras una baja médica"
+      ],
+      "knowsLanguage": "pt-BR",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Universidad Federal de Bahía"
+      },
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "International Commission on Occupational Health (ICOH)"
+        },
+        {
+          "@type": "Organization",
+          "name": "Asociación Brasileña de Ergonomía (ABERGO)"
+        },
+        {
+          "@type": "Organization",
+          "name": "Asociación Nacional de Medicina del Trabajo de Brasil (ANAMT/AMB)"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Registro profissional",
+          "name": "CRM-BA 12797"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Registro de qualificação de especialista",
+          "name": "RQE 7237 (Medicina del Trabajo)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Certificação",
+          "name": "Board Member 2024 (Board Academy)"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/draanapaulateixeira/",
+        "https://www.linkedin.com/in/draanapaulateixeira/",
+        "https://www.youtube.com/@draanapaulateixeira"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://draanapaulateixeira.com.br/direcionamento.html#servico",
+      "name": "Orientación Ejecutiva",
+      "serviceType": "Diagnóstico y mentoría individual",
+      "description": "Intervención individual de diagnóstico y mentoría para RR. HH. y líderes, con el cuestionario SMCIT. Etapa previa de 30 minutos, informe individual y devolución de 60 minutos, presencial en Salvador o en línea.",
+      "provider": {
+        "@id": "https://draanapaulateixeira.com.br/#dra-ana-paula"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "servicePhone": "+55-71-99989-9133",
+        "serviceLocation": {
+          "@type": "Place",
+          "name": "Clínica Kirinonomori Serviços e Saúde",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Metódio Coelho, 62, Ed. Cidadela Center I, sala 212",
+            "addressLocality": "Salvador",
+            "addressRegion": "BA",
+            "addressCountry": "BR"
+          }
+        }
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "name": "Profesionales de RR. HH. y líderes"
+      },
+      "url": "https://draanapaulateixeira.com.br/direcionamento.html"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://draanapaulateixeira.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Orientación Ejecutiva",
+          "item": "https://draanapaulateixeira.com.br/direcionamento.html"
+        }
+      ]
+    }
+  ]
+}</script>
+<!-- /dados estruturados -->
+<!-- Pixel da Meta (Ana Paula) + aviso de cookies -->
+<script defer="" src="/meta-pixel.js"></script>
+</head>
+<body>
+<!-- NAV -->
+<nav class="nav" id="nav">
+<div class="nav-inner">
+<a class="logo" href="index.html"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span><span class="logo-editorial-tag">Medicina del Trabajo · Salud Mental Ocupacional</span></a>
+<ul class="nav-list">
+<li><a class="nav-link" href="index.html">Inicio</a></li>
+<li class="nav-has-drop">
+<a class="nav-link nav-drop-trigger" href="index.html#servicos">Servicios<svg class="nav-caret" fill="none" height="6" stroke="currentColor" stroke-width="1.5" viewbox="0 0 10 6" width="10"><path d="M1 1l4 4 4-4"></path></svg></a>
+<ul class="nav-drop">
+<li><a class="nav-link" href="palestras.html">Charlas</a></li>
+<li><a class="nav-link" href="rodas-de-conversa.html">Círculos de Conversación</a></li>
+<li><a aria-current="page" class="nav-link" href="direcionamento.html">Orientación Ejecutiva</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="livro.html">Libro</a></li>
+<li><a class="nav-link" href="index.html#depoimentos">Testimonios</a></li>
+<li><a class="nav-link" href="index.html#midia">En los medios</a></li>
+<li><a class="nav-link" href="index.html#publicacoes-agenda">Publicaciones</a></li>
+<li><a class="nav-link nav-link-guia" href="https://guia.draanapaulateixeira.com.br/#receber-guia" rel="noopener" target="_blank">Guía gratuita</a></li>
+<li><a class="btn btn-primary nav-cta" href="https://wa.me/5571981357004?text=Hola%2C%20me%20gustar%C3%ADa%20entender%20si%20la%20Orientaci%C3%B3n%20Ejecutiva%20tiene%20sentido%20para%20una%20necesidad%20de%20mi%20empresa.%20%C2%BFPodemos%20hablar%3F" style="padding:10px 18px;font-size:0.875rem">Pedir información</a></li>
+</ul>
+<button aria-label="Abrir menú" class="nav-toggle">
+<svg fill="none" height="22" stroke="#2B180A" stroke-width="1.5" viewbox="0 0 22 22" width="22"><line x1="3" x2="19" y1="7" y2="7"></line><line x1="3" x2="19" y1="15" y2="15"></line></svg>
+</button>
+</div>
+</nav>
+<!-- HERO -->
+<header class="hero-dir">
+<div class="container">
+<div class="hero-grid">
+<div>
+<span class="eyebrow-editorial">Orientación Ejecutiva · Diagnóstico y mentoría individual</span>
+<h1>Gestionar el estrés del equipo es una competencia. Y las competencias se desarrollan.</h1>
+<p class="lead">Para profesionales de RR. HH. y líderes que quieren prevenir y gestionar los factores de estrés de su propio equipo. Un diagnóstico con el cuestionario SMCIT y una mentoría individual con una médica del trabajo, para organizar prioridades y actuar con más claridad en el día a día.</p>
+<div class="meta-row">
+<div class="meta-cell"><span class="meta-k">Etapa previa</span> <span class="meta-v">30 min · cuestionario SMCIT</span></div>
+<div class="meta-cell"><span class="meta-k">Devolución</span> <span class="meta-v">60 min · individual</span></div>
+<div class="meta-cell"><span class="meta-k">Dónde</span> <span class="meta-v">Presencial en Salvador (Parque Bela Vista) o en línea</span></div>
+<div class="meta-cell"><span class="meta-k">Intervalo</span> <span class="meta-v">De 1 a 2 semanas entre las etapas</span></div>
+</div>
+<div class="cta-row"><a class="btn btn-primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Yjoyksn9Vt9PRmAO_eAq2B8JaYhVDtcc3cLVbWySjaW4tpjXOcf0J--8nsaYp1NCr3B9wL8Nu" rel="noopener" target="_blank">Agendar conversación inicial →</a> <a class="btn btn-secondary" href="https://wa.me/5571981357004?text=Hola%2C%20me%20gustar%C3%ADa%20entender%20si%20la%20Orientaci%C3%B3n%20Ejecutiva%20tiene%20sentido%20para%20una%20necesidad%20de%20mi%20empresa.%20%C2%BFPodemos%20hablar%3F">Escribir por WhatsApp</a></div>
+<p class="micro">La conversación inicial es breve: sirve para entender el contexto y ver si la Orientación Ejecutiva responde a su necesidad. El cuestionario solo se envía después.</p>
+</div>
+<aside class="urgency">
+<span class="ur-label">Conducido por una especialista</span>
+<h3>Dra. Ana Paula Teixeira</h3>
+<p>Médica del trabajo, autora de <em>Quando o Trabalho Dói</em> (Cuando el trabajo duele) e investigadora de la Lesión Moral Ocupacional en Brasil.</p>
+<ul class="authority-list">
+<li>Casi tres décadas de actuación clínica y corporativa.</li>
+<li>Experiencia con empresas, liderazgo, RR. HH., salud laboral y casos sensibles.</li>
+<li>CRM-BA 12797 · RQE 7237 · ICOH · ABERGO · Board Academy 2024.</li>
+</ul>
+<div class="resp-time">
+<p><b>Ciclo típico</b>: unas tres semanas entre la etapa previa y la devolución, según la agenda de quien participa.</p>
+</div>
+</aside>
+</div>
+</div>
+</header>
+<!-- PARA QUEM -->
+<section class="dir-block reveal">
+<div class="container">
+<span class="eyebrow-editorial">¿Esto pasa en su equipo?</span>
+<h2 class="s-title">Cuando la presión del equipo llega primero a quien lidera.</h2>
+<p class="s-sub">Son las situaciones que los profesionales de RR. HH. y los líderes traen con más frecuencia. Cada encuentro parte de la queja o del desafío que la propia persona señala.</p>
+<div class="for-grid">
+<div class="for-item">
+<h4>Sobrecarga del equipo</h4>
+<p>Un volumen de trabajo que no cabe en el equipo y llega a quien lidera antes de convertirse en un problema declarado.</p>
+</div>
+<div class="for-item">
+<h4>Conflictos y comunicación</h4>
+<p>Ruido entre personas, conversaciones que no ocurren y mensajes que llegan distintos de como se dijeron.</p>
+</div>
+<div class="for-item">
+<h4>Delegación y retroalimentación</h4>
+<p>Distribuir el trabajo sin sobrecargar, y decir lo que hay que decir de una forma que la persona pueda aprovechar.</p>
+</div>
+<div class="for-item">
+<h4>Gestión del cambio</h4>
+<p>Conducir una reorganización, un cambio de proceso o de rumbo sin que el equipo pague la cuenta en desgaste.</p>
+</div>
+<div class="for-item">
+<h4>Apoyo a los colaboradores</h4>
+<p>Percibir quién está sufriendo, saber qué es su papel y qué corresponde a otra área, y actuar a tiempo.</p>
+</div>
+<div class="for-item">
+<h4>Situaciones sensibles</h4>
+<p>Qué hacer cuando el asunto es delicado y no existe un protocolo listo para seguir.</p>
+</div>
+</div>
+<p class="s-close">Si reconoce una de estas situaciones, el primer paso es entender el contexto, y no aplicar una solución estándar.</p>
+</div>
+</section>
+<!-- CONTRASTE: NÃO É / É -->
+<section class="dir-block reveal" style="background:var(--bege-areia)">
+<div class="container">
+<span class="eyebrow-editorial">El encaje correcto</span>
+<h2 class="s-title">Lo que es, y lo que no es.</h2>
+<div class="contrast-grid">
+<div class="contrast-card is-not">
+<h3>Lo que NO es</h3>
+<ul>
+<li>No es un diagnóstico clínico.</li>
+<li>No es una evaluación psicológica.</li>
+<li>No es una evaluación formal de desempeño.</li>
+<li>No sustituye el acompañamiento clínico individual.</li>
+<li>No sustituye la orientación jurídica ni define nexo causal o responsabilidad en casos específicos.</li>
+<li>No garantiza que las bajas o los conflictos dejen de ocurrir.</li>
+</ul>
+</div>
+<div class="contrast-card is-yes">
+<h3>Lo que ES</h3>
+<ul>
+<li>Autoevaluación con el SMCIT, la Herramienta Indicadora de Competencias para la Gestión del Estrés.</li>
+<li>Informe individual generado a partir de sus respuestas.</li>
+<li>Encuentro de devolución de 60 minutos con una médica del trabajo.</li>
+<li>Desarrollo de competencias para prevenir y gestionar los factores de estrés.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- COMO FUNCIONA -->
+<section class="dir-block reveal" id="como-funciona">
+<div class="container">
+<span class="eyebrow-editorial">Cómo funciona</span>
+<h2 class="s-title">De la conversación inicial a la devolución.</h2>
+<div class="steps-with-photo">
+<div class="steps-list">
+<div class="step">
+<span class="step-n">01</span>
+<div class="step-body">
+<h4>Conversación inicial, breve</h4>
+<p>Usted cuenta lo que está pasando y evaluamos juntos si la Orientación Ejecutiva es el formato adecuado para su necesidad, o si otro camino responde mejor.</p>
+</div>
+</div>
+<div class="step">
+<span class="step-n">02</span>
+<div class="step-body">
+<h4>Etapa previa, 30 minutos</h4>
+<p>Usted recibe el cuestionario SMCIT y lo responde. En el mismo encuentro identificamos la principal queja o desafío, y el informe individual se genera a partir de sus respuestas.</p>
+</div>
+</div>
+<div class="step">
+<span class="step-n">03</span>
+<div class="step-body">
+<h4>Devolución, 60 minutos</h4>
+<p>Se realiza de una a dos semanas después de que usted reciba el informe, en un encuentro individual, presencial en Salvador o por plataforma virtual. La grabación es privada, para consulta posterior.</p>
+</div>
+</div>
+</div>
+<figure class="sala-fig">
+<img alt="Consultorio en Salvador, con dos sillones frente a frente en un ambiente reservado" decoding="async" height="1600" loading="lazy" src="../assets/optimized/sala-atendimento-direcionamento-salvador.webp" width="900"/>
+<figcaption><strong>Atención presencial en la Clínica Kirinonomori Serviços e Saúde</strong><br/>Ed. Cidadela Center I, sala 212, Rua Metódio Coelho, 62, Parque Bela Vista, Salvador, Bahía, Brasil · <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Met%C3%B3dio%20Coelho%2C%2062%2C%20Parque%20Bela%20Vista%2C%20Salvador%20-%20BA" rel="noopener" target="_blank">ver en el mapa</a><br/>Citas presenciales: <a href="https://wa.me/5571999899133" rel="noopener" target="_blank">+55 71 99989-9133</a>. La devolución también puede realizarse por plataforma virtual.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<!-- O QUE ESPERAR -->
+<section class="dir-block reveal" style="background:var(--bege-areia)">
+<div class="container">
+<span class="eyebrow-editorial">Qué esperar</span>
+<h2 class="s-title">El objetivo no es entregar una respuesta lista. Es ayudarle a decidir mejor.</h2>
+<div class="contrast-grid" style="grid-template-columns:1fr">
+<div class="contrast-card is-yes">
+<ul>
+<li>Más claridad sobre qué factores de estrés pesan en su equipo y en su forma de liderar.</li>
+<li>Prioridades organizadas a partir de su informe individual.</li>
+<li>Repertorio para conducir las próximas conversaciones con el equipo.</li>
+<li>La mirada de una médica del trabajo sobre lo que es su papel y lo que corresponde a otra área.</li>
+</ul>
+</div>
+</div>
+<p class="s-close">Cada situación tiene características propias. El resultado depende del contexto de la organización y de la información que usted trae al encuentro.</p>
+</div>
+</section>
+<!-- PERGUNTAS -->
+<section aria-labelledby="faq-titulo" class="faq-section reveal" id="perguntas">
+<div class="container">
+<div class="faq-head">
+<span class="eyebrow-editorial">Antes de agendar</span>
+<h2 id="faq-titulo">Preguntas que llegan antes del sí.</h2>
+</div>
+<div class="faq-list">
+<details class="faq-item">
+<summary>¿Para quién es la Orientación Ejecutiva?</summary>
+<p class="faq-answer">Para profesionales de RR. HH. y líderes que quieren desarrollar competencias para prevenir y gestionar los factores de estrés de su propio equipo. El trabajo es individual: cada recorrido se hace con una persona.</p>
+</details>
+<details class="faq-item">
+<summary>¿Es presencial o en línea?</summary>
+<p class="faq-answer">Las dos cosas. La devolución puede ser presencial en Salvador, en la Clínica Kirinonomori Serviços e Saúde, en Parque Bela Vista, o por plataforma virtual.</p>
+</details>
+<details class="faq-item">
+<summary>¿Cuánto dura y cuántos encuentros son?</summary>
+<p class="faq-answer">Después de la conversación inicial, son dos encuentros: la etapa previa, de 30 minutos, y la devolución, de 60 minutos. Entre uno y otro hay de una a dos semanas, y el ciclo completo suele llevar unas tres semanas.</p>
+</details>
+<details class="faq-item">
+<summary>¿Qué necesito preparar antes?</summary>
+<p class="faq-answer">Nada más que una idea de lo que está pasando. En la conversación inicial usted cuenta el contexto, y el cuestionario SMCIT solo se envía después.</p>
+</details>
+<details class="faq-item">
+<summary>¿Incluye informe o plan de acción?</summary>
+<p class="faq-answer">Incluye un informe individual, generado a partir de sus respuestas al SMCIT, que es la base de la devolución. El encuentro de devolución se graba, y la grabación queda con usted para consulta posterior.</p>
+</details>
+<details class="faq-item">
+<summary>¿Y si la situación requiere otro tipo de apoyo?</summary>
+<p class="faq-answer">Se lo diremos con claridad. Cuando la necesidad requiere acompañamiento clínico individual o un diagnóstico de toda la organización, se indica en la conversación inicial o en la devolución.</p>
+</details>
+</div>
+</div>
+</section>
+<!-- INVESTIMENTO -->
+<section class="dir-block reveal">
+<div class="container">
+<span class="eyebrow-editorial">Contratación</span>
+<h2 class="s-title">Cómo contratar.</h2>
+<p class="s-sub">Un recorrido individual, del cuestionario a la devolución. El valor se propone según el contexto de cada organización.</p>
+<div class="invest-block">
+<div class="invest-grid" style="grid-template-columns:1fr">
+<article class="invest-tier">
+<span class="tier-eyebrow">Orientación Ejecutiva</span>
+<h3>Recorrido individual</h3>
+<span class="price">Propuesta según el contexto</span>
+<ul>
+<li>Etapa previa de 30 minutos, con el cuestionario SMCIT</li>
+<li>Informe individual a partir de sus respuestas</li>
+<li>Devolución de 60 minutos, presencial en Salvador o en línea</li>
+<li>Grabación privada del encuentro para consulta posterior</li>
+</ul>
+<a class="btn btn-primary" href="https://wa.me/5571981357004?text=Hola%2C%20me%20gustar%C3%ADa%20entender%20si%20la%20Orientaci%C3%B3n%20Ejecutiva%20tiene%20sentido%20para%20una%20necesidad%20de%20mi%20empresa.%20%C2%BFPodemos%20hablar%3F" style="width:100%;text-align:center;justify-content:center">Pedir información →</a>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA FINAL -->
+<section class="dir-cta reveal">
+<div class="container">
+<span class="eyebrow-editorial">Próximo paso</span>
+<h2>¿Vemos si este es el próximo paso correcto?</h2>
+<p class="cta-sub">Agende una conversación inicial para contar la situación y entender si la Orientación Ejecutiva sirve, o si otro formato responde mejor a lo que necesita su empresa.</p>
+<div class="cta-row"><a class="btn btn-primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Yjoyksn9Vt9PRmAO_eAq2B8JaYhVDtcc3cLVbWySjaW4tpjXOcf0J--8nsaYp1NCr3B9wL8Nu" rel="noopener" target="_blank">Agendar conversación inicial →</a> <a class="btn btn-secondary" href="https://wa.me/5571981357004?text=Hola%2C%20me%20gustar%C3%ADa%20entender%20si%20la%20Orientaci%C3%B3n%20Ejecutiva%20tiene%20sentido%20para%20una%20necesidad%20de%20mi%20empresa.%20%C2%BFPodemos%20hablar%3F">Escribir por WhatsApp</a></div>
+<p class="meta">Correo: escutaris@zohomail.com · <a href="https://wa.me/5571981357004?text=Hola%2C%20me%20gustar%C3%ADa%20entender%20si%20la%20Orientaci%C3%B3n%20Ejecutiva%20tiene%20sentido%20para%20una%20necesidad%20de%20mi%20empresa.%20%C2%BFPodemos%20hablar%3F">WhatsApp +55 71 98135-7004</a> · CRM-BA 12797 · RQE 7237 · ICOH · ABERGO · Board Academy 2024</p>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
+<p class="footer-anchor">Médica del trabajo · Salvador, Bahía, Brasil.<br/>Cuidar de las personas es cuidar del negocio.</p>
+</div>
+<div>
+<div class="footer-col-title">Navegar</div>
+<div class="stack-3">
+<div><a href="index.html">Inicio</a></div>
+<div><a href="https://guia.draanapaulateixeira.com.br/#receber-guia" rel="noopener" target="_blank">Guía gratuita</a></div>
+<div><a href="palestras.html">Charlas</a></div>
+<div><a href="rodas-de-conversa.html">Círculos de Conversación</a></div>
+<div><a href="direcionamento.html">Orientación Ejecutiva</a></div>
+<div><a href="livro.html">Libro</a></div>
+<div><a href="imprensa.html">Prensa</a></div>
+<div><a href="contato.html">Contacto</a></div>
+</div>
+</div>
+<div>
+<div class="footer-col-title">Contacto</div>
+<div class="stack-3">
+<div><a href="mailto:escutaris@zohomail.com">Correo: escutaris@zohomail.com</a></div>
+<div><a href="https://wa.me/5571981357004?text=Hola%2C%20me%20gustar%C3%ADa%20entender%20si%20la%20Orientaci%C3%B3n%20Ejecutiva%20tiene%20sentido%20para%20una%20necesidad%20de%20mi%20empresa.%20%C2%BFPodemos%20hablar%3F">WhatsApp +55 71 98135-7004</a></div>
+<div><a href="https://www.instagram.com/draanapaulateixeira/" rel="noopener" target="_blank">Instagram</a></div>
+<div><a href="https://www.linkedin.com/in/draanapaulateixeira/" rel="noopener" target="_blank">LinkedIn</a></div>
+<div><a href="https://www.youtube.com/@draanapaulateixeira" rel="noopener" target="_blank">YouTube</a></div>
+</div>
+</div>
+</div>
+<div class="footer-meta"><span>CRM-BA 12797 · RQE 7237 · ICOH · ABERGO · Board Academy 2024</span> <span>© 2026 Dra. Ana Paula Teixeira · <a href="governanca.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Gobernanza</a> · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidad</a></span></div>
+<p class="footer-disclaimer">Este sitio no sustituye el acompañamiento médico o psicológico individualizado. Contenido informativo conforme a la Resolución 2.336/2023 del Consejo Federal de Medicina de Brasil sobre publicidad médica.</p>
+</div>
+</footer>
+<script defer="" src="../design-system.js?v=i18n-1"></script>
+</body>
+</html>

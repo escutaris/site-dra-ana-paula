@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- SEO -->
+<title>隐私政策 · Ana Paula Teixeira 医生</title>
+<meta content="我们如何处理在本网站收集的个人数据。本政策符合巴西《通用数据保护法》（第 13.709/2018 号法律）。" name="description"/>
+<meta content="Dra. Ana Paula Teixeira" name="author"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://draanapaulateixeira.com.br/zh/politica-privacidade.html" rel="canonical"/><link href="https://draanapaulateixeira.com.br/politica-privacidade.html" hreflang="pt-BR" rel="alternate"/><link href="https://draanapaulateixeira.com.br/en/politica-privacidade.html" hreflang="en" rel="alternate"/><link href="https://draanapaulateixeira.com.br/es/politica-privacidade.html" hreflang="es" rel="alternate"/><link href="https://draanapaulateixeira.com.br/zh/politica-privacidade.html" hreflang="zh-CN" rel="alternate"/><link href="https://draanapaulateixeira.com.br/politica-privacidade.html" hreflang="x-default" rel="alternate"/>
+<!-- Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="zh_CN" property="og:locale"/>
+<meta content="Dra. Ana Paula Teixeira" property="og:site_name"/>
+<meta content="https://draanapaulateixeira.com.br/zh/politica-privacidade.html" property="og:url"/>
+<meta content="隐私政策 · Ana Paula Teixeira 医生" property="og:title"/>
+<meta content="我们如何处理在本网站收集的个人数据。本政策符合巴西《通用数据保护法》。" property="og:description"/>
+<meta content="https://draanapaulateixeira.com.br/assets/og-default.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="隐私政策 · Ana Paula Teixeira 医生" name="twitter:title"/>
+<meta content="我们如何处理在本网站收集的个人数据。本政策符合 LGPD。" name="twitter:description"/>
+<meta content="https://draanapaulateixeira.com.br/assets/og-default.png" name="twitter:image"/>
+<!-- Favicon -->
+<link href="../assets/favicon.png" rel="icon" type="image/png"/>
+<link href="../assets/favicon.png" rel="apple-touch-icon"/>
+<meta content="#2B180A" name="theme-color"/>
+<link href="../design-system.css?v=i18n-1" rel="stylesheet"/>
+<style>
+  .hero-privacidade {
+    background: var(--bege-areia);
+    padding-block: clamp(72px, 8vw, 120px);
+    border-bottom: 1px solid var(--border);
+  }
+  .hero-privacidade h1 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.5rem + 2.4vw, 3.25rem);
+    line-height: 1.1;
+    color: var(--apollo);
+    letter-spacing: -0.01em;
+    margin: 24px 0 16px 0;
+    max-width: 18ch;
+  }
+  .hero-privacidade .subtitle {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: var(--weight-regular);
+    font-size: clamp(1.125rem, 1rem + 0.6vw, 1.375rem);
+    color: var(--terracota);
+    line-height: 1.4;
+    margin: 0 0 28px 0;
+    max-width: 40ch;
+  }
+  .meta-info {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    border-top: 1px solid var(--border);
+    padding-top: 24px;
+    margin-top: 40px;
+    max-width: 600px;
+  }
+  .meta-info span b {
+    display: block;
+    font-weight: var(--weight-light);
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--preto-editorial);
+    margin-top: 6px;
+    font-family: var(--font-sans);
+  }
+
+  /* Corpo editorial: grid com índice lateral + conteúdo */
+  .privacidade {
+    padding-block: clamp(64px, 7vw, 96px);
+  }
+  .privacidade-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 64px;
+  }
+  @media (min-width: 960px) {
+    .privacidade-grid { grid-template-columns: 240px 1fr; gap: 80px; align-items: start; }
+  }
+
+  /* Índice lateral sticky */
+  .privacidade-toc {
+    position: sticky;
+    top: 88px;
+    font-family: var(--font-sans);
+  }
+  .privacidade-toc .toc-label {
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .privacidade-toc ol {
+    list-style: none; padding: 0; margin: 0;
+    counter-reset: toc;
+  }
+  .privacidade-toc li {
+    counter-increment: toc;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  .privacidade-toc li::before {
+    content: counter(toc, decimal-leading-zero);
+    display: inline-block;
+    width: 28px;
+    font-size: 0.75rem;
+    color: var(--cinza-quente);
+    font-feature-settings: "tnum";
+  }
+  .privacidade-toc a {
+    color: var(--preto-editorial);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: var(--weight-light);
+    transition: color .2s;
+  }
+  .privacidade-toc a:hover { color: var(--terracota); }
+
+  /* Conteúdo */
+  .privacidade-content {
+    max-width: 720px;
+  }
+  .privacidade-content section + section {
+    margin-top: 64px;
+    padding-top: 48px;
+    border-top: 1px solid var(--border);
+  }
+  .privacidade-content h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+    color: var(--apollo);
+    letter-spacing: -0.005em;
+    margin: 0 0 24px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+  }
+  .privacidade-content h2::before {
+    content: attr(data-num);
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.75rem;
+    letter-spacing: 0.22em;
+    color: var(--terracota);
+    min-width: 40px;
+    flex-shrink: 0;
+    position: relative;
+    top: -2px;
+  }
+  .privacidade-content h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.125rem;
+    color: var(--apollo);
+    margin: 32px 0 12px 0;
+  }
+  .privacidade-content p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--preto-editorial);
+    margin: 0 0 16px 0;
+    text-wrap: pretty;
+  }
+  .privacidade-content ul {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--preto-editorial);
+    padding-left: 0;
+    list-style: none;
+    margin: 0 0 16px 0;
+  }
+  .privacidade-content ul li {
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .privacidade-content ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.75em;
+    width: 12px;
+    height: 1px;
+    background: var(--terracota);
+  }
+  .privacidade-content strong {
+    font-weight: var(--weight-medium);
+    color: var(--apollo);
+  }
+  .privacidade-content a {
+    color: var(--apollo);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    transition: color .2s, border-color .2s;
+  }
+  .privacidade-content a:hover {
+    color: var(--terracota);
+    border-color: var(--terracota);
+  }
+
+  /* Bloco destacado: encarregado / direitos */
+  .destaque-box {
+    background: var(--bege-areia);
+    border-left: 3px solid var(--terracota);
+    padding: 32px;
+    margin: 32px 0;
+  }
+  .destaque-box .destaque-label {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    margin-bottom: 12px;
+  }
+  .destaque-box p:last-child { margin-bottom: 0; }
+
+  /* Tabela de dados coletados */
+  .tabela-dados {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--font-sans);
+    font-size: 0.9375rem;
+    margin: 24px 0;
+  }
+  .tabela-dados th {
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--cinza-quente);
+    text-align: left;
+    padding: 12px 16px 12px 0;
+    border-bottom: 1px solid var(--verde-noturno);
+  }
+  .tabela-dados td {
+    padding: 16px 16px 16px 0;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    color: var(--preto-editorial);
+    font-weight: var(--weight-light);
+    line-height: 1.55;
+  }
+  .tabela-dados td:first-child {
+    font-weight: var(--weight-medium);
+    color: var(--apollo);
+    min-width: 160px;
+  }
+  @media (max-width: 640px) {
+    .tabela-dados, .tabela-dados thead, .tabela-dados tbody, .tabela-dados tr, .tabela-dados td { display: block; }
+    .tabela-dados thead { display: none; }
+    .tabela-dados tr { border-bottom: 1px solid var(--border); padding: 16px 0; }
+    .tabela-dados td { border: 0; padding: 4px 0; }
+    .tabela-dados td:first-child { padding-bottom: 6px; }
+  }
+
+  /* CTA final */
+  .cta-duvidas {
+    background: var(--verde-noturno);
+    color: var(--off-white);
+    padding-block: clamp(64px, 7vw, 96px);
+  }
+  .cta-duvidas .inner { max-width: 680px; }
+  .cta-duvidas .eyebrow-editorial { color: var(--off-white); opacity: 0.7; }
+  .cta-duvidas h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.75rem, 1.3rem + 1.4vw, 2.25rem);
+    color: var(--off-white);
+    letter-spacing: -0.005em;
+    margin: 16px 0 20px 0;
+    max-width: 20ch;
+  }
+  .cta-duvidas p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: var(--off-white);
+    opacity: 0.85;
+    margin: 0 0 32px 0;
+    max-width: 54ch;
+  }
+  .cta-duvidas a {
+    color: var(--off-white);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(245, 239, 229, 0.4);
+    transition: border-color .2s;
+    font-weight: var(--weight-medium);
+  }
+  .cta-duvidas a:hover { border-color: var(--terracota); }
+</style>
+<!-- Pixel da Meta (Ana Paula) + aviso de cookies -->
+<script defer="" src="/meta-pixel.js"></script>
+</head>
+<body>
+<nav class="nav" id="nav">
+<div class="nav-inner">
+<a class="logo" href="index.html"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
+<ul class="nav-list">
+<li><a class="nav-link" href="index.html">首页</a></li>
+<li class="nav-has-drop">
+<a class="nav-link nav-drop-trigger" href="index.html#servicos">服务<svg class="nav-caret" fill="none" height="6" stroke="currentColor" stroke-width="1.5" viewbox="0 0 10 6" width="10"><path d="M1 1l4 4 4-4"></path></svg></a>
+<ul class="nav-drop">
+<li><a class="nav-link" href="palestras.html">讲座</a></li>
+<li><a class="nav-link" href="rodas-de-conversa.html">圆桌对话</a></li>
+<li><a class="nav-link" href="direcionamento.html">管理者指导</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="livro.html">著作</a></li>
+<li><a class="nav-link" href="index.html#depoimentos">评价</a></li>
+<li><a class="nav-link" href="index.html#midia">媒体报道</a></li>
+<li><a class="nav-link" href="index.html#publicacoes-agenda">出版物</a></li>
+<li><a class="nav-link nav-link-guia" href="https://guia.draanapaulateixeira.com.br/#receber-guia" rel="noopener" target="_blank">免费指南</a></li>
+<li><a class="btn btn-primary nav-cta" href="https://wa.me/5571981357004?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E4%B8%80%E4%B8%AA%E4%B8%8E%E8%81%8C%E5%9C%BA%E5%BF%83%E7%90%86%E5%81%A5%E5%BA%B7%E6%9C%89%E5%85%B3%E7%9A%84%E9%9C%80%E6%B1%82%E3%80%82%E5%8F%AF%E4%BB%A5%E8%81%8A%E4%B8%80%E8%81%8A%E5%90%97%EF%BC%9F" style="padding:10px 18px;font-size:0.875rem">WhatsApp 联系</a></li>
+</ul>
+<button aria-label="打开菜单" class="nav-toggle">
+<svg fill="none" height="22" stroke="#2B180A" stroke-width="1.5" viewbox="0 0 22 22" width="22"><line x1="3" x2="19" y1="7" y2="7"></line><line x1="3" x2="19" y1="15" y2="15"></line></svg>
+</button>
+</div>
+</nav>
+<header class="hero-privacidade">
+<div class="container">
+<span class="eyebrow-editorial">隐私政策</span>
+<h1>透明地处理您的数据</h1>
+<p class="subtitle">本文件以清晰的语言说明，当您浏览本网站或与我们联系时，您的数据如何被收集、处理和保护。</p>
+<div class="meta-info"><span>版本<b>1.0</b></span> <span>生效日期<b>2026 年 1 月</b></span> <span>法律依据<b>第 13.709/2018 号法律（LGPD）</b></span></div>
+</div>
+</header>
+<section class="privacidade container">
+<div class="privacidade-grid">
+<aside class="privacidade-toc">
+<div class="toc-label">本文件目录</div>
+<ol>
+<li><a href="#quem-somos">谁是数据控制者</a></li>
+<li><a href="#dados-coletados">收集的数据</a></li>
+<li><a href="#finalidades">处理目的</a></li>
+<li><a href="#base-legal">法律依据</a></li>
+<li><a href="#compartilhamento">共享</a></li>
+<li><a href="#armazenamento">存储与安全</a></li>
+<li><a href="#direitos">您的权利</a></li>
+<li><a href="#cookies">Cookie</a></li>
+<li><a href="#alteracoes">本政策的变更</a></li>
+<li><a href="#encarregado">数据保护负责人</a></li>
+</ol>
+</aside>
+<div class="privacidade-content">
+<section id="quem-somos">
+<h2 data-num="01">谁是数据控制者</h2>
+<p>本网站所处理个人数据的<strong>控制者</strong>是<strong>Ana Paula Cunha Teixeira</strong>，职业医学医生（CRM-BA 12797 · RQE 7237），以个人名义作为独立执业者，提供关于职业健康、NR-1 和职业道德伤害的讲座、咨询、培训和出版内容。</p>
+<p>本政策适用于通过<strong>draanapaulateixeira.com.br</strong>域名及其子域名进行的所有互动，包括表单、通讯订阅和后续沟通。</p>
+</section>
+<section id="dados-coletados">
+<h2 data-num="02">收集哪些数据</h2>
+<p>我们只收集回复您的联系、确认您的内容订阅或准备商业方案所必需的数据。本网站不收集任何敏感数据（健康数据、种族、政治观点、宗教信仰、生物特征数据）。</p>
+<table class="tabela-dados">
+<thead>
+<tr>
+<th>类别</th>
+<th>数据</th>
+<th>时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>身份信息</td>
+<td>全名、职位、企业</td>
+<td>联系表单和方案申请表单</td>
+</tr>
+<tr>
+<td>联系方式</td>
+<td>电子邮件、电话</td>
+<td>表单和通讯订阅</td>
+</tr>
+<tr>
+<td>商业背景</td>
+<td>需求性质、企业规模、期限、自由留言</td>
+<td>方案申请表单</td>
+</tr>
+<tr>
+<td>技术数据</td>
+<td>IP 地址、浏览器类型、访问页面、日期和时间</td>
+<td>浏览时自动收集</td>
+</tr>
+</tbody>
+</table>
+<p>通过表单提交的数据存储在<strong>Google Forms / Google Sheets</strong>中，与控制者的专业账户关联。浏览技术数据由网站托管服务商处理，适用时也由流量分析工具（Google Analytics，匿名化处理）处理。</p>
+</section>
+<section id="finalidades">
+<h2 data-num="03">我们如何使用您的数据</h2>
+<ul>
+<li><strong>回复联系请求</strong>：通过表单或留言中提供的渠道回复您。</li>
+<li><strong>准备商业方案</strong>：分析需求背景（规模、行业、期限）并制定合适的方案。</li>
+<li><strong>发送内容通讯</strong>：如果您自愿订阅了通讯，按约定的频率发送相应内容。</li>
+<li><strong>履行法律和监管义务</strong>：适用时，执行主管机关的要求。</li>
+<li><strong>改善网站体验</strong>：以汇总和匿名的方式了解哪些页面访问量最高。</li>
+</ul>
+<p>数据<strong>不会用于</strong>定向广告、出售给第三方或上述目的以外的任何用途。</p>
+</section>
+<section id="base-legal">
+<h2 data-num="04">我们依据什么法律基础处理数据</h2>
+<p>根据 LGPD 第 7 条，个人数据基于以下依据之一进行处理：</p>
+<ul>
+<li><strong>同意</strong>（第 7 条第 I 款）：当您自愿填写联系表单或订阅通讯时。</li>
+<li><strong>履行合同前的程序</strong>（第 7 条第 V 款）：当处理数据是为了准备您所申请的商业方案时。</li>
+<li><strong>正当利益</strong>（第 7 条第 IX 款）：用于汇总技术分析和网站安全，始终尊重您的合理期望和权利。</li>
+<li><strong>履行法定义务</strong>（第 7 条第 II 款）：当法律或法院命令要求保留或共享数据时。</li>
+</ul>
+</section>
+<section id="compartilhamento">
+<h2 data-num="05">与谁共享</h2>
+<p>您的数据<strong>不会出售、出租或转让</strong>给第三方用于商业目的。仅可能与以下各方共享：</p>
+<ul>
+<li><strong>受托处理方</strong>，用于保障网站运行和服务：Google（Forms、Sheets、Gmail）、托管服务商和电子邮件营销平台，均受符合 LGPD 的数据处理合同约束。</li>
+<li><strong>公共机关</strong>，在法律规定或法院命令要求时。</li>
+</ul>
+<p>在任何情况下，您的数据都不会在 LGPD 规定的条件之外，被跨境传输到保护水平不足的国家。</p>
+</section>
+<section id="armazenamento">
+<h2 data-num="06">我们保存多久</h2>
+<p>数据的保存期限以实现上述目的所需的时间为准：</p>
+<ul>
+<li>未达成合作的<strong>商业联系</strong>：最后一次联系后最长<strong>24 个月</strong>。</li>
+<li><strong>达成合作的联系</strong>：按法定税务和合同保存期限，通常为合作结束后<strong>5 年</strong>。</li>
+<li><strong>通讯订阅</strong>：在订阅有效期间保存。退订即时生效，每封邮件中都提供退订方式。</li>
+<li><strong>浏览技术数据</strong>：最长<strong>6 个月</strong>。</li>
+</ul>
+<p>我们采取合理的技术和管理措施，保护您的数据免遭未经授权的访问、销毁、丢失、篡改或不当披露：存储在启用双重验证的企业账户中，通过加密渠道（HTTPS）传输，仅限控制者本人访问。</p>
+</section>
+<section id="direitos">
+<h2 data-num="07">您作为数据主体的权利</h2>
+<p>LGPD 保障您作为数据主体享有以下权利，可随时免费行使：</p>
+<ul>
+<li><strong>确认</strong>我们是否处理您的数据。</li>
+<li><strong>访问</strong>我们持有的关于您的数据。</li>
+<li><strong>更正</strong>不完整、不准确或过时的数据。</li>
+<li><strong>匿名化、封存或删除</strong>不必要、过度或违反 LGPD 处理的数据。</li>
+<li>在适用的法定情形下，将数据<strong>转移</strong>至其他服务商。</li>
+<li><strong>删除</strong>基于您的同意而处理的数据。</li>
+<li><strong>了解</strong>与我们共享您数据的实体。</li>
+<li>随时<strong>撤回</strong>同意。</li>
+<li>在违法情况下，<strong>反对</strong>基于正当利益的处理。</li>
+</ul>
+<div class="destaque-box">
+<div class="destaque-label">如何行使</div>
+<p>请将您的请求发送至<a href="mailto:escutaris@zohomail.com">escutaris@zohomail.com</a>，邮件主题为<strong>"LGPD：数据主体请求"</strong>。我们将按法定期限在<strong>15 个自然日</strong>内回复。在处理涉及敏感或可识别数据的请求前，我们可能要求您提供身份证明。</p>
+</div>
+</section>
+<section id="cookies">
+<h2 data-num="08">Cookie 及类似技术</h2>
+<p>本网站使用浏览所必需的 Cookie（例如，用于记住显示偏好）和汇总分析 Cookie（Google Analytics，启用时），这些 Cookie 不会单独识别您的身份。</p>
+<p>您可以随时设置浏览器拒绝 Cookie，或在接收前收到提醒。拒绝可能影响网站的部分功能，但不妨碍浏览主要页面。</p>
+</section>
+<section id="alteracoes">
+<h2 data-num="09">本政策的变更</h2>
+<p>本政策可能会更新，以反映法规、技术或我们流程的变化。版本和生效日期标注在本文件开头。</p>
+<p>重大变更将在网站首页显著标示，适用时也会直接通知其数据正在被处理的数据主体。</p>
+</section>
+<section id="encarregado">
+<h2 data-num="10">数据保护负责人（DPO）</h2>
+<p>根据 LGPD 第 41 条，鉴于数据处理的规模和性质（独立执业者，无大规模运营），控制者本人直接担任个人数据保护事务的联系人，未指定外部负责人。</p>
+<div class="destaque-box">
+<div class="destaque-label">官方渠道</div>
+<p><strong>Ana Paula Cunha Teixeira 医生</strong><br/> 电子邮件：<a href="mailto:escutaris@zohomail.com">escutaris@zohomail.com</a><br/> WhatsApp：<a href="https://wa.me/5571981357004?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E4%B8%80%E4%B8%AA%E4%B8%8E%E8%81%8C%E5%9C%BA%E5%BF%83%E7%90%86%E5%81%A5%E5%BA%B7%E6%9C%89%E5%85%B3%E7%9A%84%E9%9C%80%E6%B1%82%E3%80%82%E5%8F%AF%E4%BB%A5%E8%81%8A%E4%B8%80%E8%81%8A%E5%90%97%EF%BC%9F">+55 71 98135-7004</a></p>
+<p>您也可以直接向<strong>巴西国家数据保护局（ANPD）</strong>投诉，网址：<a href="https://www.gov.br/anpd/" rel="noopener" target="_blank">gov.br/anpd</a>。</p>
+</div>
+</section>
+</div>
+</div>
+</section>
+<section class="cta-duvidas">
+<div class="container inner">
+<span class="eyebrow-editorial">疑问</span>
+<h2>对数据处理方式还有疑问吗？</h2>
+<p>请写信至<a href="mailto:escutaris@zohomail.com">escutaris@zohomail.com</a>或通过<a href="https://wa.me/5571981357004?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E4%B8%80%E4%B8%AA%E4%B8%8E%E8%81%8C%E5%9C%BA%E5%BF%83%E7%90%86%E5%81%A5%E5%BA%B7%E6%9C%89%E5%85%B3%E7%9A%84%E9%9C%80%E6%B1%82%E3%80%82%E5%8F%AF%E4%BB%A5%E8%81%8A%E4%B8%80%E8%81%8A%E5%90%97%EF%BC%9F">WhatsApp</a>联系。由本人亲自回复，没有自动表单。</p>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
+<p class="footer-anchor">职业医学医生 · 巴西巴伊亚州萨尔瓦多。<br/>关爱员工，就是关爱企业。</p>
+</div>
+<div>
+<div class="footer-col-title">导航</div>
+<div class="stack-3">
+<div><a href="index.html">首页</a></div>
+<div><a href="https://guia.draanapaulateixeira.com.br/#receber-guia" rel="noopener" target="_blank">免费指南</a></div>
+<div><a href="palestras.html">讲座</a></div>
+<div><a href="rodas-de-conversa.html">圆桌对话</a></div>
+<div><a href="direcionamento.html">管理者指导</a></div>
+<div><a href="livro.html">著作</a></div>
+<div><a href="imprensa.html">媒体</a></div>
+<div><a href="contato.html">联系方式</a></div>
+</div>
+</div>
+<div>
+<div class="footer-col-title">联系方式</div>
+<div class="stack-3">
+<div><a href="mailto:escutaris@zohomail.com">电子邮件：escutaris@zohomail.com</a></div>
+<div><a href="https://wa.me/5571981357004?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E4%B8%80%E4%B8%AA%E4%B8%8E%E8%81%8C%E5%9C%BA%E5%BF%83%E7%90%86%E5%81%A5%E5%BA%B7%E6%9C%89%E5%85%B3%E7%9A%84%E9%9C%80%E6%B1%82%E3%80%82%E5%8F%AF%E4%BB%A5%E8%81%8A%E4%B8%80%E8%81%8A%E5%90%97%EF%BC%9F">WhatsApp +55 71 98135-7004</a></div>
+<div><a href="https://www.instagram.com/draanapaulateixeira/" rel="noopener" target="_blank">Instagram</a></div>
+<div><a href="https://www.linkedin.com/in/draanapaulateixeira/" rel="noopener" target="_blank">LinkedIn</a></div>
+<div><a href="https://www.youtube.com/@draanapaulateixeira" rel="noopener" target="_blank">YouTube</a></div>
+</div>
+</div>
+</div>
+<div class="footer-meta"><span>CRM-BA 12797 · RQE 7237 · ICOH · ABERGO · Board Academy 2024</span> <span>© 2026 Ana Paula Teixeira 医生 · draanapaulateixeira.com.br · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3)">隐私政策</a></span></div>
+<p class="footer-disclaimer">本网站不能替代个人医疗或心理随访。内容仅供参考，符合巴西联邦医学委员会关于医疗宣传的第 2.336/2023 号决议。</p>
+</div>
+</footer>
+<script src="../design-system.js?v=i18n-1"></script>
+<script>
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Smooth scroll for TOC
+  document.querySelectorAll('.privacidade-toc a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        const top = target.getBoundingClientRect().top + window.scrollY - 100;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>

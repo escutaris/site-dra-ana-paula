@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- SEO -->
+<title>Mental health governance at work · Dr. Ana Paula</title>
+<meta content="Indicators, sources and questions to strengthen mental health governance at work: NR-1, psychosocial risks and leadership decisions." name="description"/>
+<meta content="Dra. Ana Paula Teixeira" name="author"/>
+<link href="https://draanapaulateixeira.com.br/en/governanca.html" rel="canonical"/><link href="https://draanapaulateixeira.com.br/governanca.html" hreflang="pt-BR" rel="alternate"/><link href="https://draanapaulateixeira.com.br/en/governanca.html" hreflang="en" rel="alternate"/><link href="https://draanapaulateixeira.com.br/es/governanca.html" hreflang="es" rel="alternate"/><link href="https://draanapaulateixeira.com.br/zh/governanca.html" hreflang="zh-CN" rel="alternate"/><link href="https://draanapaulateixeira.com.br/governanca.html" hreflang="x-default" rel="alternate"/>
+<!-- Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="Dra. Ana Paula Teixeira" property="og:site_name"/>
+<meta content="https://draanapaulateixeira.com.br/en/governanca.html" property="og:url"/>
+<meta content="Mental Health Governance at Work · Indicators and Psychosocial Risks" property="og:title"/>
+<meta content="Indicators and strategic questions to strengthen mental health at work, NR-1 and psychosocial risk management." property="og:description"/>
+<meta content="https://draanapaulateixeira.com.br/assets/og-default.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Mental Health Governance at Work · Indicators and Psychosocial Risks" name="twitter:title"/>
+<meta content="Indicators and strategic questions to strengthen mental health at work, NR-1 and psychosocial risk management." name="twitter:description"/>
+<meta content="https://draanapaulateixeira.com.br/assets/og-default.png" name="twitter:image"/>
+<!-- Favicon -->
+<link href="../assets/favicon.png" rel="icon" type="image/png"/>
+<link href="../assets/favicon.png" rel="apple-touch-icon"/>
+<meta content="#2B180A" name="theme-color"/>
+<link href="../design-system.css?v=i18n-1" rel="stylesheet"/>
+<style>
+  .hero-mid { padding-block: clamp(80px, 9vw, 128px); background: var(--bege-areia); }
+  .hero-mid h1 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.125rem, 1.6rem + 2.4vw, 3.25rem);
+    line-height: 1.12;
+    color: var(--apollo);
+    letter-spacing: -0.01em;
+    margin: 24px 0 24px 0;
+    max-width: 22ch;
+    text-wrap: balance;
+  }
+  .hero-mid p.sub {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    max-width: 62ch;
+    margin: 0;
+  }
+
+  .block { padding-block: clamp(96px, 10vw, 128px); }
+  .block h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.5rem);
+    color: var(--apollo);
+    margin: 16px 0 40px 0;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  .block .intro {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    max-width: 62ch;
+    margin: 0 0 56px 0;
+  }
+
+  /* KPI band — custo / retorno / nexo */
+  .kpi-band { background: var(--off-white); }
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-top: 40px;
+  }
+  @media (min-width: 800px) { .kpi-grid { grid-template-columns: repeat(3, 1fr); } }
+  .kpi-cell {
+    background: var(--off-white);
+    padding: 48px 32px;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .kpi-tag {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--terracota);
+  }
+  .kpi-num {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.25rem, 1.6rem + 2.6vw, 3.5rem);
+    color: var(--apollo);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .kpi-desc {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--preto-editorial);
+    margin: 0;
+  }
+  .source-note {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    color: var(--cinza-quente);
+    margin: 22px 0 0;
+    max-width: 78ch;
+  }
+  .source-note a {
+    color: var(--apollo);
+    border-bottom: 1px solid rgba(194,84,57,.45);
+    text-decoration: none;
+  }
+
+  /* Gap — verde-noturno, dados da lacuna */
+  .gap-block { background: var(--verde-noturno); color: var(--off-white); }
+  .gap-block h2 { color: var(--off-white); }
+  .gap-block .eyebrow-editorial { color: var(--off-white); }
+  .gap-block .eyebrow-editorial::before { background: var(--terracota); }
+  .gap-block .intro { color: var(--off-white); opacity: 0.85; }
+  .gap-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 24px;
+  }
+  @media (min-width: 700px) { .gap-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; } }
+  @media (min-width: 1000px) { .gap-grid { grid-template-columns: repeat(3, 1fr); } }
+  .gap-cell {
+    border-top: 1px solid rgba(245,239,229,.25);
+    padding-top: 24px;
+  }
+  .gap-num {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.4rem + 2.2vw, 2.875rem);
+    color: var(--terracota);
+    line-height: 1;
+    letter-spacing: -0.01em;
+    display: block;
+  }
+  .gap-title {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.0625rem;
+    color: var(--off-white);
+    line-height: 1.3;
+    margin: 16px 0 12px 0;
+    letter-spacing: -0.005em;
+  }
+  .gap-desc {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: var(--off-white);
+    opacity: 0.78;
+    margin: 0;
+  }
+  .gap-block .source-note {
+    color: rgba(245,239,229,.72);
+  }
+  .gap-block .source-note a {
+    color: var(--bege-areia);
+    border-bottom-color: rgba(194,84,57,.7);
+  }
+
+  /* FAQ — Regras de Ouro em accordion */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--border);
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+  }
+  .faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 28px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.125rem, 0.95rem + 0.6vw, 1.375rem);
+    color: var(--apollo);
+    line-height: 1.3;
+    letter-spacing: -0.005em;
+    list-style-position: outside;
+    transition: color .2s;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary:hover { color: var(--terracota); }
+  .faq-num {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.8125rem;
+    letter-spacing: 0.2em;
+    color: var(--terracota);
+    flex-shrink: 0;
+    padding-top: 6px;
+    min-width: 36px;
+  }
+  .faq-q {
+    flex: 1;
+    text-wrap: balance;
+  }
+  .faq-toggle {
+    flex-shrink: 0;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1.5rem;
+    color: var(--cinza-quente);
+    line-height: 1;
+    margin-top: 4px;
+    transition: transform .25s;
+  }
+  .faq-item[open] .faq-toggle { transform: rotate(45deg); color: var(--terracota); }
+  .faq-body {
+    padding: 0 0 32px 60px;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--preto-editorial);
+    max-width: 70ch;
+  }
+  /* Mobile: layout vertical no summary — num+toggle no topo, pergunta abaixo */
+  @media (max-width: 600px) {
+    .faq-item summary {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: "num . toggle" "q q q";
+      gap: 12px 8px;
+      padding: 22px 0;
+      font-size: 1.0625rem;
+    }
+    .faq-num { grid-area: num; padding-top: 0; min-width: auto; font-size: 0.6875rem; }
+    .faq-q { grid-area: q; }
+    .faq-toggle { grid-area: toggle; margin-top: 0; }
+    .faq-body { padding: 0 0 28px 0; font-size: 0.9375rem; }
+  }
+
+  /* Manifesto fechamento */
+  .manifesto {
+    background: var(--bege-areia);
+    padding-block: clamp(80px, 8vw, 112px);
+  }
+  .manifesto .wrap { max-width: 38rem; }
+  .manifesto .quote {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-medium);
+    font-style: italic;
+    font-size: clamp(1.375rem, 1.05rem + 1.2vw, 1.875rem);
+    line-height: 1.4;
+    color: var(--apollo);
+    letter-spacing: -0.005em;
+    text-wrap: balance;
+    margin: 32px 0 0 0;
+  }
+  .manifesto .quote em {
+    color: var(--terracota);
+    font-style: normal;
+    font-weight: var(--weight-bold);
+  }
+
+  /* CTA final */
+  .cta-block { background: var(--verde-noturno); color: var(--off-white); padding-block: clamp(80px, 8vw, 112px); }
+  .cta-block .eyebrow-editorial { color: var(--off-white); }
+  .cta-block .eyebrow-editorial::before { background: var(--terracota); }
+  .cta-block h2 {
+    color: var(--off-white);
+    margin: 24px 0 24px 0;
+    max-width: 22ch;
+  }
+  .cta-block p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--off-white);
+    opacity: 0.9;
+    max-width: 60ch;
+    margin: 0 0 40px 0;
+  }
+</style>
+<!-- dados estruturados -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://draanapaulateixeira.com.br/#dra-ana-paula",
+      "name": "Dr. Ana Paula Teixeira",
+      "alternateName": "Ana Paula Teixeira",
+      "jobTitle": "Occupational physician",
+      "description": "Occupational physician, author of Quando o Trabalho Dói (When Work Hurts) and researcher in Occupational Moral Injury, with almost three decades of corporate practice.",
+      "url": "https://draanapaulateixeira.com.br/",
+      "image": "https://draanapaulateixeira.com.br/assets/optimized/portrait-vestido-vermelho-bracos-cruzados.webp",
+      "telephone": "+55-71-98135-7004",
+      "email": "escutaris@zohomail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Salvador",
+        "addressRegion": "BA",
+        "addressCountry": "BR"
+      },
+      "knowsAbout": [
+        "Mental health at work",
+        "Occupational Moral Injury",
+        "NR-1 and psychosocial risk factors",
+        "Occupational medicine",
+        "Burnout and work-related illness",
+        "Return to work after sick leave"
+      ],
+      "knowsLanguage": "pt-BR",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Federal University of Bahia"
+      },
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "International Commission on Occupational Health (ICOH)"
+        },
+        {
+          "@type": "Organization",
+          "name": "Brazilian Ergonomics Association (ABERGO)"
+        },
+        {
+          "@type": "Organization",
+          "name": "Brazilian National Association of Occupational Medicine (ANAMT/AMB)"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Registro profissional",
+          "name": "CRM-BA 12797"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Registro de qualificação de especialista",
+          "name": "RQE 7237 (Occupational Medicine)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Certificação",
+          "name": "Board Member 2024 (Board Academy)"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/draanapaulateixeira/",
+        "https://www.linkedin.com/in/draanapaulateixeira/",
+        "https://www.youtube.com/@draanapaulateixeira"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://draanapaulateixeira.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Governance",
+          "item": "https://draanapaulateixeira.com.br/governanca.html"
+        }
+      ]
+    }
+  ]
+}</script>
+<!-- /dados estruturados -->
+<!-- Pixel da Meta (Ana Paula) + aviso de cookies -->
+<script defer="" src="/meta-pixel.js"></script>
+</head>
+<body>
+<nav class="nav" id="nav">
+<div class="nav-inner">
+<a class="logo" href="index.html"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
+<ul class="nav-list">
+<li><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-has-drop">
+<a class="nav-link nav-drop-trigger" href="index.html#servicos">Services<svg class="nav-caret" fill="none" height="6" stroke="currentColor" stroke-width="1.5" viewbox="0 0 10 6" width="10"><path d="M1 1l4 4 4-4"></path></svg></a>
+<ul class="nav-drop">
+<li><a class="nav-link" href="palestras.html">Talks</a></li>
+<li><a class="nav-link" href="rodas-de-conversa.html">Conversation Circles</a></li>
+<li><a class="nav-link" href="direcionamento.html">Executive Guidance</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="livro.html">Book</a></li>
+<li><a class="nav-link" href="index.html#depoimentos">Testimonials</a></li>
+<li><a class="nav-link" href="index.html#midia">In the media</a></li>
+<li><a class="nav-link" href="index.html#publicacoes-agenda">Publications</a></li>
+<li><a class="nav-link nav-link-guia" href="https://guia.draanapaulateixeira.com.br/#receber-guia" rel="noopener" target="_blank">Free guide</a></li>
+<li><a class="btn btn-primary nav-cta" href="https://wa.me/5571981357004?text=Hello%2C%20I%20would%20like%20to%20talk%20about%20a%20matter%20related%20to%20mental%20health%20at%20work.%20Could%20we%20talk%3F" style="padding:10px 18px;font-size:0.875rem">Message on WhatsApp</a></li>
+</ul>
+<button aria-label="Open menu" class="nav-toggle">
+<svg fill="none" height="22" stroke="#2B180A" stroke-width="1.5" viewbox="0 0 22 22" width="22"><line x1="3" x2="19" y1="7" y2="7"></line><line x1="3" x2="19" y1="15" y2="15"></line></svg>
+</button>
+</div>
+</nav>
+<header class="hero-mid">
+<div class="container">
+<span class="eyebrow-editorial">Governance · Indicators · Decision</span>
+<h1>When a company measures better, it decides better.</h1>
+<p class="sub">And when it decides better, it turns mental health into culture, leadership and long-term value. This page brings together the indicators and questions that strengthen management.</p>
+</div>
+</header>
+<!-- KPI BAND — custo, retorno, nexo -->
+<section class="block kpi-band reveal">
+<div class="container">
+<span class="eyebrow-editorial">The bill nobody wants to see</span>
+<h2>Cost, return and what global data shows.</h2>
+<p class="intro">Mental health at work is no longer just an HR topic. It is a balance sheet line, culture, productivity, leadership and psychosocial risk.</p>
+<div class="kpi-grid reveal-stagger">
+<div class="kpi-cell">
+<span class="kpi-tag">Global cost</span>
+<span class="kpi-num">US$ 1 trillion</span>
+<p class="kpi-desc"><strong>In lost productivity every year.</strong> The WHO estimates that 12 billion working days are lost annually to depression and anxiety.</p>
+</div>
+<div class="kpi-cell">
+<span class="kpi-tag">Documented return</span>
+<span class="kpi-num">4.7x</span>
+<p class="kpi-desc"><strong>Average return on investment.</strong> A Deloitte UK analysis indicates a return of about £4.70 for every £1 invested in mental health and well-being support.</p>
+</div>
+<div class="kpi-cell">
+<span class="kpi-tag">Scale of the problem</span>
+<span class="kpi-num">15%</span>
+<p class="kpi-desc"><strong>Of working-age adults</strong> were estimated to be living with a mental disorder in 2019, according to the WHO. The figure reinforces the need for management, prevention and support at work.</p>
+</div>
+</div>
+<p class="source-note">Sources: <a href="https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work" rel="noopener" target="_blank">WHO, Mental health at work</a>; <a href="https://www.deloitte.com/uk/en/about/press-room/poor-mental-health-costs-uk-employers-51-billion-a-year-for-employees.html" rel="noopener" target="_blank">Deloitte UK, Mental health and employers 2024</a>.</p>
+</div>
+</section>
+<!-- LACUNA — verde noturno -->
+<section class="block gap-block reveal">
+<div class="container">
+<span class="eyebrow-editorial">The gap between intention and governance</span>
+<h2>The market recognizes the problem. Few companies turn it into decisions.</h2>
+<p class="intro">Although 97% of large companies recognize mental health as a priority, that recognition rarely becomes governance, transparency or an auditable KPI.</p>
+<div class="gap-grid reveal-stagger">
+<div class="gap-cell">
+<span class="gap-num">13%</span>
+<h3 class="gap-title">CEOs make public commitments on the topic.</h3>
+<p class="gap-desc">Few companies turn internal recognition into a public position from senior leadership.</p>
+</div>
+<div class="gap-cell">
+<span class="gap-num">33%</span>
+<h3 class="gap-title">They train line managers.</h3>
+<p class="gap-desc">Most still do not prepare leaders to recognize suffering, hold difficult conversations and act with preparation.</p>
+</div>
+<div class="gap-cell">
+<span class="gap-num">21%</span>
+<h3 class="gap-title">They use data to shape strategy.</h3>
+<p class="gap-desc">Many companies measure engagement, but few turn that material into consistent decisions about mental health.</p>
+</div>
+<div class="gap-cell">
+<span class="gap-num">10%</span>
+<h3 class="gap-title">They disclose impact KPIs.</h3>
+<p class="gap-desc">Low transparency shows how often intention is communicated without demonstrating real results.</p>
+</div>
+<div class="gap-cell">
+<span class="gap-num">0%</span>
+<h3 class="gap-title">They have the system audited externally.</h3>
+<p class="gap-desc">Among the largest companies assessed, none has a mental health management system audited by a third party, a field still immature in governance.</p>
+</div>
+<div class="gap-cell" style="display:flex;flex-direction:column;justify-content:center;border-top-color:var(--terracota)">
+<p style="font-family:var(--font-serif);font-style:italic;font-size:1.0625rem;line-height:1.5;color:var(--off-white);margin:0;text-wrap:balance">Mental health at work is not strengthened by intention alone. It is strengthened when the company learns to measure what reveals trust, stress, support, balance and real culture change.</p>
+</div>
+</div>
+<p class="source-note">Source of the percentages: <a href="https://www.ccla.co.uk/documents/ccla-corporate-mental-health-benchmark-global-100-2025/download?inline=1" rel="noopener" target="_blank">CCLA Corporate Mental Health Benchmark Global 100+ 2025</a>, a report based on public information from the companies assessed.</p>
+</div>
+</section>
+<!-- REGRAS DE OURO — FAQ -->
+<section class="block container reveal">
+<span class="eyebrow-editorial">Golden Rules · Questions and Answers</span>
+<h2>The questions that strengthen management.</h2>
+<p class="intro">Twelve questions for senior leadership to assess real maturity in mental health at work, psychosocial risks, NR-1 and the indicators that turn intention into decisions.</p>
+<div class="faq-list">
+<details class="faq-item">
+<summary><span class="faq-num">01</span> <span class="faq-q">How do I know whether my company is creating the safety for people to speak up?</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>One of the most important signs is the percentage of employees who feel safe to talk openly with their direct manager about mental health, emotional difficulties and overload. When this figure is low, the company may have formal channels but still lack real trust.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">02</span> <span class="faq-q">What does a good well-being indicator need to capture?</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>Measuring overall satisfaction is not enough. More mature companies look at how people feel about work-life balance, perceived well-being and trends over time. This kind of reading helps adapt practices, routines and work models more intelligently.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">03</span> <span class="faq-q">How can you tell whether people know where to get help?</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>An essential indicator is internal awareness: how many employees know where to find support, what kind of support exists and how to access it. A company may offer valuable resources and still have low effectiveness if the workforce does not know they exist or does not trust them.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">04</span> <span class="faq-q">Why does measuring perceived stress help you act earlier?</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>Because this data allows predictive action. When the company tracks the percentage of people reporting high levels of stress, it can see patterns before the impact turns into sick leave, conflict, a drop in performance or more evident illness.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">05</span> <span class="faq-q">What shows that an initiative is changing behavior, not just discourse?</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>Tracking attitudes, uptake and changes in behavior toward healthier habits and lifestyles helps you understand whether the culture is really moving. When there is no concrete change, communication may be strong, but transformation has not yet reached everyday life.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">06</span> <span class="faq-q">What do these indicators reveal to senior leadership?</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>They help answer a strategic question: are the resources invested in mental health improving only the company's image, or also its culture, trust and the real experience of work? When properly tracked and disclosed, these indicators strengthen transparency, consistency and decision-making capacity.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">07</span> <span class="faq-q">Which is worth more: measuring a lot or measuring better?</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>Measuring better. The value lies in choosing indicators that make sense for the company's reality and make it possible to track trends, gaps and the concrete effects of actions. The goal is not to inflate dashboards, but to support more responsible decisions that are more useful to the operation.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">08</span> <span class="faq-q">What is the question every leader should ask?</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>Do the people in my company feel safe, supported and informed enough to ask for help before their suffering gets worse?</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">09</span> <span class="faq-q">How does NR-1 connect to mental health governance at work?</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>NR-1 (Brazil's occupational risk management standard) requires occupational risks to be identified, assessed and managed within the company's Occupational Risk Management (GRO) and Risk Management Program (PGR). When psychosocial factors enter the conversation, the company needs to move beyond one-off actions and build evidence: where the risk appears, who is exposed, what controls exist and how leadership monitors progress.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">10</span> <span class="faq-q">What is the difference between an emotional support benefit and psychosocial risk management?</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>Emotional support benefits help people who are already suffering. Psychosocial risk management also looks at how work is organized: workload, autonomy, fairness, role clarity, relationships, conflicts and leadership practices. A mature company needs both, but should not confuse individual support with prevention at the source.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">11</span> <span class="faq-q">Which mental health indicators can a company track without exposing people?</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>Useful indicators can be tracked in aggregate: absenteeism, sick leave, turnover, program uptake, perceived support, psychological safety, workload, leadership quality and use of care channels. The point is not to watch individuals, but to see patterns in order to act responsibly.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">12</span> <span class="faq-q">When does it make sense to bring in external technical support?</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>When there is recurring illness, sensitive conflicts, doubts about the link with work, return after sick leave, regulatory pressure or difficulty turning data into decisions. Technical support helps separate opinion from criteria, protect people and guide the company without reducing everything to internal communication.</p>
+</div>
+</details>
+</div>
+</section>
+<!-- CTA -->
+<section class="cta-block reveal">
+<div class="container">
+<span class="eyebrow-editorial">Next step</span>
+<h2>Bring this governance into your company.</h2>
+<p>Talks, conversation circles and Executive Guidance turn this knowledge into executive decisions, with clinical criteria, a regulatory basis and management language.</p>
+<div class="flex gap-3" style="flex-wrap:wrap"><a class="btn btn-primary" href="index.html#servicos">See services →</a> <a class="btn btn-secondary" href="contato.html">Talk to Dr. Ana Paula</a></div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
+<p class="footer-anchor">Because companies with integrity take seriously what affects people, culture and work.</p>
+</div>
+<div>
+<div class="footer-col-title">Navigate</div>
+<div class="stack-3">
+<div><a href="index.html">Home</a></div>
+<div><a href="https://guia.draanapaulateixeira.com.br/#receber-guia" rel="noopener" target="_blank">Free guide</a></div>
+<div><a href="palestras.html">Talks</a></div>
+<div><a href="rodas-de-conversa.html">Conversation Circles</a></div>
+<div><a href="direcionamento.html">Executive Guidance</a></div>
+<div><a href="livro.html">Book</a></div>
+<div><a href="imprensa.html">Press</a></div>
+<div><a href="contato.html">Contact</a></div>
+</div>
+</div>
+<div>
+<div class="footer-col-title">Contact</div>
+<div class="stack-3">
+<div><a href="mailto:escutaris@zohomail.com">Email: escutaris@zohomail.com</a></div>
+<div><a href="https://wa.me/5571981357004?text=Hello%2C%20I%20would%20like%20to%20talk%20about%20a%20matter%20related%20to%20mental%20health%20at%20work.%20Could%20we%20talk%3F">WhatsApp +55 71 98135-7004</a></div>
+<div><a href="https://www.instagram.com/draanapaulateixeira/" rel="noopener" target="_blank">Instagram</a></div>
+<div><a href="https://www.linkedin.com/in/draanapaulateixeira/" rel="noopener" target="_blank">LinkedIn</a></div>
+<div><a href="https://www.youtube.com/@draanapaulateixeira" rel="noopener" target="_blank">YouTube</a></div>
+</div>
+</div>
+</div>
+<div class="footer-meta"><span>CRM-BA 12797 · RQE 7237 · ICOH · ABERGO · Board Academy 2024</span> <span>© 2026 Dr. Ana Paula Teixeira · <a href="governanca.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Governance</a> · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Privacy Policy</a></span></div>
+<p class="footer-disclaimer">This website does not replace individual medical or psychological care. Informational content in accordance with Brazilian Federal Council of Medicine Resolution 2,336/2023 on medical advertising.</p>
+</div>
+</footer>
+<script src="../design-system.js?v=i18n-1"></script>
+<script>
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+</body>
+</html>

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- SEO -->
+<title>职场心理健康治理 · Ana Paula 医生</title>
+<meta content="提升职场心理健康治理水平的指标、来源和问题：NR-1、心理社会风险与领导决策。" name="description"/>
+<meta content="Dra. Ana Paula Teixeira" name="author"/>
+<link href="https://draanapaulateixeira.com.br/zh/governanca.html" rel="canonical"/><link href="https://draanapaulateixeira.com.br/governanca.html" hreflang="pt-BR" rel="alternate"/><link href="https://draanapaulateixeira.com.br/en/governanca.html" hreflang="en" rel="alternate"/><link href="https://draanapaulateixeira.com.br/es/governanca.html" hreflang="es" rel="alternate"/><link href="https://draanapaulateixeira.com.br/zh/governanca.html" hreflang="zh-CN" rel="alternate"/><link href="https://draanapaulateixeira.com.br/governanca.html" hreflang="x-default" rel="alternate"/>
+<!-- Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="zh_CN" property="og:locale"/>
+<meta content="Dra. Ana Paula Teixeira" property="og:site_name"/>
+<meta content="https://draanapaulateixeira.com.br/zh/governanca.html" property="og:url"/>
+<meta content="职场心理健康治理 · 指标与心理社会风险" property="og:title"/>
+<meta content="提升职场心理健康、NR-1 和心理社会风险管理水平的指标与战略问题。" property="og:description"/>
+<meta content="https://draanapaulateixeira.com.br/assets/og-default.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="职场心理健康治理 · 指标与心理社会风险" name="twitter:title"/>
+<meta content="提升职场心理健康、NR-1 和心理社会风险管理水平的指标与战略问题。" name="twitter:description"/>
+<meta content="https://draanapaulateixeira.com.br/assets/og-default.png" name="twitter:image"/>
+<!-- Favicon -->
+<link href="../assets/favicon.png" rel="icon" type="image/png"/>
+<link href="../assets/favicon.png" rel="apple-touch-icon"/>
+<meta content="#2B180A" name="theme-color"/>
+<link href="../design-system.css?v=i18n-1" rel="stylesheet"/>
+<style>
+  .hero-mid { padding-block: clamp(80px, 9vw, 128px); background: var(--bege-areia); }
+  .hero-mid h1 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.125rem, 1.6rem + 2.4vw, 3.25rem);
+    line-height: 1.12;
+    color: var(--apollo);
+    letter-spacing: -0.01em;
+    margin: 24px 0 24px 0;
+    max-width: 22ch;
+    text-wrap: balance;
+  }
+  .hero-mid p.sub {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    max-width: 62ch;
+    margin: 0;
+  }
+
+  .block { padding-block: clamp(96px, 10vw, 128px); }
+  .block h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.5rem);
+    color: var(--apollo);
+    margin: 16px 0 40px 0;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  .block .intro {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--preto-editorial);
+    max-width: 62ch;
+    margin: 0 0 56px 0;
+  }
+
+  /* KPI band — custo / retorno / nexo */
+  .kpi-band { background: var(--off-white); }
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-top: 40px;
+  }
+  @media (min-width: 800px) { .kpi-grid { grid-template-columns: repeat(3, 1fr); } }
+  .kpi-cell {
+    background: var(--off-white);
+    padding: 48px 32px;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .kpi-tag {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--terracota);
+  }
+  .kpi-num {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.25rem, 1.6rem + 2.6vw, 3.5rem);
+    color: var(--apollo);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .kpi-desc {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--preto-editorial);
+    margin: 0;
+  }
+  .source-note {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    color: var(--cinza-quente);
+    margin: 22px 0 0;
+    max-width: 78ch;
+  }
+  .source-note a {
+    color: var(--apollo);
+    border-bottom: 1px solid rgba(194,84,57,.45);
+    text-decoration: none;
+  }
+
+  /* Gap — verde-noturno, dados da lacuna */
+  .gap-block { background: var(--verde-noturno); color: var(--off-white); }
+  .gap-block h2 { color: var(--off-white); }
+  .gap-block .eyebrow-editorial { color: var(--off-white); }
+  .gap-block .eyebrow-editorial::before { background: var(--terracota); }
+  .gap-block .intro { color: var(--off-white); opacity: 0.85; }
+  .gap-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 24px;
+  }
+  @media (min-width: 700px) { .gap-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; } }
+  @media (min-width: 1000px) { .gap-grid { grid-template-columns: repeat(3, 1fr); } }
+  .gap-cell {
+    border-top: 1px solid rgba(245,239,229,.25);
+    padding-top: 24px;
+  }
+  .gap-num {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2rem, 1.4rem + 2.2vw, 2.875rem);
+    color: var(--terracota);
+    line-height: 1;
+    letter-spacing: -0.01em;
+    display: block;
+  }
+  .gap-title {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.0625rem;
+    color: var(--off-white);
+    line-height: 1.3;
+    margin: 16px 0 12px 0;
+    letter-spacing: -0.005em;
+  }
+  .gap-desc {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: var(--off-white);
+    opacity: 0.78;
+    margin: 0;
+  }
+  .gap-block .source-note {
+    color: rgba(245,239,229,.72);
+  }
+  .gap-block .source-note a {
+    color: var(--bege-areia);
+    border-bottom-color: rgba(194,84,57,.7);
+  }
+
+  /* FAQ — Regras de Ouro em accordion */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--border);
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+  }
+  .faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 28px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.125rem, 0.95rem + 0.6vw, 1.375rem);
+    color: var(--apollo);
+    line-height: 1.3;
+    letter-spacing: -0.005em;
+    list-style-position: outside;
+    transition: color .2s;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary:hover { color: var(--terracota); }
+  .faq-num {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.8125rem;
+    letter-spacing: 0.2em;
+    color: var(--terracota);
+    flex-shrink: 0;
+    padding-top: 6px;
+    min-width: 36px;
+  }
+  .faq-q {
+    flex: 1;
+    text-wrap: balance;
+  }
+  .faq-toggle {
+    flex-shrink: 0;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1.5rem;
+    color: var(--cinza-quente);
+    line-height: 1;
+    margin-top: 4px;
+    transition: transform .25s;
+  }
+  .faq-item[open] .faq-toggle { transform: rotate(45deg); color: var(--terracota); }
+  .faq-body {
+    padding: 0 0 32px 60px;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--preto-editorial);
+    max-width: 70ch;
+  }
+  /* Mobile: layout vertical no summary — num+toggle no topo, pergunta abaixo */
+  @media (max-width: 600px) {
+    .faq-item summary {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: "num . toggle" "q q q";
+      gap: 12px 8px;
+      padding: 22px 0;
+      font-size: 1.0625rem;
+    }
+    .faq-num { grid-area: num; padding-top: 0; min-width: auto; font-size: 0.6875rem; }
+    .faq-q { grid-area: q; }
+    .faq-toggle { grid-area: toggle; margin-top: 0; }
+    .faq-body { padding: 0 0 28px 0; font-size: 0.9375rem; }
+  }
+
+  /* Manifesto fechamento */
+  .manifesto {
+    background: var(--bege-areia);
+    padding-block: clamp(80px, 8vw, 112px);
+  }
+  .manifesto .wrap { max-width: 38rem; }
+  .manifesto .quote {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-medium);
+    font-style: italic;
+    font-size: clamp(1.375rem, 1.05rem + 1.2vw, 1.875rem);
+    line-height: 1.4;
+    color: var(--apollo);
+    letter-spacing: -0.005em;
+    text-wrap: balance;
+    margin: 32px 0 0 0;
+  }
+  .manifesto .quote em {
+    color: var(--terracota);
+    font-style: normal;
+    font-weight: var(--weight-bold);
+  }
+
+  /* CTA final */
+  .cta-block { background: var(--verde-noturno); color: var(--off-white); padding-block: clamp(80px, 8vw, 112px); }
+  .cta-block .eyebrow-editorial { color: var(--off-white); }
+  .cta-block .eyebrow-editorial::before { background: var(--terracota); }
+  .cta-block h2 {
+    color: var(--off-white);
+    margin: 24px 0 24px 0;
+    max-width: 22ch;
+  }
+  .cta-block p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.6;
+    color: var(--off-white);
+    opacity: 0.9;
+    max-width: 60ch;
+    margin: 0 0 40px 0;
+  }
+</style>
+<!-- dados estruturados -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://draanapaulateixeira.com.br/#dra-ana-paula",
+      "name": "Ana Paula Teixeira 医生",
+      "alternateName": "Ana Paula Teixeira",
+      "jobTitle": "职业医学医生",
+      "description": "职业医学医生，《Quando o Trabalho Dói》（当工作伤人）作者，职业道德伤害研究者，拥有近三十年企业实践经验。",
+      "url": "https://draanapaulateixeira.com.br/",
+      "image": "https://draanapaulateixeira.com.br/assets/optimized/portrait-vestido-vermelho-bracos-cruzados.webp",
+      "telephone": "+55-71-98135-7004",
+      "email": "escutaris@zohomail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Salvador",
+        "addressRegion": "BA",
+        "addressCountry": "BR"
+      },
+      "knowsAbout": [
+        "职场心理健康",
+        "职业道德伤害",
+        "NR-1 与心理社会风险因素",
+        "职业医学",
+        "职业倦怠与职业病",
+        "病假后复工"
+      ],
+      "knowsLanguage": "pt-BR",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "巴伊亚联邦大学"
+      },
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "International Commission on Occupational Health (ICOH)"
+        },
+        {
+          "@type": "Organization",
+          "name": "巴西人类工效学协会（ABERGO）"
+        },
+        {
+          "@type": "Organization",
+          "name": "巴西全国职业医学协会（ANAMT/AMB）"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Registro profissional",
+          "name": "CRM-BA 12797"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Registro de qualificação de especialista",
+          "name": "RQE 7237（职业医学）"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Certificação",
+          "name": "Board Member 2024 (Board Academy)"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/draanapaulateixeira/",
+        "https://www.linkedin.com/in/draanapaulateixeira/",
+        "https://www.youtube.com/@draanapaulateixeira"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://draanapaulateixeira.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "治理",
+          "item": "https://draanapaulateixeira.com.br/governanca.html"
+        }
+      ]
+    }
+  ]
+}</script>
+<!-- /dados estruturados -->
+<!-- Pixel da Meta (Ana Paula) + aviso de cookies -->
+<script defer="" src="/meta-pixel.js"></script>
+</head>
+<body>
+<nav class="nav" id="nav">
+<div class="nav-inner">
+<a class="logo" href="index.html"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span></a>
+<ul class="nav-list">
+<li><a class="nav-link" href="index.html">首页</a></li>
+<li class="nav-has-drop">
+<a class="nav-link nav-drop-trigger" href="index.html#servicos">服务<svg class="nav-caret" fill="none" height="6" stroke="currentColor" stroke-width="1.5" viewbox="0 0 10 6" width="10"><path d="M1 1l4 4 4-4"></path></svg></a>
+<ul class="nav-drop">
+<li><a class="nav-link" href="palestras.html">讲座</a></li>
+<li><a class="nav-link" href="rodas-de-conversa.html">圆桌对话</a></li>
+<li><a class="nav-link" href="direcionamento.html">管理者指导</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="livro.html">著作</a></li>
+<li><a class="nav-link" href="index.html#depoimentos">评价</a></li>
+<li><a class="nav-link" href="index.html#midia">媒体报道</a></li>
+<li><a class="nav-link" href="index.html#publicacoes-agenda">出版物</a></li>
+<li><a class="nav-link nav-link-guia" href="https://guia.draanapaulateixeira.com.br/#receber-guia" rel="noopener" target="_blank">免费指南</a></li>
+<li><a class="btn btn-primary nav-cta" href="https://wa.me/5571981357004?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E4%B8%80%E4%B8%AA%E4%B8%8E%E8%81%8C%E5%9C%BA%E5%BF%83%E7%90%86%E5%81%A5%E5%BA%B7%E6%9C%89%E5%85%B3%E7%9A%84%E9%9C%80%E6%B1%82%E3%80%82%E5%8F%AF%E4%BB%A5%E8%81%8A%E4%B8%80%E8%81%8A%E5%90%97%EF%BC%9F" style="padding:10px 18px;font-size:0.875rem">WhatsApp 联系</a></li>
+</ul>
+<button aria-label="打开菜单" class="nav-toggle">
+<svg fill="none" height="22" stroke="#2B180A" stroke-width="1.5" viewbox="0 0 22 22" width="22"><line x1="3" x2="19" y1="7" y2="7"></line><line x1="3" x2="19" y1="15" y2="15"></line></svg>
+</button>
+</div>
+</nav>
+<header class="hero-mid">
+<div class="container">
+<span class="eyebrow-editorial">治理 · 指标 · 决策</span>
+<h1>衡量得更好，决策就更好。</h1>
+<p class="sub">决策更好，就能把心理健康转化为文化、领导力和长期价值。本页汇集了提升管理水平的指标和问题。</p>
+</div>
+</header>
+<!-- KPI BAND — custo, retorno, nexo -->
+<section class="block kpi-band reveal">
+<div class="container">
+<span class="eyebrow-editorial">没人想看的那笔账</span>
+<h2>成本、回报，以及全球数据说明了什么。</h2>
+<p class="intro">职场心理健康已不只是人力资源的议题。它关系到资产负债表、文化、生产力、领导力和心理社会风险。</p>
+<div class="kpi-grid reveal-stagger">
+<div class="kpi-cell">
+<span class="kpi-tag">全球成本</span>
+<span class="kpi-num">1 万亿美元</span>
+<p class="kpi-desc"><strong>每年的生产力损失。</strong>世界卫生组织估计，每年因抑郁和焦虑损失 120 亿个工作日。</p>
+</div>
+<div class="kpi-cell">
+<span class="kpi-tag">有据可查的回报</span>
+<span class="kpi-num">4.7 倍</span>
+<p class="kpi-desc"><strong>平均投资回报。</strong>德勤英国的分析显示，在心理健康和福祉支持上每投入 1 英镑，约可获得 4.70 英镑的回报。</p>
+</div>
+<div class="kpi-cell">
+<span class="kpi-tag">问题的规模</span>
+<span class="kpi-num">15%</span>
+<p class="kpi-desc"><strong>的劳动年龄成年人</strong>在 2019 年被估计患有精神障碍（世界卫生组织数据）。这一数据说明工作中的管理、预防和支持十分必要。</p>
+</div>
+</div>
+<p class="source-note">来源：<a href="https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work" rel="noopener" target="_blank">世界卫生组织，Mental health at work</a>；<a href="https://www.deloitte.com/uk/en/about/press-room/poor-mental-health-costs-uk-employers-51-billion-a-year-for-employees.html" rel="noopener" target="_blank">德勤英国，Mental health and employers 2024</a>。</p>
+</div>
+</section>
+<!-- LACUNA — verde noturno -->
+<section class="block gap-block reveal">
+<div class="container">
+<span class="eyebrow-editorial">意愿与治理之间的差距</span>
+<h2>市场认识到了问题，但很少有企业把它变成决策。</h2>
+<p class="intro">尽管 97% 的大型企业承认心理健康是优先事项，这种认识却很少转化为治理、透明度或可审计的 KPI。</p>
+<div class="gap-grid reveal-stagger">
+<div class="gap-cell">
+<span class="gap-num">13%</span>
+<h3 class="gap-title">CEO 就此议题作出公开承诺。</h3>
+<p class="gap-desc">很少有企业把内部认识转化为高层领导的公开表态。</p>
+</div>
+<div class="gap-cell">
+<span class="gap-num">33%</span>
+<h3 class="gap-title">培训一线管理者。</h3>
+<p class="gap-desc">大多数企业仍未培养管理者识别痛苦、进行艰难对话并有准备地行动的能力。</p>
+</div>
+<div class="gap-cell">
+<span class="gap-num">21%</span>
+<h3 class="gap-title">用数据制定战略。</h3>
+<p class="gap-desc">许多企业衡量员工敬业度，但很少有企业把这些材料转化为关于心理健康的一致决策。</p>
+</div>
+<div class="gap-cell">
+<span class="gap-num">10%</span>
+<h3 class="gap-title">披露影响类 KPI。</h3>
+<p class="gap-desc">透明度低，说明很多时候传达的只是意愿，而没有展示真实成果。</p>
+</div>
+<div class="gap-cell">
+<span class="gap-num">0%</span>
+<h3 class="gap-title">对体系进行外部审计。</h3>
+<p class="gap-desc">在受评估的最大企业中，没有一家的心理健康管理体系经过第三方审计，这在治理上仍是一个不成熟的领域。</p>
+</div>
+<div class="gap-cell" style="display:flex;flex-direction:column;justify-content:center;border-top-color:var(--terracota)">
+<p style="font-family:var(--font-serif);font-style:italic;font-size:1.0625rem;line-height:1.5;color:var(--off-white);margin:0;text-wrap:balance">职场心理健康不能只靠意愿来加强。当企业学会衡量那些反映信任、压力、支持、平衡和真实文化变化的东西时，它才会加强。</p>
+</div>
+</div>
+<p class="source-note">百分比来源：<a href="https://www.ccla.co.uk/documents/ccla-corporate-mental-health-benchmark-global-100-2025/download?inline=1" rel="noopener" target="_blank">CCLA Corporate Mental Health Benchmark Global 100+ 2025</a>，该报告基于受评估企业的公开信息。</p>
+</div>
+</section>
+<!-- REGRAS DE OURO — FAQ -->
+<section class="block container reveal">
+<span class="eyebrow-editorial">黄金法则 · 问与答</span>
+<h2>提升管理水平的问题。</h2>
+<p class="intro">十二个问题，帮助高层领导评估在职场心理健康、心理社会风险、NR-1 以及把意愿转化为决策的指标方面的真实成熟度。</p>
+<div class="faq-list">
+<details class="faq-item">
+<summary><span class="faq-num">01</span> <span class="faq-q">如何知道我的企业是否让员工敢于开口？</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>最重要的信号之一，是有多少比例的员工觉得可以安心地与直属上级坦率谈论心理健康、情绪困难和工作负荷。如果这个数字很低，企业可能有正式渠道，却还没有真正的信任。</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">02</span> <span class="faq-q">一个好的幸福感指标需要反映什么？</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>只衡量整体满意度是不够的。更成熟的企业会观察员工对工作与生活平衡的感受、感知到的幸福感，以及随时间变化的趋势。这样的解读有助于更明智地调整做法、日常安排和工作模式。</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">03</span> <span class="faq-q">如何判断员工是否知道去哪里求助？</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>一个关键指标是内部知晓度：有多少员工知道在哪里能获得支持、有哪些支持，以及如何获取。企业可能提供了很有价值的资源，但如果员工不知道或不信任这些资源，效果仍然很低。</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">04</span> <span class="faq-q">为什么衡量压力感知有助于提前行动？</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>因为这一数据能让企业预判。当企业跟踪承受高压力的人员比例时，就能在影响转化为病假、冲突、绩效下降或更明显的疾病之前看到规律。</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">05</span> <span class="faq-q">什么能说明一项举措改变的是行为，而不只是说法？</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>跟踪员工对更健康习惯和生活方式的态度、参与度和行为变化，有助于了解文化是否真的在改变。如果没有具体变化，宣传可能很有力，但转变还没有进入日常。</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">06</span> <span class="faq-q">这些指标向高层领导揭示了什么？</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>它们帮助回答一个战略问题：投入心理健康的资源只是改善了企业形象，还是也改善了文化、信任和真实的工作体验？如果跟踪和披露得当，这些指标能增强透明度、一致性和决策能力。</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">07</span> <span class="faq-q">哪个更有价值：衡量得多，还是衡量得好？</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>衡量得好。价值在于选择符合企业实际情况的指标，能够跟踪趋势、差距和行动的具体效果。目标不是把仪表盘做得更满，而是支撑对运营更负责、更有用的决策。</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">08</span> <span class="faq-q">每位管理者都应该问自己的问题是什么？</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>我们企业的员工是否感到安全、得到支持，并且足够了解情况，能在痛苦加重之前求助？</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">09</span> <span class="faq-q">NR-1 与职场心理健康治理有什么关系？</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>NR-1（巴西职业风险管理标准）要求在职业风险管理（GRO）和风险管理计划（PGR）中识别、评估和管理职业风险。当心理社会因素进入讨论时，企业需要从零散的行动转向建立证据：风险出现在哪里、谁暴露于风险、有哪些控制措施，以及管理层如何跟踪进展。</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">10</span> <span class="faq-q">情绪支持福利和心理社会风险管理有什么区别？</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>情绪支持福利帮助的是已经在承受痛苦的人。心理社会风险管理还会审视工作的组织方式：负荷、自主性、公平、角色清晰度、人际关系、冲突和领导方式。成熟的企业两者都需要，但不应把个人支持和源头预防混为一谈。</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">11</span> <span class="faq-q">企业可以在不暴露个人的情况下跟踪哪些心理健康指标？</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>有用的指标可以按汇总方式跟踪：缺勤率、病假、人员流动、计划参与度、支持感知、心理安全、工作负荷、领导质量和关怀渠道的使用情况。重点不是监视个人，而是看清规律，从而负责任地行动。</p>
+</div>
+</details>
+<details class="faq-item">
+<summary><span class="faq-num">12</span> <span class="faq-q">什么时候适合请外部技术支持？</span> <span class="faq-toggle">+</span></summary>
+<div class="faq-body">
+<p>当出现反复的患病情况、敏感冲突、对工作相关性存疑、病假后复工、监管压力，或难以把数据转化为决策时。技术支持有助于区分意见与标准、保护员工，并在不把一切简化为内部沟通的前提下为企业指明方向。</p>
+</div>
+</details>
+</div>
+</section>
+<!-- CTA -->
+<section class="cta-block reveal">
+<div class="container">
+<span class="eyebrow-editorial">下一步</span>
+<h2>把这套治理带进您的企业。</h2>
+<p>讲座、圆桌对话和管理者指导把这些知识转化为管理决策，兼具临床标准、法规依据和管理语言。</p>
+<div class="flex gap-3" style="flex-wrap:wrap"><a class="btn btn-primary" href="index.html#servicos">查看服务 →</a> <a class="btn btn-secondary" href="contato.html">联系 Ana Paula 医生</a></div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
+<p class="footer-anchor">因为诚信的企业会认真对待影响员工、文化和工作的事情。</p>
+</div>
+<div>
+<div class="footer-col-title">导航</div>
+<div class="stack-3">
+<div><a href="index.html">首页</a></div>
+<div><a href="https://guia.draanapaulateixeira.com.br/#receber-guia" rel="noopener" target="_blank">免费指南</a></div>
+<div><a href="palestras.html">讲座</a></div>
+<div><a href="rodas-de-conversa.html">圆桌对话</a></div>
+<div><a href="direcionamento.html">管理者指导</a></div>
+<div><a href="livro.html">著作</a></div>
+<div><a href="imprensa.html">媒体</a></div>
+<div><a href="contato.html">联系方式</a></div>
+</div>
+</div>
+<div>
+<div class="footer-col-title">联系方式</div>
+<div class="stack-3">
+<div><a href="mailto:escutaris@zohomail.com">电子邮件：escutaris@zohomail.com</a></div>
+<div><a href="https://wa.me/5571981357004?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E4%B8%80%E4%B8%AA%E4%B8%8E%E8%81%8C%E5%9C%BA%E5%BF%83%E7%90%86%E5%81%A5%E5%BA%B7%E6%9C%89%E5%85%B3%E7%9A%84%E9%9C%80%E6%B1%82%E3%80%82%E5%8F%AF%E4%BB%A5%E8%81%8A%E4%B8%80%E8%81%8A%E5%90%97%EF%BC%9F">WhatsApp +55 71 98135-7004</a></div>
+<div><a href="https://www.instagram.com/draanapaulateixeira/" rel="noopener" target="_blank">Instagram</a></div>
+<div><a href="https://www.linkedin.com/in/draanapaulateixeira/" rel="noopener" target="_blank">LinkedIn</a></div>
+<div><a href="https://www.youtube.com/@draanapaulateixeira" rel="noopener" target="_blank">YouTube</a></div>
+</div>
+</div>
+</div>
+<div class="footer-meta"><span>CRM-BA 12797 · RQE 7237 · ICOH · ABERGO · Board Academy 2024</span> <span>© 2026 Ana Paula Teixeira 医生 · <a href="governanca.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">治理</a> · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">隐私政策</a></span></div>
+<p class="footer-disclaimer">本网站不能替代个人医疗或心理随访。内容仅供参考，符合巴西联邦医学委员会关于医疗宣传的第 2.336/2023 号决议。</p>
+</div>
+</footer>
+<script src="../design-system.js?v=i18n-1"></script>
+<script>
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+</body>
+</html>

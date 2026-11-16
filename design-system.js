@@ -131,49 +131,74 @@
     });
   }
 
-  /* ----- Language switcher: original PT + Google translated pages ----- */
+  /* ----- Seletor de idiomas: PT na raiz, traduções em /en/, /es/, /zh/ -----
+     As páginas traduzidas são montadas por i18n/build.py. Em telas largas as
+     bandeiras ficam numa faixa acima do menu; no celular, dentro do menu. */
   function initLanguageSwitcher() {
     const navList = document.querySelector('.nav-list');
     if (!navList || navList.querySelector('.lang-switcher')) return;
 
-    const currentUrl = new URL(window.location.href);
-    const fallbackOrigin = 'https://site-dra-ana-paula.vercel.app';
-    const isPublicPage = currentUrl.protocol === 'http:' || currentUrl.protocol === 'https:';
-    const isTranslateProxy = currentUrl.hostname.endsWith('.translate.goog');
-    const pageMatch = currentUrl.pathname.match(/\/([^/]+\.html)$/);
-    const fallbackPath = pageMatch ? '/' + pageMatch[1] : '/';
-    const mustUseFallback = isTranslateProxy || currentUrl.hostname === 'anapaulateixeira.med.br';
-    const originalUrl = isPublicPage && !mustUseFallback
-      ? currentUrl.href
-      : new URL(fallbackPath, fallbackOrigin).href;
+    const IDIOMAS = [
+      { cod: 'pt', flag: 'br', nome: 'Português' },
+      { cod: 'en', flag: 'us', nome: 'English' },
+      { cod: 'es', flag: 'es', nome: 'Español' },
+      { cod: 'zh', flag: 'cn', nome: '中文' }
+    ];
+    const ROTULO = { pt: 'Idioma', en: 'Language', es: 'Idioma', zh: '语言' };
 
-    const buildTranslateUrl = (lang) => {
-      const params = new URLSearchParams({
-        sl: 'pt',
-        tl: lang,
-        u: originalUrl
-      });
-      return 'https://translate.google.com/translate?' + params.toString();
+    const partes = window.location.pathname.split('/');
+    let pagina = partes.pop() || 'index.html';
+    if (!/\.html$/.test(pagina)) pagina = 'index.html';
+    const pasta = partes[partes.length - 1];
+    const atual = ['en', 'es', 'zh'].indexOf(pasta) >= 0 ? pasta : 'pt';
+    const web = location.protocol === 'http:' || location.protocol === 'https:';
+
+    const link = (cod) => {
+      if (web) {
+        const nome = pagina === 'index.html' ? '' : pagina;
+        return '/' + (cod === 'pt' ? '' : cod + '/') + nome;
+      }
+      // prévia local (file://): caminho relativo
+      const subir = atual === 'pt' ? '' : '../';
+      return subir + (cod === 'pt' ? '' : cod + '/') + pagina;
     };
 
-    const li = document.createElement('li');
-    li.className = 'lang-switcher';
-    li.setAttribute('aria-label', 'Selecionar idioma');
-    li.innerHTML = [
-      '<a class="lang-link" href="' + originalUrl + '" aria-label="Português" title="Português">',
-      '<span class="flag-icon flag-br" aria-hidden="true"></span><span class="sr-only">Português</span>',
-      '</a>',
-      '<a class="lang-link" href="' + buildTranslateUrl('en') + '" aria-label="English" title="English" rel="noopener">',
-      '<span class="flag-icon flag-us" aria-hidden="true"></span><span class="sr-only">English</span>',
-      '</a>',
-      '<a class="lang-link" href="' + buildTranslateUrl('es') + '" aria-label="Español" title="Español" rel="noopener">',
-      '<span class="flag-icon flag-es" aria-hidden="true"></span><span class="sr-only">Español</span>',
-      '</a>'
-    ].join('');
+    const montar = () => {
+      const li = document.createElement('li');
+      li.className = 'lang-switcher';
+      li.setAttribute('aria-label', ROTULO[atual]);
+      li.innerHTML = IDIOMAS.map((i) =>
+        '<a class="lang-link" href="' + link(i.cod) + '" hreflang="' + i.cod + '" lang="' + i.cod + '"' +
+        ' aria-label="' + i.nome + '" title="' + i.nome + '"' +
+        (i.cod === atual ? ' aria-current="true"' : '') + '>' +
+        '<span class="flag-icon flag-' + i.flag + '" aria-hidden="true"></span>' +
+        '<span class="sr-only">' + i.nome + '</span></a>'
+      ).join('');
+      return li;
+    };
 
+    // dentro do menu (celular)
     const cta = navList.querySelector('.nav-cta');
     const ctaItem = cta ? cta.closest('li') : null;
-    navList.insertBefore(li, ctaItem || null);
+    navList.insertBefore(montar(), ctaItem || null);
+
+    // faixa acima do menu (telas largas)
+    const nav = document.getElementById('nav') || navList.closest('nav');
+    if (nav && !document.querySelector('.lang-bar')) {
+      const barra = document.createElement('div');
+      barra.className = 'lang-bar';
+      const dentro = document.createElement('div');
+      dentro.className = 'lang-bar-inner';
+      dentro.textContent = ROTULO[atual];
+      const sw = montar();
+      const div = document.createElement('div');
+      div.className = sw.className;
+      div.setAttribute('aria-label', ROTULO[atual]);
+      div.innerHTML = sw.innerHTML;
+      dentro.appendChild(div);
+      barra.appendChild(dentro);
+      nav.parentNode.insertBefore(barra, nav);
+    }
   }
 
   /* ----- Smooth scroll for in-page anchors ----- */

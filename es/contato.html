@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Contacto · Dra. Ana Paula Teixeira</title>
+<meta content="Hable sobre charlas, círculos de conversación, Orientación Ejecutiva, prensa o alianzas editoriales. WhatsApp +55 71 98135-7004, Salvador, Bahía, Brasil." name="description"/>
+<meta content="Dra. Ana Paula Teixeira" name="author"/>
+<link href="https://draanapaulateixeira.com.br/es/contato.html" rel="canonical"/><link href="https://draanapaulateixeira.com.br/contato.html" hreflang="pt-BR" rel="alternate"/><link href="https://draanapaulateixeira.com.br/en/contato.html" hreflang="en" rel="alternate"/><link href="https://draanapaulateixeira.com.br/es/contato.html" hreflang="es" rel="alternate"/><link href="https://draanapaulateixeira.com.br/zh/contato.html" hreflang="zh-CN" rel="alternate"/><link href="https://draanapaulateixeira.com.br/contato.html" hreflang="x-default" rel="alternate"/>
+<meta content="website" property="og:type"/>
+<meta content="es_ES" property="og:locale"/>
+<meta content="Dra. Ana Paula Teixeira" property="og:site_name"/>
+<meta content="https://draanapaulateixeira.com.br/es/contato.html" property="og:url"/>
+<meta content="Contacto · Dra. Ana Paula Teixeira" property="og:title"/>
+<meta content="WhatsApp, correo y formulario para información sobre charlas, círculos de conversación, Orientación Ejecutiva, prensa o alianzas editoriales." property="og:description"/>
+<meta content="https://draanapaulateixeira.com.br/assets/og-default.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Contacto · Dra. Ana Paula Teixeira" name="twitter:title"/>
+<meta content="WhatsApp, correo y formulario para información sobre charlas, círculos de conversación y Orientación Ejecutiva." name="twitter:description"/>
+<meta content="https://draanapaulateixeira.com.br/assets/og-default.png" name="twitter:image"/>
+<link href="../assets/favicon.png" rel="icon" type="image/png"/>
+<link href="../assets/favicon.png" rel="apple-touch-icon"/>
+<meta content="#2B180A" name="theme-color"/>
+<link href="../design-system.css?v=i18n-1" rel="stylesheet"/>
+<style>
+  /* HERO */
+  .hero-cont {
+    padding-block: clamp(96px, 11vw, 160px);
+    background: var(--bg);
+  }
+  .hero-cont .hero-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  @media (min-width: 900px) {
+    .hero-cont .hero-contact-grid { grid-template-columns: minmax(0, 1fr) minmax(280px, 0.48fr); gap: 80px; }
+  }
+  .hero-cont h1 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.5rem, 1.6rem + 3vw, 4rem);
+    line-height: 1.05;
+    color: var(--apollo);
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    max-width: 14ch;
+    margin: 24px 0 24px 0;
+  }
+  .hero-cont h1 em { font-style: italic; font-weight: var(--weight-semibold); color: var(--terracota); }
+  .hero-cont .lead {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.7;
+    color: var(--preto-editorial);
+    max-width: 60ch;
+    margin: 0;
+  }
+  .contact-portrait {
+    display: none;
+    aspect-ratio: 4 / 5;
+    width: 100%;
+    max-width: 340px;
+    justify-self: end;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .contact-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 22%;
+    display: block;
+  }
+  @media (min-width: 900px) {
+    .contact-portrait { display: block; }
+  }
+
+  /* CANAIS DIRETOS */
+  .canais {
+    padding-block: clamp(80px, 9vw, 128px);
+    background: var(--off-white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .canais h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.625rem);
+    color: var(--apollo);
+    line-height: 1.18;
+    margin: 16px 0 48px 0;
+    max-width: 22ch;
+    letter-spacing: -0.005em;
+  }
+  .canais-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  @media (min-width: 760px) { .canais-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; } }
+  @media (min-width: 1180px) { .canais-grid { grid-template-columns: repeat(4, 1fr); } }
+  .canal {
+    padding: clamp(32px, 4vw, 44px);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    display: flex; flex-direction: column;
+  }
+  .canal.feat {
+    border-color: var(--terracota);
+    background: var(--bege-areia);
+  }
+  .canal .ctag {
+    display: block;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.625rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--terracota);
+    margin-bottom: 14px;
+  }
+  .canal h3 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.5rem;
+    color: var(--apollo);
+    margin: 0 0 14px 0;
+    line-height: 1.25;
+  }
+  .canal p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: var(--preto-editorial);
+    margin: 0 0 16px 0;
+    flex-grow: 1;
+  }
+  .canal .num {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.9375rem;
+    color: var(--apollo);
+    margin: 0 0 24px 0;
+    word-break: break-all;
+  }
+  .canal a.btn { width: 100%; text-align: center; justify-content: center; }
+
+  /* FORMULÁRIO */
+  .form-section {
+    padding-block: clamp(96px, 10vw, 144px);
+  }
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+  @media (min-width: 960px) {
+    .form-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 96px; }
+  }
+  .form-text h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.875rem, 1.4rem + 1.8vw, 2.625rem);
+    color: var(--apollo);
+    line-height: 1.18;
+    margin: 16px 0 24px 0;
+    max-width: 16ch;
+    text-wrap: balance;
+    letter-spacing: -0.005em;
+  }
+  .form-text p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--preto-editorial);
+    margin: 0 0 16px 0;
+    max-width: 48ch;
+  }
+  .form-text .micro {
+    font-size: 0.8125rem;
+    color: var(--cinza-quente);
+    margin-top: 16px;
+  }
+  .form-card {
+    background: var(--off-white);
+    padding: clamp(32px, 4vw, 44px);
+    border-radius: 2px;
+    border: 1px solid var(--border);
+  }
+  .form-card label {
+    display: block;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--apollo);
+    margin-bottom: 8px;
+  }
+  .form-card input,
+  .form-card select,
+  .form-card textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    border-radius: 2px;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.9375rem;
+    color: var(--preto-editorial);
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .form-card input:focus,
+  .form-card select:focus,
+  .form-card textarea:focus {
+    outline: none;
+    border-color: var(--terracota);
+  }
+  .form-card textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  .form-card .form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  @media (min-width: 600px) {
+    .form-card .form-row { grid-template-columns: 1fr 1fr; gap: 16px; }
+  }
+  .form-actions {
+    display: flex; gap: 12px; flex-wrap: wrap;
+    margin-top: 8px;
+  }
+
+  /* REDES */
+  .redes {
+    padding-block: clamp(80px, 9vw, 128px);
+    background: var(--off-white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .redes h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.625rem, 1.2rem + 1.4vw, 2.25rem);
+    color: var(--apollo);
+    margin: 16px 0 40px 0;
+    line-height: 1.2;
+    max-width: 26ch;
+  }
+  .redes-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  @media (min-width: 720px) { .redes-grid { grid-template-columns: repeat(3, 1fr); gap: 28px; } }
+  .rede-card {
+    padding: clamp(24px, 3vw, 32px);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    text-decoration: none; color: inherit;
+    transition: border-color 200ms ease, transform 200ms ease;
+    display: block;
+  }
+  .rede-card:hover {
+    border-color: var(--terracota);
+    transform: translateY(-3px);
+  }
+  .rede-card .name {
+    display: block;
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: 1.125rem;
+    color: var(--apollo);
+    margin-bottom: 4px;
+  }
+  .rede-card .handle {
+    display: block;
+    font-family: var(--font-sans);
+    font-weight: var(--weight-medium);
+    font-size: 0.8125rem;
+    color: var(--terracota);
+    margin-bottom: 12px;
+  }
+  .rede-card .desc {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--cinza-quente);
+    margin: 0;
+  }
+
+  /* ESCUTARIS */
+  .escut-cta {
+    padding-block: clamp(80px, 9vw, 128px);
+    background: var(--bg);
+  }
+  .escut-cta .escut-grid { max-width: 760px; }
+  .escut-cta h2 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+    color: var(--apollo);
+    margin: 16px 0 16px 0;
+    line-height: 1.25;
+    max-width: 30ch;
+    letter-spacing: -0.005em;
+  }
+  .escut-cta p {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--preto-editorial);
+    margin: 0 0 24px 0;
+    max-width: 60ch;
+  }
+  .escut-cta p b { font-weight: var(--weight-medium); color: var(--apollo); }
+</style>
+<!-- dados estruturados -->
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://draanapaulateixeira.com.br/#dra-ana-paula",
+      "name": "Dra. Ana Paula Teixeira",
+      "alternateName": "Ana Paula Teixeira",
+      "jobTitle": "Médica del trabajo",
+      "description": "Médica del trabajo, autora de Quando o Trabalho Dói (Cuando el trabajo duele) e investigadora de la Lesión Moral Ocupacional, con casi tres décadas de actuación corporativa.",
+      "url": "https://draanapaulateixeira.com.br/",
+      "image": "https://draanapaulateixeira.com.br/assets/optimized/portrait-vestido-vermelho-bracos-cruzados.webp",
+      "telephone": "+55-71-98135-7004",
+      "email": "escutaris@zohomail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Salvador",
+        "addressRegion": "BA",
+        "addressCountry": "BR"
+      },
+      "knowsAbout": [
+        "Salud mental en el trabajo",
+        "Lesión Moral Ocupacional",
+        "NR-1 y factores de riesgo psicosocial",
+        "Medicina del trabajo",
+        "Burnout y enfermedad ocupacional",
+        "Reincorporación al trabajo tras una baja médica"
+      ],
+      "knowsLanguage": "pt-BR",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Universidad Federal de Bahía"
+      },
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "International Commission on Occupational Health (ICOH)"
+        },
+        {
+          "@type": "Organization",
+          "name": "Asociación Brasileña de Ergonomía (ABERGO)"
+        },
+        {
+          "@type": "Organization",
+          "name": "Asociación Nacional de Medicina del Trabajo de Brasil (ANAMT/AMB)"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Registro profissional",
+          "name": "CRM-BA 12797"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Registro de qualificação de especialista",
+          "name": "RQE 7237 (Medicina del Trabajo)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Certificação",
+          "name": "Board Member 2024 (Board Academy)"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/draanapaulateixeira/",
+        "https://www.linkedin.com/in/draanapaulateixeira/",
+        "https://www.youtube.com/@draanapaulateixeira"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://draanapaulateixeira.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contacto",
+          "item": "https://draanapaulateixeira.com.br/contato.html"
+        }
+      ]
+    }
+  ]
+}</script>
+<!-- /dados estruturados -->
+<!-- Pixel da Meta (Ana Paula) + aviso de cookies -->
+<script defer="" src="/meta-pixel.js"></script>
+</head>
+<body>
+<!-- NAV -->
+<nav class="nav" id="nav">
+<div class="nav-inner">
+<a class="logo" href="index.html"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span><span class="logo-editorial-tag">Medicina del Trabajo · Salud Mental Ocupacional</span></a>
+<ul class="nav-list">
+<li><a class="nav-link" href="index.html">Inicio</a></li>
+<li class="nav-has-drop">
+<a class="nav-link nav-drop-trigger" href="index.html#servicos">Servicios<svg class="nav-caret" fill="none" height="6" stroke="currentColor" stroke-width="1.5" viewbox="0 0 10 6" width="10"><path d="M1 1l4 4 4-4"></path></svg></a>
+<ul class="nav-drop">
+<li><a class="nav-link" href="palestras.html">Charlas</a></li>
+<li><a class="nav-link" href="rodas-de-conversa.html">Círculos de Conversación</a></li>
+<li><a class="nav-link" href="direcionamento.html">Orientación Ejecutiva</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="livro.html">Libro</a></li>
+<li><a class="nav-link" href="index.html#depoimentos">Testimonios</a></li>
+<li><a class="nav-link" href="index.html#midia">En los medios</a></li>
+<li><a class="nav-link" href="index.html#publicacoes-agenda">Publicaciones</a></li>
+<li><a class="nav-link nav-link-guia" href="https://guia.draanapaulateixeira.com.br/#receber-guia" rel="noopener" target="_blank">Guía gratuita</a></li>
+<li><a class="btn btn-primary nav-cta" href="https://wa.me/5571981357004?text=Hola%2C%20me%20gustar%C3%ADa%20conversar%20sobre%20una%20necesidad%20relacionada%20con%20la%20salud%20mental%20en%20el%20trabajo.%20%C2%BFPodemos%20hablar%3F" style="padding:10px 18px;font-size:0.875rem">Escribir por WhatsApp</a></li>
+</ul>
+<button aria-label="Abrir menú" class="nav-toggle">
+<svg fill="none" height="22" stroke="#2B180A" stroke-width="1.5" viewbox="0 0 22 22" width="22"><line x1="3" x2="19" y1="7" y2="7"></line><line x1="3" x2="19" y1="15" y2="15"></line></svg>
+</button>
+</div>
+</nav>
+<!-- HERO -->
+<header class="hero-cont">
+<div class="container hero-contact-grid">
+<div>
+<span class="eyebrow-editorial">Próximo paso</span>
+<h1><em>Conversemos.</em></h1>
+<p class="lead">Para charlas, círculos de conversación, Orientación Ejecutiva, mentoría, prensa o alianzas editoriales. La agenda la gestiona Ana Cecília Teixeira, hermana y responsable de la operación de la marca.</p>
+</div>
+<div class="contact-portrait">
+<img alt="Retrato editorial de la Dra. Ana Paula Teixeira" decoding="async" height="1400" loading="eager" src="../assets/optimized/dra-ana-paula-cadeira-blusa-offwhite-saia-plissada.webp" width="1120"/>
+</div>
+</div>
+</header>
+<!-- CANAIS DIRETOS -->
+<section class="canais">
+<div class="container">
+<span class="eyebrow-editorial">Canales directos</span>
+<h2>Elija el mejor camino.</h2>
+<div class="canais-grid">
+<article class="canal feat">
+<span class="ctag">Más rápido</span>
+<h3>WhatsApp</h3>
+<p>Para pedir información sobre charlas, Círculos de Conversación, Orientación Ejecutiva o proyectos institucionales.</p>
+<p class="num">(71) 98135-7004</p>
+<a class="btn btn-primary" href="https://wa.me/5571981357004?text=Hola%2C%20me%20gustar%C3%ADa%20conversar%20sobre%20una%20necesidad%20relacionada%20con%20la%20salud%20mental%20en%20el%20trabajo.%20%C2%BFPodemos%20hablar%3F">Abrir conversación →</a>
+</article>
+<article class="canal">
+<span class="ctag">Con cita previa</span>
+<h3>Agenda</h3>
+<p>Para agendar una conversación inicial y entender el mejor formato antes de enviar un briefing o una propuesta formal.</p>
+<p class="num">Google Calendar</p>
+<a class="btn btn-secondary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Yjoyksn9Vt9PRmAO_eAq2B8JaYhVDtcc3cLVbWySjaW4tpjXOcf0J--8nsaYp1NCr3B9wL8Nu" rel="noopener" target="_blank">Agendar conversación →</a>
+</article>
+<article class="canal">
+<span class="ctag">Para envíos formales</span>
+<h3>Correo electrónico</h3>
+<p>Para el envío de briefings, contactos de prensa, propuestas formales o material con archivos adjuntos.</p>
+<p class="num">Correo: escutaris@zohomail.com</p>
+<a class="btn btn-secondary" href="mailto:escutaris@zohomail.com">Enviar correo →</a>
+</article>
+<article class="canal">
+<span class="ctag">Más detallado</span>
+<h3>Formulario</h3>
+<p>Para un mensaje detallado, cuando tiene más sentido escribir que enviar un mensaje directo, sobre todo en un proyecto nuevo.</p>
+<p class="num">Justo abajo en esta página.</p>
+<a class="btn btn-secondary" href="#form">Ir al formulario ↓</a>
+</article>
+</div>
+</div>
+</section>
+<!-- FORMULÁRIO -->
+<section class="form-section" id="form">
+<div class="container form-grid">
+<div class="form-text">
+<span class="eyebrow-editorial">Formulario</span>
+<h2>Cuéntenos el escenario.</h2>
+<p>Complete lo que pueda. Al enviarlo, se abre una conversación en WhatsApp con el briefing organizado para que el equipo responda.</p>
+<p>Para la Orientación Ejecutiva, la respuesta se prioriza en un plazo de 4 horas hábiles.</p>
+<p class="micro">La información enviada se trata con confidencialidad, se usa solo para responder a esta solicitud y no se comparte con terceros, conforme a la ley brasileña de protección de datos (LGPD) y a nuestra <a href="politica-privacidade.html">Política de Privacidad</a>.</p>
+</div>
+<form class="form-card" data-origem="site-contato" data-wa-phone="5571981357004" data-wa-submit="">
+<div class="form-row">
+<div>
+<label for="nome">Nombre</label>
+<input autocomplete="name" id="nome" name="nome" required="" type="text"/>
+</div>
+<div>
+<label for="empresa">Empresa u organización</label>
+<input autocomplete="organization" id="empresa" name="empresa" type="text"/>
+</div>
+</div>
+<div class="form-row">
+<div>
+<label for="cargo">Función / cargo</label>
+<input autocomplete="organization-title" id="cargo" name="cargo" type="text"/>
+</div>
+<div>
+<label for="email">Correo electrónico</label>
+<input autocomplete="email" id="email" name="email" required="" type="email"/>
+</div>
+</div>
+<div class="form-row">
+<div>
+<label for="telefone">Teléfono (opcional)</label>
+<input autocomplete="tel" id="telefone" name="telefone" type="tel"/>
+</div>
+<div>
+<label for="motivo">Motivo del contacto</label>
+<select id="motivo" name="motivo" required="">
+<option disabled="" selected="" value="">Seleccione</option>
+<option value="palestra">Información sobre una charla</option>
+<option value="roda">Información sobre un círculo de conversación</option>
+<option value="direcionamento">Información sobre la Orientación Ejecutiva</option>
+<option value="mentoria">Consultar Mentoría Individual</option>
+<option value="livro-volume">Pedidos por volumen del libro</option>
+<option value="imprensa">Prensa</option>
+<option value="parceria">Alianza editorial</option>
+<option value="outro">Otro</option>
+</select>
+</div>
+</div>
+<div>
+<label for="mensagem">Mensaje</label>
+<textarea id="mensagem" name="mensagem" placeholder="Cuéntenos el escenario: tamaño de la empresa, público, plazo, tema deseado..." rows="5"></textarea>
+</div>
+<div class="form-actions">
+<button class="btn btn-primary" type="submit">Enviar por WhatsApp →</button>
+<a class="btn btn-secondary" data-email-submit="escutaris@zohomail.com" href="mailto:escutaris@zohomail.com?subject=Contato%20pelo%20site">Enviar por correo</a>
+</div>
+</form>
+</div>
+</section>
+<!-- REDES -->
+<section class="redes">
+<div class="container">
+<span class="eyebrow-editorial">Dónde más encontrarme</span>
+<h2>Tres frentes editoriales.</h2>
+<div class="redes-grid">
+<a class="rede-card" href="https://www.instagram.com/draanapaulateixeira/" rel="noopener" target="_blank">
+<span class="name">Instagram</span>
+<span class="handle">@draanapaulateixeira</span>
+<p class="desc">Contenido técnico y el detrás de escena profesional.</p>
+</a>
+<a class="rede-card" href="https://www.linkedin.com/in/draanapaulateixeira/" rel="noopener" target="_blank">
+<span class="name">LinkedIn</span>
+<span class="handle">/in/draanapaulateixeira</span>
+<p class="desc">Contenido profesional, casos, posicionamiento.</p>
+</a>
+<a class="rede-card" href="https://www.youtube.com/@draanapaulateixeira" rel="noopener" target="_blank">
+<span class="name">YouTube</span>
+<span class="handle">@draanapaulateixeira</span>
+<p class="desc">Archivo de la serie Nomear para Prevenir (Nombrar para prevenir), documental sobre la Lesión Moral Ocupacional, en producción en 2026.</p>
+</a>
+</div>
+</div>
+</section>
+<!-- ESCUTARIS -->
+<section class="escut-cta">
+<div class="container">
+<div class="escut-grid">
+<span class="eyebrow-editorial">Para diagnóstico organizacional y consultoría sobre la NR-1</span>
+<h2>Atención institucional a través de Escutaris.</h2>
+<p>Para empresas que necesitan un <b>diagnóstico organizacional profundo</b>, <b>la estructuración de un programa de salud mental</b> o <b>una respuesta institucional a la NR-1</b> con acompañamiento continuo, atiendo a través de Escutaris, la consultora donde soy directora técnica.</p>
+<p>Esta página de la marca personal está dedicada a charlas, círculos, Orientación Ejecutiva y mentoría individual. Para lo institucional, el canal es la propia Escutaris.</p>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
+<p class="footer-anchor">Médica del trabajo · Salvador, Bahía, Brasil.<br/>Cuidar de las personas es cuidar del negocio.</p>
+</div>
+<div>
+<div class="footer-col-title">Navegar</div>
+<div class="stack-3">
+<div><a href="index.html">Inicio</a></div>
+<div><a href="https://guia.draanapaulateixeira.com.br/#receber-guia" rel="noopener" target="_blank">Guía gratuita</a></div>
+<div><a href="palestras.html">Charlas</a></div>
+<div><a href="rodas-de-conversa.html">Círculos de Conversación</a></div>
+<div><a href="direcionamento.html">Orientación Ejecutiva</a></div>
+<div><a href="livro.html">Libro</a></div>
+<div><a href="imprensa.html">Prensa</a></div>
+<div><a href="contato.html">Contacto</a></div>
+</div>
+</div>
+<div>
+<div class="footer-col-title">Contacto</div>
+<div class="stack-3">
+<div><a href="mailto:escutaris@zohomail.com">Correo: escutaris@zohomail.com</a></div>
+<div><a href="https://wa.me/5571981357004?text=Hola%2C%20me%20gustar%C3%ADa%20conversar%20sobre%20una%20necesidad%20relacionada%20con%20la%20salud%20mental%20en%20el%20trabajo.%20%C2%BFPodemos%20hablar%3F">WhatsApp +55 71 98135-7004</a></div>
+<div><a href="https://www.instagram.com/draanapaulateixeira/" rel="noopener" target="_blank">Instagram</a></div>
+<div><a href="https://www.linkedin.com/in/draanapaulateixeira/" rel="noopener" target="_blank">LinkedIn</a></div>
+<div><a href="https://www.youtube.com/@draanapaulateixeira" rel="noopener" target="_blank">YouTube</a></div>
+</div>
+</div>
+</div>
+<div class="footer-meta"><span>CRM-BA 12797 · RQE 7237 · ICOH · ABERGO · Board Academy 2024</span> <span>© 2026 Dra. Ana Paula Teixeira · <a href="governanca.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Gobernanza</a> · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">Política de Privacidad</a></span></div>
+<p class="footer-disclaimer">Este sitio no sustituye el acompañamiento médico o psicológico individualizado. Contenido informativo conforme a la Resolución 2.336/2023 del Consejo Federal de Medicina de Brasil sobre publicidad médica.</p>
+</div>
+</footer>
+<script src="../design-system.js?v=i18n-1"></script>
+<script src="../form-handlers.js"></script>
+<script>
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+</script>
+</body>
+</html>

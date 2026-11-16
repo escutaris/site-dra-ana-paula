@@ -41,12 +41,19 @@
     var caixa = document.createElement('div');
     caixa.className = 'esc-cookies';
     caixa.setAttribute('role', 'dialog');
-    caixa.setAttribute('aria-label', 'Aviso de cookies');
+    var TXT = {
+      pt: ['Aviso de cookies', 'Usamos cookies para medir as visitas e mostrar nossos anúncios.', 'Recusar', 'Aceitar'],
+      en: ['Cookie notice', 'We use cookies to measure visits and show our ads.', 'Decline', 'Accept'],
+      es: ['Aviso de cookies', 'Usamos cookies para medir las visitas y mostrar nuestros anuncios.', 'Rechazar', 'Aceptar'],
+      zh: ['Cookie 提示', '我们使用 Cookie 统计访问量并展示我们的广告。', '拒绝', '接受']
+    };
+    var t = TXT[(document.documentElement.lang || 'pt').slice(0, 2)] || TXT.pt;
+    caixa.setAttribute('aria-label', t[0]);
     caixa.innerHTML =
-      '<p>Usamos cookies para medir as visitas e mostrar nossos anúncios.</p>' +
+      '<p>' + t[1] + '</p>' +
       '<div class="esc-cookies__botoes">' +
-      '<button type="button" class="esc-cookies__nao">Recusar</button>' +
-      '<button type="button" class="esc-cookies__sim">Aceitar</button></div>';
+      '<button type="button" class="esc-cookies__nao">' + t[2] + '</button>' +
+      '<button type="button" class="esc-cookies__sim">' + t[3] + '</button></div>';
     document.body.appendChild(caixa);
 
     caixa.querySelector('.esc-cookies__sim').addEventListener('click', function () {

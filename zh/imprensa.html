@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>媒体中心 · Ana Paula Teixeira 医生</title>
+<meta content="职业医学医生 Ana Paula Teixeira 的简介、资质、可评论话题、照片和媒体露面。采访请求将在 2 个工作日内回复。" name="description"/>
+<meta content="Dra. Ana Paula Teixeira" name="author"/>
+<link href="https://draanapaulateixeira.com.br/zh/imprensa.html" rel="canonical"/><link href="https://draanapaulateixeira.com.br/imprensa.html" hreflang="pt-BR" rel="alternate"/><link href="https://draanapaulateixeira.com.br/en/imprensa.html" hreflang="en" rel="alternate"/><link href="https://draanapaulateixeira.com.br/es/imprensa.html" hreflang="es" rel="alternate"/><link href="https://draanapaulateixeira.com.br/zh/imprensa.html" hreflang="zh-CN" rel="alternate"/><link href="https://draanapaulateixeira.com.br/imprensa.html" hreflang="x-default" rel="alternate"/>
+<meta content="website" property="og:type"/>
+<meta content="zh_CN" property="og:locale"/>
+<meta content="Dra. Ana Paula Teixeira" property="og:site_name"/>
+<meta content="https://draanapaulateixeira.com.br/zh/imprensa.html" property="og:url"/>
+<meta content="媒体中心 · Ana Paula Teixeira 医生" property="og:title"/>
+<meta content="三种长度的简介、资质、可评论话题、照片和过往采访，供引用或采访时使用。" property="og:description"/>
+<meta content="https://draanapaulateixeira.com.br/assets/og-default.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="媒体中心 · Ana Paula Teixeira 医生" name="twitter:title"/>
+<meta content="媒体资料：简介、资质、可评论话题、照片和过往采访。" name="twitter:description"/>
+<meta content="https://draanapaulateixeira.com.br/assets/og-default.png" name="twitter:image"/>
+<link href="../assets/favicon.png" rel="icon" type="image/png"/>
+<link href="../assets/favicon.png" rel="apple-touch-icon"/>
+<meta content="#2B180A" name="theme-color"/>
+<link href="../design-system.css?v=i18n-1" rel="stylesheet"/>
+<style>
+  /* HERO */
+  .hero-press { padding-block: clamp(88px, 10vw, 144px); background: var(--bg); }
+  .hero-press .grid { display: grid; grid-template-columns: 1fr; gap: 48px; align-items: center; }
+  @media (min-width: 960px) {
+    .hero-press .grid { grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: 72px; }
+  }
+  .hero-press h1 {
+    font-family: var(--font-serif);
+    font-weight: var(--weight-bold);
+    font-size: clamp(2.25rem, 1.6rem + 2.4vw, 3.5rem);
+    line-height: 1.08;
+    color: var(--apollo);
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+    max-width: 20ch;
+    margin: 24px 0 28px;
+  }
+  .hero-press .lead {
+    font-family: var(--font-sans);
+    font-weight: var(--weight-light);
+    font-size: var(--type-lead);
+    line-height: 1.65;
+    color: var(--preto-editorial);
+    max-width: 54ch;
+    margin: 0 0 36px;
+  }
+  .hero-press .portrait {
+    aspect-ratio: 4/5;
+    width: 100%;
+    max-width: 460px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: var(--bege-areia);
+    box-shadow: 0 28px 70px -44px rgba(28,53,32,.45);
+    margin-inline: auto;
+  }
+  .hero-press .portrait img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+  /* BLOCO DE CONTATO */
+  .press-contact { padding-block: clamp(56px, 6vw, 80px); background: var(--bg-inverse); color: var(--fg-inverse); }
+  .press-contact-grid { display: grid; grid-template-columns: 1fr; gap: 32px; }
+  @media (min-width: 820px) { .press-contact-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; } }
+  .press-contact .label {
+    font-family: var(--font-sans); font-weight: var(--weight-medium); font-size: 0.75rem;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--zeus-ambar); margin: 0 0 10px;
+  }
+  .press-contact .value { font-family: var(--font-sans); font-size: 1.0625rem; line-height: 1.6; margin: 0; }
+  .press-contact .value a { color: var(--fg-inverse); border-bottom: 1px solid rgba(246,240,233,.35); text-decoration: none; }
+  .press-contact .value a:hover { border-bottom-color: var(--zeus-ambar); }
+  .press-contact .note { font-family: var(--font-sans); font-size: 0.9375rem; color: rgba(246,240,233,.72); margin: 8px 0 0; }
+
+  /* SEÇÕES */
+  .press-sec { padding-block: clamp(72px, 8vw, 112px); }
+  .press-sec.alt { background: var(--bg-surface); }
+  .press-sec h2 {
+    font-family: var(--font-serif); font-weight: var(--weight-bold);
+    font-size: clamp(1.75rem, 1.4rem + 1.6vw, 2.5rem); line-height: 1.15;
+    color: var(--apollo); letter-spacing: -0.01em; max-width: 26ch; margin: 16px 0 40px;
+  }
+  .press-sec h3 {
+    font-family: var(--font-sans); font-weight: var(--weight-semibold);
+    font-size: 0.8125rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--cinza-quente); margin: 0 0 14px;
+  }
+  .press-sec p { font-family: var(--font-sans); font-weight: var(--weight-light); font-size: 1.0625rem; line-height: 1.75; color: var(--preto-editorial); }
+
+  /* BIO */
+  .bio-item { padding: 28px 0; border-top: 1px solid var(--border); }
+  .bio-item:last-child { border-bottom: 1px solid var(--border); }
+  .bio-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .bio-text { max-width: 76ch; margin: 0; }
+  .copy-btn {
+    font-family: var(--font-sans); font-weight: var(--weight-medium); font-size: 0.8125rem;
+    letter-spacing: 0.04em; color: var(--terracota); background: transparent;
+    border: 1px solid var(--terracota); border-radius: 4px; padding: 7px 14px; cursor: pointer;
+    transition: background var(--dur-base) var(--ease-standard), color var(--dur-base) var(--ease-standard);
+  }
+  .copy-btn:hover { background: var(--terracota); color: var(--off-white); }
+  .copy-btn[data-copied="1"] { background: var(--poseidon); border-color: var(--poseidon); color: var(--off-white); }
+
+  /* FICHA / COMO CITAR */
+  .cite-grid { display: grid; grid-template-columns: 1fr; gap: 28px; }
+  @media (min-width: 820px) { .cite-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; align-items: start; } }
+  .cite-card { background: #ffffff; border-radius: 8px; padding: 32px; border: 1px solid var(--border); }
+  .cite-card p { margin: 0 0 12px; font-size: 1rem; }
+  .cite-card p:last-child { margin-bottom: 0; }
+  .cite-card strong { font-weight: var(--weight-semibold); color: var(--apollo); }
+  .cite-wrong { color: var(--cinza-quente); font-size: 0.9375rem; }
+
+  /* NÚMEROS */
+  .press-numbers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin-top: 8px; }
+  @media (min-width: 820px) { .press-numbers { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  .press-num strong {
+    display: block; font-family: var(--font-serif); font-weight: var(--weight-bold);
+    font-size: clamp(2.25rem, 1.8rem + 2vw, 3.25rem); line-height: 1; color: var(--terracota); margin-bottom: 10px;
+  }
+  .press-num span { font-family: var(--font-sans); font-size: 0.9375rem; line-height: 1.5; color: var(--cinza-quente); }
+
+  /* PAUTAS */
+  .pauta-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 0; }
+  .pauta-list li { padding: 20px 0; border-top: 1px solid var(--border); font-family: var(--font-sans); font-size: 1.0625rem; line-height: 1.6; color: var(--apollo); }
+  .pauta-list li:last-child { border-bottom: 1px solid var(--border); }
+  .pauta-list li span { display: block; font-size: 0.875rem; color: var(--cinza-quente); margin-top: 6px; }
+
+  /* FOTOS */
+  .photo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  @media (min-width: 900px) { .photo-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; } }
+  .photo-grid a { display: block; aspect-ratio: 3/4; overflow: hidden; border-radius: 6px; background: var(--bege-areia); }
+  .photo-grid img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-slow) var(--ease-editorial); }
+  .photo-grid a:hover img { transform: scale(1.03); }
+
+  /* APARIÇÕES */
+  .press-links { display: grid; grid-template-columns: 1fr; gap: 48px; }
+  @media (min-width: 980px) { .press-links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; } }
+  .press-list { list-style: none; margin: 0; padding: 0; }
+  .press-list li { border-top: 1px solid var(--border); }
+  .press-list li:last-child { border-bottom: 1px solid var(--border); }
+  .press-list a { display: block; padding: 16px 0; text-decoration: none; }
+  .press-list strong { display: block; font-family: var(--font-sans); font-weight: var(--weight-semibold); font-size: 0.9375rem; color: var(--apollo); }
+  .press-list span { display: block; font-family: var(--font-sans); font-weight: var(--weight-light); font-size: 0.9375rem; line-height: 1.5; color: var(--cinza-quente); margin-top: 4px; }
+  .press-list a:hover strong { color: var(--terracota); }
+
+  /* CTA FINAL */
+  .press-cta { padding-block: clamp(80px, 9vw, 120px); background: var(--bg-surface); }
+  .press-cta h2 { margin-bottom: 20px; }
+  .press-cta .btns { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 28px; }
+</style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://draanapaulateixeira.com.br/#dra-ana-paula",
+      "name": "Ana Paula Teixeira 医生",
+      "alternateName": "Ana Paula Teixeira",
+      "jobTitle": "职业医学医生",
+      "description": "职业医学医生，《Quando o Trabalho Dói》（当工作伤人）作者，职业道德伤害研究者，拥有近三十年企业实践经验。",
+      "url": "https://draanapaulateixeira.com.br/",
+      "image": "https://draanapaulateixeira.com.br/assets/optimized/portrait-vestido-vermelho-bracos-cruzados.webp",
+      "telephone": "+55-71-98135-7004",
+      "email": "escutaris@zohomail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Salvador",
+        "addressRegion": "BA",
+        "addressCountry": "BR"
+      },
+      "knowsAbout": [
+        "职场心理健康",
+        "职业道德伤害",
+        "NR-1 与心理社会风险因素",
+        "职业医学",
+        "职业倦怠与职业病",
+        "病假后复工"
+      ],
+      "knowsLanguage": "pt-BR",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "巴伊亚联邦大学"
+      },
+      "memberOf": [
+        {
+          "@type": "Organization",
+          "name": "International Commission on Occupational Health (ICOH)"
+        },
+        {
+          "@type": "Organization",
+          "name": "巴西人类工效学协会（ABERGO）"
+        },
+        {
+          "@type": "Organization",
+          "name": "巴西全国职业医学协会（ANAMT/AMB）"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Registro profissional",
+          "name": "CRM-BA 12797"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Registro de qualificação de especialista",
+          "name": "RQE 7237（职业医学）"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Certificação",
+          "name": "Board Member 2024 (Board Academy)"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/draanapaulateixeira/",
+        "https://www.linkedin.com/in/draanapaulateixeira/",
+        "https://www.youtube.com/@draanapaulateixeira"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://draanapaulateixeira.com.br/imprensa.html",
+      "name": "媒体中心 · Ana Paula Teixeira 医生",
+      "description": "职业医学医生 Ana Paula Teixeira 的简介、资质、可评论话题、照片和采访记录。",
+      "url": "https://draanapaulateixeira.com.br/imprensa.html",
+      "inLanguage": "pt-BR",
+      "about": {
+        "@id": "https://draanapaulateixeira.com.br/#dra-ana-paula"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://draanapaulateixeira.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "媒体中心",
+          "item": "https://draanapaulateixeira.com.br/imprensa.html"
+        }
+      ]
+    }
+  ]
+}</script>
+<!-- Pixel da Meta (Ana Paula) + aviso de cookies -->
+<script defer="" src="/meta-pixel.js"></script>
+</head>
+<body>
+<!-- NAV -->
+<nav class="nav" id="nav">
+<div class="nav-inner">
+<a class="logo" href="index.html"><span class="logo-main"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</span><span class="logo-editorial-tag">职业医学 · 职业心理健康</span></a>
+<ul class="nav-list">
+<li><a class="nav-link" href="index.html">首页</a></li>
+<li class="nav-has-drop">
+<a class="nav-link nav-drop-trigger" href="index.html#servicos">服务<svg class="nav-caret" fill="none" height="6" stroke="currentColor" stroke-width="1.5" viewbox="0 0 10 6" width="10"><path d="M1 1l4 4 4-4"></path></svg></a>
+<ul class="nav-drop">
+<li><a class="nav-link" href="palestras.html">讲座</a></li>
+<li><a class="nav-link" href="rodas-de-conversa.html">圆桌对话</a></li>
+<li><a class="nav-link" href="direcionamento.html">管理者指导</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="livro.html">著作</a></li>
+<li><a class="nav-link" href="index.html#depoimentos">评价</a></li>
+<li><a class="nav-link" href="index.html#midia">媒体报道</a></li>
+<li><a class="nav-link" href="index.html#publicacoes-agenda">出版物</a></li>
+<li><a class="nav-link nav-link-guia" href="https://guia.draanapaulateixeira.com.br/#receber-guia" rel="noopener" target="_blank">免费指南</a></li>
+<li><a class="btn btn-primary nav-cta" href="https://wa.me/5571981357004?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%98%AF%E8%AE%B0%E8%80%85%EF%BC%8C%E6%83%B3%E5%B0%B1%E4%B8%80%E4%B8%AA%E9%80%89%E9%A2%98%E4%B8%8E%20Ana%20Paula%20%E5%8C%BB%E7%94%9F%E8%81%94%E7%B3%BB%E3%80%82" style="padding:10px 18px;font-size:0.875rem">联系媒体对接人</a></li>
+</ul>
+<button aria-label="打开菜单" class="nav-toggle">
+<svg fill="none" height="22" stroke="#2B180A" stroke-width="1.5" viewbox="0 0 22 22" width="22"><line x1="3" x2="19" y1="7" y2="7"></line><line x1="3" x2="19" y1="15" y2="15"></line></svg>
+</button>
+</div>
+</nav>
+<!-- HERO -->
+<header class="hero-press">
+<div class="container grid">
+<div>
+<span class="eyebrow-editorial">媒体中心</span>
+<h1>为引用、采访或报道准备的现成资料。</h1>
+<p class="lead">三种长度的简介、供核实的资质、她基于临床实践可以评论的话题、照片和采访记录。采访请求将在 2 个工作日内回复。</p>
+<div style="display:flex;gap:16px;flex-wrap:wrap"><a class="btn btn-primary" href="https://wa.me/5571981357004?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%98%AF%E8%AE%B0%E8%80%85%EF%BC%8C%E6%83%B3%E5%B0%B1%E4%B8%80%E4%B8%AA%E9%80%89%E9%A2%98%E4%B8%8E%20Ana%20Paula%20%E5%8C%BB%E7%94%9F%E8%81%94%E7%B3%BB%E3%80%82">WhatsApp 联系 →</a> <a class="btn btn-secondary" href="../assets/material-organizadores-dra-ana-paula-teixeira.pdf" rel="noopener" target="_blank">PDF 资料</a></div>
+</div>
+<div>
+<div class="portrait">
+<img alt="职业医学医生 Ana Paula Teixeira 的肖像" decoding="async" fetchpriority="high" height="1350" loading="eager" src="../assets/optimized/dra-ana-paula-teixeira-medica-do-trabalho-retrato-principal.webp" width="1080"/>
+</div>
+</div>
+</div>
+</header>
+<!-- CONTATO DE IMPRENSA -->
+<section class="press-contact">
+<div class="container press-contact-grid">
+<div>
+<p class="label">WhatsApp</p>
+<p class="value"><a href="https://wa.me/5571981357004?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%98%AF%E8%AE%B0%E8%80%85%EF%BC%8C%E6%83%B3%E5%B0%B1%E4%B8%80%E4%B8%AA%E9%80%89%E9%A2%98%E4%B8%8E%20Ana%20Paula%20%E5%8C%BB%E7%94%9F%E8%81%94%E7%B3%BB%E3%80%82">(71) 98135-7004</a></p>
+<p class="note">赶稿时最快的渠道。</p>
+</div>
+<div>
+<p class="label">电子邮件</p>
+<p class="value"><a href="mailto:escutaris@zohomail.com?subject=Pedido%20de%20pauta%20ou%20entrevista">escutaris@zohomail.com</a></p>
+<p class="note">用于发送问题、采访提纲和正式邀请。</p>
+</div>
+<div>
+<p class="label">回复时间</p>
+<p class="value">2 个工作日内</p>
+<p class="note">高清照片和录音录像可应要求提供。</p>
+</div>
+</div>
+</section>
+<!-- BIOGRAFIA -->
+<section class="press-sec reveal">
+<div class="container">
+<span class="eyebrow-editorial">简介</span>
+<h2>三种长度，根据篇幅选用。</h2>
+<div class="bio-item">
+<div class="bio-head">
+<h3>一句话</h3>
+<button class="copy-btn" data-copy="bio-1" type="button">复制</button>
+</div>
+<p class="bio-text" id="bio-1">职业医学医生，《Quando o Trabalho Dói》（当工作伤人）作者，巴西职业道德伤害研究者。</p>
+</div>
+<div class="bio-item">
+<div class="bio-head">
+<h3>一段话</h3>
+<button class="copy-btn" data-copy="bio-2" type="button">复制</button>
+</div>
+<p class="bio-text" id="bio-2">Ana Paula Teixeira 医生是一名职业医学医生，拥有近三十年临床和企业实践经验，服务过矿业、钢铁、实验室、医院、传媒和零售企业。著有《Quando o Trabalho Dói》（当工作伤人，AssedioNet 出版社，2025），入围第七届 Ecos da Literatura 文学奖。她是国际职业卫生委员会（ICOH）、ABERGO 和 ANAMT/AMB 会员，并于 2024 年获 Board Academy 认证为董事会成员。</p>
+</div>
+<div class="bio-item">
+<div class="bio-head">
+<h3>半页</h3>
+<button class="copy-btn" data-copy="bio-3" type="button">复制</button>
+</div>
+<p class="bio-text" id="bio-3">Ana Paula Teixeira 医生是一名职业医学医生，拥有近三十年临床和企业实践经验，服务过矿业、钢铁、实验室、医院、传媒和零售企业。她是巴西职业道德伤害研究者，在 Escola Bahiana 的硕士研究中主持 OMIS-R 量表的巴西葡萄牙语翻译与效度验证，这是巴西最早的同类研究之一。著有《Quando o Trabalho Dói: do adoecimento silencioso à cultura de bem-estar》（当工作伤人：从无声的疾病到幸福文化，AssedioNet 出版社，2025，253 页），入围第七届 Ecos da Literatura 文学奖。她是国际职业卫生委员会（ICOH）、ABERGO 和 ANAMT/AMB 会员，并于 2024 年获 Board Academy 认证为董事会成员。她为企业、行业活动和专业协会带来对当今管理层面临议题的临床解读：NR-1（巴西职业风险管理标准）与心理社会因素、职场霸凌、心理健康相关疾病、复工和心理安全。曾服务 PetroRecôncavo、Alvopetro、ABRH-BA 和 ABRH Sergipe 等机构。</p>
+</div>
+</div>
+</section>
+<!-- COMO CITAR -->
+<section class="press-sec alt reveal">
+<div class="container">
+<span class="eyebrow-editorial">如何引用</span>
+<h2>供核实的姓名、头衔和执业注册。</h2>
+<div class="cite-grid">
+<div class="cite-card">
+<h3>正确写法</h3>
+<p><strong>Ana Paula Teixeira 医生</strong>，职业医学医生。</p>
+<p>执业注册：<strong>CRM-BA 12797 · RQE 7237</strong>（职业医学）。</p>
+<p>如果只能写一项资质，最能支撑她观点的是<strong>职业医学医生、《Quando o Trabalho Dói》作者</strong>。</p>
+</div>
+<div class="cite-card">
+<h3>核实注意事项</h3>
+<p class="cite-wrong">她的注册属于医学委员会（CRM），不是心理学委员会（CRP）。她是医生，不是心理学家。</p>
+<p class="cite-wrong">Escutaris 是她作为创始合伙人的职业心理健康公司。在新闻报道中，署名使用她本人的名字。</p>
+<p class="cite-wrong">职业道德伤害研究正在她于 Escola Bahiana 的硕士阶段进行，结果尚未发表。</p>
+</div>
+</div>
+<div class="press-numbers" style="margin-top:56px">
+<div class="press-num"><strong>130+</strong><span>场讲座</span></div>
+<div class="press-num"><strong>1 万+</strong><span>名受训专业人士</span></div>
+<div class="press-num"><strong>28</strong><span>年临床和企业实践</span></div>
+<div class="press-num"><strong>253</strong><span>页，2025 年第 1 版</span></div>
+</div>
+</div>
+</section>
+<!-- PAUTAS -->
+<section class="press-sec reveal">
+<div class="container">
+<span class="eyebrow-editorial">可评论话题</span>
+<h2>她从诊室和企业出发评论的话题。</h2>
+<ul class="pauta-list">
+<li>NR-1 与心理社会因素：对管理者来说实际有什么变化<span>期限、监管检查、标准的要求，以及哪些已沦为空洞的清单。</span></li>
+<li>职场霸凌、职业暴力与职业道德伤害<span>职业医学如何区分冲突、骚扰和道德伤害。</span></li>
+<li>职业倦怠、病假与心理健康相关疾病<span>从临床角度解读病假数据，以及数据出现之前的迹象。</span></li>
+<li>因精神障碍请病假后的复工<span>返岗时常见的问题，以及直属上级的作用。</span></li>
+<li>出勤主义：不体现在病假统计中的疾病<span>如何识别与痛苦相关的绩效下降。</span></li>
+<li>职业病中的不平等、性别与种族<span>相关观点已发表于 CartaCapital、Robb Report 和 Bahia Notícias。</span></li>
+<li>心理安全与领导力<span>任何组织文化宣传之前该做的事。</span></li>
+</ul>
+</div>
+</section>
+<!-- FOTOS -->
+<section class="press-sec alt reveal">
+<div class="container">
+<span class="eyebrow-editorial">照片</span>
+<h2>供编辑使用的图片。</h2>
+<p style="max-width:60ch;margin:-24px 0 36px">以下为低分辨率版本，仅供参考。附署名和使用授权的高清文件可应要求通过 WhatsApp 或电子邮件发送。</p>
+<div class="photo-grid">
+<a href="../assets/optimized/dra-ana-paula-teixeira-medica-do-trabalho-retrato-principal.webp" rel="noopener" target="_blank"><img alt="Ana Paula Teixeira 医生的肖像" loading="lazy" src="../assets/optimized/dra-ana-paula-teixeira-medica-do-trabalho-retrato-principal.webp"/></a>
+<a href="../assets/optimized/portrait-vestido-vermelho-bracos-cruzados.webp" rel="noopener" target="_blank"><img alt="身穿红色连衣裙的 Ana Paula Teixeira 医生，竖版肖像" loading="lazy" src="../assets/optimized/portrait-vestido-vermelho-bracos-cruzados.webp"/></a>
+<a href="../assets/optimized/dra-ana-paula-palestra-vestido-preto-microfone.webp" rel="noopener" target="_blank"><img alt="Ana Paula Teixeira 医生在企业讲座上对着麦克风讲话" loading="lazy" src="../assets/optimized/dra-ana-paula-palestra-vestido-preto-microfone.webp"/></a>
+<a href="../assets/optimized/dra-ana-paula-teixeira-palestra-palco-forum-saude-360.webp" rel="noopener" target="_blank"><img alt="Ana Paula Teixeira 医生在 Fórum Saúde 360 的舞台上" loading="lazy" src="../assets/optimized/dra-ana-paula-teixeira-palestra-palco-forum-saude-360.webp"/></a>
+<a href="../assets/optimized/dra-ana-paula-roda-painel-microfone.webp" rel="noopener" target="_blank"><img alt="Ana Paula Teixeira 医生在圆桌讨论中对着麦克风讲话" loading="lazy" src="../assets/optimized/dra-ana-paula-roda-painel-microfone.webp"/></a>
+<a href="../assets/optimized/dra-ana-paula-teixeira-autora-quando-o-trabalho-doi.webp" rel="noopener" target="_blank"><img alt="Ana Paula Teixeira 医生手持《Quando o Trabalho Dói》" loading="lazy" src="../assets/optimized/dra-ana-paula-teixeira-autora-quando-o-trabalho-doi.webp"/></a>
+</div>
+</div>
+</section>
+<!-- APARIÇÕES -->
+<section class="press-sec reveal">
+<div class="container">
+<span class="eyebrow-editorial">已发表</span>
+<h2>过往采访与报道。</h2>
+<div class="press-links">
+<div>
+<h3>报道与文章</h3>
+<ul class="press-list">
+<li><a href="https://comsaudebahia.com.br/os-desafios-de-saude-seguranca-e-dignidade-nos-bastidores-do-sao-joao/" rel="noopener" target="_blank"><strong>ComSaúde Bahia</strong><span>圣若昂节幕后的健康、安全与尊严</span></a></li>
+<li><a href="https://www.cartacapital.com.br/do-micro-ao-macro/mulheres-ganham-21-menos-burnout-desigualdade/" rel="noopener" target="_blank"><strong>CartaCapital · Do Micro ao Macro</strong><span>女性收入低 21%，却占全国职业倦怠病例的 60%</span></a></li>
+<li><a href="https://www.robbreportbrasil.com.br/noticias-lide/sociedade-tendencias/mulheres-ganham-21-menos-e-representam-60-dos-casos-de-burnout-no-pais" rel="noopener" target="_blank"><strong>Robb Report Brasil · Lide</strong><span>女性、不平等与职业倦怠</span></a></li>
+<li><a href="https://www.rhnoticias.com.br/desigualdade-eleva-burnout-e-afasta-mulheres-no-trabalho" rel="noopener" target="_blank"><strong>RH Notícias</strong><span>不平等加剧职业倦怠，令女性远离工作</span></a></li>
+<li><a href="https://www.bahianoticias.com.br/saude/artigo/1064-mulheres-ganham-21-menos-e-representam-60-dos-casos-de-burnout-no-pais" rel="noopener" target="_blank"><strong>Bahia Notícias · Saúde</strong><span>巴伊亚州女性与职业倦怠的地区观察</span></a></li>
+<li><a href="https://muitainformacao.com.br/saude/mulheres-lideram-casos-de-burnout-e-afastamentos-no-brasil-especialistas-apontam-desigualdade-como-gatilho-silencioso/" rel="noopener" target="_blank"><strong>Muita Informação</strong><span>巴西职业倦怠和病假病例中女性居多</span></a></li>
+<li><a href="https://www.bnews.com.br/amp/noticias/economia-e-mercado/crise-silenciosa-no-trabalho-ansiedade-e-burnout-disparam-no-brasil-e-nova-nr-1-obriga-empresas-agir.html" rel="noopener" target="_blank"><strong>BNews</strong><span>焦虑、职业倦怠与企业中的新版 NR-1</span></a></li>
+<li><a href="https://newsba.com.br/2026/05/21/nova-nr-1-coloca-saude-mental-no-centro-da-gestao-empresarial/" rel="noopener" target="_blank"><strong>NewsBA</strong><span>新版 NR-1 将心理健康置于企业管理的核心</span></a></li>
+<li><a href="https://portaldosmunicipios.com.br/2026/05/21/nova-nr-1-coloca-saude-mental-no-centro-da-gestao-empresarial-afastamentos-por-transtornos-mentais-ultrapassam-meio-milhao-em-2025/" rel="noopener" target="_blank"><strong>Portal dos Municípios</strong><span>2025 年企业心理健康与病假</span></a></li>
+<li><a href="https://bahiaeconomica.com.br/wp/2025/11/14/preconceito-contra-populacao-negra-afeta-28-dos-trabalhadores-diferenca-no-trato-causa-adoecimento-psicologico/" rel="noopener" target="_blank"><strong>Bahia Econômica</strong><span>偏见与疾病</span></a></li>
+<li><a href="https://www.bahianoticias.com.br/saude/artigo/1042-medico-do-trabalho-a-importancia-do-profissional-que-cuida-da-saude-de-quem-move-as-empresas" rel="noopener" target="_blank"><strong>Bahia Notícias</strong><span>企业中的职业医学医生</span></a></li>
+<li><a href="https://www.bahianoticias.com.br/saude/artigo/1019-home-office-flexibilidade-ou-pratica-que-levara-trabalhadores-ao-esgotamento-mental" rel="noopener" target="_blank"><strong>Bahia Notícias</strong><span>居家办公与耗竭</span></a></li>
+<li><a href="https://www.bahianoticias.com.br/saude/artigo/981-o-futuro-do-trabalho-comecou" rel="noopener" target="_blank"><strong>Bahia Notícias</strong><span>工作的未来已经开始</span></a></li>
+</ul>
+</div>
+<div>
+<h3>广播、电视和播客</h3>
+<ul class="press-list">
+<li><a href="https://www.youtube.com/watch?v=f4KWwgZnyvI" rel="noopener" target="_blank"><strong>Rádio CBN Bahia</strong><span>减少工伤事故</span></a></li>
+<li><a href="https://youtu.be/eNpFczxoUf8" rel="noopener" target="_blank"><strong>CBN Salvador</strong><span>职场心理健康 · Conexão Sociedade</span></a></li>
+<li><a href="https://www.youtube.com/watch?v=tXqH3eqP76U" rel="noopener" target="_blank"><strong>Tribuna do Recôncavo</strong><span>平台用工与事故病假</span></a></li>
+<li><a href="https://youtu.be/S6DwuYlanoQ" rel="noopener" target="_blank"><strong>Programa Intera</strong><span>第 14.831/24 号法律与心理健康</span></a></li>
+<li><a href="https://www.youtube.com/watch?v=IQLtccj2jms" rel="noopener" target="_blank"><strong>YouTube</strong><span>工作负荷：工具与诊断</span></a></li>
+<li><a href="https://www.youtube.com/watch?v=ZAZ-KYTJnmU" rel="noopener" target="_blank"><strong>Board Talks</strong><span>可持续发展</span></a></li>
+<li><a href="https://www.youtube.com/watch?v=8-2xZy5eITY" rel="noopener" target="_blank"><strong>TV Aratu / TVE Bahia</strong><span>冒名顶替综合征</span></a></li>
+<li><a href="https://www.youtube.com/watch?v=2WgClkHtW4c" rel="noopener" target="_blank"><strong>F5 Podcast</strong><span>职业历程</span></a></li>
+<li><a href="https://www.youtube.com/watch?v=0rmRJUfnH5w" rel="noopener" target="_blank"><strong>Rádio 93FM</strong><span>心理健康与工作</span></a></li>
+<li><a href="https://youtu.be/HNi9j_bsPFs?si=C0Gf13fS6-WEi-wB" rel="noopener" target="_blank"><strong>YouTube</strong><span>乱中求静：用瑜伽应对现代生活压力</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- LIVRO -->
+<section class="press-sec alt reveal">
+<div class="container">
+<span class="eyebrow-editorial">著作</span>
+<h2>《Quando o Trabalho Dói》图书信息。</h2>
+<div class="cite-grid">
+<div class="cite-card">
+<p><strong>书名：</strong> Quando o Trabalho Dói: do adoecimento silencioso à cultura de bem-estar（当工作伤人：从无声的疾病到幸福文化）</p>
+<p><strong>作者：</strong> Ana Paula Teixeira</p>
+<p><strong>出版社：</strong> AssedioNet · <strong>年份：</strong> 2025 · <strong>页数：</strong> 253</p>
+<p><strong>荣誉：</strong> 入围第七届 Ecos da Literatura 文学奖</p>
+</div>
+<div class="cite-card">
+<p>书评样书和经授权可发表的节选可应要求提供。</p>
+<p style="margin-top:20px"><a class="btn btn-secondary" href="https://www.amazon.com.br/Quando-Trabalho-D%C3%B3i-Adoecimento-Silencioso/dp/6598341957" rel="noopener" target="_blank">在亚马逊查看</a></p>
+<p style="margin-top:12px"><a class="btn btn-ghost" href="livro.html">图书页面 <span class="arrow">→</span></a></p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<section class="press-cta reveal">
+<div class="container">
+<span class="eyebrow-editorial">采访请求</span>
+<h2>请告知选题、媒体和截稿时间。</h2>
+<p style="max-width:58ch">有了这三项信息，回复会更快，并会说明能否接受直播、录制或书面采访。</p>
+<div class="btns"><a class="btn btn-primary" href="https://wa.me/5571981357004?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%98%AF%E8%AE%B0%E8%80%85%EF%BC%8C%E6%83%B3%E5%B0%B1%E4%B8%80%E4%B8%AA%E9%80%89%E9%A2%98%E4%B8%8E%20Ana%20Paula%20%E5%8C%BB%E7%94%9F%E8%81%94%E7%B3%BB%E3%80%82">WhatsApp 联系 →</a> <a class="btn btn-secondary" href="mailto:escutaris@zohomail.com?subject=Pedido%20de%20pauta%20ou%20entrevista">通过电子邮件发送</a> <a class="btn btn-secondary" href="../assets/material-organizadores-dra-ana-paula-teixeira.pdf" rel="noopener" target="_blank">PDF 资料</a></div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div>
+<div class="logo-main" style="color:var(--off-white);margin-bottom:20px"><span class="dra">dra.</span>ANA PAULA TEIXEIRA</div>
+<p class="footer-anchor">职业医学医生 · 巴西巴伊亚州萨尔瓦多。<br/>关爱员工，就是关爱企业。</p>
+</div>
+<div>
+<div class="footer-col-title">导航</div>
+<div class="stack-3">
+<div><a href="index.html">首页</a></div>
+<div><a href="https://guia.draanapaulateixeira.com.br/#receber-guia" rel="noopener" target="_blank">免费指南</a></div>
+<div><a href="palestras.html">讲座</a></div>
+<div><a href="rodas-de-conversa.html">圆桌对话</a></div>
+<div><a href="direcionamento.html">管理者指导</a></div>
+<div><a href="livro.html">著作</a></div>
+<div><a href="imprensa.html">媒体</a></div>
+<div><a href="contato.html">联系方式</a></div>
+</div>
+</div>
+<div>
+<div class="footer-col-title">联系方式</div>
+<div class="stack-3">
+<div><a href="mailto:escutaris@zohomail.com">电子邮件：escutaris@zohomail.com</a></div>
+<div><a href="https://wa.me/5571981357004?text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E4%B8%BA%E6%88%91%E7%9A%84%E4%BC%81%E4%B8%9A%E6%88%96%E6%B4%BB%E5%8A%A8%E5%AE%89%E6%8E%92%E4%B8%80%E5%9C%BA%E8%AE%B2%E5%BA%A7%E3%80%82%E5%8F%AF%E4%BB%A5%E8%81%8A%E4%B8%80%E8%81%8A%E5%90%97%EF%BC%9F">WhatsApp +55 71 98135-7004</a></div>
+<div><a href="https://www.instagram.com/draanapaulateixeira/" rel="noopener" target="_blank">Instagram</a></div>
+<div><a href="https://www.linkedin.com/in/draanapaulateixeira/" rel="noopener" target="_blank">LinkedIn</a></div>
+<div><a href="https://www.youtube.com/@draanapaulateixeira" rel="noopener" target="_blank">YouTube</a></div>
+</div>
+</div>
+</div>
+<div class="footer-meta"><span>CRM-BA 12797 · RQE 7237 · ICOH · ABERGO · Board Academy 2024</span> <span>© 2026 Ana Paula Teixeira 医生 · <a href="governanca.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">治理</a> · <a href="politica-privacidade.html" style="color:inherit;border-bottom:1px solid rgba(245,239,229,.3);text-decoration:none">隐私政策</a></span></div>
+<p class="footer-disclaimer">本网站不能替代个人医疗或心理随访。内容仅供参考，符合巴西联邦医学委员会关于医疗宣传的第 2.336/2023 号决议。</p>
+</div>
+</footer>
+<script src="../design-system.js?v=i18n-1"></script>
+<script>
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 8);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const alvo = document.getElementById(btn.dataset.copy);
+      if (!alvo) return;
+      const texto = alvo.textContent.trim();
+      try {
+        await navigator.clipboard.writeText(texto);
+      } catch (e) {
+        const campo = document.createElement('textarea');
+        campo.value = texto;
+        campo.setAttribute('readonly', '');
+        campo.style.position = 'fixed';
+        campo.style.opacity = '0';
+        document.body.appendChild(campo);
+        campo.select();
+        try { document.execCommand('copy'); } catch (err) { console.log('[imprensa] copia indisponivel'); }
+        document.body.removeChild(campo);
+      }
+      const rotulo = btn.textContent;
+      btn.textContent = '已复制';
+      btn.dataset.copied = '1';
+      setTimeout(() => { btn.textContent = rotulo; btn.removeAttribute('data-copied'); }, 2000);
+    });
+  });
+</script>
+</body>
+</html>
