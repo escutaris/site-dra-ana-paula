@@ -408,7 +408,6 @@
  "CRM-BA 12797 · RQE 7237 · ICOH · ABERGO · Board Academy 2024.": "CRM-BA 12797 · RQE 7237 · ICOH · ABERGO · Board Academy 2024。",
  "<b1>Ciclo típico</b1>: cerca de três semanas entre a etapa prévia e a devolutiva, conforme a agenda de quem participa.": "<b1>典型周期</b1>：从前期环节到反馈约三周，视参与者的日程而定。",
  "Encaixe correto": "是否适合",
- "Relatório individual gerado a partir das suas respostas.": "根据您的回答生成的个人报告。",
  "Devolutiva, 60 minutos": "反馈，60 分钟",
  "Sala de atendimento em Salvador, com duas poltronas frente a frente e ambiente reservado": "萨尔瓦多的诊室，两张扶手椅相对而放，环境私密",
  "<strong1>Atendimento presencial na Clínica Kirinonomori Serviços e Saúde</strong1><br>Ed. Cidadela Center I, sala 212, Rua Metódio Coelho, 62, Parque Bela Vista, Salvador-BA · <a2>ver no mapa</a2><br>Agendamento presencial: <a3>(71) 99989-9133</a3>. A devolutiva também acontece por plataforma virtual.": "<strong1>线下会谈地点：Clínica Kirinonomori Serviços e Saúde</strong1><br>Ed. Cidadela Center I, 212 室, Rua Metódio Coelho, 62, Parque Bela Vista, 巴西巴伊亚州萨尔瓦多 · <a2>查看地图</a2><br>线下预约：<a3>+55 71 99989-9133</a3>。反馈也可通过线上平台进行。",
@@ -831,7 +830,6 @@
  "De uma a duas semanas depois de você receber o relatório, acontece o encontro individual com a Dra. Ana Paula Teixeira, presencial em Salvador (Clínica Kirinonomori, Parque Bela Vista) ou online. A conversa faz a leitura conjunta do seu resultado e liga esse resultado ao desafio que você trouxe: o que pesa na equipe, onde agir primeiro e o que é papel seu ou de outra área.": "在您收到报告后的一到两周内，与 Ana Paula Teixeira 医生进行一对一会谈，可在萨尔瓦多（Parque Bela Vista 的 Clínica Kirinonomori）线下或线上进行。会谈与您一起解读结果，并把它与您提出的挑战联系起来：什么在影响团队、先从哪里着手，以及哪些是您的职责、哪些属于其他部门。",
  "A leitura do seu relatório, junto com a médica do trabalho.": "与职业医学医生一起解读您的报告。",
  "Prioridades de desenvolvimento para os próximos meses.": "未来几个月的发展重点。",
- "A gravação privada do encontro, para consulta posterior.": "会谈的私人录像，供日后查阅。",
  "Os materiais não substituem laudo, parecer pericial, diagnóstico da organização ou orientação jurídica.": "这些材料不能替代医学报告、司法鉴定意见、组织诊断或法律咨询。",
  "Valores e condições são apresentados conforme a demanda.": "费用和条件根据需求提供。",
  "Proposta conforme o contexto": "根据情况报价",
@@ -861,5 +859,8 @@
  "A devolutiva é um laudo ou parecer?": "反馈是医学报告或鉴定意见吗？",
  "Não. É um encontro de 60 minutos sobre o seu relatório do SMCIT, gravado para você consultar depois. Não equivale a laudo, parecer pericial nem avaliação da empresa.": "不是。这是一次围绕您的 SMCIT 报告进行的 60 分钟会谈，会录像供您日后查阅。它不等同于医学报告、司法鉴定意见或对企业的评估。",
  "Vamos entender se o Direcionamento atende à sua demanda?": "我们来看看管理者指导是否符合您的需求？",
- "Envie uma mensagem breve com o tipo de situação, o seu papel na organização e a urgência. A conversa inicial serve para entender o contexto, verificar a disponibilidade e confirmar o formato antes de o questionário ser enviado.": "请发送一条简短消息，说明情况类型、您在组织中的角色和紧急程度。初步沟通用于了解背景、确认可预约时间，并在发送问卷之前确认形式。"
+ "Envie uma mensagem breve com o tipo de situação, o seu papel na organização e a urgência. A conversa inicial serve para entender o contexto, verificar a disponibilidade e confirmar o formato antes de o questionário ser enviado.": "请发送一条简短消息，说明情况类型、您在组织中的角色和紧急程度。初步沟通用于了解背景、确认可预约时间，并在发送问卷之前确认形式。",
+ "Relatório individual com o percentual em cada uma das 4 competências e das 12 subcompetências, e a faixa de cada uma: Eficaz, Razoável ou Necessita desenvolvimento.": "个人报告，列出您在 4 项能力和 12 项子能力上的百分比，以及每项所处的等级：有效、尚可或需要提升。",
+ "A gravação do encontro, disponibilizada para você consultar depois.": "会谈录像，提供给您日后查阅。",
+ "Se a conversa mostrar que a demanda precisa de outro tipo de apoio, isso será sinalizado.": "如果沟通中发现需求需要其他类型的支持，我们会明确告知。"
 }
