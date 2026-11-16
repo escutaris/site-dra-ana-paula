@@ -1221,3 +1221,30 @@ html { scroll-behavior: smooth; }
 :lang(zh) em,
 :lang(zh) i,
 :lang(zh) cite { font-style: normal; }
+
+/* Botão flutuante do WhatsApp (montado por design-system.js) */
+.wa-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 60;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transform: translateY(16px) scale(0.9);
+  pointer-events: none;
+  transition: opacity 240ms ease, transform 240ms ease, bottom 240ms ease;
+}
+.wa-float.is-visible { opacity: 1; transform: none; pointer-events: auto; }
+.wa-float:hover { background: #1ebe5b; }
+.wa-float:focus-visible { outline: 3px solid var(--terracota); outline-offset: 3px; }
+.wa-float svg { width: 32px; height: 32px; fill: #fff; }
+body:has(.esc-cookies) .wa-float { bottom: 96px; }
+@media (min-width: 768px) { body:has(.esc-cookies) .wa-float { bottom: 84px; } }
+@media (max-width: 560px) { .wa-float { right: 16px; bottom: 16px; width: 54px; height: 54px; } }
